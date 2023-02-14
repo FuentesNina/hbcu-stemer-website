@@ -1,4 +1,4 @@
-import Head from '../../node_modules/next/head';
+import Head from 'next/head';
 
 export default function MyHead({pageTitle, pageDescription}: {pageTitle:string, pageDescription: string}) {
     return (
