@@ -9,13 +9,11 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
-    const quote = `“Yesterday’s the past, tomorrow’s the future, but today is a gift. That’s why its called the present.” - Bil Keane`;
-
 
     return (
       <>
         <section>
-          <p className='font-quote text-center text-lg m-5'>{quote}</p>
+          <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
           <div className="bg-black pt-10">
             <InstagramShowcase customUrl={webLinks.instagram}/>
             <div className="my-10 md:flex md:w-full">

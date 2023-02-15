@@ -1,4 +1,10 @@
-export default function Banner({pageTitle, bannerImage}: {pageTitle:string, bannerImage:string}) {
+import { getPageInfo } from "@/public/utils/data";
+
+export default function Banner() {
+  const pageInfo = getPageInfo();
+
+  const pageTitle = pageInfo.pageTitle;
+  const bannerImage= pageInfo.bannerImage;
 
     return (
       <>
