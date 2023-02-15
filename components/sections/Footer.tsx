@@ -1,40 +1,34 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { navLinks } from "@/public/utils/data";
+import { navLinks, webLinks } from "@/public/utils/data";
 import CompactLogo from "../elements/logos/CompactLogo";
 import WebsiteLogo from "../elements/logos/WebsiteLogo";
-import { faFacebook, faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import InstagramShowcase from "../elements/InstagramShowcase";
 
 
-export default function Footer() {
+export default function Footer({showSignUp}: {showSignUp: boolean}) {
     const quote = `“Yesterday’s the past, tomorrow’s the future, but today is a gift. That’s why its called the present.” - Bil Keane`;
-    const INSTAGRAM_URL = 'https://www.instagram.com/hbcustemer/';
-    const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=100077784492698';
-    const YOUTUBE_URL = 'https://www.youtube.com/@hbcustemer5734';
 
 
     return (
       <>
         <section>
-          <p className='font-quote text-center text-xl m-5'>{quote}</p>
+          <p className='font-quote text-center text-lg m-5'>{quote}</p>
           <div className="bg-black pt-10">
-            <div className="bg-cyan-700 h-20 grid relative place-content-center">
-              <div id="collage of Instagram images" className='absolute'>
-              </div>
-              <Link href={INSTAGRAM_URL} className='text-white text-center uppercase font-title font-bold'>Follow Us On Instagram</Link>
-            </div>
+            <InstagramShowcase customUrl={webLinks.instagram}/>
             <div className="my-10 md:flex md:w-full">
               <div className="flex text-center h-8 my-10 md:ml-10 place-content-center">
-                <Link href={INSTAGRAM_URL}><FontAwesomeIcon icon={faInstagram} className="text-white h-full mx-1" mask={faCircle} transform="shrink-4" /></Link>
-                <Link href={FACEBOOK_URL}><FontAwesomeIcon icon={faFacebookF} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
-                <Link href={YOUTUBE_URL}><FontAwesomeIcon icon={faYoutube} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
+                <Link href={webLinks.instagram}><FontAwesomeIcon icon={faInstagram} className="text-white h-full mx-1" mask={faCircle} transform="shrink-4" /></Link>
+                <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
+                <Link href={webLinks.youtube}><FontAwesomeIcon icon={faYoutube} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
               </div>
               <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
                 <div>
                   <ul className="text-white font-body text-sm">
                     {navLinks.map((link, index) => { return(
-                      <li key={index}><Link href={link.path}>{link.name}</Link></li>
+                      <li key={index}><Link href={link.path} className="capitalize">{link.pageTitle}</Link></li>
                     )})}
                   </ul>
                 </div>

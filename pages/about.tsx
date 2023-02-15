@@ -1,11 +1,16 @@
-import MyHead from '../components/sections/MyHead';
+import Banner from '@/components/sections/banner';
+import { navLinks } from '@/public/utils/data';
+
 
 export default function About() {
-  const pageDescription = 'Educate, empower, and elevate HBCU students through scholarships and career resources.';
+  const pageIndex = 4;
+
+  const pageTitle = navLinks[pageIndex].pageTitle;
+  const bannerImage= navLinks[pageIndex].bannerImage;
 
   return (
     <>
-      <MyHead pageTitle='Who We Are' pageDescription={pageDescription} />
+      <Banner pageTitle={pageTitle} bannerImage={bannerImage}/>
     </>
   )
 }

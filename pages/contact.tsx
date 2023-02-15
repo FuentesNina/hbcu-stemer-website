@@ -1,21 +1,18 @@
-import MyHead from '@/components/sections/MyHead';
-import NavBar from '@/components/sections/NavBar';
-import Banner from '@/components/sections/Banner';
-import ContactSection from '@/components/sections/ContactSection';
-import Footer from '@/components/sections/Footer';
+import { navLinks } from '@/public/utils/data';
+import Banner from '@/components/sections/banner';
+import ContactSection from '@/components/sections/contactSection';
+
 
 export default function Contact() {
-  const pageDescription = 'Educate, empower, and elevate HBCU students through scholarships and career resources.';
-  const pageTitle = 'Contact Us';
-  const bannerImage= 'images/contactUs_Banner.jpeg';
+  const pageIndex = 5;
+
+  const pageTitle = navLinks[pageIndex].pageTitle;
+  const bannerImage= navLinks[pageIndex].bannerImage;
 
   return (
     <>
-      <MyHead pageTitle={pageTitle} pageDescription={pageDescription} />
-      {/* <NavBar /> */}
       <Banner pageTitle={pageTitle} bannerImage={bannerImage}/>
       {/* <ContactSection /> */}
-      <Footer />
     </>
   )
 }
