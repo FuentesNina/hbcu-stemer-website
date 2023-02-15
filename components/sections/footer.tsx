@@ -18,9 +18,9 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
             <InstagramShowcase customUrl={webLinks.instagram}/>
             <div className="my-10 md:flex md:w-full">
               <div className="flex text-center h-8 my-10 md:ml-10 place-content-center">
-                <Link href={webLinks.instagram}><FontAwesomeIcon icon={faInstagram} className="text-white h-full mx-1" mask={faCircle} transform="shrink-4" /></Link>
-                <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
-                <Link href={webLinks.youtube}><FontAwesomeIcon icon={faYoutube} className="text-white h-full mx-1" mask={faCircle} transform="shrink-6" /></Link>
+                <Link href={webLinks.instagram}><FontAwesomeIcon icon={faInstagram} className="text-white h-full w-8 mx-1" mask={faCircle} transform="shrink-4" /></Link>
+                <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className="text-white h-full w-8 mx-1" mask={faCircle} transform="shrink-6" /></Link>
+                <Link href={webLinks.youtube}><FontAwesomeIcon icon={faYoutube} className="text-white h-full w-8 mx-1" mask={faCircle} transform="shrink-6" /></Link>
               </div>
               <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
                 <div>
