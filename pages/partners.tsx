@@ -1,11 +1,10 @@
-import MyHead from '../components/sections/Head';
+import Banner from "@/components/sections/banner";
 
 export default function Partners() {
-  const pageDescription = 'Educate, empower, and elevate HBCU students through scholarships and career resources.';
 
   return (
     <>
-      <MyHead pageTitle='Our Partners' pageDescription={pageDescription} />
+      <Banner/>
     </>
   )
 }

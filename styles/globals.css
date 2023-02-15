@@ -1,3 +1,17 @@
+/* Fonts (Oswald, Open Sans, Montserrat) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Lumios Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/lumios-marker/Lumios\ Marker.otf') format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   margin: 0;
 }
