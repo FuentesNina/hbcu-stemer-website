@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { navLinks, webLinks } from "@/public/utils/data";
-import CompactLogo from "../elements/logos/CompactLogo";
-import WebsiteLogo from "../elements/logos/WebsiteLogo";
+import CompactLogo from "@/components/elements/logos/compactLogo";
+import WebsiteLogo from "../elements/logos/websiteLogo";
+import InstagramShowcase from "../elements/instagramShowcase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import InstagramShowcase from "../elements/InstagramShowcase";
 
 
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
