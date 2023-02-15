@@ -7,7 +7,6 @@
   src: url('../public/fonts/lumios-marker/Lumios\ Marker.otf') format('opentype');
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

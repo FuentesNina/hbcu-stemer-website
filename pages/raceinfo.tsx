@@ -5,7 +5,7 @@ export default function RaceInformation() {
 
   return (
     <>
-      <MyHead pageTitle='Race Information' pageDescription={pageDescription} />
+      <MyHead pageTitle='Education Run' pageDescription={pageDescription} />
     </>
   )
 }
