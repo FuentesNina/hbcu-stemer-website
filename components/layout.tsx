@@ -10,6 +10,7 @@ export default function Layout({children}:{children:ReactElement}) {
     return (
       <>
         {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} />}
+        {pageInfo && <NavBar />}
               <main>{children}</main>
         {pageInfo &&<Footer showSignUp={pageInfo.showSignUp}/>}
       </>
