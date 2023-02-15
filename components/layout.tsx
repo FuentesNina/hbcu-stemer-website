@@ -7,18 +7,11 @@ import { navLinks, getPageInfo } from "@/public/utils/data";
 export default function Layout({children}:{children:ReactElement}) {
     const pageInfo = getPageInfo();
 
-    const pageTitle = pageInfo.pageTitle;
-    const pageDescription = pageInfo.pageDescription
-      ? pageInfo.pageDescription
-      : navLinks[0].pageDescription;
-    const showSignUp = pageInfo.showSignUp;
-
     return (
-        <>
-        <MyHead pageTitle={pageTitle} pageDescription={pageDescription} />
-        {/* <NavBar /> */}
-            <main>{children}</main>
-        <Footer showSignUp={showSignUp}/>
+      <>
+        {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} />}
+              <main>{children}</main>
+        {pageInfo &&<Footer showSignUp={pageInfo.showSignUp}/>}
       </>
     )
   }
