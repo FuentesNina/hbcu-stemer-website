@@ -24,9 +24,9 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
               </div>
               <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
                 <div>
-                  <ul className="text-white font-body text-sm">
+                  <ul className="text-white font-body text-sm capitalize">
                     {navLinks.map((pageInfo, index) => { return(
-                      <li key={index}><Link href={pageInfo.path} className="capitalize">{pageInfo.pageTitle}</Link></li>
+                      <li key={index}><Link href={pageInfo.path}>{pageInfo.pageTitle}</Link></li>
                     )})}
                   </ul>
                 </div>
