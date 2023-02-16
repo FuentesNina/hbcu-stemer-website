@@ -17,3 +17,22 @@
   scroll-behavior: smooth;
   z-index: 1;
 }
+
+@keyframes showMenu {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%)
+  }
+}
+
+@keyframes showMenu {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
+}
