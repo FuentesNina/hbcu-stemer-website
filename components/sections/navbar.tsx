@@ -28,7 +28,7 @@ export default function NavBar() {
       <>
         <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky  top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
             <Link href="/" className="self-center">
-            <WebsiteLogo color='#ffffff' className="h-6 self-center md:hidden"/>
+            <WebsiteLogo color='#ffffff' className="h-5 self-center md:hidden"/>
             <CompactLogo color="#ffffff" className="hidden md:block h-12 self-center"/>
             </Link>
             <div id="hamburgerMenuIcons" className="flex md:hidden">
@@ -40,7 +40,7 @@ export default function NavBar() {
                 {navLinks.map((pageInfo, index) => { return(
                     <li key={index} onClick={closeMenu} className='flex flex-col hover:max-w-fit hover:bg-myGreen '>
                       <Link href={pageInfo.path} className={`bg-black ${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                      <span className={`bg-myGreen h-1 top-0 text-black max-w-fit text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                      <span className={`bg-myGreen h-1 top-0 text-black text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
                     </li>
                 )})}
               </ul>
@@ -48,9 +48,9 @@ export default function NavBar() {
             <div id="mobileMenu" className={`${mobileMenu ? '' : 'hidden'} md:hidden top-10 bg-black/[0.9] p-14 pt-5 max-w-fit absolute right-0 z-50 rounded-bl-xl backdrop-blur transition-all`}>
               <ul className="text-white uppercase font-title font-bold">
                 {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='py-2 flex flex-col max-w-fit hover:bg-myGreen'>
-                    <Link href={pageInfo.path} className={pageInfo.highlight ? 'text-myGreen' : ''}>{pageInfo.pageTitle}</Link>
-                    <span className={`h-1 top-0 text-black max-w-fit text-transparent text-right ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                  <li key={index} onClick={closeMenu} className='my-4 flex flex-col hover:max-w-fit hover:bg-myGreen hover:text-black'>
+                    <Link href={pageInfo.path} className={`${pageInfo.highlight ? 'text-myGreen hover:text-black' : ''}`}>{pageInfo.pageTitle}</Link>
+                    <span className={`bg-myGreen h-1 top-0 text-black text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
                   </li>
                 )})}
               </ul>

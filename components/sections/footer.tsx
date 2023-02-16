@@ -30,10 +30,10 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
                     )})}
                   </ul>
                 </div>
-                <div className='self-end md:self-center'>
-                  <CompactLogo color='#ffffff' className='block md:hidden h-20'/>
+                <Link href="/" className="self-end md:self-center">
+                  <CompactLogo color='#ffffff' className='block md:hidden h-14'/>
                   <WebsiteLogo color='#ffffff' className="hidden md:block h-8"/>
-                </div>
+                </Link>
               </div>
             </div>
             <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by Nina Fuentes LLC</p>
