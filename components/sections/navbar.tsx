@@ -38,9 +38,9 @@ export default function NavBar() {
             <div id="desktopMenu" className="hidden md:block self-center">
               <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
                 {navLinks.map((pageInfo, index) => { return(
-                    <li key={index} onClick={closeMenu} className='flex flex-col'>
-                      <Link href={pageInfo.path} className={pageInfo.highlight ? 'text-myGreen' : ''}>{pageInfo.pageTitle}</Link>
-                      <span className={`"bg-myGreen h-1 top-0 text-black max-w-fit text-transparent text-right" ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                    <li key={index} onClick={closeMenu} className='flex flex-col hover:max-w-fit hover:bg-myGreen '>
+                      <Link href={pageInfo.path} className={`bg-black ${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
+                      <span className={`bg-myGreen h-1 top-0 text-black max-w-fit text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
                     </li>
                 )})}
               </ul>
@@ -48,9 +48,9 @@ export default function NavBar() {
             <div id="mobileMenu" className={`${mobileMenu ? '' : 'hidden'} md:hidden top-10 bg-black/[0.9] p-14 pt-5 max-w-fit absolute right-0 z-50 rounded-bl-xl backdrop-blur transition-all`}>
               <ul className="text-white uppercase font-title font-bold">
                 {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='py-2 flex flex-col'>
+                  <li key={index} onClick={closeMenu} className='py-2 flex flex-col max-w-fit hover:bg-myGreen'>
                     <Link href={pageInfo.path} className={pageInfo.highlight ? 'text-myGreen' : ''}>{pageInfo.pageTitle}</Link>
-                    <span className={`"bg-myGreen h-1 top-0 text-black max-w-fit text-transparent text-right" ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`h-1 top-0 text-black max-w-fit text-transparent text-right ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
                   </li>
                 )})}
               </ul>
