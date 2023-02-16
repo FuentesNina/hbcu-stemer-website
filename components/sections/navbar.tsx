@@ -4,7 +4,7 @@ import CompactLogo from "@/components/elements/logos/compactLogo";
 import WebsiteLogo from "../elements/logos/websiteLogo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 
@@ -18,13 +18,23 @@ export default function NavBar() {
 
 
     const openMenu = function() {
-      setFirstLoad(false);
+      if(firstLoad) {
+        setFirstLoad(false);
+      }
       setMobileMenu(true);
     }
 
     const closeMenu = function() {
-      setMobileMenu(false);
+      if (mobileMenu) {
+        setMobileMenu(false);
+      }
     }
+
+    // useEffect(() => {
+    //   if(mobileMenu === false) {
+    //     setFirstLoad(true);
+    //   }
+    // },[mobileMenu])
 
     return (
       <>
@@ -47,9 +57,10 @@ export default function NavBar() {
               )})}
             </ul>
           </div>
-          <div id="mobileMenu" onClick={closeMenu} className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? 'hidden' : 'animate-hidemenu')} bg-blue-900/50 transition-all w-screen h-screen left-0 transform absolute z-49`} >
-            <div className={"p-14 pt-5 max-w-fit md:hidden top-10 bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0"}>
-              <ul className={`${mobileMenu ? '' : ''} text-white uppercase font-title`}>
+        </section>
+        <div id="mobileMenu" onClick={closeMenu} className={`bg-blue-900/50 overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
+            <div className={`${mobileMenu ? 'animate-showmenu' : 'animate-hidemenu'} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
+              <ul className={`text-white uppercase font-title`}>
                 {navLinks.map((pageInfo, index) => { return(
                   <li key={index} onClick={closeMenu} className='my-4 flex flex-col font-bold hover:max-w-fit hover:bg-myGreen hover:text-black'>
                     <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen hover:text-black' : ''}`}>{pageInfo.pageTitle}</Link>
@@ -59,8 +70,6 @@ export default function NavBar() {
               </ul>
             </div>
           </div>
-
-        </section>
       </>
     )
   }
