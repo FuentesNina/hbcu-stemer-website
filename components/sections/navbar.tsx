@@ -47,7 +47,7 @@ export default function NavBar() {
               )})}
             </ul>
           </div>
-          <div id="mobileMenu" onClick={closeMenu} className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? 'hidden' : 'animate-hidemenu')} bg-blue-900 transition-all w-screen h-screen left-0 transform absolute z-49`} >
+          <div id="mobileMenu" onClick={closeMenu} className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? 'hidden' : 'animate-hidemenu')} bg-blue-900/50 transition-all w-screen h-screen left-0 transform absolute z-49`} >
             <div className={"p-14 pt-5 max-w-fit md:hidden top-10 bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0"}>
               <ul className={`${mobileMenu ? '' : ''} text-white uppercase font-title`}>
                 {navLinks.map((pageInfo, index) => { return(
