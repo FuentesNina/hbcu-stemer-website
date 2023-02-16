@@ -7,6 +7,16 @@ export default function Contact() {
   return (
     <>
       <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
       {/* <ContactSection /> */}
     </>
   )
