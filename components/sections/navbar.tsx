@@ -12,11 +12,13 @@ export default function NavBar() {
     const router = useRouter();
     const currentPath = router.pathname;
     const [mobileMenu, setMobileMenu] = useState(false); //false: menu is CLOSED. true: menu is OPEN.
+    const [firstLoad, setFirstLoad] = useState(true)
 
     const scrollPosition = useScrollPosition();
 
 
     const openMenu = function() {
+      setFirstLoad(false);
       setMobileMenu(true);
     }
 
@@ -27,11 +29,11 @@ export default function NavBar() {
     return (
       <>
         <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
-          <Link href="/" className="self-center">
+          <Link href="/" className="self-center z-50">
             <WebsiteLogo color='#ffffff' className="h-5 self-center md:hidden"/>
             <CompactLogo color="#ffffff" className="hidden md:block h-12 self-center"/>
           </Link>
-          <div id="hamburgerMenuIcons" className="flex md:hidden cursor-pointer">
+          <div id="hamburgerMenuIcons" className="flex md:hidden cursor-pointer z-50">
             <FontAwesomeIcon icon={faBars} onClick={openMenu} className={`text-white h-8 self-center ${mobileMenu ? 'hidden' : ''}`}/>
             <FontAwesomeIcon icon={faXmark} onClick={closeMenu} className={`text-white h-10 self-center ${mobileMenu ? '' : 'hidden'}`}/>
           </div>
@@ -45,8 +47,8 @@ export default function NavBar() {
               )})}
             </ul>
           </div>
-          <div id="mobileMenu" className={`${mobileMenu ? 'animate-showmenu' : 'animate-hidemenu'} bg-transparent transition-all fixed top-10 left-0 transform z-49`} style={{width: '100vw', height: '100vh'}} onClick={closeMenu}>
-            <div className={"p-14 pt-5 max-w-fit md:hidden top-10 bg-black/[0.9] absolute top-0 right-0 z-50 rounded-bl-xl backdrop-blur"}>
+          <div id="mobileMenu" onClick={closeMenu} className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? 'hidden' : 'animate-hidemenu')} bg-transparent transition-all w-screen h-screen left-0 transform fixed z-49`} >
+            <div className={"p-14 pt-5 max-w-fit md:hidden top-10 bg-black/[0.9] rounded-bl-xl backdrop-blur absolute right-0"}>
               <ul className={`${mobileMenu ? '' : ''} text-white uppercase font-title`}>
                 {navLinks.map((pageInfo, index) => { return(
                   <li key={index} onClick={closeMenu} className='my-4 flex flex-col font-bold hover:max-w-fit hover:bg-myGreen hover:text-black'>
