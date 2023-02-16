@@ -6,11 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 
 export default function NavBar() {
     const router = useRouter();
     const currentPath = router.pathname;
     const [mobileMenu, setMobileMenu] = useState(false); //false: menu is CLOSED. true: menu is OPEN.
+
+    const scrollPosition = useScrollPosition();
 
 
     const openMenu = function() {
@@ -23,7 +26,7 @@ export default function NavBar() {
 
     return (
       <>
-        <section className="bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 sticky z-50">
+        <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky  top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
             <Link href="/" className="self-center">
             <WebsiteLogo color='#ffffff' className="h-6 self-center md:hidden"/>
             <CompactLogo color="#ffffff" className="hidden md:block h-12 self-center"/>
