@@ -10,7 +10,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
       <>
-        <section>
+        <footer >
           <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
           <div className="bg-black pt-10">
             <InstagramShowcase customUrl={webLinks.instagram}/>
@@ -32,7 +32,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
             </div>
             <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://fuentesnina.github.io/my-portfolio-website/">Nina Fuentes LLC</Link></p>
           </div>
-        </section>
+        </footer>
       </>
     )
   }

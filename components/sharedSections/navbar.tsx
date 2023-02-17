@@ -31,7 +31,7 @@ export default function NavBar() {
 
     return (
       <>
-        <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
+        <header className={`${scrollPosition > 0 && "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]"} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
           <Link href="/" className="self-center z-50">
             <WebsiteLogo color='#ffffff' className="h-5 self-center md:hidden"/>
             <CompactLogo color="#ffffff" className="hidden md:block h-12 self-center"/>
@@ -50,7 +50,7 @@ export default function NavBar() {
               )})}
             </ul>
           </div>
-        </section>
+        </header>
         <div onClick={closeMenu} className={`${mobileMenu ? 'z-50' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden w-screen h-screen z-50 fixed`} >
             <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
               <ul className={`text-white uppercase font-title font-bold`}>
