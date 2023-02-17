@@ -1,17 +1,20 @@
+import SocialMediaIcons from "../elements/socialMediaIcons";
+
 export default function ContactSection() {
 
     return (
-      <>
-      <div>
+      <section>
+        <div>
 
-      </div>
-      <div>
-        <h2>Connect With Us</h2>
-        <p>social icons</p>
-        <p>Instagram @ hbcustemer{'\n'}Facebook @ HBCU STEMER
-        {'\n'}Email - info@hbcustemer.com
-        </p>
-      </div>
-      </>
+        </div>
+        <div className="">
+          <h2 className="">Connect With Us</h2>
+          <SocialMediaIcons color="black"/>
+          <p>Instagram @ hbcustemer{'\n'}Facebook @ HBCU STEMER
+          {'\n'}Email - info@hbcustemer.com
+          </p>
+        </div>
+
+      </section>
     )
   }

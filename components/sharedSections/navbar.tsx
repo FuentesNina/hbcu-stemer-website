@@ -62,17 +62,17 @@ export default function NavBar() {
           </div>
         </header>
         <div onClick={closeMenu} className={`${mobileMenu ? 'z-50' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden w-screen h-screen z-50 fixed`} >
-            <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
-              <ul className={`text-white uppercase font-title font-bold`}>
-                {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit group'>
-                    <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span className={`bg-myGreen h-1 top-0 text-transparent transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "mw-full" : "w-0"}`}>{pageInfo.pageTitle}</span>
-                  </li>
-                )})}
-              </ul>
-            </div>
+          <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
+            <ul className={`text-white uppercase font-title font-bold`}>
+              {navLinks.map((pageInfo, index) => { return(
+                <li key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit group'>
+                  <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
+                  <span className={`bg-myGreen h-1 top-0 text-transparent transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "mw-full" : "w-0"}`}>{pageInfo.pageTitle}</span>
+                </li>
+              )})}
+            </ul>
           </div>
+        </div>
       </>
     )
   }

@@ -11,12 +11,10 @@ export default function SocialMediaIcons({containerClassName, iconClassName, col
     const iconClass = iconClassName ? iconClassName : "h-full mx-1 w-8" ;
 
     return (
-      <>
-        <div className={containerClass}>
-            <Link href={webLinks.instagram}><FontAwesomeIcon icon={faInstagram} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
-            <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
-            <Link href={webLinks.youtube}><FontAwesomeIcon icon={faYoutube} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
-        </div>
-      </>
+      <div className={containerClass}>
+          <Link href={webLinks.instagram}><FontAwesomeIcon icon={faInstagram} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
+          <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
+          <Link href={webLinks.youtube}><FontAwesomeIcon icon={faYoutube} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
+      </div>
     )
   }

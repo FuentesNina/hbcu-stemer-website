@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <Banner />
-      {/* <ContactSection /> */}
+      <ContactSection />
     </>
   )
 }

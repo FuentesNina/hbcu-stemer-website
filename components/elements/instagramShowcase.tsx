@@ -23,7 +23,6 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
   }, [pictures])
 
     return (
-      <>
         <div className={`bg-transparent w-full relative overflow-clip isolate`} style={{height: `${height}`}}>
           <div className={`bg-transparent w-full h-full absolute flex-row flex`}>
             {IG_PICTURES.map((picture, index) => {
@@ -38,7 +37,5 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
             <Link href={customUrl} className='text-white text-center uppercase font-title font-bold'>Follow Us On Instagram</Link>
           </div>
         </div>
-
-      </>
     )
   }
