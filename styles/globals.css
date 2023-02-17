@@ -15,4 +15,5 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
+  z-index: 1;
 }

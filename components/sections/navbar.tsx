@@ -51,7 +51,7 @@ export default function NavBar() {
             </ul>
           </div>
         </section>
-        <div id="mobileMenu" onClick={closeMenu} className={`bg-transparent overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
+        <div onClick={closeMenu} className={`${mobileMenu ? 'z-50' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden w-screen h-screen z-50 fixed`} >
             <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
               <ul className={`text-white uppercase font-title font-bold`}>
                 {navLinks.map((pageInfo, index) => { return(
