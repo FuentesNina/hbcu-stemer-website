@@ -43,9 +43,9 @@ export default function NavBar() {
           <div id="desktopMenu" className="hidden md:block self-center">
             <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
               {navLinks.map((pageInfo, index) => { return(
-                  <li id="navLink" key={index} className='flex flex-col max-w-fit lg:ml-5'>
+                  <li key={index} className='group flex flex-col max-w-fit lg:ml-5'>
                     <Link href={pageInfo.path} className={`${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span id="bar" className={`h-1 top-0 text-transparent bg-myGreen ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`h-1 top-0 text-transparent bg-myGreen transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
               )})}
             </ul>
@@ -55,9 +55,9 @@ export default function NavBar() {
             <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
               <ul className={`text-white uppercase font-title font-bold`}>
                 {navLinks.map((pageInfo, index) => { return(
-                  <li id="navLink" key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit'>
+                  <li key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit group'>
                     <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span id="bar" className={`bg-myGreen h-1 top-0 text-transparent ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`bg-myGreen h-1 top-0 text-transparent transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "mw-full" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
                 )})}
               </ul>
