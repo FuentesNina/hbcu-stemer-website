@@ -19,7 +19,21 @@ module.exports = {
         'myLightGrey': '#d9d9d9',
         'myDarkGrey': '#545454',
       },
+      keyframes:{
+        showMenu: {
+          '0%' : {transform: 'translate(100%)'},
+          '100%': {transform: 'translate(0)'},
+        },
+        hideMenu: {
+          '0%': {transform: 'translate(0)'},
+          '100%' : {transform: 'translate(100%)'},
+        },
+      },
+      animation: {
+        showMenu: 'showMenu 0.5s ease-out forwards',
+        hideMenu: 'hideMenu 0.5s ease-out forwards',
+      },
     },
   },
   plugins: [],
-}
+};

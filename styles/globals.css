@@ -14,4 +14,23 @@
 
 * {
   margin: 0;
+  scroll-behavior: smooth;
+  z-index: 1;
 }
+
+#navLink:hover > #bar {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+
+/*
+@keyframes showMenu {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
+} */
