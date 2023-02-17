@@ -17,16 +17,14 @@
   scroll-behavior: smooth;
   z-index: 1;
 }
-/*
-@keyframes showMenu {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%)
-  }
+
+#navLink:hover > #bar {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
 }
 
+
+/*
 @keyframes showMenu {
   from {
     transform: translateX(0%);

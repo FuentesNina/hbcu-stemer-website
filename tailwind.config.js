@@ -20,18 +20,18 @@ module.exports = {
         'myDarkGrey': '#545454',
       },
       keyframes:{
-        showmenu: {
+        showMenu: {
           '0%' : {transform: 'translate(100%)'},
-          '100%': {transform: 'translate(0)'}
+          '100%': {transform: 'translate(0)'},
         },
-        hidemenu: {
+        hideMenu: {
+          '0%': {transform: 'translate(0)'},
           '100%' : {transform: 'translate(100%)'},
-          '0%': {transform: 'translate(0)'}
         },
       },
       animation: {
-        showmenu: 'showmenu 0.5s ease-out',
-        hidemenu: 'hidemenu 1s ease-in-out forwards',
+        showMenu: 'showMenu 0.5s ease-out forwards',
+        hideMenu: 'hideMenu 0.5s ease-out forwards',
       },
     },
   },

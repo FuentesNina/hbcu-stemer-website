@@ -43,21 +43,21 @@ export default function NavBar() {
           <div id="desktopMenu" className="hidden md:block self-center">
             <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
               {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='flex flex-col hover:max-w-fit hover:bg-myGreen lg:ml-5'>
-                    <Link href={pageInfo.path} className={`bg-black ${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span className={`h-1 top-0 text-black text-transparent max-w-fit text-right ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                  <li id="navLink" key={index} className='flex flex-col max-w-fit lg:ml-5'>
+                    <Link href={pageInfo.path} className={`${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
+                    <span id="bar" className={`h-1 top-0 text-transparent bg-myGreen ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
               )})}
             </ul>
           </div>
         </section>
         <div id="mobileMenu" onClick={closeMenu} className={`bg-transparent overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
-            <div className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? "hidden" : 'animate-hidemenu') } p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
-              <ul className={`text-white uppercase font-title`}>
+            <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
+              <ul className={`text-white uppercase font-title font-bold`}>
                 {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='my-4 flex flex-col font-bold hover:max-w-fit hover:bg-myGreen hover:text-black'>
-                    <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen hover:text-black' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span className={`bg-myGreen h-1 top-0 text-black text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                  <li id="navLink" key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit'>
+                    <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
+                    <span id="bar" className={`bg-myGreen h-1 top-0 text-transparent ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
                 )})}
               </ul>
