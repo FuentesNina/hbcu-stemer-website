@@ -9,8 +9,12 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
   useEffect(() => {
 
     const handleWindowResize = () => {
-      let maxImages = Math.ceil(window.innerWidth / Number(height.replace('px','')));
+      const maxImages = Math.ceil(window.innerWidth / Number(height.replace('px','')));
       setPictures(IG_PICTURES.length > maxImages ? IG_PICTURES.slice(0, maxImages) : IG_PICTURES);
+    }
+
+    if (window === undefined) {
+      handleWindowResize();
     }
 
     window.addEventListener('resize', handleWindowResize);
