@@ -13,7 +13,6 @@ export default function NavBar() {
     const currentPath = router.pathname;
     const [mobileMenu, setMobileMenu] = useState(false); //false: menu is CLOSED. true: menu is OPEN.
     const [firstLoad, setFirstLoad] = useState(true)
-
     const scrollPosition = useScrollPosition();
 
 
@@ -30,12 +29,6 @@ export default function NavBar() {
       }
     }
 
-    // useEffect(() => {
-    //   if(mobileMenu === false) {
-    //     setFirstLoad(true);
-    //   }
-    // },[mobileMenu])
-
     return (
       <>
         <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
@@ -50,16 +43,16 @@ export default function NavBar() {
           <div id="desktopMenu" className="hidden md:block self-center">
             <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
               {navLinks.map((pageInfo, index) => { return(
-                  <li key={index} onClick={closeMenu} className='flex flex-col hover:max-w-fit hover:bg-myGreen '>
+                  <li key={index} onClick={closeMenu} className='flex flex-col hover:max-w-fit hover:bg-myGreen lg:ml-5'>
                     <Link href={pageInfo.path} className={`bg-black ${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span className={`bg-myGreen h-1 top-0 text-black text-transparent text-right ${currentPath === pageInfo.path ? "max-w-fit" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`h-1 top-0 text-black text-transparent max-w-fit text-right ${currentPath === pageInfo.path ? "bg-myGreen" : "bg-transparent"}`}>{pageInfo.pageTitle}</span>
                   </li>
               )})}
             </ul>
           </div>
         </section>
-        <div id="mobileMenu" onClick={closeMenu} className={`bg-blue-900/50 overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
-            <div className={`${mobileMenu ? 'animate-showmenu' : 'animate-hidemenu'} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
+        <div id="mobileMenu" onClick={closeMenu} className={`bg-transparent overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
+            <div className={`${mobileMenu ? 'animate-showmenu' : (firstLoad ? "hidden" : 'animate-hidemenu') } p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
               <ul className={`text-white uppercase font-title`}>
                 {navLinks.map((pageInfo, index) => { return(
                   <li key={index} onClick={closeMenu} className='my-4 flex flex-col font-bold hover:max-w-fit hover:bg-myGreen hover:text-black'>
