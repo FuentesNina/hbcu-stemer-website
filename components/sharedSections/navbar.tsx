@@ -15,6 +15,16 @@ export default function NavBar() {
     const [firstLoad, setFirstLoad] = useState(true)
     const scrollPosition = useScrollPosition();
 
+    useEffect(() => {
+      const handleWindowResize = () => {
+        setFirstLoad(true);
+      }
+
+      window.addEventListener('resize', handleWindowResize);
+
+      return () => window.removeEventListener('resize', handleWindowResize);
+    })
+
 
     const openMenu = function() {
       if(firstLoad) {
@@ -31,7 +41,7 @@ export default function NavBar() {
 
     return (
       <>
-        <section className={`${scrollPosition > 0 ? "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]" : ""} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
+        <header className={`${scrollPosition > 0 && "drop-shadow-[0_5px_5px_rgba(0,0,0,.5)]"} transition-all sticky top-0 bg-black h-10 flex justify-between px-3 md:h-20 md:pl-5 md:pr-0 lg:px-6 z-50`}>
           <Link href="/" className="self-center z-50">
             <WebsiteLogo color='#ffffff' className="h-5 self-center md:hidden"/>
             <CompactLogo color="#ffffff" className="hidden md:block h-12 self-center"/>
@@ -43,21 +53,21 @@ export default function NavBar() {
           <div id="desktopMenu" className="hidden md:block self-center">
             <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
               {navLinks.map((pageInfo, index) => { return(
-                  <li id="navLink" key={index} className='flex flex-col max-w-fit lg:ml-5'>
+                  <li key={index} className='group flex flex-col max-w-fit lg:ml-5'>
                     <Link href={pageInfo.path} className={`${pageInfo.highlight ? 'text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span id="bar" className={`h-1 top-0 text-transparent bg-myGreen ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`h-1 top-0 text-transparent bg-myGreen transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
               )})}
             </ul>
           </div>
-        </section>
-        <div id="mobileMenu" onClick={closeMenu} className={`bg-transparent overflow-hidden md:hidden bg-blue-900/50 transition-all w-screen h-screen transform z-50 fixed`} >
+        </header>
+        <div onClick={closeMenu} className={`${mobileMenu ? 'z-50' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden w-screen h-screen z-50 fixed`} >
             <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
               <ul className={`text-white uppercase font-title font-bold`}>
                 {navLinks.map((pageInfo, index) => { return(
-                  <li id="navLink" key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit'>
+                  <li key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit group'>
                     <Link href={pageInfo.path} className={`${pageInfo.highlight ? ' text-myGreen' : ''}`}>{pageInfo.pageTitle}</Link>
-                    <span id="bar" className={`bg-myGreen h-1 top-0 text-transparent ${currentPath === pageInfo.path ? "max-w-fit" : "w-0"}`}>{pageInfo.pageTitle}</span>
+                    <span className={`bg-myGreen h-1 top-0 text-transparent transition-all ease-in-out duration-500 group-hover:w-full ${currentPath === pageInfo.path ? "mw-full" : "w-0"}`}>{pageInfo.pageTitle}</span>
                   </li>
                 )})}
               </ul>

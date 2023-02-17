@@ -10,12 +10,12 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
       <>
-        <section>
+        <footer >
           <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
           <div className="bg-black pt-10">
-            <InstagramShowcase customUrl={webLinks.instagram}/>
+            <InstagramShowcase customUrl={webLinks.instagram} height="112px"/>
             <div className="my-10 md:flex md:w-full">
-              <SocialMediaIcons containerClassName="default" iconClassName="default"/>
+              <SocialMediaIcons />
               <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
                 <div>
                   <ul className="text-white font-body text-sm capitalize">
@@ -30,9 +30,9 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
                 </Link>
               </div>
             </div>
-            <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by Nina Fuentes LLC</p>
+            <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://fuentesnina.github.io/my-portfolio-website/">Nina Fuentes LLC</Link></p>
           </div>
-        </section>
+        </footer>
       </>
     )
   }

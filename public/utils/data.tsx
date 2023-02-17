@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 export const navLinks = [
     {
         pageTitle: "Home",
@@ -60,13 +58,68 @@ export const webLinks = {
     youtube: "https://www.youtube.com/@hbcustemer5734",
 }
 
-export function getPageInfo() {
-    const router = useRouter();
-    const pathname = router.pathname;
-
-    const filtered = navLinks.filter(pageInfo => pageInfo.path === pathname);
-
-    const pageInfo = filtered[0];
-
-    return pageInfo;
-  }
+// to be deleted/replaced with IG API.
+export const IG_PICTURES = [
+    {
+        src: "/images/placeholders/instagramShowcase/IG1.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG2.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG3.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG4.png",
+        caption: "",
+    },{
+        src: "/images/placeholders/instagramShowcase/IG5.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG6.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG8.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG9.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG1.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG2.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG3.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG4.png",
+        caption: "",
+    },{
+        src: "/images/placeholders/instagramShowcase/IG5.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG6.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG8.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG9.png",
+        caption: "",
+    },
+]

@@ -1,8 +1,9 @@
-import MyHead from "./sections/myHead";
-import NavBar from "./sections/navbar";
-import Footer from "./sections/footer";
+import MyHead from "./myHead";
+import NavBar from "./navbar";
+import Footer from "./footer";
 import { ReactElement } from "react";
-import { navLinks, getPageInfo } from "@/public/utils/data";
+import { navLinks } from "@/public/utils/data";
+import { getPageInfo } from "@/public/utils/helperFunctions";
 
 export default function Layout({children}:{children:ReactElement}) {
     const pageInfo = getPageInfo();
