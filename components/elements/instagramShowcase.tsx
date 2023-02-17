@@ -30,7 +30,7 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
                 );
             })}
           </div>
-          <div className="bg-black/50 w-full h-full absolute grid place-content-center">
+          <div className="w-full h-full absolute grid place-content-center" style={{background: 'radial-gradient(closest-side, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 100%)'}}>
             <Link href={customUrl} className='text-white text-center uppercase font-title font-bold'>Follow Us On Instagram</Link>
           </div>
         </div>
