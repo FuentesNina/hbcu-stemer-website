@@ -4,17 +4,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function InstagramShowcase({customUrl, height}:{customUrl:string, height: string}) {
-  const [pictures, setPictures] = useState([]);
+  const [pictures, setPictures] = useState(IG_PICTURES.length > 20 ? IG_PICTURES.slice(0, 20) : IG_PICTURES);
 
   useEffect(() => {
-    if(pictures.length === 0) {
-      let maxImages = Math.ceil(window.innerWidth / (height));
-      setPictures(IG_PICTURES.slice(maxImages));
-    }
 
     const handleWindowResize = () => {
-      let maxImages = Math.ceil(window.innerWidth / height);
-      setPictures(IG_PICTURES.slice(maxImages));
+      let maxImages = Math.ceil(window.innerWidth / Number(height.replace('px','')));
+      setPictures(IG_PICTURES.length > maxImages ? IG_PICTURES.slice(0, maxImages) : IG_PICTURES);
     }
 
     window.addEventListener('resize', handleWindowResize);
@@ -26,9 +22,9 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
       <>
         <div className={`bg-transparent w-full relative overflow-clip isolate`} style={{height: `${height}`}}>
           <div className={`bg-transparent w-full h-full absolute flex-row flex`}>
-            {IG_PICTURES.map((picture) => {
+            {IG_PICTURES.map((picture, index) => {
                 return (
-                  <div className=" h-full aspect-square relative overflow-y-clip">
+                  <div key={index} className=" h-full aspect-square relative overflow-y-clip">
                     <Image className="object-cover" sizes="50vw" fill src={picture.src} alt={picture.caption}/>
                   </div>
                 );
