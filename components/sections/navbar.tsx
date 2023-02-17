@@ -4,7 +4,7 @@ import CompactLogo from "@/components/elements/logos/compactLogo";
 import WebsiteLogo from "../elements/logos/websiteLogo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 

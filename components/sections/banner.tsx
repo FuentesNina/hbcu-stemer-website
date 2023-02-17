@@ -1,4 +1,4 @@
-import { getPageInfo } from "@/public/utils/data";
+import { getPageInfo } from "@/public/utils/helperFunctions";
 
 export default function Banner() {
   const pageInfo = getPageInfo();
