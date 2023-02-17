@@ -58,6 +58,34 @@ export const webLinks = {
     youtube: "https://www.youtube.com/@hbcustemer5734",
 }
 
+export const contactForm = [
+    {
+      fieldName: "Name",
+      type: "Short answer text",
+      placeholder: "Name",
+    },
+    {
+      fieldName: "Subject",
+      type: "Short answer text",
+      placeholder: "Subject",
+    },
+    {
+      fieldName: "Email",
+      type: "Email",
+      placeholder: "Email",
+    },
+    {
+      fieldName: "Name",
+      type: "Paragraph",
+      placeholder: "Please type your question or what information you are interested in."
+    },
+    {
+      fieldName: "Disclaimer",
+      type: "Disclaimer",
+      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run"
+    },
+  ];
+
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [
     {
