@@ -57,3 +57,38 @@ export const webLinks = {
     facebook: "https://www.facebook.com/profile.php?id=100077784492698",
     youtube: "https://www.youtube.com/@hbcustemer5734",
 }
+
+// to be deleted/replaced with IG API.
+export const IG_PICTURES = [
+    {
+        src: "/images/placeholders/instagramShowcase/IG1.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG2.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG3.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG4.png",
+        caption: "",
+    },{
+        src: "/images/placeholders/instagramShowcase/IG5.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG6.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG8.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG9.png",
+        caption: "",
+    },
+]

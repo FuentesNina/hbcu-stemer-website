@@ -4,7 +4,7 @@ import CompactLogo from "@/components/elements/logos/compactLogo";
 import WebsiteLogo from "../elements/logos/websiteLogo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 
@@ -14,6 +14,16 @@ export default function NavBar() {
     const [mobileMenu, setMobileMenu] = useState(false); //false: menu is CLOSED. true: menu is OPEN.
     const [firstLoad, setFirstLoad] = useState(true)
     const scrollPosition = useScrollPosition();
+
+    useEffect(() => {
+      const handleWindowResize = () => {
+        setFirstLoad(true);
+      }
+
+      window.addEventListener('resize', handleWindowResize);
+
+      return () => window.removeEventListener('resize', handleWindowResize);
+    })
 
 
     const openMenu = function() {

@@ -4,10 +4,11 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { webLinks } from "@/public/utils/data";
 
-export default function SocialMediaIcons({containerClassName, iconClassName }: {containerClassName: string,iconClassName:string}) {
+export default function SocialMediaIcons({containerClassName, iconClassName, color }: {containerClassName?: string | undefined ,iconClassName?:string | undefined, color?: string | undefined}) {
 
-    const containerClass = "default" ? "flex text-center place-content-center text-white h-8 my-10 md:ml-10" : containerClassName;
-    const iconClass = "default" ? "h-full mx-1 w-8" : iconClassName;
+    const iconColor = color ? color : "white";
+    const containerClass = containerClassName ? containerClassName : `text-${iconColor} flex text-center place-content-center h-8 my-10 md:ml-10`;
+    const iconClass = iconClassName ? iconClassName : "h-full mx-1 w-8" ;
 
     return (
       <>

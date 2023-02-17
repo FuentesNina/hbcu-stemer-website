@@ -13,9 +13,9 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
         <footer >
           <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
           <div className="bg-black pt-10">
-            <InstagramShowcase customUrl={webLinks.instagram}/>
+            <InstagramShowcase customUrl={webLinks.instagram} height={112}/>
             <div className="my-10 md:flex md:w-full">
-              <SocialMediaIcons containerClassName="default" iconClassName="default"/>
+              <SocialMediaIcons />
               <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
                 <div>
                   <ul className="text-white font-body text-sm capitalize">
