@@ -7,7 +7,6 @@ import { FormEvent, useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 import FAQ from "./faq";
-import { useRouter } from "next/router";
 
 export default function ContactSection() {
   const formRef = useRef(null);

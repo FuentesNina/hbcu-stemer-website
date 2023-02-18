@@ -28,7 +28,7 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
             {IG_PICTURES.map((picture, index) => {
                 return (
                   <div key={index} className="h-full aspect-square relative overflow-y-clip">
-                    <Image className="object-cover" fill src={picture.src} alt={picture.caption}/>
+                    <Image className="object-cover" sizes="33vw" fill src={picture.src} alt={picture.caption}/>
                   </div>
                 );
             })}
