@@ -20,7 +20,7 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
     window.addEventListener('resize', handleWindowResize);
 
     return () => {window.removeEventListener('resize', handleWindowResize)};
-  }, [pictures])
+  }, [pictures, height])
 
     return (
         <div className={`bg-transparent w-full relative overflow-clip`} style={{height: `${height}`}}>

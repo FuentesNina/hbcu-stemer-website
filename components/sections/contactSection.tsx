@@ -58,15 +58,15 @@ export default function ContactSection() {
             {contactForm.map((field, index) => {
               const className = "py-2 px-5 font-body m-2 text-sm";
               if (field.type === "Short answer text") {
-                return <input name={`${field.fieldName.toLowerCase()} ${index}`} placeholder={`${field.placeholder}`} type="text" className={className} required={field.required}/>
+                return <input key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()}${index}`} placeholder={`${field.placeholder}`} type="text" className={className} required={field.required}/>
               } else if (field.type === "Email") {
-                return <input name={`${field.fieldName.toLowerCase()} ${index}`} placeholder={`${field.placeholder}`} type="email" className={className} required={field.required}/>
+                return <input key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()}${index}`} placeholder={`${field.placeholder}`} type="email" className={className} required={field.required}/>
               } else if (field.type === "Paragraph") {
-                return <textarea className={className + ' ' + "min-h-[10rem]"} name={`${field.fieldName.toLowerCase()} ${index}`} placeholder={`${field.placeholder}`} required={field.required}/>
+                return <textarea className={className + ' ' + "min-h-[10rem]"} key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()} ${index}`} placeholder={`${field.placeholder}`} required={field.required}/>
               } else if (field.type === "Disclaimer") {
                 return (
                   <div className="flex flex-row text-white m-5 text-xs">
-                    <input name={`${field.fieldName.toLowerCase()} ${index}`} type="checkbox" className="mr-5" required={field.required}/>
+                    <input key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()}${index}`} type="checkbox" className="mr-5" required={field.required}/>
                     <label className="">
                       {field.placeholder}
                     </label>
