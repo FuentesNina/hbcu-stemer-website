@@ -42,7 +42,7 @@ export const navLinks = [
     {
         pageTitle: "Contact Us",
         path: "/contact",
-        bannerImage: "images/contactUs_Banner.jpeg",
+        bannerImage: "/images/contactUs_Banner.jpeg",
         pageDescription: "",
         showSignUp: false,
         highlight: false,
@@ -57,6 +57,39 @@ export const webLinks = {
     facebook: "https://www.facebook.com/profile.php?id=100077784492698",
     youtube: "https://www.youtube.com/@hbcustemer5734",
 }
+
+export const contactForm = [
+    {
+      fieldName: "Name",
+      type: "Short answer text",
+      placeholder: "Name",
+      required: true,
+    },
+    {
+        fieldName: "Email",
+        type: "Email",
+        placeholder: "Email",
+        required: true,
+    },
+    {
+      fieldName: "Subject",
+      type: "Short answer text",
+      placeholder: "Subject",
+      required: true,
+    },
+    {
+      fieldName: "Name",
+      type: "Paragraph",
+      placeholder: "Please type your question or what information you are interested in.",
+      required: true,
+    },
+    {
+      fieldName: "Disclaimer",
+      type: "Disclaimer",
+      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run",
+      required: false,
+    },
+];
 
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [
@@ -106,7 +139,24 @@ export const IG_PICTURES = [
     {
         src: "/images/placeholders/instagramShowcase/IG4.png",
         caption: "",
-    },{
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG5.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG6.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG8.png",
+        caption: "",
+    },
+    {
+        src: "/images/placeholders/instagramShowcase/IG9.png",
+        caption: "",
+    },
+    {
         src: "/images/placeholders/instagramShowcase/IG5.png",
         caption: "",
     },

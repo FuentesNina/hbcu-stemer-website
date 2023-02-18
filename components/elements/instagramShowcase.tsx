@@ -20,16 +20,15 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
     window.addEventListener('resize', handleWindowResize);
 
     return () => {window.removeEventListener('resize', handleWindowResize)};
-  }, [pictures])
+  }, [pictures, height])
 
     return (
-      <>
-        <div className={`bg-transparent w-full relative overflow-clip isolate`} style={{height: `${height}`}}>
+        <div className={`bg-transparent w-full relative overflow-clip`} style={{height: `${height}`}}>
           <div className={`bg-transparent w-full h-full absolute flex-row flex`}>
             {IG_PICTURES.map((picture, index) => {
                 return (
-                  <div key={index} className=" h-full aspect-square relative overflow-y-clip">
-                    <Image className="object-cover" sizes="50vw" fill src={picture.src} alt={picture.caption}/>
+                  <div key={index} className="h-full aspect-square relative overflow-y-clip">
+                    <Image className="object-cover" priority={false} sizes="33vw" fill src={picture.src} alt={picture.caption}/>
                   </div>
                 );
             })}
@@ -38,7 +37,5 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
             <Link href={customUrl} className='text-white text-center uppercase font-title font-bold'>Follow Us On Instagram</Link>
           </div>
         </div>
-
-      </>
     )
   }

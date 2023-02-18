@@ -3,7 +3,7 @@ import NavBar from "./navbar";
 import Footer from "./footer";
 import { ReactElement } from "react";
 import { navLinks } from "@/public/utils/data";
-import { getPageInfo } from "@/public/utils/helperFunctions";
+import { getPageInfo } from "@/hooks/getPageInfo";
 
 export default function Layout({children}:{children:ReactElement}) {
     const pageInfo = getPageInfo();

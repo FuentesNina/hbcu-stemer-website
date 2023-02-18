@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { navLinks } from "./data";
+import { navLinks } from "../public/utils/data";
 
 export function getPageInfo() {
     const router = useRouter();
