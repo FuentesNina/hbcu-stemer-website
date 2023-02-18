@@ -63,28 +63,33 @@ export const contactForm = [
       fieldName: "Name",
       type: "Short answer text",
       placeholder: "Name",
+      required: true,
+    },
+    {
+        fieldName: "Email",
+        type: "Email",
+        placeholder: "Email",
+        required: true,
     },
     {
       fieldName: "Subject",
       type: "Short answer text",
       placeholder: "Subject",
-    },
-    {
-      fieldName: "Email",
-      type: "Email",
-      placeholder: "Email",
+      required: true,
     },
     {
       fieldName: "Name",
       type: "Paragraph",
-      placeholder: "Please type your question or what information you are interested in."
+      placeholder: "Please type your question or what information you are interested in.",
+      required: true,
     },
     {
       fieldName: "Disclaimer",
       type: "Disclaimer",
-      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run"
+      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run",
+      required: false,
     },
-  ];
+];
 
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [
