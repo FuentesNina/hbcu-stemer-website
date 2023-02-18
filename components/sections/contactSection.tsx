@@ -6,6 +6,7 @@ import { Title } from "../elements/title";
 import { FormEvent, useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
+import FAQ from "./faq";
 
 export default function ContactSection() {
   const formRef = useRef(null);
@@ -14,12 +15,10 @@ export default function ContactSection() {
 
   const showFAQ = () => {
     setVisibleFAQ(true);
-    return console.log(visibleFAQ);
   }
 
   const hideFAQ = () => {
     setVisibleFAQ(false);
-    return console.log(visibleFAQ);
   }
 
   const submitForm = (e: FormEvent) => {
@@ -89,9 +88,9 @@ export default function ContactSection() {
               <p className="font-body text-sm my-1">  Email - {webLinks.email}</p>
           </div>
         </div>
-        <div className={`${!visibleFAQ && "hidden" } grid place-content-center fixed bg-black/[0.8] backdrop-blur w-screen min-h-full top-0 z-50`}>
+        <div className={`${!visibleFAQ && "hidden"} grid place-content-center fixed bg-black/[0.8] backdrop-blur w-screen min-h-full top-0 z-50 p-10`}>
           <FontAwesomeIcon onClick={hideFAQ} icon={faXmark} className="text-white right-0 absolute h-8 mt-10 mr-5" mask={faCircle}/>
-          <div className="h-10 w-10 bg-white"/>
+          <FAQ />
         </div>
       </section>
     )
