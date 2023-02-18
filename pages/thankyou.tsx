@@ -20,7 +20,7 @@ export default function ThankYou() {
       <>
         <MyHead pageTitle="Thank You" pageDescription={navLinks[0].pageDescription} />
         <NavBar />
-        <main className="m-10 max-w-lg grid place-content-center font-body gap-5">
+        <main className="m-10 grid place-content-center font-body gap-5">
             <p>Thank you for your submission.</p>
             <Button action={goBack} content="previous page" buttonStyle="red"/>
             <Button action={goHome} content="homepage" buttonStyle="white-red"/>
