@@ -31,7 +31,7 @@ export default function ContactSection() {
     if (true) {
       //clear form
       if(formRef.current) {
-        formRef.current.reset();
+        // formRef.current.reset();
       }
 
       //display confirmation message and erase after a few seconds
@@ -51,9 +51,9 @@ export default function ContactSection() {
 
 
     return (
-      <section>
-        <div>
-          <form ref={formRef} onSubmit={submitForm} className="bg-black p-5 rounded-3xl flex flex-col m-5">
+      <section className="md:flex md:gap-x-5 md:justify-center">
+        <div className="grid place-content-center mt-10 md:mb-10">
+          <form ref={formRef} onSubmit={submitForm} className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md">
             <Title content="get in touch" className="text-myGreen text-center my-5" />
             {contactForm.map((field, index) => {
               const className = "py-2 px-5 font-body m-2 text-sm";
@@ -66,7 +66,7 @@ export default function ContactSection() {
               } else if (field.type === "Disclaimer") {
                 return (
                   <div className="flex flex-row text-white m-5 text-xs">
-                    <input name={`${field.fieldName.toLowerCase()} ${index}`} type="checkbox" className="mr-2" required={field.required}/>
+                    <input name={`${field.fieldName.toLowerCase()} ${index}`} type="checkbox" className="mr-5" required={field.required}/>
                     <label className="">
                       {field.placeholder}
                     </label>
@@ -76,11 +76,11 @@ export default function ContactSection() {
             })}
             <Button buttonStyle="white" content="send message" type="submit" className="my-5"/>
           </form>
-          <p className={`${!formConfirmation.success && "text-myRed font-bold transition-none"} font-body text-sm m-10 italic text-center transition-all duration-1000`}>{formConfirmation.message}</p>
+          <p className={`${!formConfirmation.success && "text-myRed font-bold transition-none"} font-body text-sm ${formConfirmation.message && "m-10" } italic text-center transition-all duration-1000`}>{formConfirmation.message}</p>
         </div>
-        <div className="">
-          <Button action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10"/>
-          <div className="flex flex-col mx-auto my-10 text-center">
+        <div className="flex flex-col md:mt-10">
+          <Button action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
+          <div className="flex flex-col mx-auto my-10 text-center md:text-left">
               <Title content="Connect With Us" className="text-black"/>
               <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7"/>
               <Link href={webLinks.instagram} className="font-body text-sm my-1">Instagram @ hbcustemer</Link>
