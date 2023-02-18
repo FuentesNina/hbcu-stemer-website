@@ -4,17 +4,22 @@ import { webLinks, contactForm } from "@/public/utils/data";
 import Link from "next/link";
 import { Title } from "../elements/title";
 import { FormEvent, useState, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactSection() {
   const formRef = useRef(null);
   const [formConfirmation, setFormConfirmation] = useState({success: true, message: ''});
+  const [visibleFAQ, setVisibleFAQ] = useState(false);
 
   const showFAQ = () => {
-    console.log('show FAQ')
+    setVisibleFAQ(true);
+    return console.log(visibleFAQ);
   }
 
   const hideFAQ = () => {
-    console.log('hide FAW')
+    setVisibleFAQ(false);
+    return console.log(visibleFAQ);
   }
 
   const submitForm = (e: FormEvent) => {
@@ -84,9 +89,9 @@ export default function ContactSection() {
               <p className="font-body text-sm my-1">  Email - {webLinks.email}</p>
           </div>
         </div>
-        <div className="">
-          {/* close button */}
-          {/* FAQ centered */}
+        <div className={`${!visibleFAQ && "hidden" } grid place-content-center fixed bg-black/[0.8] backdrop-blur w-screen min-h-full top-0 z-50`}>
+          <FontAwesomeIcon onClick={hideFAQ} icon={faXmark} className="text-white right-0 absolute h-8 mt-10 mr-5" mask={faCircle}/>
+          <div className="h-10 w-10 bg-white"/>
         </div>
       </section>
     )
