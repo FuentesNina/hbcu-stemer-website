@@ -57,6 +57,7 @@ export default function ContactSection() {
             <Title content="get in touch" className="text-myGreen text-center my-5" />
             {contactForm.map((field, index) => {
               const className = "py-2 px-5 font-body m-2 text-sm";
+
               if (field.type === "Short answer text") {
                 return <input key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()}${index}`} placeholder={`${field.placeholder}`} type="text" className={className} required={field.required}/>
               } else if (field.type === "Email") {
@@ -65,8 +66,8 @@ export default function ContactSection() {
                 return <textarea className={className + ' ' + "min-h-[10rem]"} key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()} ${index}`} placeholder={`${field.placeholder}`} required={field.required}/>
               } else if (field.type === "Disclaimer") {
                 return (
-                  <div className="flex flex-row text-white m-5 text-xs">
-                    <input key = {`${field.fieldName.toLowerCase()}${index}`} name={`${field.fieldName.toLowerCase()}${index}`} type="checkbox" className="mr-5" required={field.required}/>
+                  <div key = {`${field.fieldName.toLowerCase()}${index}`} className="flex flex-row text-white m-5 text-xs">
+                    <input name={`${field.fieldName.toLowerCase()}${index}`} type="checkbox" className="mr-5" required={field.required}/>
                     <label className="">
                       {field.placeholder}
                     </label>

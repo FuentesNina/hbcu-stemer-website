@@ -42,7 +42,7 @@ export const navLinks = [
     {
         pageTitle: "Contact Us",
         path: "/contact",
-        bannerImage: "images/contactUs_Banner.jpeg",
+        bannerImage: "/images/contactUs_Banner.jpeg",
         pageDescription: "",
         showSignUp: false,
         highlight: false,
