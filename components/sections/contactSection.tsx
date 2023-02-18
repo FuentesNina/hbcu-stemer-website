@@ -12,6 +12,7 @@ export default function ContactSection() {
   const formRef = useRef(null);
   const [visibleFAQ, setVisibleFAQ] = useState(false);
   const [URL, setURL] = useState('');
+  const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
     setURL(
@@ -21,17 +22,23 @@ export default function ContactSection() {
     )
   },[])
 
+  useEffect (() => {
+    if (firstLoad) {
+      setFirstLoad(false);
+
+      const form = formRef.current;
+      if (form) {
+        (form as HTMLFormElement).reset();
+      }
+    }
+  },[firstLoad]);
+
   const showFAQ = () => {
     setVisibleFAQ(true);
   }
 
   const hideFAQ = () => {
     setVisibleFAQ(false);
-  }
-
-  const clearForm = (e: FormEvent) => {
-    const form = formRef.current;
-    if (form) (form as HTMLFormElement).reset();
   }
 
   // const [formConfirmation, setFormConfirmation] = useState({success: true, message: ''});
@@ -45,9 +52,11 @@ export default function ContactSection() {
   //   // //SUCCESSFUL SUBMISSION
   //   // if (true) {
   //   //   //clear form
-  //   //   if(formRef.current) {
-  //   //     // formRef.current.reset();
-  //   //   }
+  // const form = formRef.current;
+  // if (form) {
+  //   (form as HTMLFormElement).submit();
+  //   (form as HTMLFormElement).reset();
+  // }
 
   //   //   //display confirmation message and erase after a few seconds
   //   //   setFormConfirmation({success: true, message:`Your message has been sent. Someone from our team will get back to you shortly.`});
@@ -68,7 +77,7 @@ export default function ContactSection() {
   return (
     <section className="md:flex md:gap-x-5 md:justify-center">
       <div className="grid place-content-center mt-10 md:mb-10">
-        <form onSubmit={clearForm} ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
+        <form ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
               // ref={formRef} onSubmit={submitForm}
               >
           {/* This is setup for formsubmit.com */}
@@ -93,7 +102,7 @@ export default function ContactSection() {
             } else if (field.type === "Disclaimer") {
               return (
                 <div key = {`${field.fieldName.toLowerCase()}${index}`} className="flex flex-row text-white m-5 text-xs">
-                  <input id={`${field.fieldName.toLowerCase()}${index}`} name={field.fieldName.toLowerCase()} type="checkbox" className="mr-5" required={field.required}/>
+                  <input id={`${field.fieldName.toLowerCase()}${index}`} name={field.placeholder.toLowerCase()} type="checkbox" className="mr-5" required={field.required}/>
                   <label htmlFor={`${field.fieldName.toLowerCase()}${index}`}>
                     {field.placeholder}
                   </label>
