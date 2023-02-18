@@ -30,9 +30,8 @@ export default function ContactSection() {
   }
 
   const clearForm = (e: FormEvent) => {
-    if(formRef.current) {
-      formRef.current.reset();
-    }
+    const form = formRef.current;
+    if (form) (form as HTMLFormElement).reset();
   }
 
   // const [formConfirmation, setFormConfirmation] = useState({success: true, message: ''});
