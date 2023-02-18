@@ -19,7 +19,7 @@ export default function ContactSection() {
       ? window.location.origin
       : ''
     )
-  })
+  },[])
 
   const showFAQ = () => {
     setVisibleFAQ(true);
