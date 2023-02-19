@@ -9,7 +9,7 @@ import SocialMediaIcons from "../elements/socialMediaIcons";
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
-      <footer>
+      <footer className="overflow-clip">
         <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
         <div className="bg-black pt-10">
           <InstagramShowcase customUrl={webLinks.instagram} height="112px"/>
