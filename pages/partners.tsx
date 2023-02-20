@@ -13,8 +13,9 @@ export default function Partners() {
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/ourPartners_introImage.jpg" alt="" />
         </div>
         <div className="mx-5 my-10">
-          <p className="font-body ">This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
-          This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
+          <p className="font-body ">
+          {`This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
+          This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.`}
           </p>
           <Button content="become a sponsor" buttonStyle="black" className="my-5" />
           <Button content="become a partner" buttonStyle="black" className="my-5" />

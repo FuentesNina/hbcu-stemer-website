@@ -16,6 +16,7 @@ export default function CollapsableSection() {
       <div className="flex place-content-center">
         {partnersData.map((tab, index) => {
           let tabStyle : string;
+          const listKey = `${tab} + ${index}`;
 
           if (tab.tabTitle === currentTab.tabTitle) {
             tabStyle = "text-myRed bg-myLightGrey p-5";
@@ -23,7 +24,7 @@ export default function CollapsableSection() {
             tabStyle = "text-black font-normal bg-myDarkGrey p-5";
           }
           return (
-            <Title action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
+            <Title key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
           )
         })}
       </div>
