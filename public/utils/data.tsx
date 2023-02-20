@@ -94,28 +94,29 @@ export const contactForm = [
 export const partnersData = [
     {
         tabTitle: 'sponsors',
-        intro: "",
-        company: [
+        intro: "This is a small paragraph introducing the sponsors",
+        companies: [
             {
                 name: "4D Traders Institute",
-                logo: "",
+                logo: "/images/placeholders/4Dtraders_logo.png",
                 description: "Creating successful traders through education.",
-                website: "",
+                website: "https://www.4dtradersinstitute.com/",
             },
             {
                 name: "Nina Fuentes Coaching LLC",
-                logo: "",
+                logo: "https://lh4.googleusercontent.com/g5ULT3HiSG4zlBQ90_pV8o4ItcsKtCZ3iocGUQiMg7ZYPMDKMgR4Gkaqr6XqeTzmXnDocYV9O1xNAVl6bsmleU9qLmzBNLOnU-yAcF7i62c4dUIejtohJGVPOhS0JB5r8g=w1280",
                 description: "Helping women transition to a plant-based lifestyle while losing stubborn weight",
                 website: "https://www.ninafuentescoaching.com",
             },
             {
                 name: "Post Mask Skin",
-                logo: "",
+                logo: "https://lh4.googleusercontent.com/mnGCnuTR1MTxd_Ne2_V5jlOHTU788Cajf17tP4IR3Nq8Fo2Exk3HFWrBx1ZoMuVE0gN2MLoZqql5OPTwSbLY3cchHZkSFbiYGTwnKHz93Xw5Z7ja48Fw8hPbeXXd_WlCAQ=w1280",
                 description: "A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.",
                 website: "",
             },
         ],
         form: {
+            title: "Your Mission Here! Partner with Us",
             intro: "SPONSOR BENEFITS",
             fields: [
                 {
@@ -158,7 +159,7 @@ export const partnersData = [
     {
         tabTitle: 'hbcu partners',
         intro: "HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners to fulfill our goals of furthering STEM education through the STEM programs, initiatives, and bright minds at your institution. By leveraging the influential community of HBCU alumni, current students, and supporters, we can improve STEM education.",
-        company: [
+        companies: [
             {
                 name: "Spelman College",
                 logo: "",
@@ -179,6 +180,8 @@ export const partnersData = [
             },
         ],
         form: {
+            title: "Your School Here! Partner with HBCU STEMER",
+            logo: "",
             intro: "HBCU PARTNER BENEFITS",
             fields: [
                 {
