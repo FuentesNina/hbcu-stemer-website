@@ -2,34 +2,35 @@ import { partnersData } from "@/public/utils/data"
 import { useState } from "react"
 import { Title } from "../elements/title";
 import AccordionItem from "../elements/accordionItem";
+import AccordionForm from "../elements/accordionForm";
 
 export default function CollapsableSection() {
-  const [currentTab, setCurrentTab] = useState(partnersData[0].tabTitle)
-  const [tabIntro, setTabIntro] = useState(partnersData[0].intro);
-  const [currentCompanies, setCurrentCompanies] = useState(partnersData[0].companies);
+  const [currentTab, setCurrentTab] = useState(partnersData[0]);
+
+  const activateTab = function(index: number) {
+    setCurrentTab(partnersData[index]);
+  }
 
   return (
     <section>
       <div className="flex place-content-center">
-        {partnersData.map(tab => {
+        {partnersData.map((tab, index) => {
           let tabStyle : string;
 
-          if (tab.tabTitle === currentTab) {
+          if (tab.tabTitle === currentTab.tabTitle) {
             tabStyle = "text-myRed bg-myLightGrey p-5";
           } else {
             tabStyle = "text-black font-normal bg-myDarkGrey p-5";
           }
           return (
-            <Title content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
+            <Title action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
           )
         })}
       </div>
       <div className = "w-screen bg-myLightGrey border-y-2 border-black p-5" >
-          {/* intro - origin depends on tab */}
-          <p className="font-body my-5">{tabIntro}</p>
-          {/* companies - should use map*/}
+          <p className="font-body my-5">{currentTab.intro}</p>
           <ul>
-            {currentCompanies.map((company, index) => {
+            {currentTab.companies.map((company, index) => {
               const listKey = `${company} + ${index}`;
 
               return (
@@ -38,8 +39,11 @@ export default function CollapsableSection() {
                 </li>
               )
             })}
+            <li className="my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
+              <AccordionForm company={currentTab.companies[0]}/>
+            </li>
           </ul>
-          {/* form */}
+
       </div>
     </section>
   )
