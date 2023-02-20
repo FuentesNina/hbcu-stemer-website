@@ -33,7 +33,7 @@ export default function Partners() {
           </p>
           {partnersData.map((tab, index) => {
             return (
-              <Link href="#form">
+              <Link key={index} href="#form">
                 <Button content={tab.callToAction} buttonStyle="black" className="my-5" action={() => goToForm(index)}/>
               </Link>
             )
