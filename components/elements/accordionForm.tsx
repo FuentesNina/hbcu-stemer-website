@@ -82,8 +82,8 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                             )
                         } else if (field.type === "Checkbox") {
                             return (
-                                <fieldset>
-                                    <legend key = {`${field.fieldName.toLowerCase()}${index}`} className="">{field.placeholder}</legend>
+                                <fieldset key = {`${field.fieldName.toLowerCase()}${index}`}>
+                                    <legend className="">{field.placeholder}</legend>
                                         {field.options.map((option : string, index: number) => {
                                             console.log(option);
                                             return (

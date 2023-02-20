@@ -22,7 +22,7 @@ export default function Partners() {
   return (
     <>
       <Banner/>
-      <div className="my-10">
+      <div className="mt-10 mb-16">
         <div className="border-black border rounded-lg m-10 overflow-clip">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/ourPartners_introImage.jpg" alt="" />
         </div>
