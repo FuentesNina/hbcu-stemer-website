@@ -18,7 +18,7 @@ export default function AccordionItem({company} : {company: {[key: string]: stri
                     <img src={company.logo} className="h-10"/>
                 </div>
             </dt>
-            <dd className={`text-sm ml-6 mt-5 transition-all duration-500 overflow-clip ${!isActive && 'h-0 mt-0'}`}>
+            <dd className={`text-sm ml-6 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                 {isActive &&
                     <p>
                         {company.description}
