@@ -18,13 +18,16 @@ export default function AccordionItem({company} : {company: {[key: string]: stri
                     <img src={company.logo} className="h-10"/>
                 </div>
             </dt>
-            <dd className={`text-sm ml-6 mt-5 ${!isActive && 'hidden'}`}>
-                <p>
-                    {company.description}
-                    <br></br>
-                    <br></br>
-                    Learn more at: <Link href={company.website}>{company.website}</Link>
-                </p>
+            <dd className={`text-sm ml-6 mt-5 transition-all duration-500 overflow-clip ${!isActive && 'h-0 mt-0'}`}>
+                {isActive &&
+                    <p>
+                        {company.description}
+                        <br></br>
+                        <br></br>
+                        Learn more at: <Link href={company.website}>{company.website}</Link>
+                    </p>
+                }
+
             </dd>
         </dl>
         </>
