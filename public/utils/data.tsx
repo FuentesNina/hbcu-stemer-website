@@ -95,6 +95,7 @@ export const partnersData = [
     {
         tabTitle: 'sponsors',
         intro: "This is a small paragraph introducing the sponsors",
+        callToAction: "become a sponsor",
         companies: [
             {
                 name: "4D Traders Institute",
@@ -116,8 +117,10 @@ export const partnersData = [
             },
         ],
         form: {
-            title: "Your Mission Here! Partner with Us",
-            intro: "SPONSOR BENEFITS",
+            callToAction: "Your Company Here! Partner with Us",
+            logo: "/images/placeholders/4Dtraders_logo.png",
+            title: "Sponsor Sign-Up",
+            details: "SPONSOR BENEFITS",
             fields: [
                 {
                     fieldName: "Name",
@@ -159,6 +162,7 @@ export const partnersData = [
     {
         tabTitle: 'hbcu partners',
         intro: "HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners to fulfill our goals of furthering STEM education through the STEM programs, initiatives, and bright minds at your institution. By leveraging the influential community of HBCU alumni, current students, and supporters, we can improve STEM education.",
+        callToAction: "become a partner",
         companies: [
             {
                 name: "Spelman College",
@@ -180,9 +184,10 @@ export const partnersData = [
             },
         ],
         form: {
-            title: "Your School Here! Partner with HBCU STEMER",
+            callToAction:"Your School Here! Partner with HBCU STEMER",
             logo: "",
-            intro: "HBCU PARTNER BENEFITS",
+            title: "HBCU Partner Sign-Up",
+            details: "HBCU PARTNER BENEFITS",
             fields: [
                 {
                     fieldName: "Name",

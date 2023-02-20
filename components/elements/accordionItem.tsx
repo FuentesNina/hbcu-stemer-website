@@ -13,9 +13,9 @@ export default function AccordionItem({company} : {company: {[key: string]: stri
                 <div className="h-5 mr-2">
                     <FontAwesomeIcon onClick={() => setIsActive(!isActive)} icon={isActive ? faMinus :faPlus} className="h-full"/>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center w-full justify-between">
                     <p className="font-bold align-middle">{company.name}</p>
-                    <img src={company.logo} className="h-10"/>
+                    <img src={company.logo} className="h-10 ml-2"/>
                 </div>
             </dt>
             <dd className={`text-sm ml-6 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>

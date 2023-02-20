@@ -1,15 +1,11 @@
 import { partnersData } from "@/public/utils/data"
 import { useState } from "react"
-import { Title } from "../elements/title";
+import { Subtitle } from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
+import Link from "next/link";
 
-export default function CollapsableSection() {
-  const [currentTab, setCurrentTab] = useState(partnersData[0]);
-
-  const activateTab = function(index: number) {
-    setCurrentTab(partnersData[index]);
-  }
+export default function CollapsableSection({currentTab, activateTab, setOpenForm, openForm} : {activateTab: Function, currentTab: any, setOpenForm: Function, openForm: boolean}) {
 
   return (
     <section>
@@ -24,14 +20,14 @@ export default function CollapsableSection() {
             tabStyle = "text-black font-normal bg-myDarkGrey p-5";
           }
           return (
-            <Title key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
+            <Subtitle key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
           )
         })}
       </div>
       <div className = "w-screen bg-myLightGrey border-y-2 border-black p-5" >
-          <p className="font-body my-5">{currentTab.intro}</p>
+          <p className="font-body mt-5 mb-10">{currentTab.intro}</p>
           <ul>
-            {currentTab.companies.map((company, index) => {
+            {currentTab.companies.map((company: any, index: number) => {
               const listKey = `${company} + ${index}`;
 
               return (
@@ -40,8 +36,8 @@ export default function CollapsableSection() {
                 </li>
               )
             })}
-            <li className="my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
-              <AccordionForm company={currentTab.companies[0]}/>
+            <li id="form" className="scroll-mt-14 my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
+              <AccordionForm form={currentTab.form} setOpenForm={setOpenForm} openForm={openForm}/>
             </li>
           </ul>
 

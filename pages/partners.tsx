@@ -1,9 +1,23 @@
 import { Button } from "@/components/elements/styledbutton";
 import Banner from "@/components/sections/banner";
 import CollapsableSection from "@/components/sections/collapsableSection";
-import Image from "next/image";
+import { partnersData } from "@/public/utils/data";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Partners() {
+  const [currentTab, setCurrentTab] = useState(partnersData[0]);
+  const [openForm, setOpenForm] = useState(false);
+
+  const activateTab = function(index: number) {
+    setCurrentTab(partnersData[index]);
+    setOpenForm(false);
+  }
+
+  const goToForm = function (index: number) {
+    setCurrentTab(partnersData[index]);
+    setOpenForm(true);
+  }
 
   return (
     <>
@@ -17,11 +31,16 @@ export default function Partners() {
           {`This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
           This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.`}
           </p>
-          <Button content="become a sponsor" buttonStyle="black" className="my-5" />
-          <Button content="become a partner" buttonStyle="black" className="my-5" />
+          {partnersData.map((tab, index) => {
+            return (
+              <Link href="#form">
+                <Button content={tab.callToAction} buttonStyle="black" className="my-5" action={() => goToForm(index)}/>
+              </Link>
+            )
+          })}
         </div>
       </div>
-      <CollapsableSection />
+      <CollapsableSection currentTab={currentTab} activateTab={activateTab} setOpenForm={setOpenForm} openForm={openForm}/>
     </>
   )
 }
