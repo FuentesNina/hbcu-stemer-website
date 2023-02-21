@@ -16,4 +16,4 @@ export default function Layout({children}:{children:ReactElement}) {
         {pageInfo && <Footer showSignUp={pageInfo.path === '/' && true}/>}
       </>
     )
-  }
+}

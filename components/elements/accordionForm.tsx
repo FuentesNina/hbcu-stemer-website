@@ -86,7 +86,6 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                                 <fieldset key = {`${field.fieldName.toLowerCase()}${index}`}>
                                     <legend className="">{field.placeholder}</legend>
                                         {field.options.map((option : string, index: number) => {
-                                            console.log(option);
                                             return (
                                                 <div key = {`${option.toLowerCase().trim()}${index}`} className="flex flex-row m-5">
                                                     <input id={`${option.toLowerCase().trim()}${index}`} name={`${option}`} type="checkbox" className="mr-5"/>

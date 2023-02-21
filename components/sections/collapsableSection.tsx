@@ -39,7 +39,7 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
                 </li>
               )
             })}
-            <li id="form" className="scroll-mt-14 my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
+            <li id="form" className="scroll-mt-14 md:scroll-mt-24 my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
               <AccordionForm form={currentTab.form} setOpenForm={setOpenForm} openForm={openForm}/>
             </li>
           </ul>
