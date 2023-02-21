@@ -9,9 +9,9 @@ export default function AccordionItem({company} : {company: {[key: string]: stri
     return (
         <>
         <dl className="font-body">
-            <dt className="flex items-center">
-                <div className="h-5 mr-2">
-                    <FontAwesomeIcon onClick={() => setIsActive(!isActive)} icon={isActive ? faMinus :faPlus} className="h-full"/>
+            <dt className="flex items-center cursor-pointer" onClick={() => setIsActive(!isActive)}>
+                <div className="h-5 mr-2 md:mr-5">
+                    <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="h-full"/>
                 </div>
                 <div className="flex items-center w-full justify-between">
                     <p className="font-bold align-middle">{company.name}</p>

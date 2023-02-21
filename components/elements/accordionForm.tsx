@@ -3,6 +3,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Subtitle } from "./subtitle";
 import { Button } from "./styledbutton";
+import Link from "next/link";
 
 export default function AccordionForm({form, setOpenForm, openForm} : {form: any, setOpenForm: Function, openForm: boolean}) {
     const formRef = useRef(null);
@@ -32,12 +33,12 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
     return (
         <>
         <dl className="font-body">
-            <dt className="flex items-center">
-                <div className="h-5 mr-2">
-                    <FontAwesomeIcon onClick={() => setOpenForm(!openForm)} icon={openForm ? faMinus :faPlus} className="h-full"/>
+            <dt className="flex items-center cursor-pointer" onClick={() => setOpenForm(!openForm)}>
+                <div className="h-5 mr-2 md:mr-5">
+                    <FontAwesomeIcon icon={openForm ? faMinus :faPlus} className="h-full"/>
                 </div>
                 <div className="flex items-center w-full justify-between">
-                    <p className="font-bold align-middle">{form.callToAction}</p>
+                    <p className="font-bold align-middle underline">{form.callToAction}</p>
                     <img src={form.logo} className="h-14 ml-2"/>
                 </div>
             </dt>
