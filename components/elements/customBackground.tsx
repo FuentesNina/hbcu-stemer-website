@@ -1,10 +1,44 @@
-import { ReactElement } from "react";
+import { ReactElement, useState, useEffect, useRef } from "react";
+import BackgroundPattern from "./logos/backgroundPattern";
 
-export default function Layout({children}:{children:ReactElement}) {
+export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement, backgroundColor?: string, color?: string, factor: number}) {
+    const [bgDimRepeat, setBgDimRepeat] = useState({dimension: 100 * factor, xRepeat: 5, yRepeat: 20})
+    const bgRef = useRef(null);
+    const [gridSetup, setGridSetup] = useState({cols: `grid-cols-${bgDimRepeat.xRepeat}`, rows: `grid-rows-${bgDimRepeat.yRepeat}` });
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+            const div = bgRef.current;
+            let innerWidth : number;
+            let innerHeight : number;
+
+            if (div) {
+                innerWidth = (div as HTMLDivElement).clientWidth;
+                innerHeight = (div as HTMLDivElement).clientHeight;
+                const xrepeat = Math.ceil(innerWidth / bgDimRepeat.dimension);
+                const yrepeat = Math.ceil(innerHeight / bgDimRepeat.dimension);
+                setBgDimRepeat({dimension: bgDimRepeat.dimension, xRepeat: xrepeat, yRepeat: yrepeat});
+                setGridSetup({cols: `grid-cols-${bgDimRepeat.xRepeat}`, rows: `grid-rows-${bgDimRepeat.yRepeat}` });
+            }
+            console.log(bgDimRepeat);
+
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {window.removeEventListener('resize', handleWindowResize)};
+      }, [bgDimRepeat])
 
     return (
-      <section>
-        {children}
-      </section>
+      <div ref={bgRef} className="w-full h-full overflow-clip">
+        <div className={`flex flex-wrap h-full absolute -z-10 overflow-clip`} style={{width: `${bgDimRepeat.dimension * bgDimRepeat.xRepeat}px`}}>
+            {[...Array(bgDimRepeat.xRepeat * bgDimRepeat.yRepeat)].map((value, index) => {
+                return <BackgroundPattern key={index} dimension={bgDimRepeat.dimension} backgroundColor={backgroundColor} color={color}/>
+            })}
+        </div>
+        <div className="">
+            {children}
+        </div>
+      </div>
     )
 }
