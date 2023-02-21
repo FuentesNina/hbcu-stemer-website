@@ -24,8 +24,8 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
             afterStyle = `after:-left-1 after:top-4`;
           }
           return (
-            <div className={`flex after:w-2 after:bg-black after:relative ${index === 0 ? "after:top-2" : `${afterStyle}`}`}>
-              <Subtitle key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 py-3 px-5 max-w-fit`}/>
+            <div key={listKey} className={`flex after:w-2 after:bg-black after:relative ${index === 0 ? "after:top-2" : `${afterStyle}`}`}>
+              <Subtitle action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 py-3 px-5 max-w-fit`}/>
             </div>
           )
         })}
