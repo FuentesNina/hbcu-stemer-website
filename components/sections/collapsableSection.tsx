@@ -27,7 +27,7 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
           )
         })}
       </div>
-      <div className = "bg-myLightGrey p-5 border-y-2 border-black relative z-20 md:border-2 md:drop-shadow-[8px_8px_0px_#000000] lg:max-w-4xl lg:mx-auto" >
+      <div className = "bg-myLightGrey p-5 border-y-2 border-black relative z-20 md:px-10 md:border-2 md:drop-shadow-[8px_8px_0px_#000000] lg:max-w-4xl lg:mx-auto" >
           <p className="font-body mt-5 mb-10">{currentTab.intro}</p>
           <ul>
             {currentTab.companies.map((company: any, index: number) => {
