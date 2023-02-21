@@ -4,27 +4,33 @@ import { Subtitle } from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
 import Link from "next/link";
+import { after } from "node:test";
 
 export default function CollapsableSection({currentTab, activateTab, setOpenForm, openForm} : {activateTab: Function, currentTab: any, setOpenForm: Function, openForm: boolean}) {
 
   return (
-    <section>
+    <section className="">
       <div className="flex place-content-center">
         {partnersData.map((tab, index) => {
           let tabStyle : string;
+          let afterStyle = "";
           const listKey = `${tab} + ${index}`;
 
           if (tab.tabTitle === currentTab.tabTitle) {
-            tabStyle = "text-myRed bg-myLightGrey p-5";
+            tabStyle = "text-myRed bg-myLightGrey z-30 relative top-0.5 ";
+            afterStyle = `after:top-3`;
           } else {
-            tabStyle = "text-black font-normal bg-myDarkGrey p-5";
+            tabStyle = `text-black font-normal bg-[#909090] relative top-2 z-10 ${ index === 0 ? "left-4" : "-left-1"}`;
+            afterStyle = `after:-left-1 after:top-4`;
           }
           return (
-            <Subtitle key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 max-w-fit"`} />
+            <div className={`flex after:w-2 after:bg-black after:relative ${index === 0 ? "after:top-2" : `${afterStyle}`}`}>
+              <Subtitle key={listKey} action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 py-3 px-5 max-w-fit`}/>
+            </div>
           )
         })}
       </div>
-      <div className = "w-screen bg-myLightGrey border-y-2 border-black p-5" >
+      <div className = "w-screen bg-myLightGrey p-5 border-y-2 border-black relative z-20" >
           <p className="font-body mt-5 mb-10">{currentTab.intro}</p>
           <ul>
             {currentTab.companies.map((company: any, index: number) => {

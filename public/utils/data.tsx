@@ -4,7 +4,6 @@ export const navLinks = [
         path: "/",
         bannerImage: "",
         pageDescription: "Educate, empower, and elevate HBCU students through scholarships and career resources.",
-        showSignUp: true,
         highlight: false,
     },
     {
@@ -12,7 +11,6 @@ export const navLinks = [
         path: "/raceinfo",
         bannerImage: "",
         pageDescription: "",
-        showSignUp: false,
         highlight: true,
     },
     {
@@ -20,7 +18,6 @@ export const navLinks = [
         path: "/impact",
         bannerImage: "",
         pageDescription: "",
-        showSignUp: false,
         highlight: false,
     },
     {
@@ -28,7 +25,6 @@ export const navLinks = [
         path: "/partners",
         bannerImage: "/images/ourPartners_Banner.jpg",
         pageDescription: "",
-        showSignUp: false,
         highlight: false,
     },
     {
@@ -36,7 +32,6 @@ export const navLinks = [
         path: "/about",
         bannerImage: "",
         pageDescription: "",
-        showSignUp: false,
         highlight: false,
     },
     {
@@ -44,7 +39,6 @@ export const navLinks = [
         path: "/contact",
         bannerImage: "/images/contactUs_Banner.jpeg",
         pageDescription: "",
-        showSignUp: false,
         highlight: false,
     },
 ]
