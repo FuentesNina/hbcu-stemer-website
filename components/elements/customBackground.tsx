@@ -1,10 +1,9 @@
 import { ReactElement, useState, useEffect, useRef } from "react";
 import BackgroundPattern from "./logos/backgroundPattern";
 
-export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement, backgroundColor?: string, color?: string, factor: number}) {
+export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement | never[], backgroundColor?: string, color?: string, factor: number}) {
     const [bgDimRepeat, setBgDimRepeat] = useState({dimension: 100 * factor, xRepeat: 5, yRepeat: 20})
     const bgRef = useRef(null);
-    const [gridSetup, setGridSetup] = useState({cols: `grid-cols-${bgDimRepeat.xRepeat}`, rows: `grid-rows-${bgDimRepeat.yRepeat}` });
 
     useEffect(() => {
         const handleWindowResize = () => {
@@ -18,7 +17,6 @@ export default function CustomBackground({children, backgroundColor, color, fact
                 const xrepeat = Math.ceil(innerWidth / bgDimRepeat.dimension);
                 const yrepeat = Math.ceil(innerHeight / bgDimRepeat.dimension);
                 setBgDimRepeat({dimension: bgDimRepeat.dimension, xRepeat: xrepeat, yRepeat: yrepeat});
-                setGridSetup({cols: `grid-cols-${bgDimRepeat.xRepeat}`, rows: `grid-rows-${bgDimRepeat.yRepeat}` });
             }
             console.log(bgDimRepeat);
 
