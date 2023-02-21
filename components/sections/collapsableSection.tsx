@@ -14,14 +14,14 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
           const listKey = `${tab} + ${index}`;
 
           if (tab.tabTitle === currentTab.tabTitle) {
-            tabStyle = "text-myRed bg-myLightGrey z-30 relative top-0.5 ";
+            tabStyle = "text-myRed bg-myLightGrey z-30 relative top-0.5";
             afterStyle = `after:top-3`;
           } else {
-            tabStyle = `text-black font-normal bg-[#909090] relative top-2 z-10 ${ index === 0 ? "left-4" : "-left-1"}`;
-            afterStyle = `after:-left-1 after:top-4`;
+            tabStyle = `text-black font-normal bg-[#909090] relative top-2 z-10 cursor-pointer group-hover:top-0 ${ index === 0 ? "left-4 " : "-left-1"}`;
+            afterStyle = `after:-left-1 after:top-4 after:hover:top-2 ${ index === 0 && "after:none "}`;
           }
           return (
-            <div key={listKey} className={`flex after:w-2 after:bg-black after:relative ${index === 0 ? "after:top-2" : `${afterStyle}`}`}>
+            <div key={listKey} className={`group flex after:w-2 after:bg-black after:relative ${index === 0 ? "after:top-2" : `${afterStyle}`}`}>
               <Subtitle action={() => activateTab(index)} content={tab.tabTitle} className={`${tabStyle} border-2 border-black border-b-0 py-3 px-5 max-w-fit`}/>
             </div>
           )
