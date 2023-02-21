@@ -22,11 +22,11 @@ export default function Partners() {
   return (
     <>
       <Banner/>
-      <div className="mt-10 mb-16 md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
+      <div className="mx-5 mt-10 mb-16 md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/ourPartners_introImage.jpg" alt="" />
         </div>
-        <div className="mx-5 my-10 md:my-auto">
+        <div className="my-10 md:mx-auto">
           <p className="font-body ">
           {`This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
           This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.`}
