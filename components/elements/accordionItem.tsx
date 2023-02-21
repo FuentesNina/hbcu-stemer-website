@@ -24,7 +24,11 @@ export default function AccordionItem({company} : {company: {[key: string]: stri
                         {company.description}
                         <br></br>
                         <br></br>
-                        Learn more at: <Link href={company.website}>{company.website}</Link>
+                        {company.website &&
+                            <>
+                            Learn more at: <Link href={company.website}>{company.website}</Link>
+                            </>
+                        }
                     </p>
                 }
 

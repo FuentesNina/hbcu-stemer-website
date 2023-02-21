@@ -1,10 +1,7 @@
 import { partnersData } from "@/public/utils/data"
-import { useState } from "react"
 import { Subtitle } from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
-import Link from "next/link";
-import { after } from "node:test";
 
 export default function CollapsableSection({currentTab, activateTab, setOpenForm, openForm} : {activateTab: Function, currentTab: any, setOpenForm: Function, openForm: boolean}) {
 

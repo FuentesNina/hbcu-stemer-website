@@ -5,7 +5,6 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "Educate, empower, and elevate HBCU students through scholarships and career resources.",
         highlight: false,
-        showSignUp: true,
     },
     {
         pageTitle: "Education Run",
@@ -13,7 +12,6 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: true,
-        showSignUp: false,
     },
     {
         pageTitle: "Our Impact",
@@ -21,7 +19,6 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: false,
-        showSignUp: false,
     },
     {
         pageTitle: "Our Partners",
@@ -29,7 +26,6 @@ export const navLinks = [
         bannerImage: "/images/ourPartners_Banner.jpg",
         pageDescription: "",
         highlight: false,
-        showSignUp: false,
     },
     {
         pageTitle: "Who We Are",
@@ -37,7 +33,6 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: false,
-        showSignUp: false,
     },
     {
         pageTitle: "Contact Us",
@@ -45,7 +40,6 @@ export const navLinks = [
         bannerImage: "/images/contactUs_Banner.jpeg",
         pageDescription: "",
         highlight: false,
-        showSignUp: false,
     },
 ]
 
@@ -105,20 +99,20 @@ export const partnersData = [
             },
             {
                 name: "Nina Fuentes Coaching LLC",
-                logo: "https://lh4.googleusercontent.com/g5ULT3HiSG4zlBQ90_pV8o4ItcsKtCZ3iocGUQiMg7ZYPMDKMgR4Gkaqr6XqeTzmXnDocYV9O1xNAVl6bsmleU9qLmzBNLOnU-yAcF7i62c4dUIejtohJGVPOhS0JB5r8g=w1280",
+                logo: "/images/placeholders/nfc_logo.png",
                 description: "Helping women transition to a plant-based lifestyle while losing stubborn weight",
                 website: "https://www.ninafuentescoaching.com",
             },
             {
                 name: "Post Mask Skin",
-                logo: "https://lh4.googleusercontent.com/mnGCnuTR1MTxd_Ne2_V5jlOHTU788Cajf17tP4IR3Nq8Fo2Exk3HFWrBx1ZoMuVE0gN2MLoZqql5OPTwSbLY3cchHZkSFbiYGTwnKHz93Xw5Z7ja48Fw8hPbeXXd_WlCAQ=w1280",
+                logo: "/images/placeholders/pms_logo.png",
                 description: "A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.",
-                website: "",
+                website: "https://www.etsy.com/shop/hgho/?etsrc=sdt",
             },
         ],
         form: {
             callToAction: "Your Company Here! Partner with Us",
-            logo: "/images/placeholders/4Dtraders_logo.png",
+            logo: "/images/placeholders/yourLogoHere.png",
             title: "Sponsor Sign-Up",
             details: "SPONSOR BENEFITS",
             fields: [
@@ -166,26 +160,26 @@ export const partnersData = [
         companies: [
             {
                 name: "Spelman College",
-                logo: "",
+                logo: "/images/placeholders/spelmanCollege_logo.png",
                 description: "A historically black liberal arts college for women location in Atlanta, Georgia dedicated to the intellectual, creative, ethical, and leadership development of it's students.",
                 website: "https://www.spelman.edu",
             },
             {
                 name: "Oakwook University",
-                logo: "",
+                logo: "/images/placeholders/oakwood_logo.png",
                 description: "",
                 website: "",
             },
             {
                 name: "Howard University",
-                logo: "",
+                logo: "/images/placeholders/howard_logo.png",
                 description: "",
                 website: "",
             },
         ],
         form: {
             callToAction:"Your School Here! Partner with HBCU STEMER",
-            logo: "",
+            logo: "/images/placeholders/yourLogoHere.png",
             title: "HBCU Partner Sign-Up",
             details: "HBCU PARTNER BENEFITS",
             fields: [
