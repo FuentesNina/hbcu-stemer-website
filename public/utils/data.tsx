@@ -5,6 +5,7 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "Educate, empower, and elevate HBCU students through scholarships and career resources.",
         highlight: false,
+        showSignUp: true,
     },
     {
         pageTitle: "Education Run",
@@ -12,6 +13,7 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: true,
+        showSignUp: false,
     },
     {
         pageTitle: "Our Impact",
@@ -19,6 +21,7 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: false,
+        showSignUp: false,
     },
     {
         pageTitle: "Our Partners",
@@ -26,6 +29,7 @@ export const navLinks = [
         bannerImage: "/images/ourPartners_Banner.jpg",
         pageDescription: "",
         highlight: false,
+        showSignUp: false,
     },
     {
         pageTitle: "Who We Are",
@@ -33,6 +37,7 @@ export const navLinks = [
         bannerImage: "",
         pageDescription: "",
         highlight: false,
+        showSignUp: false,
     },
     {
         pageTitle: "Contact Us",
@@ -40,6 +45,7 @@ export const navLinks = [
         bannerImage: "/images/contactUs_Banner.jpeg",
         pageDescription: "",
         highlight: false,
+        showSignUp: false,
     },
 ]
 
