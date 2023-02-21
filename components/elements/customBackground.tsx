@@ -30,15 +30,13 @@ export default function CustomBackground({children, backgroundColor, color, fact
       }, [bgDimRepeat])
 
     return (
-      <div ref={bgRef} className="w-full h-full overflow-clip">
-        <div className={`flex flex-wrap h-full absolute -z-10 overflow-clip`} style={{width: `${bgDimRepeat.dimension * bgDimRepeat.xRepeat}px`}}>
+      <div ref={bgRef} className="w-full h-fit relative overflow-clip">
+        <div className={`flex flex-wrap absolute -z-10`} style={{width: `${bgDimRepeat.dimension * bgDimRepeat.xRepeat}px`}}>
             {[...Array(bgDimRepeat.xRepeat * bgDimRepeat.yRepeat)].map((value, index) => {
                 return <BackgroundPattern key={index} dimension={bgDimRepeat.dimension} backgroundColor={backgroundColor} color={color}/>
             })}
         </div>
-        <div className="">
-            {children}
-        </div>
+        {children}
       </div>
     )
 }
