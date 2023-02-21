@@ -26,7 +26,7 @@ export default function Partners() {
         <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/ourPartners_introImage.jpg" alt="" />
         </div>
-        <div className="my-10 md:mx-auto">
+        <div className="my-10 md:m-auto">
           <p className="font-body ">
           {`This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
           This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.`}
