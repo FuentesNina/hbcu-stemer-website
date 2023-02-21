@@ -24,7 +24,7 @@ export default function InstagramShowcase({customUrl, height}:{customUrl:string,
 
     return (
         <div className={`bg-transparent w-full relative overflow-clip`} style={{height: `${height}`}}>
-          <div className={`bg-transparent w-full h-full absolute flex-row flex`}>
+          <div className={`bg-transparent w-full h-full absolute flex-row flex overflow-clip`}>
             {IG_PICTURES.map((picture, index) => {
                 return (
                   <div key={index} className="h-full aspect-square relative overflow-y-clip">

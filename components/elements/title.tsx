@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
 
-export function Title({content, action, className} : {content?: string, action?: MouseEventHandler | undefined, className?: string}) {
+export function Title({content, action, className, style} : {content?: string, action?: MouseEventHandler | undefined, className?: string, style?: any}) {
     return (
-        <h2 className={`${className} font-title uppercase font-bold text-lg`} onClick={action}>{content}</h2>
+        <h3 className={`font-title uppercase font-bold text-lg ${className}`} onClick={action} style={style}>{content}</h3>
     )
 }

@@ -50,7 +50,7 @@ export default function NavBar() {
             <FontAwesomeIcon icon={faBars} onClick={openMenu} className={`text-white h-8 self-center ${mobileMenu ? 'hidden' : ''}`}/>
             <FontAwesomeIcon icon={faXmark} onClick={closeMenu} className={`text-white h-10 self-center ${mobileMenu ? '' : 'hidden'}`}/>
           </div>
-          <div id="desktopMenu" className="hidden md:block self-center">
+          <nav id="desktopMenu" className="hidden md:block self-center">
             <ul className="text-white uppercase font-title font-bold text-sm grid grid-cols-3 gap-x-10 gap-y-1 lg:flex">
               {navLinks.map((pageInfo, index) => { return(
                   <li key={index} className='group flex flex-col max-w-fit lg:ml-5'>
@@ -59,9 +59,9 @@ export default function NavBar() {
                   </li>
               )})}
             </ul>
-          </div>
+          </nav>
         </header>
-        <div onClick={closeMenu} className={`${mobileMenu ? 'w-screen h-screen' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden  z-50 fixed`} >
+        <nav onClick={closeMenu} className={`${mobileMenu ? 'w-screen h-screen' : "w-0 h-0"} bg-transparent overflow-hidden md:hidden  z-50 fixed`} >
           <div className={`${mobileMenu ? 'animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed right-0`}>
             <ul className={`text-white uppercase font-title font-bold`}>
               {navLinks.map((pageInfo, index) => { return(
@@ -72,7 +72,7 @@ export default function NavBar() {
               )})}
             </ul>
           </div>
-        </div>
+        </nav>
       </>
     )
   }

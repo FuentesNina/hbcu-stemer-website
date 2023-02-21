@@ -9,20 +9,20 @@ import SocialMediaIcons from "../elements/socialMediaIcons";
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
-      <footer>
+      <footer className="overflow-clip">
         <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
         <div className="bg-black pt-10">
           <InstagramShowcase customUrl={webLinks.instagram} height="112px"/>
           <div className="my-10 md:flex md:w-full">
             <SocialMediaIcons />
             <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
-              <div>
+              <nav>
                 <ul className="text-white font-body text-sm capitalize">
                   {navLinks.map((pageInfo, index) => { return(
                     <li key={index}><Link href={pageInfo.path}>{pageInfo.pageTitle}</Link></li>
                   )})}
                 </ul>
-              </div>
+              </nav>
               <Link href="/" className="self-end md:self-center">
                 <CompactLogo color='#ffffff' className='block md:hidden h-14'/>
                 <WebsiteLogo color='#ffffff' className="hidden md:block h-8"/>
