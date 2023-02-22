@@ -3,7 +3,6 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Subtitle } from "./subtitle";
 import { Button } from "./styledbutton";
-import Link from "next/link";
 
 export default function AccordionForm({form, setOpenForm, openForm} : {form: any, setOpenForm: Function, openForm: boolean}) {
     const formRef = useRef(null);
