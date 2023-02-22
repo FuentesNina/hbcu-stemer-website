@@ -1,4 +1,4 @@
-export default function LargeLogo({color, className}:{color:string, className:string}) {
+export default function LargeLogo({color, className}:{color:string, className?:string}) {
 
     return (
       <>
