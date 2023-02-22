@@ -21,8 +21,8 @@ module.exports = {
       },
       keyframes:{
         showMenu: {
-          '0%' : {transform: 'translate(100%)'},
-          '100%': {transform: 'translate(0)'},
+          '0%' : {transform: 'translate(0%)'},
+          '100%': {transform: 'translate(-100%)'},
         },
         hideMenu: {
           '0%': {transform: 'translate(0)'},

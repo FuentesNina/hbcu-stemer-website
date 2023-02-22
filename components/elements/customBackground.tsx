@@ -1,7 +1,7 @@
 import { ReactElement, useState, useEffect, useRef } from "react";
 import BackgroundPattern from "./logos/backgroundPattern";
 
-export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement | never[], backgroundColor?: string, color?: string, factor: number}) {
+export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement, backgroundColor?: string, color?: string, factor: number}) {
     const [bgDimRepeat, setBgDimRepeat] = useState({dimension: 100 * factor, xRepeat: 5, yRepeat: 20})
     const bgRef = useRef(null);
 
@@ -22,15 +22,17 @@ export default function CustomBackground({children, backgroundColor, color, fact
 
         }
 
+        handleWindowResize();
+
         window.addEventListener('resize', handleWindowResize);
 
         return () => {window.removeEventListener('resize', handleWindowResize)};
-      }, [bgDimRepeat])
+      }, [])
 
     return (
       <div ref={bgRef} className="w-full h-fit relative overflow-clip">
         <div className={`flex flex-wrap absolute -z-10`} style={{width: `${bgDimRepeat.dimension * bgDimRepeat.xRepeat}px`}}>
-            {[...Array(bgDimRepeat.xRepeat * bgDimRepeat.yRepeat)].map((value, index) => {
+            {[...Array(bgDimRepeat.xRepeat * bgDimRepeat.yRepeat * 2)].map((value, index) => {
                 return <BackgroundPattern key={index} dimension={bgDimRepeat.dimension} backgroundColor={backgroundColor} color={color}/>
             })}
         </div>
