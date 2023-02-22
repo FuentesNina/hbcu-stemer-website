@@ -22,3 +22,9 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

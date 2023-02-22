@@ -1,7 +1,7 @@
 import { ReactElement, useState, useEffect, useRef } from "react";
 import BackgroundPattern from "./logos/backgroundPattern";
 
-export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement | never[], backgroundColor?: string, color?: string, factor: number}) {
+export default function CustomBackground({children, backgroundColor, color, factor}:{children?:ReactElement, backgroundColor?: string, color?: string, factor: number}) {
     const [bgDimRepeat, setBgDimRepeat] = useState({dimension: 100 * factor, xRepeat: 5, yRepeat: 20})
     const bgRef = useRef(null);
 

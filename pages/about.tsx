@@ -3,6 +3,9 @@ import CustomBackground from '@/components/elements/customBackground';
 import CallToAction from '@/components/sections/callToAction';
 import Link from 'next/link';
 import { Button } from '@/components/elements/styledbutton';
+import { teamMembers } from '@/public/utils/data';
+import { SectionTitle } from '@/components/elements/sectionTitle';
+import TeamMember from '@/components/sections/teamMember';
 
 
 export default function About() {
@@ -25,8 +28,20 @@ export default function About() {
           </Link>
         </div>
       </section>
-      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 max-w-lg min-h-fit m-auto overflow-clip">
-        <CustomBackground backgroundColor="white" color="#d9d9d9" factor={1.5}>
+      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10">
+        <CustomBackground backgroundColor="#d9d9d9" color="white" factor={2}>
+            <div className="bg-black/[68%] py-10 px-5">
+              <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
+              <ul>
+                {teamMembers.map((member, index) => {
+                  return (
+                    <li key={index}>
+                      <TeamMember member={member} />
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
         </CustomBackground>
       </section>
       <CallToAction />
