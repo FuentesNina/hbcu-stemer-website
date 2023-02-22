@@ -62,7 +62,7 @@ export default function NavBar() {
           </nav>
         </header>
         <nav onClick={closeMenu} className={`${mobileMenu ? 'w-screen h-screen bg-black/[0.25] backdrop-blur-sm' : "w-0 h-0"}  overflow-hidden md:hidden z-50 fixed`} >
-          <div className={`${mobileMenu ? 'animate-showMenu right-0' : (firstLoad ? "hidden" : 'animate-hideMenu right-0')} p-14 pt-5 max-w-fit md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed `}>
+          <div className={`${mobileMenu ? 'left-full animate-showMenu' : (firstLoad ? "hidden" : 'animate-hideMenu right-0')} p-14 pt-5 md:hidden bg-black/[0.9] rounded-bl-xl backdrop-blur fixed `}>
             <ul className={`text-white uppercase font-title font-bold`}>
               {navLinks.map((pageInfo, index) => { return(
                 <li key={index} onClick={closeMenu} className='my-4 flex flex-col max-w-fit group'>
