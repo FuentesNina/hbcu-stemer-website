@@ -18,8 +18,6 @@ export default function CustomBackground({children, backgroundColor, color, fact
                 const yrepeat = Math.ceil(innerHeight / bgDimRepeat.dimension);
                 setBgDimRepeat({dimension: bgDimRepeat.dimension, xRepeat: xrepeat, yRepeat: yrepeat});
             }
-            console.log(bgDimRepeat);
-
         }
 
         handleWindowResize();

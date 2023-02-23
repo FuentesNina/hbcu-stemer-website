@@ -24,7 +24,7 @@ export default function Partners() {
       <Banner/>
       <section className="mx-5 mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
-          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/ourPartners_introImage.jpg" alt="" />
+          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/ourPartners_introImage.jpg" alt="" />
         </div>
         <div className="my-10 md:m-auto">
           <p className="font-body ">
