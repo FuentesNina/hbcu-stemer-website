@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Countdown from "@/components/elements/countdown";
 import CustomBackground from "@/components/elements/customBackground";
+import { Carousel } from "@/components/elements/carousel";
 
 export default function Home() {
   const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5";
@@ -37,7 +38,6 @@ export default function Home() {
                 <li key={index}>
                   <img src={company.logo} className="h-10"/>
                 </li>
-
               )
             })}
           </ul>
@@ -76,25 +76,38 @@ export default function Home() {
       <section id="stats">
         <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9">
             <div>
-              <div>
-                <div>
-                  <p>{120}</p>
-                  <p>{`Participants and Donors`}</p>
+              <div className="py-10">
+                <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
+                  <div>
+                    <p className="text-center font-bold font-display text-3xl">{`120`}</p>
+                    <p className="text-center font-body">{`Participants and Donors`}</p>
+                  </div>
+                  <div >
+                    <p className="text-center font-bold font-display text-3xl">{`$12,340`}</p>
+                    <p className="text-center font-body">{`in scholarship funds raised`}</p>
+                  </div>
                 </div>
                 <Link href="/impact" >
-                  <Button content="meet out scholars" buttonStyle="black"/>
+                  <Button content="meet our scholars" buttonStyle="black"/>
                 </Link>
               </div>
-              <div>
-
-              </div>
+              <Carousel />
             </div>
         </CustomBackground>
       </section>
       <section id="previous events">
 
       </section>
-      <section id="mission">
+      <section id="mission" className="bg-black">
+        <div>
+          <Title content="our mission" className="text-myGreen text-center" />
+          <p className="font-body text-white text-sm text-center">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
+          <Link href="/about" >
+            <Button content="meet the team" buttonStyle="white-black" />
+          </Link>
+        </div>
+        <img src="/images/placeholders/aboutUs_introImage.png" />
+
 
       </section>
     </>

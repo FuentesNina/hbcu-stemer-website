@@ -87,20 +87,97 @@ export const contactForm = [
 
 export const teamMembers = [
     {
-        firstname: "danielle",
-        lastname: "lewis",
+        firstName: "danielle",
+        lastName: "lewis",
         title: "founder & CEO",
         picture: "/images/placeholders/danielle_headshot.png",
         bio: "I'm from Pell City, AL, a small town not too far from Birmingham. Even when I was younger, I was always interested in Math and Science, partly due to my mom being an engineer. I knew I wanted to attend Oakwood University, however, the school did not have their own Engineering program. Through Oakwood University and University of Alabama in Huntsville's Dual Degree Program, I had the unique experience of attending both a private HBCU and a public PWI while earning my degrees. Additionally, the financial and academic burden of a 5 year program caused me to be proactive in discovering scholarships and other resources through organizations such as the National Society of Black Engineers (NSBE) and the United Negro College Fund (UNCF).",
     },
     {
-        firstname: "india",
-        lastname: "hester",
+        firstName: "india",
+        lastName: "hester",
         title: "marketing director",
         picture: "/images/placeholders/india_headshot.png",
         bio: "Because I know first hand how invaluable these opportunities were for my career as a black woman in STEM, I am passionate to advocate for the younger generations of black STEM potential. Although currently working as a Systems Engineer in Electrification, I remain actively involved in the attraction, retention, and engagement of diverse talent. Most recently serving as the coordinator for the Cummins NSBE Integrated Pipeline Program which is a scholarship, internship, and mentorship opportunity for students at Howard, NC A&T, and Purdue University. Starting my own scholarship for deserving students has been a long lasting dream of mine. In the midst of COVID, I started the virtual HBCU STEM Education Run to raise funds and awareness through another passion of mine, running. I hope you will join me in support of this great cause!",
     },
-]
+];
+
+export const communityMember = {
+        scholars: [
+            {
+                firstName: "Micah",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                school: "Oakwood University",
+                year: "2020",
+            },
+            {
+                firstName: "Daniella",
+                lastName: "Johnson",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                school: "Spelman College",
+                year: "2020",
+            },
+            {
+                firstName: "Peter",
+                lastName: "McGiven",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                school: "Howard University",
+                year: "2021",
+            },
+            {
+                firstName: "Micah",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                school: "Oakwood University",
+                year: "2020",
+            },
+            {
+                firstName: "Peter",
+                lastName: "McGiven",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                school: "Howard University",
+                year: "2021",
+            },
+        ],
+        participants: [
+            {
+                firstName: "Steven",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "HBCU Education Run",
+                year: "2022",
+            },
+            {
+                firstName: "Hazel",
+                lastName: "Samini",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "Women In STEM Walkathon",
+                year: "2020",
+            },
+            {
+                firstName: "Steven",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "HBCU Education Run",
+                year: "2022",
+            },
+            {
+                firstName: "Hazel",
+                lastName: "Samini",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "Women In STEM Walkathon",
+                year: "2020",
+            },
+            {
+                firstName: "Steven",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "HBCU Education Run",
+                year: "2022",
+            },
+        ]
+};
 
 export const partnersData = [
     {

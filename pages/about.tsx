@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/elements/styledbutton';
 import { teamMembers } from '@/public/utils/data';
 import { SectionTitle } from '@/components/elements/sectionTitle';
-import TeamMember from '@/components/sections/teamMember';
+import TeamMember from '@/components/elements/teamMember';
 
 
 export default function About() {

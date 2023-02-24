@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { Subtitle } from '../elements/subtitle';
+import { Subtitle } from './subtitle';
 
 
 export default function TeamMember({member}: {member: any}) {
@@ -10,10 +10,10 @@ export default function TeamMember({member}: {member: any}) {
   return (
     <div className="mb-14 max-w-sm mx-auto">
         <div className="max-w-[70%] aspect-square relative rounded-full overflow-clip border border-white my-5 mx-auto">
-          <Image className="h-full w-full object-cover object-center" src={member.picture} fill alt={`headshot of ${member.firstname} ${member.lastname}`}/>
+          <Image className="h-full w-full object-cover object-center" src={member.picture} fill alt={`headshot of ${member.firstName} ${member.lastName}`}/>
         </div>
         <div className="my-5 text-center text-white">
-          <Subtitle content={`${member.firstname} ${member.lastname}`} className=""/>
+          <Subtitle content={`${member.firstName} ${member.lastName}`} className=""/>
           <Subtitle content={member.title} className="text-sm font-normal"/>
         </div>
         <div className='font-body text-sm text-white overflow-clip mx-auto'>
