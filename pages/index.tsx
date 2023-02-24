@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Countdown from "@/components/elements/countdown";
 import CustomBackground from "@/components/elements/customBackground";
 import { Carousel } from "@/components/elements/carousel";
+import { SectionTitle } from "@/components/elements/sectionTitle";
 
 export default function Home() {
   const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5";
@@ -43,7 +44,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24">
+      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10">
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
             <div className={`${divStyle} grid`}>
@@ -95,20 +96,35 @@ export default function Home() {
             </div>
         </CustomBackground>
       </section>
-      <section id="previous events">
-
+      <section id="previous events" className="mt-10 mb-16 mx-auto w-80 h-52 relative">
+        <Link href="/raceinfo#previousevents" className="cursor-default">
+          <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
+          </div>
+          <div className="hover:cursor-pointer left-1 isolate top-4 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
+          </div>
+          <div className="hover:cursor-pointer right-1 isolate top-2 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
+          </div>
+          <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-myRed/[0.30] border border-white">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`previous events`}</h3>
+          </div>
+        </Link>
       </section>
-      <section id="mission" className="bg-black">
+      <section id="mission" className="bg-black py-10">
         <div>
-          <Title content="our mission" className="text-myGreen text-center" />
-          <p className="font-body text-white text-sm text-center">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
+          <Title content="our mission" className="text-myGreen text-center mb-10" />
+          <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
           <Link href="/about" >
-            <Button content="meet the team" buttonStyle="white-black" />
+            <Button content="meet the team" buttonStyle="white-black" className="my-10" />
           </Link>
         </div>
-        <img src="/images/placeholders/aboutUs_introImage.png" />
-
-
+        <img src="/images/placeholders/aboutUs_introImage.png" className="px-5"/>
       </section>
     </>
   )

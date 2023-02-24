@@ -85,6 +85,21 @@ export const contactForm = [
     },
 ];
 
+export const newsletterForm = [
+    {
+      fieldName: "Name",
+      type: "Short answer text",
+      placeholder: "Name",
+      required: true,
+    },
+    {
+        fieldName: "Email",
+        type: "Email",
+        placeholder: "Email",
+        required: true,
+    },
+];
+
 export const teamMembers = [
     {
         firstName: "danielle",
