@@ -25,7 +25,7 @@ export default function Home() {
               <Button content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
             </Link>
           </div>
-          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first md:shadow-white md:shadow-lg lg:max-w-none">
+          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto md:grid md:grid-cols-2 md:max-w-4xl md:gap-5 md:my-20">
+      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto md:grid md:grid-cols-2 md:max-w-4xl md:gap-5 md:my-20 md:px-10">
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
             <div className={`${divStyle} grid`}>
@@ -94,8 +94,8 @@ export default function Home() {
             </div>
         </CustomBackground>
       </section>
-      <section id="previous events" className="mt-10 mb-16 mx-auto w-80 h-52 relative md:my-20 md:h-[22rem] md:max-w-7xl md:w-full">
-        <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-[22rem]">
+      <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
+        <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
           <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
             <img src="/images/placeholders/previousEvents.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2021`}</h3>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
         </Link>
       </section>
-      <section id="mission" className="bg-black py-10 max-w-lg mx-auto md:max-w-4xl md:mx-auto md:grid md:grid-cols-[3fr_2fr] md:p-0 md:h-96 md:my-10 lg:h-[35rem]">
+      <section id="mission" className="bg-black py-10 max-w-lg mx-auto md:max-w-4xl md:mx-auto md:grid md:grid-cols-[3fr_2fr] md:p-0 md:h-96 md:my-0 lg:h-[35rem]">
         <div className="md:my-auto">
           <Title content="our mission" className="text-myGreen text-center mb-10" />
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
