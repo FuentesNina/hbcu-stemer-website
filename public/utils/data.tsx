@@ -129,14 +129,14 @@ export const communityMember = {
             {
                 firstName: "Daniella",
                 lastName: "Johnson",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                picture: "/images/placeholders/studentFemale.png",
                 school: "Spelman College",
                 year: "2020",
             },
             {
                 firstName: "Peter",
                 lastName: "McGiven",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                picture: "/images/placeholders/studentMale2.png",
                 school: "Howard University",
                 year: "2021",
             },
@@ -150,7 +150,7 @@ export const communityMember = {
             {
                 firstName: "Peter",
                 lastName: "McGiven",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                picture: "/images/placeholders/studentFemale.png",
                 school: "Howard University",
                 year: "2021",
             },
