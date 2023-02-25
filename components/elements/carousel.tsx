@@ -35,10 +35,10 @@ export function Carousel() {
 
     return (
         <div className="pb-10">
-            <ul className={`flex mx-auto max-w-xs overflow-x-clip transition-transform justify-center`}>
+            <ul className={`flex mx-auto max-w-sm overflow-x-clip transition-transform justify-center border-x border-x-black`}>
                 {[...Array(3)].map((value, index) => {
                     return (
-                        <li key={index} className={`mx-5 ${animation}`}>
+                        <li key={index} className={`mx-5 ${animation} ${currentSlide !== index && ""}`}>
                             <CommunityMemberCard member={communityMember.scholars[index]} />
                         </li>
                     )

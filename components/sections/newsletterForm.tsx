@@ -30,7 +30,7 @@ export default function NewsletterForm() {
 
 
   return (
-    <form ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="relative top-10 bg-myRed p-10 flex flex-col max-w-md"
+    <form ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="relative top-10 bg-myRed p-10 flex flex-col max-w-md mx-auto"
             >
         {/* This is setup for formsubmit.com */}
         <input type="hidden" name="_captcha" value="false" />

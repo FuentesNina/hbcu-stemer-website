@@ -18,16 +18,16 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-black">
-        <div>
-          <div className="max-w-xs mx-auto">
-            <LargeLogo color="white"  className="py-10 "/>
+      <section id="hero" className="bg-black">
+        <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-3xl md:mx-auto md:gap-10 md:px-5">
+          <div className="max-w-xs mx-auto md:w-full">
+            <LargeLogo color="white"  className="py-10 md:pt-0"/>
             <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
             <Link href="#basicInfo">
-              <Button content="learn more" buttonStyle="red" className="my-10"/>
+              <Button content="learn more" buttonStyle="red" className="my-10 md:pb-0"/>
             </Link>
           </div>
-          <div className="aspect-video">
+          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10">
+      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto">
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
             <div className={`${divStyle} grid`}>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </Link>
       </section>
-      <section id="mission" className="bg-black py-10">
+      <section id="mission" className="bg-black py-10 max-w-lg mx-auto">
         <div>
           <Title content="our mission" className="text-myGreen text-center mb-10" />
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
