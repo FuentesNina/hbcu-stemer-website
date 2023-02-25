@@ -10,7 +10,7 @@ import NewsletterForm from "../sections/newsletterForm";
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
-      <footer className="overflow-clip">
+      <footer className="overflow-clip w-full">
         <p className={`font-quote text-center text-lg mx-5 ${showSignUp ? 'relative top-10 mb-5' : 'my-5'}`}>{webLinks.quote}</p>
         {showSignUp && <NewsletterForm />}
         <div className={`bg-black -z-10 ${showSignUp ? 'pt-20 relative' : 'pt-10'}`}>

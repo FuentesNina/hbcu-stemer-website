@@ -17,15 +17,15 @@ export default function Home() {
   return (
     <>
       <section id="hero" className="bg-black">
-        <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-4xl md:mx-auto md:gap-10 md:px-5">
-          <div className="max-w-xs mx-auto md:w-full">
+        <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-4xl md:mx-auto md:gap-10 md:px-5 lg:max-w-6xl">
+          <div className="max-w-xs mx-auto md:w-full lg:my-auto">
             <LargeLogo color="white"  className="py-10 md:pt-0"/>
             <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
             <Link href="#basicInfo">
-              <Button content="learn more" buttonStyle="red" className="my-10 md:pb-0"/>
+              <Button content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
             </Link>
           </div>
-          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first md:shadow-white md:shadow-lg">
+          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first md:shadow-white md:shadow-lg lg:max-w-none">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
       <section id="stats">
         <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9">
-            <div>
+            <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
               <div className="py-10">
                 <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
                   <div>
@@ -94,35 +94,35 @@ export default function Home() {
             </div>
         </CustomBackground>
       </section>
-      <section id="previous events" className="mt-10 mb-16 mx-auto w-80 h-52 relative">
-        <Link href="/raceinfo#previousevents" className="cursor-default">
-          <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
+      <section id="previous events" className="mt-10 mb-16 mx-auto w-80 h-52 relative md:my-20 md:h-[22rem] md:max-w-7xl md:w-full">
+        <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-[22rem]">
+          <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2021`}</h3>
+          </div>
+          <div className="hover:cursor-pointer left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
           </div>
-          <div className="hover:cursor-pointer left-1 isolate top-4 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
-            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
+          <div className="hover:cursor-pointer right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2023`}</h3>
           </div>
-          <div className="hover:cursor-pointer right-1 isolate top-2 absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-black/[0.30] border border-white">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay"/>
-            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
-          </div>
-          <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-80 h-52 grid place-content-center bg-myRed/[0.30] border border-white">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay w-full h-full"/>
+          <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`previous events`}</h3>
           </div>
         </Link>
       </section>
-      <section id="mission" className="bg-black py-10 max-w-lg mx-auto">
-        <div>
+      <section id="mission" className="bg-black py-10 max-w-lg mx-auto md:max-w-4xl md:mx-auto md:grid md:grid-cols-[3fr_2fr] md:p-0 md:h-96 md:my-10 lg:h-[35rem]">
+        <div className="md:my-auto">
           <Title content="our mission" className="text-myGreen text-center mb-10" />
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
           <Link href="/about" >
-            <Button content="meet the team" buttonStyle="white-black" className="my-10" />
+            <Button content="meet the team" buttonStyle="white-black" className="my-10 md:mb-0" />
           </Link>
         </div>
-        <img src="/images/placeholders/aboutUs_introImage.png" className="px-5"/>
+        <img src="/images/placeholders/aboutUs_introImage.png" className="px-5 md:p-0 md:object-cover md:h-full"/>
       </section>
     </>
   )
