@@ -1,7 +1,129 @@
+import LargeLogo from "@/components/elements/logos/largeLogo";
+import { Button } from "@/components/elements/styledbutton";
+import { Title } from "@/components/elements/title";
+import Link from "next/link";
+import { partnersData } from "@/public/utils/data";
+import Image from "next/image";
+import Countdown from "@/components/elements/countdown";
+import CustomBackground from "@/components/elements/customBackground";
+import { Carousel } from "@/components/elements/carousel";
+
 export default function Home() {
+  const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
+  const imageStyle = "grayscale mix-blend-overlay h-full w-full object-cover object-center absolute contrast-125 brightness-50"
+  const h4Style = "font-display text-xl text-center font-bold uppercase text-white drop-shadow-[2px_2px_0_rgba(0,0,0,1)]";
+  const pStyle = "drop-shadow-md font-body text-center text-white capitalize mt-2";
 
   return (
     <>
+      <section id="hero" className="bg-black">
+        <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-4xl md:mx-auto md:gap-10 md:px-5 lg:max-w-6xl">
+          <div className="max-w-xs mx-auto md:w-full lg:my-auto">
+            <LargeLogo color="white"  className="py-10 md:pt-0"/>
+            <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
+            <Link href="#basicInfo">
+              <Button content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
+            </Link>
+          </div>
+          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+          </div>
+        </div>
+        <div className="py-10 md:max-w-4xl md:mx-auto">
+          <Title content="sponsored by" className="text-white text-sm text-center"/>
+          <ul className="flex gap-10 justify-center mt-10 flex-wrap">
+            {partnersData[0].companies.map((company, index) => {
+              return (
+                <li key={index}>
+                  <img src={company.logo} className="h-10"/>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </section>
+      <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto md:grid md:grid-cols-2 md:max-w-4xl md:gap-5 md:my-20 md:px-10">
+        <div>
+          <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
+            <div className={`${divStyle} grid`}>
+              <Image className={`${imageStyle} object-top`} fill src="/images/raceInfo_Banner.jpeg" alt=""/>
+              <div className="my-10">
+                <h4 className={h4Style}>{`register now`}</h4>
+                <p className={pStyle}>{`join the STEM education run`}</p>
+              </div>
+              <Countdown />
+            </div>
+          </Link>
+        </div>
+        <div className="md:grid md:grid-rows-2 md:gap-5">
+          <Link href="/">
+            <div className={divStyle}>
+              <Image className={imageStyle} fill src="/images/pledgeImage.png" alt=""/>
+              <h4 className={h4Style}>{`pledge`}</h4>
+              <p className={pStyle}>{`Donate funds to support HBCU's`}</p>
+            </div>
+          </Link>
+          <Link href="/partners">
+            <div className={divStyle}>
+              <Image className={imageStyle} fill src="/images/ourPartners_Banner.jpg" alt=""/>
+              <h4 className={h4Style}>{`sponsor`}</h4>
+              <p className={pStyle}>{`Support STEM Education`}</p>
+            </div>
+          </Link>
+        </div>
+      </section>
+      <section id="stats">
+        <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9">
+            <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
+              <div className="py-10">
+                <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
+                  <div>
+                    <p className="text-center font-bold font-display text-3xl">{`120`}</p>
+                    <p className="text-center font-body">{`Participants and Donors`}</p>
+                  </div>
+                  <div >
+                    <p className="text-center font-bold font-display text-3xl">{`$12,340`}</p>
+                    <p className="text-center font-body">{`in scholarship funds raised`}</p>
+                  </div>
+                </div>
+                <Link href="/impact" >
+                  <Button content="meet our scholars" buttonStyle="black"/>
+                </Link>
+              </div>
+              <Carousel />
+            </div>
+        </CustomBackground>
+      </section>
+      <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
+        <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
+          <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2021`}</h3>
+          </div>
+          <div className="hover:cursor-pointer left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
+          </div>
+          <div className="hover:cursor-pointer right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2023`}</h3>
+          </div>
+          <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
+            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
+            <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`previous events`}</h3>
+          </div>
+        </Link>
+      </section>
+      <section id="mission" className="bg-black py-10 max-w-lg mx-auto md:max-w-4xl md:mx-auto md:grid md:grid-cols-[3fr_2fr] md:p-0 md:h-96 md:my-0 lg:h-[35rem]">
+        <div className="md:my-auto">
+          <Title content="our mission" className="text-myGreen text-center mb-10" />
+          <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
+          <Link href="/about" >
+            <Button content="meet the team" buttonStyle="white-black" className="my-10 md:mb-0" />
+          </Link>
+        </div>
+        <img src="/images/placeholders/aboutUs_introImage.png" className="px-5 md:p-0 md:object-cover md:h-full"/>
+      </section>
     </>
   )
 }

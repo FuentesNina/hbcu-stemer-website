@@ -1,4 +1,4 @@
-export default function CompactLogo({color, className}:{color:string, className:string}) {
+export default function CompactLogo({color, className}:{color:string, className?:string}) {
 
     return (
       <>

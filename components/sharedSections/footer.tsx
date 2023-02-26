@@ -4,14 +4,16 @@ import CompactLogo from "@/components/elements/logos/compactLogo";
 import WebsiteLogo from "../elements/logos/websiteLogo";
 import InstagramShowcase from "../elements/instagramShowcase";
 import SocialMediaIcons from "../elements/socialMediaIcons";
+import NewsletterForm from "../sections/newsletterForm";
 
 
 export default function Footer({showSignUp}: {showSignUp: boolean}) {
 
     return (
-      <footer className="overflow-clip">
-        <p className='font-quote text-center text-lg m-5'>{webLinks.quote}</p>
-        <div className="bg-black pt-10">
+      <footer className="overflow-clip w-full">
+        <p className={`font-quote text-center text-lg mx-5 ${showSignUp ? 'relative top-10 mb-5' : 'my-5'}`}>{webLinks.quote}</p>
+        {showSignUp && <NewsletterForm />}
+        <div className={`bg-black -z-10 ${showSignUp ? 'pt-20 relative' : 'pt-10'}`}>
           <InstagramShowcase customUrl={webLinks.instagram} height="112px"/>
           <div className="my-10 md:flex md:w-full">
             <SocialMediaIcons />

@@ -28,10 +28,40 @@ module.exports = {
           '0%': {transform: 'translate(0)'},
           '100%' : {transform: 'translate(100%)'},
         },
+        fullLeft: {
+          '0%': {transform: 'translate(-100%)'},
+          '100%' : {transform: 'translate(100%)'},
+        },
+        fullRight: {
+          '0%': {transform: 'translate(100%)'},
+          '100%' : {transform: 'translate(-100%)'},
+        },
+        halfLeft: {
+          '0%': {transform: 'translate(100%)'},
+          '100%' : {transform: 'translate(0%)'},
+        },
+        secondLeft: {
+          '0%': {transform: 'translate(0%)'},
+          '100%' : {transform: 'translate(-100%)'},
+        },
+        halfRight: {
+          '0%': {transform: 'translate(-100%)'},
+          '100%' : {transform: 'translate(0%)'},
+        },
+        secondRight: {
+          '0%': {transform: 'translate(0%)'},
+          '100%' : {transform: 'translate(100%)'},
+        },
       },
       animation: {
         showMenu: 'showMenu 0.5s ease-out forwards',
         hideMenu: 'hideMenu 0.5s ease-out forwards',
+        fullLeft: 'fullLeft 0.5s ease-out forwards',
+        fullRight: 'fullRight 0.5s ease-out forwards',
+        halfRight: 'halfRight 0.5s ease-out forwards',
+        halfLeft: 'halfLeft 0.5s ease-out forwards',
+        secondLeft: 'secondLeft 0.5s ease-out forwards',
+        secondRight: 'secondRight 0.5s ease-out forwards',
       },
     },
   },
