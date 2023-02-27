@@ -37,7 +37,7 @@ export default function Impact() {
             <div className="shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] bg-myLightGrey border-y border-black py-10 relative md:border md:shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
               {/* greyed and blured overlay */}
               <div className={`w-screen h-screen z-10 fixed top-0 left-0 bg-black/[0.4] backdrop-blur-sm ${!focus && 'hidden'}`} onClick={() => setFocus(false)}/>
-              <FontAwesomeIcon icon={faXmark} mask={faCircle} className={`${!focus && 'hidden'} z-10 text-white h-10 aspect-square fixed top-[40vh] right-5 cursor-pointer drop-shadow-xl`} onClick={() => setFocus(false)}/>
+              <FontAwesomeIcon icon={faXmark} mask={faCircle} className={`${!focus && 'hidden'} z-10 text-white h-10 aspect-square fixed top-[30vh] right-5 cursor-pointer drop-shadow-xl`} onClick={() => setFocus(false)}/>
 
               {/* all of the cards displayed */}
               <ul className="flex flex-wrap place-content-stretch gap-14 overflow-auto py-4 mx-auto md:overflow-auto px-10 max-w-6xl">
