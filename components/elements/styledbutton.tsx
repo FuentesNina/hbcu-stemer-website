@@ -16,6 +16,8 @@ export function Button({content, action, buttonStyle, className, type} : {conten
             return 'border-white text-white bg-myLightGrey'
         } else if (buttonStyle === 'white-red') {
             return 'border-myRed text-myRed bg-white'
+        } else if (buttonStyle === 'darkerGrey') {
+            return 'border-white text-white bg-[#909090]'
         }
     }
 
