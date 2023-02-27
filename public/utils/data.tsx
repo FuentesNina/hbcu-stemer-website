@@ -178,7 +178,7 @@ export const communityMembers = [
                 firstName: "Steven",
                 lastName: "Mayne",
                 picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
+                event: "Women In STEM Walkathon ",
                 year: "2022",
                 bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
