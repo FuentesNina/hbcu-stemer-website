@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 export function Carousel() {
+    const scholarsTabIndex = 0;
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
 
@@ -39,7 +40,7 @@ export function Carousel() {
                 {[...Array(3)].map((value, index) => {
                     return (
                         <li key={index} className={`mx-5 ${animation} ${currentSlide !== index && ""}`}>
-                            <CommunityMemberCard member={communityMembers.scholars[index]} />
+                            <CommunityMemberCard member={communityMembers[scholarsTabIndex].profiles[index]} />
                         </li>
                     )
                 })}

@@ -10,8 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 export default function Impact() {
-  const keys = Object.keys(communityMembers);
-  const [category, setCategory] = useState(keys[0]);
+  const scholarsTabIndex = 0;
+  const participantsTabIndex = 1;
+  const [currentTabIndex, setCurrentTabIndex] = useState(scholarsTabIndex);
   const [focus, setFocus] = useState(false);
 
 
@@ -20,16 +21,16 @@ export default function Impact() {
       <ImpactGame />
       <Banner />
       <section>
-        <div className="my-10 grid gap-10 mx-5">
+        <div className="my-10 grid gap-10 mx-5 md:my-20">
           <SectionTitle content={`our community`} titleStyle="red-black"/>
-          <p className="font-body text-justify">{`This is a small intro paragraph talking about the people who are impacted by HBCU STEMER`}</p>
+          <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{`This is a small intro paragraph talking about the people who are impacted by HBCU STEMER`}</p>
         </div>
 
-        <div className="my-10">
-          <div className="z-10 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] bg-myLightGrey w-fit mx-auto py-5 px-10 rounded-t-3xl border border-black border-b-0 grid gap-5 relative -mb-2 overflow-clip">
+        <div className="my-10 md:max-w-7xl md:mx-auto">
+          <div className="md:grid md:grid-cols-2 z-10 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] bg-myLightGrey w-fit mx-auto py-5 px-10 rounded-t-3xl border border-black border-b-0 grid gap-5 relative -mb-2 overflow-clip">
             {/* titles /tabs */}
-            <Button content="our scholars" buttonStyle={category === keys[0] ? 'black' : 'darkerGrey'} action={() => {setCategory(keys[0]); setFocus(false)}}/>
-            <Button content="race hall of fame" buttonStyle={category === keys[1] ? 'black' : 'darkerGrey'} action={() => {setCategory(keys[1]); setFocus(false)}}/>
+            <Button content="our scholars" buttonStyle={currentTabIndex === scholarsTabIndex ? 'black' : 'darkerGrey'} action={() => {setCurrentTabIndex(scholarsTabIndex); setFocus(false)}}/>
+            <Button content="race hall of fame" buttonStyle={currentTabIndex === participantsTabIndex ? 'black' : 'darkerGrey'} action={() => {setCurrentTabIndex(participantsTabIndex); setFocus(false)}}/>
           </div>
 
           <div>
@@ -38,9 +39,9 @@ export default function Impact() {
               <div className={`w-full h-full z-10 fixed top-0 bg-black/[0.4] backdrop-blur-sm ${!focus && 'hidden'}`} onClick={() => setFocus(false)}/>
               <FontAwesomeIcon icon={faXmark} mask={faCircle} className={`${!focus && 'hidden'} z-10 text-white h-10 aspect-square fixed top-[40vh] right-5 cursor-pointer drop-shadow-xl`} onClick={() => setFocus(false)}/>
 
-               {/* all of the cards displayed */}
-              <ul className="flex flex-wrap gap-14 h-[70vh] overflow-auto py-4 mx-auto md:overflow-auto max-w-4xl px-10 md:h-fit">
-                {communityMembers[category].map((member : any, index : any) => {
+              {/* all of the cards displayed */}
+              <ul className="flex flex-wrap gap-14 h-[70vh] overflow-auto py-4 mx-auto md:overflow-auto px-10 md:h-fit max-w-6xl">
+                {communityMembers[currentTabIndex].profiles.map((member : any, index : any) => {
                   return (
                     <li key={index} onClick={() => setFocus(true)} className="w-fit h-fit mx-auto cursor-pointer">
                       <CommunityMemberCard member={member} focusable={focus}/>

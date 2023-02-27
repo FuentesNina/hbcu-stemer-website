@@ -117,8 +117,10 @@ export const teamMembers = [
     },
 ];
 
-export const communityMembers = {
-        scholars: [
+export const communityMembers = [
+    {
+        tabTitle: 'our scholars',
+        profiles: [
             {
                 firstName: "Micah",
                 lastName: "Mayne",
@@ -160,7 +162,10 @@ export const communityMembers = {
                 bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish",
             },
         ],
-        participants: [
+    },
+    {
+        tabTitle: "race hall of fame",
+        profiles: [
             {
                 firstName: "Hazel",
                 lastName: "Samini",
@@ -202,7 +207,9 @@ export const communityMembers = {
                 bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
         ]
-};
+    }
+];
+
 
 export const partnersData = [
     {
