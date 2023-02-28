@@ -16,7 +16,7 @@ export const navLinks = [
     {
         pageTitle: "Our Impact",
         path: "/impact",
-        bannerImage: "",
+        bannerImage: "/images/impact_banner.jpeg",
         pageDescription: "",
         highlight: false,
     },
@@ -117,14 +117,17 @@ export const teamMembers = [
     },
 ];
 
-export const communityMember = {
-        scholars: [
+export const communityMembers = [
+    {
+        tabTitle: 'our scholars',
+        profiles: [
             {
                 firstName: "Micah",
                 lastName: "Mayne",
                 picture: "/images/placeholders/blackStudent.jpeg",
                 school: "Oakwood University",
                 year: "2020",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish",
             },
             {
                 firstName: "Daniella",
@@ -132,6 +135,7 @@ export const communityMember = {
                 picture: "/images/placeholders/studentFemale.png",
                 school: "Spelman College",
                 year: "2020",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
             },
             {
                 firstName: "Peter",
@@ -139,6 +143,7 @@ export const communityMember = {
                 picture: "/images/placeholders/studentMale2.png",
                 school: "Howard University",
                 year: "2021",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
             },
             {
                 firstName: "Micah",
@@ -146,6 +151,7 @@ export const communityMember = {
                 picture: "/images/placeholders/blackStudent.jpeg",
                 school: "Oakwood University",
                 year: "2020",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
             },
             {
                 firstName: "Peter",
@@ -153,15 +159,36 @@ export const communityMember = {
                 picture: "/images/placeholders/studentFemale.png",
                 school: "Howard University",
                 year: "2021",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish",
             },
         ],
-        participants: [
+    },
+    {
+        tabTitle: "race hall of fame",
+        profiles: [
+            {
+                firstName: "Hazel",
+                lastName: "Samini",
+                picture: "/images/placeholders/studentFemale.png",
+                event: "Women In STEM Walkathon",
+                year: "2020",
+                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
+            },
+            {
+                firstName: "Steven",
+                lastName: "Mayne",
+                picture: "/images/placeholders/blackStudent.jpeg",
+                event: "Women In STEM Walkathon ",
+                year: "2022",
+                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
+            },
             {
                 firstName: "Steven",
                 lastName: "Mayne",
                 picture: "/images/placeholders/blackStudent.jpeg",
                 event: "HBCU Education Run",
                 year: "2022",
+                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
             {
                 firstName: "Hazel",
@@ -169,6 +196,7 @@ export const communityMember = {
                 picture: "/images/placeholders/blackStudent.jpeg",
                 event: "Women In STEM Walkathon",
                 year: "2020",
+                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
             {
                 firstName: "Steven",
@@ -176,23 +204,12 @@ export const communityMember = {
                 picture: "/images/placeholders/blackStudent.jpeg",
                 event: "HBCU Education Run",
                 year: "2022",
-            },
-            {
-                firstName: "Hazel",
-                lastName: "Samini",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon",
-                year: "2020",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
-                year: "2022",
+                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
         ]
-};
+    }
+];
+
 
 export const partnersData = [
     {

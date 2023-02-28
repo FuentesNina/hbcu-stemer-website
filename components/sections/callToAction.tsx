@@ -14,7 +14,7 @@ export default function CallToAction() {
                   <Button content="register now" buttonStyle="red"/>
               </Link>
             </div>
-            <img className="rounded-xl mt-10 mx-0 md:max-w-xs" src="/images/placeholders/cta_picture.jpeg" />
+            <img className="rounded-xl mt-10 mx-0 md:max-w-xs" src="/images/cta_picture.jpeg" />
           </div>
         </div>
       </section>
