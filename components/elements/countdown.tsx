@@ -1,8 +1,15 @@
+import { getPageInfo } from "@/hooks/getPageInfo";
 import { useEffect, useState } from "react";
+import { text } from "stream/consumers";
 
 export default function Countdown() {
-  const numberStyle = "drop-shadow-md font-title uppercase font-bold text-white text-center text-3xl";
-  const catStyle = "drop-shadow-md font-title uppercase font-bold text-white text-center";
+  const pageInfo = getPageInfo();
+
+  const path= pageInfo.path;
+
+  const numberStyle = `font-title uppercase font-bold text-white text-center text-3xl ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
+  const catStyle = `font-title uppercase font-bold text-white text-center ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
+  const textStyle = `font-title uppercase text-center font-bold text-white text-sm ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
 
   const raceDay = {year: 2023, month: 5, day: 1};
 
@@ -40,8 +47,8 @@ export default function Countdown() {
 
 
   return (
-    <div>
-        <h5 className="drop-shadow-md font-title uppercase text-center font-bold text-white text-sm">{`Race Starts in...`}</h5>
+    <div className="flex flex-col place-content-center">
+        <h5 className={textStyle}>{`Race Starts in...`}</h5>
         <div className="grid grid-cols-3 mt-3">
             <div>
                 <p className={numberStyle}>{countdown.days}</p>

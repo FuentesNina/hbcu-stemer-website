@@ -9,9 +9,27 @@ export const navLinks = [
     {
         pageTitle: "Education Run",
         path: "/raceinfo",
-        bannerImage: "",
+        bannerImage: "/images/raceInfo_Banner.jpg",
         pageDescription: "",
         highlight: true,
+        runBenefits: [
+            {
+                title: 'get moving',
+                imageIcon: '/images/benefit_getMoving.jpg',
+            },
+            {
+                title: 'support black excellence',
+                imageIcon: '/images/benefit_support.jpg',
+            },
+            {
+                title: 'build connections',
+                imageIcon: '/images/benefit_connections.jpeg',
+            },
+            {
+                title: 'challenge yourself',
+                imageIcon: '/images/benefit_challenge.png',
+            },
+        ],
     },
     {
         pageTitle: "Our Impact",
