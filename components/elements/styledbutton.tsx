@@ -1,6 +1,9 @@
+import Link from "next/link";
 import { MouseEventHandler } from "react"
+import { UrlObject } from 'url';
+declare type Url = string | UrlObject;
 
-export function Button({content, action, buttonStyle, className, type} : {content?: string, action?: MouseEventHandler, buttonStyle?: string, className?: string, type?: 'button' | 'submit' | 'reset'}) {
+export function Button({content, action, buttonStyle, className, type, href} : {href: Url, content?: string, action?: MouseEventHandler, buttonStyle?: string, className?: string, type?: 'button' | 'submit' | 'reset'}) {
     const pickButtonStyle = function() {
         if (buttonStyle === 'green') {
             return 'border-black text-black bg-myGreen';
@@ -24,7 +27,9 @@ export function Button({content, action, buttonStyle, className, type} : {conten
 
     return (
         <div className={`w-full flex justify-center ${className}`}>
-            <button type={type} className={`${pickButtonStyle()} text-sm max-w-fit border border-solid rounded-lg font-title uppercase font-bold py-2 px-6`} onClick={action}>{content}</button>
+            <Link href={href}>
+                <button type={type} className={`${pickButtonStyle()} text-sm max-w-fit border border-solid rounded-lg font-title uppercase font-bold py-2 px-6`} onClick={action}>{content}</button>
+            </Link>
         </div>
     )
 }

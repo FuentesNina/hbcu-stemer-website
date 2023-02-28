@@ -20,20 +20,23 @@ export default function RaceInformation() {
             <Countdown />
         </section>
         <section>
-          <p>
-
+          <p className="font-body my-10 mx-5">
+            {`HBCU STEMER is a virtual run/walk that can be done anywhere you like! Race alone, with a friend, or with a team.
+            You can select the finisher thank you packet option you would like to receive. Whether you are an HBCU alum/student,
+             STEM graduate, or just passionate about education, this run is for you!
+             Come join the virtual HBCU STEM Education Run to support STEM education at these crucial institutions.`}
           </p>
-          <div>
+          <ul className="flex flex-wrap gap-10 place-content-center justify-items-center">
             {benefits && benefits.map((benefit, index) => {
               return (
-                <div key={index}>
-                  <img src={benefit.imageIcon} className={`aspect-square object-cover h-20 border border-black rounded-full overflow-clip`} />
-                  <h3>{benefit.title}</h3>
-                </div>
+                <li key={index} className="max-w-[10rem]">
+                  <img src={benefit.imageIcon} className={`aspect-square object-cover drop-shadow-[1px_1px_1px_rgba(0,0,0,0.4)] rounded-full overflow-clip`} />
+                  <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[1px_1px_0_white] -mt-5">{benefit.title}</h3>
+                </li>
               )
             })}
-          </div>
-          <Button content="register now" buttonStyle="black"/>
+          </ul>
+          <Button content="register now" buttonStyle="black" className="my-10"/>
         </section>
       </>
     )
