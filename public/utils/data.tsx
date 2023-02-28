@@ -135,7 +135,7 @@ export const communityMembers = [
                 picture: "/images/placeholders/studentFemale.png",
                 school: "Spelman College",
                 year: "2020",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
             },
             {
                 firstName: "Peter",
