@@ -1,1 +1,35 @@
-export {}
+import { partnersData } from "@/public/utils/data"
+import LargeLogo from "../elements/logos/largeLogo"
+import { Button } from "../elements/styledbutton"
+import { Title } from "../elements/title"
+
+export function Hero() {
+    return (
+        <>
+          <section id="hero" className="bg-black">
+            <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-4xl md:mx-auto md:gap-10 md:px-5 lg:max-w-6xl">
+              <div className="max-w-xs mx-auto md:w-full lg:my-auto">
+                <LargeLogo color="white"  className="py-10 md:pt-0"/>
+                <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
+                <Button href="#basicInfo" content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
+              </div>
+              <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+              </div>
+            </div>
+            <div className="py-10 md:max-w-4xl md:mx-auto">
+              <Title content="sponsored by" className="text-white text-sm text-center"/>
+              <ul className="flex gap-10 justify-center mt-10 flex-wrap">
+                {partnersData[0].companies.map((company, index) => {
+                  return (
+                    <li key={index}>
+                      <img src={company.logo} className="h-10"/>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          </section>
+        </>
+    )
+}

@@ -7,6 +7,7 @@ import Image from "next/image";
 import Countdown from "@/components/elements/countdown";
 import CustomBackground from "@/components/elements/customBackground";
 import { Carousel } from "@/components/elements/carousel";
+import { Hero } from "@/components/sections/hero";
 
 export default function Home() {
   const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
@@ -16,32 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <section id="hero" className="bg-black">
-        <div className="md:grid md:grid-cols-[3fr_2fr] md:pt-20 md:max-w-4xl md:mx-auto md:gap-10 md:px-5 lg:max-w-6xl">
-          <div className="max-w-xs mx-auto md:w-full lg:my-auto">
-            <LargeLogo color="white"  className="py-10 md:pt-0"/>
-            <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
-            <Link href="#basicInfo">
-              <Button content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
-            </Link>
-          </div>
-          <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
-          </div>
-        </div>
-        <div className="py-10 md:max-w-4xl md:mx-auto">
-          <Title content="sponsored by" className="text-white text-sm text-center"/>
-          <ul className="flex gap-10 justify-center mt-10 flex-wrap">
-            {partnersData[0].companies.map((company, index) => {
-              return (
-                <li key={index}>
-                  <img src={company.logo} className="h-10"/>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      </section>
+      <Hero />
       <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto md:grid md:grid-cols-2 md:max-w-4xl md:gap-5 md:my-20 md:px-10">
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
@@ -86,9 +62,7 @@ export default function Home() {
                     <p className="text-center font-body">{`in scholarship funds raised`}</p>
                   </div>
                 </div>
-                <Link href="/impact" >
-                  <Button content="meet our scholars" buttonStyle="black"/>
-                </Link>
+                <Button href="/impact" content="meet our scholars" buttonStyle="black"/>
               </div>
               <Carousel />
             </div>
@@ -118,9 +92,7 @@ export default function Home() {
         <div className="md:my-auto">
           <Title content="our mission" className="text-myGreen text-center mb-10" />
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
-          <Link href="/about" >
-            <Button content="meet the team" buttonStyle="white-black" className="my-10 md:mb-0" />
-          </Link>
+          <Button href="/about" content="meet the team" buttonStyle="white-black" className="my-10 md:mb-0" />
         </div>
         <img src="/images/placeholders/aboutUs_introImage.png" className="px-5 md:p-0 md:object-cover md:h-full"/>
       </section>

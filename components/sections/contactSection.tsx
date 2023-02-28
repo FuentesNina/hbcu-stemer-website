@@ -110,12 +110,12 @@ export default function ContactSection() {
               )
             }
           })}
-          <Button buttonStyle="white-black" content="send message" type="submit" className="my-5"/>
+          <Button href="" buttonStyle="white-black" content="send message" type="submit" className="my-5"/>
         </form>
         {/* <p className={`${!formConfirmation.success && "text-myRed font-bold transition-none"} font-body text-sm ${formConfirmation.message && "m-10" } italic text-center transition-all duration-1000`}>{formConfirmation.message}</p> */}
       </div>
       <div className="flex flex-col md:mt-10">
-        <Button action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
+        <Button href="" action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
         <div className="flex flex-col mx-auto my-10 text-center md:text-left">
             <Title content="Connect With Us" className="text-black"/>
             <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7"/>

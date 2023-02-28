@@ -23,9 +23,7 @@ export default function About() {
           <br/><br/>
           {`The HBCU STEM Education Run (STEMER) is a virtual run/walk that strives to raise funds and awareness through fitness. Funds are collected in the form of registration fees, sponsorship money, and pledges. Funds raised will be used to educate, empower, and elevate HBCU students through scholarships and career resources.`}
           </p>
-          <Link href="#hbcuTeam">
-            <Button content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
-          </Link>
+          <Button href="#hbcuTeam" content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>
       <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-[#d9d9d9]">

@@ -34,9 +34,7 @@ export default function Partners() {
           <div className="md:grid md:grid-cols-2">
             {partnersData.map((tab, index) => {
               return (
-                <Link key={index} href="#form">
-                  <Button content={tab.callToAction} buttonStyle="black" className="my-5 md:mb-0" action={() => goToForm(index)}/>
-                </Link>
+                <Button key={index} href="#form" content={tab.callToAction} buttonStyle="black" className="my-5 md:mb-0" action={() => goToForm(index)}/>
               )
             })}
           </div>

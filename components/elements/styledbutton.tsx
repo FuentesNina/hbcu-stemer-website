@@ -24,12 +24,14 @@ export function Button({content, action, buttonStyle, className, type, href} : {
         }
     }
 
-
     return (
         <div className={`w-full flex justify-center ${className}`}>
-            <Link href={href}>
-                <button type={type} className={`${pickButtonStyle()} text-sm max-w-fit border border-solid rounded-lg font-title uppercase font-bold py-2 px-6`} onClick={action}>{content}</button>
-            </Link>
+            {href
+                ?    <Link href={href}>
+                        <button type={type} className={`${pickButtonStyle()} text-sm max-w-fit border border-solid rounded-lg font-title uppercase font-bold py-2 px-6`} onClick={action}>{content}</button>
+                    </Link>
+                :   <button type={type} className={`${pickButtonStyle()} text-sm max-w-fit border border-solid rounded-lg font-title uppercase font-bold py-2 px-6`} onClick={action}>{content}</button>
+            }
         </div>
     )
 }

@@ -1,7 +1,10 @@
 import Countdown from "@/components/elements/countdown";
 import LargeLogo from "@/components/elements/logos/largeLogo";
+import { SectionTitle } from "@/components/elements/sectionTitle";
 import { Button } from "@/components/elements/styledbutton";
 import { getPageInfo } from "@/hooks/getPageInfo";
+import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function RaceInformation() {
@@ -30,14 +33,38 @@ export default function RaceInformation() {
             {benefits && benefits.map((benefit, index) => {
               return (
                 <li key={index} className="max-w-[10rem]">
-                  <img src={benefit.imageIcon} className={`aspect-square object-cover drop-shadow-[1px_1px_1px_rgba(0,0,0,0.4)] rounded-full overflow-clip`} />
-                  <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[1px_1px_0_white] -mt-5">{benefit.title}</h3>
+                  <img src={benefit.imageIcon} className={`aspect-square object-cover drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`} />
+                  <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[2px_2px_0_white] -mt-4">{benefit.title}</h3>
                 </li>
               )
             })}
           </ul>
-          <Button content="register now" buttonStyle="black" className="my-10"/>
+          <Button href="#tickets" content="register now" buttonStyle="black" className="my-10"/>
         </section>
+        <section id="tickets" className="bg-myLightGrey">
+            <SectionTitle />
+            <ul>
+
+            </ul>
+            <div>
+              <p>{`Don't want to run... but still want to support?`}</p>
+              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='donate' buttonStyle="white-red"/>
+              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red"/>
+            </div>
+        </section>
+        <div className="flex items-center gap-4">
+							<img src="/img/logo.svg" alt="Shroomy logo" className="w-10" />
+							<h1 className="font-logo text-3xl mr-auto">Shroomy</h1>
+							<button
+								className="tooltip flex justify-center"
+							>
+								<FontAwesomeIcon
+									icon={faArrowUpFromBracket}
+									className="h-5 hover:text-main"
+								></FontAwesomeIcon>
+								<span className="tooltiptext icon mt-1">Share with others</span>
+							</button>
+						</div>
       </>
     )
   }
