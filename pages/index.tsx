@@ -72,8 +72,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="stats">
-        <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9">
+      <section id="stats" className="bg-[#d9d9d9]">
+        {/* <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9"> */}
             <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
               <div className="py-10">
                 <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
               <Carousel />
             </div>
-        </CustomBackground>
+        {/* </CustomBackground> */}
       </section>
       <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
         <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">

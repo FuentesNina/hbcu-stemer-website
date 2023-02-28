@@ -28,8 +28,8 @@ export default function About() {
           </Link>
         </div>
       </section>
-      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10">
-        <CustomBackground backgroundColor="#d9d9d9" color="white" factor={2}>
+      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-[#d9d9d9]">
+        {/* <CustomBackground backgroundColor="#d9d9d9" color="white" factor={2}> */}
             <div className="bg-black/[68%] py-10 px-5">
               <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
               <ul className="md:grid md:grid-cols-2 md:gap-x-10 max-w-4xl md:mx-auto">
@@ -42,7 +42,7 @@ export default function About() {
                 })}
               </ul>
             </div>
-        </CustomBackground>
+        {/* </CustomBackground> */}
       </section>
       <div className="bg-white">
         <CallToAction />
