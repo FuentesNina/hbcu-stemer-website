@@ -453,6 +453,33 @@ export const pastEvents = [
     },
 ]
 
+export const faq = [
+    {
+        question: 'What is a virtual race or walkathon?',
+        answer: 'Walking or running for a cause is an exciting, rewarding fundraising experience. The advantage of a virtual event is that it can be done anywhere! Participants also have the full month of May (HBCU STEMER) or October (Women in STEM Walkathon) to either run or rack up as many miles as possible. Then we turn your miles into money.',
+    },
+    {
+        question: 'How do I register?',
+        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. Register now to join the virtual Women in STEM Walkathon to support young women in STEM at these crucial institutions.`
+    },
+    {
+        question: 'When is the race?',
+        answer: 'The  Women in STEM Walkathon is a virtual event that is held over the full month of October. Consistency is key to rack up as many miles as possible. Upload your miles and pictures before the deadline to turn your miles into money!',
+    },
+    {
+        question: `Unfortunately, I can't participate in the event, but can I donate instead?`,
+        answer: 'Yes! Pledge funds to help us meet our $1500 donation goal.',
+    },
+    {
+        question: ' What does HBCU STEMER and WiSW stand for?',
+        answer: 'Historically Black Colleges and Universities Science, Technology, Engineering, and Math Education Run. Women in STEM Walkathon',
+    },
+    {
+        question: 'How do I partner with HBCU STEMER?',
+        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on our Partners page.',
+    },
+];
+
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [
     {
