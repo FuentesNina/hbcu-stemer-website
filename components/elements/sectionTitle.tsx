@@ -9,6 +9,8 @@ export default function SectionTitle({content, action, className, style, titleSt
             return 'text-myRed text-stroke-black drop-shadow-[2px_2px_0_#000000]';
         } else if (titleStyle === "white-black") {
             return 'text-white text-stroke-black drop-shadow-[2px_2px_0_#000000]';
+        } else if (titleStyle === "black-red") {
+            return 'text-black text-stroke-black drop-shadow-[1px_2px_0_#ff1616]';
         }
     }
 

@@ -398,6 +398,61 @@ export const partnersData = [
     },
 ];
 
+export const pastEvents = [
+    {
+        type: 'event',
+        date: 'may 2022',
+        title: '2nd annual education run',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            '1 Mile, 5K, and Half Marathon Options',
+            'Runners from all over the country',
+            '$1,200+ raised for future black doctors of America!'
+        ]
+    },
+    {
+        type: 'recap',
+        date: '2021 recap',
+        title: 'thanks everyone',
+        video: "https://www.youtube.com/embed/o5caqBTLK4k",
+    },
+    {
+        type: 'event',
+        date: 'october 2021',
+        title: 'women in STEM walkathon',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            'Over 500 Miles',
+            '1st Place: Sakinah S. with 120 Miles',
+            'Over $1000 raised for graduating seniors'
+        ]
+    },
+    {
+        type: 'event',
+        date: 'may 2021',
+        title: 'inaugural education run',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            '56 runners',
+            'Accross 13 states',
+            'Over $2,500 raised for STEM scholarships!',
+            'Math and Computer Science (MACS) support Scholarship established for deserving students at Oakwood University (Huntsville, AL)'
+        ]
+    },
+]
+
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [
     {

@@ -1,11 +1,12 @@
 import Countdown from "@/components/elements/countdown";
 import LargeLogo from "@/components/elements/logos/largeLogo";
+import PastEventCard, { PastEvent } from "@/components/elements/pastEventsCard";
 import RaceTicketCard from "@/components/elements/raceTicketCard";
 import SectionTitle from "@/components/elements/sectionTitle";
 import Button from "@/components/elements/styledbutton";
 import FAQ from "@/components/sections/faq";
 import { getPageInfo } from "@/hooks/getPageInfo";
-import { raceTickets } from "@/public/utils/data";
+import { pastEvents, raceTickets } from "@/public/utils/data";
 import Image from "next/image";
 
 export default function RaceInformation() {
@@ -60,8 +61,17 @@ export default function RaceInformation() {
               <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red" className="my-5"/>
             </div>
         </section>
-        <section id="previousevents" >
-
+        <section id="previousevents" className="my-20">
+          <SectionTitle content="previous events" titleStyle="black-red"/>
+          <ul>
+            {pastEvents.map((event, index) => {
+              return (
+                <li key={index}>
+                  <PastEventCard event={event} />
+                </li>
+              )
+            })}
+          </ul>
         </section>
         <FAQ />
       </>
