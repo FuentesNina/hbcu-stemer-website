@@ -21,9 +21,9 @@ export default function RaceInformation() {
               <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" color="white"/>
             </h1>
             <Countdown />
-            <Button href="#raceInfo" content="learn more" buttonStyle="white-red" className="my-10"/>
+            <Button href="#raceDetails" content="learn more" buttonStyle="white-red" className="my-10 relative"/>
         </section>
-        <section id='raceInfo'>
+        <section id='raceDetails' className="scroll-mt-20 md:scroll-mt-28">
           <p className="font-body my-10 mx-5">
             {`HBCU STEMER is a virtual run/walk that can be done anywhere you like! Race alone, with a friend, or with a team.
             You can select the finisher thank you packet option you would like to receive. Whether you are an HBCU alum/student,
