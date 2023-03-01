@@ -91,9 +91,11 @@ export default function ContactSection() {
             <p className="font-body text-sm my-1">  Email - {webLinks.email}</p>
         </div>
       </div>
-      <div className={`${!visibleFAQ && "hidden"} grid place-content-center fixed bg-black/[0.8] backdrop-blur w-screen min-h-full top-0 z-50 p-10`}>
-        <FontAwesomeIcon onClick={hideFAQ} icon={faXmark} className="text-white right-0 absolute h-8 mt-10 mr-5" mask={faCircle}/>
-        <FAQ />
+      <div className={`${!visibleFAQ && "hidden"} py-20 fixed bg-white/[0.8] backdrop-blur w-screen h-screen top-10 md:top-20 z-50 overflow-scroll`}>
+        <FontAwesomeIcon onClick={hideFAQ} icon={faXmark} className="text-black right-0 absolute h-8 -mt-10 mr-5 cursor-pointer" mask={faCircle}/>
+        <div className="">
+          <FAQ />
+        </div>
       </div>
     </section>
   )

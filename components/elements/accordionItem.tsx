@@ -40,7 +40,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                 <>
                     <dt className="flex w-full items-center cursor-pointer justify-between" onClick={() => setIsActive(!isActive)}>
                         <p className="font-bold">{accordionItem.question}</p>
-                        <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="w-5 shrink-0"/>
+                        <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="w-5 shrink-0 ml-5"/>
                     </dt>
                     <dd className={`text-sm mx-4 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                         {isActive &&
