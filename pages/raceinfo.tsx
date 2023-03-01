@@ -21,15 +21,17 @@ export default function RaceInformation() {
               <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" color="white"/>
             </h1>
             <Countdown />
+            <Button href="#raceInfo" content="learn more" buttonStyle="white-red" className="my-10"/>
         </section>
-        <section>
+        <section id='raceInfo'>
           <p className="font-body my-10 mx-5">
             {`HBCU STEMER is a virtual run/walk that can be done anywhere you like! Race alone, with a friend, or with a team.
             You can select the finisher thank you packet option you would like to receive. Whether you are an HBCU alum/student,
              STEM graduate, or just passionate about education, this run is for you!
              Come join the virtual HBCU STEM Education Run to support STEM education at these crucial institutions.`}
           </p>
-          <ul className="flex flex-wrap gap-10 place-content-center justify-items-center">
+          <Button href="#tickets" content="register now" buttonStyle="black" className="my-10"/>
+          <ul className="flex flex-wrap gap-10 place-content-center justify-items-center my-10">
             {benefits && benefits.map((benefit, index) => {
               return (
                 <li key={index} className="max-w-[10rem]">
@@ -39,9 +41,8 @@ export default function RaceInformation() {
               )
             })}
           </ul>
-          <Button href="#tickets" content="register now" buttonStyle="black" className="my-10"/>
         </section>
-        <section id="tickets" className="bg-myLightGrey py-10">
+        <section id="tickets" className="bg-myLightGrey py-10 scroll-mt-10 md:scroll-mt-20">
             <SectionTitle content="choose your event" titleStyle="red-black" className=""/>
             <ul className="my-10">
               {raceTickets.map((ticket, index) => {
