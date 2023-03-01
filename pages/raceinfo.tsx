@@ -3,6 +3,7 @@ import LargeLogo from "@/components/elements/logos/largeLogo";
 import RaceTicketCard from "@/components/elements/raceTicketCard";
 import SectionTitle from "@/components/elements/sectionTitle";
 import Button from "@/components/elements/styledbutton";
+import FAQ from "@/components/sections/faq";
 import { getPageInfo } from "@/hooks/getPageInfo";
 import { raceTickets } from "@/public/utils/data";
 import Image from "next/image";
@@ -59,6 +60,10 @@ export default function RaceInformation() {
               <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red" className="my-5"/>
             </div>
         </section>
+        <section id="previousevents" >
+
+        </section>
+        <FAQ />
       </>
     )
   }
