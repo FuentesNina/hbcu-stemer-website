@@ -1,5 +1,5 @@
 import { partnersData } from "@/public/utils/data"
-import { Subtitle } from "../elements/subtitle";
+import Subtitle from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
 

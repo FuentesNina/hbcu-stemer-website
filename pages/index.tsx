@@ -1,13 +1,11 @@
-import LargeLogo from "@/components/elements/logos/largeLogo";
-import { Button } from "@/components/elements/styledbutton";
-import { Title } from "@/components/elements/title";
+import Button from "@/components/elements/styledbutton";
+import Title from "@/components/elements/title";
 import Link from "next/link";
-import { partnersData } from "@/public/utils/data";
 import Image from "next/image";
 import Countdown from "@/components/elements/countdown";
 import CustomBackground from "@/components/elements/customBackground";
-import { Carousel } from "@/components/elements/carousel";
-import { Hero } from "@/components/sections/hero";
+import Carousel from "@/components/elements/carousel";
+import Hero from "@/components/sections/hero";
 
 export default function Home() {
   const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";

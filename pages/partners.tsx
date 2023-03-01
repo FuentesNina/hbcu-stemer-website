@@ -1,8 +1,7 @@
-import { Button } from "@/components/elements/styledbutton";
+import Button from "@/components/elements/styledbutton";
 import Banner from "@/components/sections/banner";
 import CollapsableSection from "@/components/sections/collapsableSection";
 import { partnersData } from "@/public/utils/data";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Partners() {

@@ -1,6 +1,6 @@
-import { CommunityMemberCard } from "@/components/elements/communityMemberCard";
-import { SectionTitle } from "@/components/elements/sectionTitle";
-import { Button } from "@/components/elements/styledbutton";
+import CommunityMemberCard from "@/components/elements/communityMemberCard";
+import SectionTitle from "@/components/elements/sectionTitle";
+import Button from "@/components/elements/styledbutton";
 import Banner from "@/components/sections/banner";
 import CallToAction from "@/components/sections/callToAction";
 import ImpactGame from "@/components/sections/impactGame";

@@ -1,6 +1,6 @@
-import { Button } from "../elements/styledbutton";
+import Button from "../elements/styledbutton";
 import { newsletterForm } from "@/public/utils/data";
-import { Title } from "../elements/title";
+import Title from "../elements/title";
 import { useState, useRef, useEffect } from "react";
 
 export default function NewsletterForm() {

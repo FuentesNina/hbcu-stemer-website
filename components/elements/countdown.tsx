@@ -1,6 +1,5 @@
 import { getPageInfo } from "@/hooks/getPageInfo";
 import { useEffect, useState } from "react";
-import { text } from "stream/consumers";
 
 export default function Countdown() {
   const pageInfo = getPageInfo();

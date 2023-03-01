@@ -1,10 +1,9 @@
 import Banner from '@/components/sections/banner';
 import CustomBackground from '@/components/elements/customBackground';
 import CallToAction from '@/components/sections/callToAction';
-import Link from 'next/link';
-import { Button } from '@/components/elements/styledbutton';
+import Button from '@/components/elements/styledbutton';
 import { teamMembers } from '@/public/utils/data';
-import { SectionTitle } from '@/components/elements/sectionTitle';
+import SectionTitle from '@/components/elements/sectionTitle';
 import TeamMember from '@/components/elements/teamMember';
 
 

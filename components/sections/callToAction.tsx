@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { SectionTitle } from "../elements/sectionTitle";
-import { Button } from "../elements/styledbutton";
+import SectionTitle from "../elements/sectionTitle";
+import Button from "../elements/styledbutton";
 
 export default function CallToAction() {
     return (
