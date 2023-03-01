@@ -1,10 +1,10 @@
 import Countdown from "@/components/elements/countdown";
 import LargeLogo from "@/components/elements/logos/largeLogo";
-import { SectionTitle } from "@/components/elements/sectionTitle";
-import { Button } from "@/components/elements/styledbutton";
+import RaceTicketCard from "@/components/elements/raceTicketCard";
+import SectionTitle from "@/components/elements/sectionTitle";
+import Button from "@/components/elements/styledbutton";
 import { getPageInfo } from "@/hooks/getPageInfo";
-import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { raceTickets } from "@/public/utils/data";
 import Image from "next/image";
 
 export default function RaceInformation() {
@@ -41,30 +41,23 @@ export default function RaceInformation() {
           </ul>
           <Button href="#tickets" content="register now" buttonStyle="black" className="my-10"/>
         </section>
-        <section id="tickets" className="bg-myLightGrey">
-            <SectionTitle />
-            <ul>
-
+        <section id="tickets" className="bg-myLightGrey py-10">
+            <SectionTitle content="choose your event" titleStyle="red-black" className=""/>
+            <ul className="my-10">
+              {raceTickets.map((ticket, index) => {
+                return (
+                  <li key={index}>
+                    <RaceTicketCard ticket={ticket}/>
+                  </li>
+                )
+              })}
             </ul>
             <div>
-              <p>{`Don't want to run... but still want to support?`}</p>
-              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='donate' buttonStyle="white-red"/>
-              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red"/>
+              <p className="text-center font-body font-bold max-w-xs mx-auto mt-14">{`Don't want to run... but still want to support?`}</p>
+              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='donate' buttonStyle="white-red" className="my-5"/>
+              <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red" className="my-5"/>
             </div>
         </section>
-        <div className="flex items-center gap-4">
-							<img src="/img/logo.svg" alt="Shroomy logo" className="w-10" />
-							<h1 className="font-logo text-3xl mr-auto">Shroomy</h1>
-							<button
-								className="tooltip flex justify-center"
-							>
-								<FontAwesomeIcon
-									icon={faArrowUpFromBracket}
-									className="h-5 hover:text-main"
-								></FontAwesomeIcon>
-								<span className="tooltiptext icon mt-1">Share with others</span>
-							</button>
-						</div>
       </>
     )
   }

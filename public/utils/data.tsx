@@ -135,6 +135,48 @@ export const teamMembers = [
     },
 ];
 
+export const raceTickets = [
+    {
+        title: 'Family fun',
+        description: '1 mile run/walk',
+        price: '$15',
+        fee: '$1.90',
+        mostPopular: false,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+    {
+        title: 'virtual 5K',
+        description: '3.1 miles run/walk',
+        price: '$25',
+        fee: '$2.50',
+        mostPopular: true,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+    {
+        title: 'virtual half-marathon',
+        description: '13.1 miles run/walk',
+        price: '$40',
+        fee: '$3.40',
+        mostPopular: false,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+];
+
 export const communityMembers = [
     {
         tabTitle: 'our scholars',

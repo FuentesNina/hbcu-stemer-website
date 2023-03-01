@@ -1,9 +1,9 @@
 import { partnersData } from "@/public/utils/data"
 import LargeLogo from "../elements/logos/largeLogo"
-import { Button } from "../elements/styledbutton"
-import { Title } from "../elements/title"
+import Button from "../elements/styledbutton"
+import Title from "../elements/title"
 
-export function Hero() {
+export default function Hero() {
     return (
         <>
           <section id="hero" className="bg-black">

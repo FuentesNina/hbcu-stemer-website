@@ -3,7 +3,7 @@ import { MouseEventHandler } from "react"
 import { UrlObject } from 'url';
 declare type Url = string | UrlObject;
 
-export function Button({content, action, buttonStyle, className, type, href} : {href: Url, content?: string, action?: MouseEventHandler, buttonStyle?: string, className?: string, type?: 'button' | 'submit' | 'reset'}) {
+export default function Button({content, action, buttonStyle, className, type, href} : {href: Url, content?: string, action?: MouseEventHandler, buttonStyle?: string, className?: string, type?: 'button' | 'submit' | 'reset'}) {
     const pickButtonStyle = function() {
         if (buttonStyle === 'green') {
             return 'border-black text-black bg-myGreen';
@@ -11,8 +11,8 @@ export function Button({content, action, buttonStyle, className, type, href} : {
             return 'border-black text-black bg-white'
         } else if (buttonStyle === 'red') {
             return 'border-black text-white bg-myRed'
-        } else if (buttonStyle === 'red') {
-            return 'border-black text-black bg-white'
+        } else if (buttonStyle === 'red-no-border') {
+            return 'border-white text-white bg-myRed'
         } else if (buttonStyle === 'black') {
             return 'border-transparent text-myGreen bg-black'
         } else if (buttonStyle === 'lightGrey') {

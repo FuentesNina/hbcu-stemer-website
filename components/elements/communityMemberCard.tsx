@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function CommunityMemberCard({member, focusable}:{member: any, focusable?: boolean}) {
+export default function CommunityMemberCard({member, focusable}:{member: any, focusable?: boolean}) {
     const [active, setActive] = useState(false);
     const [expandBio, setExpandBio] = useState(false);
 

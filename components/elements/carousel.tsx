@@ -1,10 +1,10 @@
-import { CommunityMemberCard } from "./communityMemberCard";
+import CommunityMemberCard from "./communityMemberCard";
 import { communityMembers } from "@/public/utils/data";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-export function Carousel() {
+export default function Carousel() {
     const scholarsTabIndex = 0;
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
