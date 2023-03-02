@@ -9,7 +9,7 @@ export const navLinks = [
     {
         pageTitle: "Education Run",
         path: "/raceinfo",
-        bannerImage: "/images/raceInfo_Banner.jpg",
+        bannerImage: "/images/raceInfo_Banner.jpeg",
         pageDescription: "",
         highlight: true,
         runBenefits: [

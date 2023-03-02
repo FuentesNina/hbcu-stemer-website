@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       <Banner/>
-      <section className="mx-5 bg-white mt-10 mb-16 md:my-20 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
+      <section className="mx-5 bg-white mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/aboutUs_introImage.png" alt="" />
         </div>

@@ -17,7 +17,7 @@ export default function RaceTicketCard({ticket} : {ticket: {
 
     return (
         <>
-            <div className="font-body bg-white shadow-[4px_4px_4px_rgba(0,0,0,0.4)] rounded-3xl p-10 max-w-xs mx-auto my-10 relative">
+            <div className="font-body bg-white shadow-[4px_4px_4px_rgba(0,0,0,0.4)] rounded-3xl p-10 max-w-xs md:w-80 mx-auto my-10 relative">
                 {ticket.mostPopular &&
                     <p className="bg-myRed/[0.44] text-white p-2 text-xs rounded-full border border-myRed absolute top-5 right-5">Most Popular</p>
 

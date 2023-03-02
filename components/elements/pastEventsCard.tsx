@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Title from "./title";
 
-export default function PastEventCard({event} : {event: PastEvent}) {
+export default function PastEventCard({event, nthChild} : {event: PastEvent, nthChild: number}) {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const getNextSlide = function() {
@@ -25,13 +25,13 @@ export default function PastEventCard({event} : {event: PastEvent}) {
     return (
         <>
             {event.type === 'event' &&
-                <div className="bg-black text-white font-body m-10 text-sm overflow-clip rounded-3xl">
+                <div className={`bg-black text-white font-body my-10 text-sm overflow-clip rounded-3xl max-w-xs mx-auto md:grid ${nthChild % 2 !== 0 ? "md:grid-cols-[3fr_4fr]" : "md:grid-cols-[4fr_3fr]"} md:max-w-none md:items-center`}>
                     <div className='aspect-square relative'>
                         <FontAwesomeIcon onClick={getPreviousSlide} icon={faArrowAltCircleLeft} className="absolute h-10 left-5 top-[50%] -mt-5 cursor-pointer"/>
                         <img src={event.files && event.files[currentSlide]} className='object-cover'/>
                         <FontAwesomeIcon onClick={getNextSlide} icon={faArrowAltCircleRight} className="absolute h-10 right-5 top-[50%] -mt-5 cursor-pointer"/>
                     </div>
-                    <div className="p-5">
+                    <div className={`${nthChild % 2 === 0 && "order-first"} p-5 ml-10`}>
                         <Title content={event.date} className="text-myGreen"/>
                         <Title content={event.title} className="text-myGreen capitalize"/>
                         <ul className="p-5 list-disc list-outside">
@@ -46,8 +46,8 @@ export default function PastEventCard({event} : {event: PastEvent}) {
                 <div className="bg-black text-white font-body m-10 text-sm overflow-clip rounded-3xl p-5">
                     <Title content={event.date} className="text-myGreen text-center"/>
                     <Title content={event.title} className="text-myGreen text-center"/>
-                    <div className="pt-5">
-                    <iframe width="100%" height="100%" src={event.video} title={event.date} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+                    <div className="pt-5 aspect-video">
+                        <iframe width="100%" height="100%" src={event.video} title={event.date} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
                     </div>
                 </div>
             }

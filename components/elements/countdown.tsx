@@ -6,9 +6,9 @@ export default function Countdown() {
 
   const path= pageInfo.path;
 
-  const numberStyle = `font-title uppercase font-bold text-white text-center text-3xl ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
-  const catStyle = `font-title uppercase font-bold text-white text-center ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
-  const textStyle = `font-title uppercase text-center font-bold text-white text-sm ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
+  const numberStyle = `font-title uppercase font-bold text-white text-center text-3xl ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
+  const catStyle = `font-title uppercase font-bold text-white text-center ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
+  const textStyle = `font-title uppercase text-center font-bold text-white text-sm ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
 
   const raceDay = {year: 2023, month: 5, day: 1};
 
