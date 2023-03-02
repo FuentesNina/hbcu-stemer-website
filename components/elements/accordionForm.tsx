@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react"
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Subtitle } from "./subtitle";
-import { Button } from "./styledbutton";
+import Subtitle from "./subtitle";
+import Button from "./styledbutton";
 
 export default function AccordionForm({form, setOpenForm, openForm} : {form: any, setOpenForm: Function, openForm: boolean}) {
     const formRef = useRef(null);
@@ -98,7 +98,7 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                             )
                         }
                     })}
-                    <Button buttonStyle="red" content="submit" type="submit" className="mt-5"/>
+                    <Button href="" buttonStyle="red" content="submit" type="submit" className="mt-5"/>
                 </form>
             </dd>
         </dl>

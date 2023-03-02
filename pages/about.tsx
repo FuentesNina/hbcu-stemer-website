@@ -1,10 +1,9 @@
 import Banner from '@/components/sections/banner';
 import CustomBackground from '@/components/elements/customBackground';
 import CallToAction from '@/components/sections/callToAction';
-import Link from 'next/link';
-import { Button } from '@/components/elements/styledbutton';
+import Button from '@/components/elements/styledbutton';
 import { teamMembers } from '@/public/utils/data';
-import { SectionTitle } from '@/components/elements/sectionTitle';
+import SectionTitle from '@/components/elements/sectionTitle';
 import TeamMember from '@/components/elements/teamMember';
 
 
@@ -13,7 +12,7 @@ export default function About() {
   return (
     <>
       <Banner/>
-      <section className="mx-5 bg-white mt-10 mb-16 md:my-20 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
+      <section className="mx-5 bg-white mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/aboutUs_introImage.png" alt="" />
         </div>
@@ -23,9 +22,7 @@ export default function About() {
           <br/><br/>
           {`The HBCU STEM Education Run (STEMER) is a virtual run/walk that strives to raise funds and awareness through fitness. Funds are collected in the form of registration fees, sponsorship money, and pledges. Funds raised will be used to educate, empower, and elevate HBCU students through scholarships and career resources.`}
           </p>
-          <Link href="#hbcuTeam">
-            <Button content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
-          </Link>
+          <Button href="#hbcuTeam" content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>
       <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-[#d9d9d9]">

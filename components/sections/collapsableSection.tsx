@@ -1,5 +1,5 @@
 import { partnersData } from "@/public/utils/data"
-import { Subtitle } from "../elements/subtitle";
+import Subtitle from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
 
@@ -35,7 +35,7 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
 
               return (
                 <li key={listKey} className="my-5 bg-white rounded-3xl p-5 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
-                  <AccordionItem company={company}/>
+                  <AccordionItem accordionItem={company}/>
                 </li>
               )
             })}

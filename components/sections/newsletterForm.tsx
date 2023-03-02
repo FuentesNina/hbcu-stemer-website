@@ -1,6 +1,6 @@
-import { Button } from "../elements/styledbutton";
+import Button from "../elements/styledbutton";
 import { newsletterForm } from "@/public/utils/data";
-import { Title } from "../elements/title";
+import Title from "../elements/title";
 import { useState, useRef, useEffect } from "react";
 
 export default function NewsletterForm() {
@@ -67,7 +67,7 @@ export default function NewsletterForm() {
                 )
             }
             })}
-            <Button buttonStyle="white-black" content="keep me posted" type="submit" className="my-5 md:mb-0"/>
+            <Button href="" buttonStyle="white-black" content="keep me posted" type="submit" className="my-5 md:mb-0"/>
         </div>
     </form>
   )

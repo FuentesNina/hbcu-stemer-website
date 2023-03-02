@@ -1,10 +1,10 @@
-import { CommunityMemberCard } from "./communityMemberCard";
+import CommunityMemberCard from "./communityMemberCard";
 import { communityMembers } from "@/public/utils/data";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-export function Carousel() {
+export default function Carousel() {
     const scholarsTabIndex = 0;
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
@@ -35,8 +35,8 @@ export function Carousel() {
     }
 
     return (
-        <div className="pb-10 md:order-first">
-            <ul className={`flex mx-auto max-w-sm overflow-x-clip transition-transform justify-center`}>
+        <div className="pb-10 md:order-first overflow-x-clip">
+            <ul className={`flex mx-auto max-w-sm transition-transform justify-center`}>
                 {[...Array(3)].map((value, index) => {
                     return (
                         <li key={index} className={`mx-5 ${animation} ${currentSlide !== index && ""}`}>

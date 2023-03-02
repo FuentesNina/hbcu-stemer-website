@@ -1,8 +1,7 @@
-import { Button } from "@/components/elements/styledbutton";
+import Button from "@/components/elements/styledbutton";
 import Banner from "@/components/sections/banner";
 import CollapsableSection from "@/components/sections/collapsableSection";
 import { partnersData } from "@/public/utils/data";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Partners() {
@@ -34,9 +33,7 @@ export default function Partners() {
           <div className="md:grid md:grid-cols-2">
             {partnersData.map((tab, index) => {
               return (
-                <Link key={index} href="#form">
-                  <Button content={tab.callToAction} buttonStyle="black" className="my-5 md:mb-0" action={() => goToForm(index)}/>
-                </Link>
+                <Button key={index} href="#form" content={tab.callToAction} buttonStyle="black" className="my-5 md:mb-0" action={() => goToForm(index)}/>
               )
             })}
           </div>

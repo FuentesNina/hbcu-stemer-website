@@ -1,7 +1,7 @@
 import { MouseEventHandler } from "react";
 
 
-export function SectionTitle({content, action, className, style, titleStyle} : {titleStyle?: string, content?: string, action?: MouseEventHandler | undefined, className?: string, style?: any}) {
+export default function SectionTitle({content, action, className, style, titleStyle} : {titleStyle?: string, content?: string, action?: MouseEventHandler | undefined, className?: string, style?: any}) {
     const pickTitleStyle = function() {
         if (titleStyle === "white-red") {
             return 'text-blackOutline fill-white text-stroke-black drop-shadow-[2px_2px_0_#ff1616]';
@@ -9,6 +9,8 @@ export function SectionTitle({content, action, className, style, titleStyle} : {
             return 'text-myRed text-stroke-black drop-shadow-[2px_2px_0_#000000]';
         } else if (titleStyle === "white-black") {
             return 'text-white text-stroke-black drop-shadow-[2px_2px_0_#000000]';
+        } else if (titleStyle === "black-red") {
+            return 'text-black text-stroke-black drop-shadow-[1px_2px_0_#ff1616]';
         }
     }
 

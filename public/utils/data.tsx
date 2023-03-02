@@ -9,9 +9,28 @@ export const navLinks = [
     {
         pageTitle: "Education Run",
         path: "/raceinfo",
-        bannerImage: "",
+        bannerImage: "/images/raceInfo_Banner.jpeg",
+        bannerImageLarge: "/images/raceInfo_Banner_largeScreen.jpg",
         pageDescription: "",
         highlight: true,
+        runBenefits: [
+            {
+                title: 'get moving',
+                imageIcon: '/images/benefit_getMoving.jpg',
+            },
+            {
+                title: 'support black excellence',
+                imageIcon: '/images/benefit_support.jpg',
+            },
+            {
+                title: 'build connections',
+                imageIcon: '/images/benefit_connections.jpeg',
+            },
+            {
+                title: 'challenge yourself',
+                imageIcon: '/images/benefit_challenge.png',
+            },
+        ],
     },
     {
         pageTitle: "Our Impact",
@@ -117,6 +136,48 @@ export const teamMembers = [
     },
 ];
 
+export const raceTickets = [
+    {
+        title: 'Family fun',
+        description: '1 mile run/walk',
+        price: '$15',
+        fee: '$1.90',
+        mostPopular: false,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+    {
+        title: 'virtual 5K',
+        description: '3.1 miles run/walk',
+        price: '$25',
+        fee: '$2.50',
+        mostPopular: true,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+    {
+        title: 'virtual half-marathon',
+        description: '13.1 miles run/walk',
+        price: '$40',
+        fee: '$3.40',
+        mostPopular: false,
+        features: [
+            'Official T-shirt',
+            'Runners Bib',
+            'Create/Join a team of friends and family',
+            'Easy to use fundraising page to help raise funds'
+        ],
+    },
+];
+
 export const communityMembers = [
     {
         tabTitle: 'our scholars',
@@ -135,7 +196,7 @@ export const communityMembers = [
                 picture: "/images/placeholders/studentFemale.png",
                 school: "Spelman College",
                 year: "2020",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
+                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
             },
             {
                 firstName: "Peter",
@@ -178,7 +239,7 @@ export const communityMembers = [
                 firstName: "Steven",
                 lastName: "Mayne",
                 picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon ",
+                event: "Women In STEM Walkathon",
                 year: "2022",
                 bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
             },
@@ -335,6 +396,88 @@ export const partnersData = [
                 },
             ],
         }
+    },
+];
+
+export const pastEvents = [
+    {
+        type: 'event',
+        date: 'may 2022',
+        title: '2nd annual education run',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            '1 Mile, 5K, and Half Marathon Options',
+            'Runners from all over the country',
+            '$1,200+ raised for future black doctors of America!'
+        ]
+    },
+    {
+        type: 'recap',
+        date: '2021 recap',
+        title: 'thanks everyone',
+        video: "https://www.youtube.com/embed/o5caqBTLK4k",
+    },
+    {
+        type: 'event',
+        date: 'october 2021',
+        title: 'women in STEM walkathon',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            'Over 500 Miles',
+            '1st Place: Sakinah S. with 120 Miles',
+            'Over $1000 raised for graduating seniors'
+        ]
+    },
+    {
+        type: 'event',
+        date: 'may 2021',
+        title: 'inaugural education run',
+        files: [
+            "/images/placeholders/instagramShowcase/IG1.png",
+            "/images/placeholders/instagramShowcase/IG2.png",
+            "/images/placeholders/instagramShowcase/IG3.png",
+        ],
+        highlights: [
+            '56 runners',
+            'Accross 13 states',
+            'Over $2,500 raised for STEM scholarships!',
+            'Math and Computer Science (MACS) support Scholarship established for deserving students at Oakwood University (Huntsville, AL)'
+        ]
+    },
+]
+
+export const faq = [
+    {
+        question: 'What is a virtual race or walkathon?',
+        answer: 'Walking or running for a cause is an exciting, rewarding fundraising experience. The advantage of a virtual event is that it can be done anywhere! Participants also have the full month of May (HBCU STEMER) or October (Women in STEM Walkathon) to either run or rack up as many miles as possible. Then we turn your miles into money.',
+    },
+    {
+        question: 'How do I register?',
+        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. Register now to join the virtual Women in STEM Walkathon to support young women in STEM at these crucial institutions.`
+    },
+    {
+        question: 'When is the race?',
+        answer: 'The  Women in STEM Walkathon is a virtual event that is held over the full month of October. Consistency is key to rack up as many miles as possible. Upload your miles and pictures before the deadline to turn your miles into money!',
+    },
+    {
+        question: `Unfortunately, I can't participate in the event, but can I donate instead?`,
+        answer: 'Yes! Pledge funds to help us meet our $1500 donation goal.',
+    },
+    {
+        question: ' What does HBCU STEMER and WiSW stand for?',
+        answer: 'Historically Black Colleges and Universities Science, Technology, Engineering, and Math Education Run. Women in STEM Walkathon',
+    },
+    {
+        question: 'How do I partner with HBCU STEMER?',
+        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on our Partners page.',
     },
 ];
 

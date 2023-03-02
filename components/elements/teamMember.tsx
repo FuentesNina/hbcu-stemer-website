@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { Subtitle } from './subtitle';
+import Subtitle from './subtitle';
 
 
 export default function TeamMember({member}: {member: any}) {
