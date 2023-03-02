@@ -46,7 +46,7 @@ export default function PastEventCard({event, nthChild} : {event: PastEvent, nth
                 <div className="bg-black text-white font-body m-10 text-sm overflow-clip rounded-3xl p-5">
                     <Title content={event.date} className="text-myGreen text-center"/>
                     <Title content={event.title} className="text-myGreen text-center"/>
-                    <div className="pt-5 aspect-video">
+                    <div className="m-5 aspect-video">
                         <iframe width="100%" height="100%" src={event.video} title={event.date} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
                     </div>
                 </div>

@@ -8,20 +8,21 @@ import FAQ from "@/components/sections/faq";
 import { getPageInfo } from "@/hooks/getPageInfo";
 import { pastEvents, raceTickets } from "@/public/utils/data";
 import Image from "next/image";
-import { useState } from "react";
+
 
 export default function RaceInformation() {
   const pageInfo = getPageInfo();
-
-  const bannerImage= pageInfo.bannerImage;
   const benefits = pageInfo.runBenefits;
+  const bannerImage= pageInfo.bannerImage;
+  const bannerImageLarge= pageInfo.bannerImageLarge;
 
   let nthChild = -1;
 
     return (
       <>
         <section className={`md:h-80 md:py-auto py-5 md:px-10 isolate bg-myRed/[0.44] overflow-clip md:rounded-lg md:border border-x-0 border md:m-5 border-black shadow-md relative `}>
-            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center absolute md:object-top lg:object-top" fill src={bannerImage} alt=""/>
+            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center  md:object-top lg:object-top absolute lg:hidden" fill src={bannerImage} alt=""/>
+            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center md:object-top lg:object-center hidden absolute lg:block" fill src={bannerImageLarge ? bannerImageLarge : ''} alt=""/>
             <div className="md:flex md:justify-between md:max-w-6xl lg:mx-auto place-content-center grid">
             <h1><span className="hidden">HBCU Education Run Info Page</span>
               <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)]" color="white"/>

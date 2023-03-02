@@ -10,6 +10,7 @@ export const navLinks = [
         pageTitle: "Education Run",
         path: "/raceinfo",
         bannerImage: "/images/raceInfo_Banner.jpeg",
+        bannerImageLarge: "/images/raceInfo_Banner_largeScreen.jpg",
         pageDescription: "",
         highlight: true,
         runBenefits: [
