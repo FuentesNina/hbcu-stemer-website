@@ -37,7 +37,7 @@ export default function RaceInformation() {
             {benefits && benefits.map((benefit, index) => {
               return (
                 <li key={index} className="max-w-[10rem]">
-                  <img src={benefit.imageIcon} className={`aspect-square object-cover drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`} />
+                  <img src={benefit.imageIcon} className={`aspect-square w-full object-cover drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`} />
                   <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[2px_2px_0_white] -mt-4">{benefit.title}</h3>
                 </li>
               )
