@@ -46,7 +46,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="stats" className="bg-[#d9d9d9]">
+      <section id="stats" className="bg-myLightGrey">
         {/* <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9"> */}
             <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
               <div className="py-10">
