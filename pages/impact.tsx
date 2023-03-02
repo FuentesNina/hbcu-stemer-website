@@ -40,6 +40,7 @@ export default function Impact() {
               <FontAwesomeIcon icon={faXmark} mask={faCircle} className={`${!focus && 'hidden'} z-10 text-white h-10 aspect-square fixed top-[9vh] md:top-[30vh] right-5 cursor-pointer drop-shadow-xl`} onClick={() => setFocus(false)}/>
 
               {/* all of the cards displayed */}
+              <p className="font-body italic text-center text-sm mb-10">Click on each card to learn more about our {currentTabIndex === 0 ? 'scholars' : 'participants'}...</p>
               <ul className="flex flex-wrap place-content-stretch gap-14 overflow-auto py-4 mx-auto md:overflow-auto px-10 max-w-6xl">
                 {communityMembers[currentTabIndex].profiles.map((member : any, index : any) => {
                   return (
