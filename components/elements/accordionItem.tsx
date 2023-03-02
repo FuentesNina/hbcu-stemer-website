@@ -1,17 +1,32 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function AccordionItem({accordionItem} : {accordionItem: {[key: string]: string, }}) {
     const [isActive, setIsActive] = useState(false);
+    const [itemName, setItemName] = useState(accordionItem.name);
+    const [transition, setTransition] = useState('transition-none');
+
+    useEffect(() => {
+        if (accordionItem.name !== itemName) {
+            setTransition('transition-none');
+            setIsActive(false);
+            setItemName(accordionItem.name);
+        }
+    }, [accordionItem.name]);
+
+    const activate = function() {
+        setIsActive(!isActive);
+        setTransition('transition-all');
+    };
 
     return (
         <>
         <dl className="font-body">
             {accordionItem.name &&
                 <>
-                    <dt className="flex items-center cursor-pointer" onClick={() => setIsActive(!isActive)}>
+                    <dt className="flex items-center cursor-pointer" onClick={() => activate()}>
                         <div className="h-5 mr-2 md:mr-5">
                             <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="h-full"/>
                         </div>
@@ -20,7 +35,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                             <img src={accordionItem.logo} className="h-10 ml-2"/>
                         </div>
                     </dt>
-                    <dd className={`text-sm ml-6 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
+                    <dd className={`text-sm ml-6 ${transition} duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                         {isActive &&
                             <p>
                                 {accordionItem.description}
