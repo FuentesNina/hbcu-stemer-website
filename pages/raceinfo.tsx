@@ -61,7 +61,7 @@ export default function RaceInformation() {
               <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red" className="my-5"/>
             </div>
         </section>
-        <section id="previousevents" className="my-20">
+        <section id="previousevents" className="my-20 scroll-mt-10 md:scroll-mt-20">
           <SectionTitle content="previous events" titleStyle="black-red"/>
           <ul>
             {pastEvents.map((event, index) => {
