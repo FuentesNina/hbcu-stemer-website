@@ -42,7 +42,7 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                 </div>
             </dt>
             <dd className={`transition-all duration-500 ${openForm ? 'mt-5' : 'h-0 mt-0'}`}>
-                <form ref={formRef} className={`p-5 text-sm border-black border shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] ${!openForm && 'hidden'}`} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST">
+                <form ref={formRef} className={`p-5 text-sm border-black border shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] ${!openForm && 'hidden'}`} action={`https://formsubmit.co/info@hbcustemer.com`} method="POST">
                     {/* This is setup for formsubmit.com */}
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_autoresponse" value="Thank you for message. Someone from our team will get back to you shortly." />

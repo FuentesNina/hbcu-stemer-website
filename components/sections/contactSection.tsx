@@ -46,7 +46,7 @@ export default function ContactSection() {
   return (
     <section className="md:flex md:gap-x-5 md:justify-center">
       <div className="grid place-content-center mt-10 md:mb-10">
-        <form ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
+        <form ref={formRef} action={`https://formsubmit.co/info@hbcustemer.com`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
               >
           {/* This is setup for formsubmit.com */}
           <input type="hidden" name="_captcha" value="false" />
