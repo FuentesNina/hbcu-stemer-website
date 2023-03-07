@@ -35,7 +35,7 @@ export const navLinks = [
     {
         pageTitle: "Our Impact",
         path: "/impact",
-        bannerImage: "/images/impact_banner.jpeg",
+        bannerImage: "/images/placeholders/ourImpact_background.png",
         pageDescription: "",
         highlight: false,
     },
@@ -480,6 +480,29 @@ export const faq = [
         answer: 'To become a sponsor or HBCU partner, please fill out the respective form on our Partners page.',
     },
 ];
+
+export const milestones = [
+    {
+        title: 'Inaugural HBCU STEMER',
+        description: 'May 2021 - MACS Support Scholarship Established.',
+    },
+    {
+        title: `We're official!`,
+        description: 'In August 2021, HBCU STEMER became a registered LLC.',
+    },
+    {
+        title: 'First WISW',
+        description: 'In October 2021, HBCU STEMER organized the first Women In STEM Walkathon. Over 500 miles were logged by participants!',
+    },
+    {
+        title: 'In the news',
+        description: `HBCU STEMER was featured in the the 'Endless Possibilities through STEM' Article in Historically Black Since Magazine.`,
+    },
+    {
+        title: 'Community Impact',
+        description: `How to Build an EV Workshop for Oakwood University's Women Initiative (WIN) for STEM Summer Bridge Program.`,
+    },
+]
 
 // to be deleted/replaced with IG API.
 export const IG_PICTURES = [

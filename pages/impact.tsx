@@ -20,7 +20,7 @@ export default function Impact() {
     <>
       <ImpactGame />
       <Banner />
-      <section className="md:my-20">
+      <section className="md:my-20" id='community'>
         <div className="my-10 grid gap-10 mx-5 md:my-20">
           <SectionTitle content={`our community`} titleStyle="red-black"/>
           <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{`This is a small intro paragraph talking about the people who are impacted by HBCU STEMER`}</p>
