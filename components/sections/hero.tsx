@@ -17,15 +17,17 @@ export default function Hero() {
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=0" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
               </div>
             </div>
-            <div className="py-10 md:max-w-4xl md:mx-auto">
+            <div className="pt-10 pb-5 md:max-w-4xl md:mx-auto">
               <Title content="sponsored by" className="text-white text-sm text-center"/>
-              <ul className="flex gap-10 justify-center mt-10 flex-wrap">
+              <ul className="flex justify-around p-5 flex-wrap bg-white mx-5 mt-5 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
                 {partnersData[0].companies.map((company, index) => {
-                  return (
-                    <li key={index}>
-                      <img src={company.logo} className="h-10"/>
-                    </li>
-                  )
+                  if (company.homepage) {
+                    return (
+                      <li key={index}>
+                        <img src={company.logo} className="h-10"/>
+                      </li>
+                    )
+                  }
                 })}
               </ul>
             </div>
