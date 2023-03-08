@@ -8,7 +8,6 @@ export default function ImpactGame() {
 
   const pageTitle = pageInfo.pageTitle;
   const bannerImage= `bg-[url('/images/placeholders/ourImpact_background.png')]`;
-  const title = `${pageInfo.bannerImage};
 
     return (
       <section className={`isolate bg-gradient-to-b from-myRed to-transparent overflow-clip md:rounded-lg md:border border-x-0 border md:m-5 border-black shadow-md relative place-content-center grid`}>
