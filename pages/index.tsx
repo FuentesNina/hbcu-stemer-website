@@ -46,25 +46,23 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="stats" className="bg-myLightGrey">
-        {/* <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9"> */}
-            <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
-              <div className="py-10">
-                <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
-                  <div>
-                    <p className="text-center font-bold font-display text-3xl">{`150+`}</p>
-                    <p className="text-center font-body">{`Participants and Donors`}</p>
-                  </div>
-                  <div >
-                    <p className="text-center font-bold font-display text-3xl">{`$5,500+`}</p>
-                    <p className="text-center font-body">{`in scholarship funds raised`}</p>
-                  </div>
-                </div>
-                <Button href="/impact" content="meet our scholars" buttonStyle="black"/>
+      <section id="stats" className="bg-repeat bg-contain" style={{backgroundImage: 'url(/images/customBackground_light.png)'}}>
+        <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
+          <div className="py-10">
+            <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10 bg-black/[0.7] p-5">
+              <div>
+                <p className="text-center font-bold font-display text-3xl text-white">{`150+`}</p>
+                <p className="text-center font-body text-white">{`Participants and Donors`}</p>
               </div>
-              <Carousel />
+              <div >
+                <p className="text-center font-bold font-display text-3xl text-white">{`$5,500+`}</p>
+                <p className="text-center font-body text-white">{`in scholarship funds raised`}</p>
+              </div>
             </div>
-        {/* </CustomBackground> */}
+            <Button href="/impact" content="meet our scholars" buttonStyle="black"/>
+          </div>
+          <Carousel />
+        </div>
       </section>
       <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
         <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
