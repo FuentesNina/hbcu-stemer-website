@@ -258,7 +258,7 @@ export const partnersData = [
             },
             {
                 name: "Math N'More",
-                logo: "missing",
+                logo: "/images/partner_logos/logo_MathNMore.png",
                 description: "An acute mathematics firm offering K-12 and post-secondary schools and families math tutorial, coaching, and IEPS/504 solutions. Creating mathematical diversity! Enveryone is a math person!",
                 website: "https://www.mathnmore.com/",
                 homepage: true,

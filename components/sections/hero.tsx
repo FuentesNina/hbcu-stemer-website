@@ -19,12 +19,12 @@ export default function Hero() {
             </div>
             <div className="pt-10 pb-5 md:max-w-4xl md:mx-auto">
               <Title content="sponsored by" className="text-white text-sm text-center"/>
-              <ul className="flex justify-around p-5 flex-wrap bg-white mx-5 mt-2 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
+              <ul className="flex justify-around items-center gap-3 p-5 flex-wrap bg-white mx-5 mt-2 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
                 {partnersData[0].companies.map((company, index) => {
                   if (company.homepage) {
                     return (
-                      <li key={index}>
-                        <img src={company.logo} className="h-10"/>
+                      <li key={index} className='max-w-[6rem] '>
+                        <img src={company.logo} className="w-full max-h-[3rem]"/>
                       </li>
                     )
                   }
