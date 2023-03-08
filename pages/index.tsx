@@ -52,11 +52,11 @@ export default function Home() {
               <div className="py-10">
                 <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
                   <div>
-                    <p className="text-center font-bold font-display text-3xl">{`120`}</p>
+                    <p className="text-center font-bold font-display text-3xl">{`150+`}</p>
                     <p className="text-center font-body">{`Participants and Donors`}</p>
                   </div>
                   <div >
-                    <p className="text-center font-bold font-display text-3xl">{`$12,340`}</p>
+                    <p className="text-center font-bold font-display text-3xl">{`$5,500+`}</p>
                     <p className="text-center font-body">{`in scholarship funds raised`}</p>
                   </div>
                 </div>

@@ -99,7 +99,7 @@ export const contactForm = [
     {
       fieldName: "Disclaimer",
       type: "Disclaimer",
-      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run",
+      placeholder: "I would like to be notified of HBCU STEMER's next event",
       required: false,
     },
 ];
@@ -144,11 +144,12 @@ export const raceTickets = [
         fee: '$1.90',
         mostPopular: false,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'T-shirt',
+            'Swag Bag',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: '',
     },
     {
         title: 'virtual 5K',
@@ -157,11 +158,13 @@ export const raceTickets = [
         fee: '$2.50',
         mostPopular: true,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'Premium T-shirt',
+            'Swag Bag',
+            'Digital Runners Bib',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: '',
     },
     {
         title: 'virtual half-marathon',
@@ -170,11 +173,13 @@ export const raceTickets = [
         fee: '$3.40',
         mostPopular: false,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'Premium T-shirt',
+            'Swag Bag',
+            'Digital Runners Bib',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: '',
     },
 ];
 
@@ -226,48 +231,7 @@ export const communityMembers = [
     },
     {
         tabTitle: "race hall of fame",
-        profiles: [
-            {
-                firstName: "Hazel",
-                lastName: "Samini",
-                picture: "/images/placeholders/studentFemale.png",
-                event: "Women In STEM Walkathon",
-                year: "2020",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Hazel",
-                lastName: "Samini",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon",
-                year: "2020",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-        ]
+        profiles: []
     }
 ];
 
@@ -275,7 +239,7 @@ export const communityMembers = [
 export const partnersData = [
     {
         tabTitle: 'sponsors',
-        intro: "This is a small paragraph introducing the sponsors",
+        intro: "HBCU STEMER relies on sponsors to fulfill our goals of furthering STEM education through STEM programs, info sessions, and funding. By leveraging companies that demonstrate a commitment to diversity, we can increase diverse representation and improve STEM education. Many thanks to our amazing past and current sponsors!",
         callToAction: "become a sponsor",
         companies: [
             {
@@ -295,6 +259,12 @@ export const partnersData = [
                 logo: "/images/placeholders/pms_logo.png",
                 description: "A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.",
                 website: "https://www.etsy.com/shop/hgho/?etsrc=sdt",
+            },
+            {
+                name: "Post Mask Skin",
+                logo: "/images/placeholders/pms_logo.png",
+                description: "We create Scientist and Engineers! For STEM News: Join the AcaSTEMics Community Network Facebook Group.",
+                website: "https://www.facebook.com/groups/599867161520168",
             },
         ],
         form: {
@@ -345,24 +315,24 @@ export const partnersData = [
         intro: "HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners to fulfill our goals of furthering STEM education through the STEM programs, initiatives, and bright minds at your institution. By leveraging the influential community of HBCU alumni, current students, and supporters, we can improve STEM education.",
         callToAction: "become a partner",
         companies: [
-            {
-                name: "Spelman College",
-                logo: "/images/placeholders/spelmanCollege_logo.png",
-                description: "A historically black liberal arts college for women location in Atlanta, Georgia dedicated to the intellectual, creative, ethical, and leadership development of it's students.",
-                website: "https://www.spelman.edu",
-            },
-            {
-                name: "Oakwook University",
-                logo: "/images/placeholders/oakwood_logo.png",
-                description: "",
-                website: "",
-            },
-            {
-                name: "Howard University",
-                logo: "/images/placeholders/howard_logo.png",
-                description: "",
-                website: "",
-            },
+            // {
+            //     name: "Spelman College",
+            //     logo: "/images/placeholders/spelmanCollege_logo.png",
+            //     description: "A historically black liberal arts college for women location in Atlanta, Georgia dedicated to the intellectual, creative, ethical, and leadership development of it's students.",
+            //     website: "https://www.spelman.edu",
+            // },
+            // {
+            //     name: "Oakwook University",
+            //     logo: "/images/placeholders/oakwood_logo.png",
+            //     description: "",
+            //     website: "",
+            // },
+            // {
+            //     name: "Howard University",
+            //     logo: "/images/placeholders/howard_logo.png",
+            //     description: "",
+            //     website: "",
+            // },
         ],
         form: {
             callToAction:"Your School Here! Partner with HBCU STEMER",
@@ -400,6 +370,12 @@ export const partnersData = [
 ];
 
 export const pastEvents = [
+    {
+        type: 'recap',
+        date: '2022 recap',
+        title: 'thanks everyone',
+        video: "https://youtube.com/shorts/CCdyfKaBKYc",
+    },
     {
         type: 'event',
         date: 'may 2022',
@@ -461,15 +437,15 @@ export const faq = [
     },
     {
         question: 'How do I register?',
-        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. Register now to join the virtual Women in STEM Walkathon to support young women in STEM at these crucial institutions.`
+        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. You can register by visiting www.hbcustemer.com/raceinfo.`
     },
     {
         question: 'When is the race?',
-        answer: 'The  Women in STEM Walkathon is a virtual event that is held over the full month of October. Consistency is key to rack up as many miles as possible. Upload your miles and pictures before the deadline to turn your miles into money!',
+        answer: 'The HBCU STEMER virtual run is held during the month of May, while the  Women in STEM Walkathon is a virtual walk that is held over the full month of October.',
     },
     {
         question: `Unfortunately, I can't participate in the event, but can I donate instead?`,
-        answer: 'Yes! Pledge funds to help us meet our $1500 donation goal.',
+        answer: 'Yes! Pledge funds to help us meet our donation goal and/or you can sponsor a student to participate in the virtual event.',
     },
     {
         question: ' What does HBCU STEMER and WiSW stand for?',
@@ -477,7 +453,7 @@ export const faq = [
     },
     {
         question: 'How do I partner with HBCU STEMER?',
-        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on our Partners page.',
+        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on Our Partners page: www.hbcustemer.com/partners.',
     },
 ];
 

@@ -14,7 +14,7 @@ export default function Hero() {
                 <Button href="#basicInfo" content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
               </div>
               <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=0" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
               </div>
             </div>
             <div className="py-10 md:max-w-4xl md:mx-auto">
