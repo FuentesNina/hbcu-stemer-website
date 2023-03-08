@@ -149,7 +149,7 @@ export const raceTickets = [
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
-        link: '',
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359',
     },
     {
         title: 'virtual 5K',
@@ -164,7 +164,7 @@ export const raceTickets = [
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
-        link: '',
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361',
     },
     {
         title: 'virtual half-marathon',
@@ -179,7 +179,7 @@ export const raceTickets = [
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
-        link: '',
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362',
     },
 ];
 
@@ -231,7 +231,16 @@ export const communityMembers = [
     },
     {
         tabTitle: "race hall of fame",
-        profiles: []
+        profiles: [
+            // {
+            //     firstName: "Peter",
+            //     lastName: "McGiven",
+            //     picture: "/images/placeholders/studentFemale.png",
+            //     event: "Howard University",
+            //     year: "2021",
+            //     bio: "The is short'
+            // },
+        ]
     }
 ];
 
