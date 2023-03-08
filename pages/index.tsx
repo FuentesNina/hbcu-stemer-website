@@ -46,7 +46,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="stats" className="bg-repeat bg-contain" style={{backgroundImage: 'url(/images/customBackground_light.png)'}}>
+      <section id="stats" className="bg-repeat" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
         <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
           <div className="py-10">
             <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10 bg-black/[0.7] p-5">
