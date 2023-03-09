@@ -60,7 +60,7 @@ export default function ImpactGame() {
       <div className="md:my-5 md:mt-0 my-10">
         <div className="h-52 grid place-content-center overflow-y-auto">
           <div className={`${status === 'run' && 'hidden'}`}>
-            <p className={`${status !== 'start' && 'hidden'} mx-10 drop-shadow-md font-body font-bold text-center text-sm`}>This is a text that invites people to scroll through the race</p>
+            <p className={`${status !== 'start' && 'hidden'} mx-10 drop-shadow-md font-body font-bold text-center text-sm md:max-w-xl md:mx-auto bg-white/[0.6] backdrop-blur rounded-lg p-2`}>Click on 'Begin the Race' below and use the left and right arrows to learn about our milestones throughout the years</p>
             <Button className={`${status === 'start' && 'animate-pulse'} my-5`} action={startRace} content={status === 'start' ? 'begin the race' : 'start over'} href='' buttonStyle={status === 'start' ? 'black' : 'darkerGrey'}/>
             <Button content='meet our scholars' href='#community' buttonStyle="black" className={`${status !== 'end' && 'hidden'}`}/>
           </div>

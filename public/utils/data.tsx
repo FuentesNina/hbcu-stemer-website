@@ -483,7 +483,7 @@ export const faq = [
 
 export const milestones = [
     {
-        title: 'Inaugural HBCU STEMER',
+        title: 'first HBCU STEM Education run',
         description: 'May 2021 - MACS Support Scholarship Established.',
     },
     {
@@ -496,11 +496,11 @@ export const milestones = [
     },
     {
         title: 'In the news',
-        description: `HBCU STEMER was featured in the the 'Endless Possibilities through STEM' Article in Historically Black Since Magazine.`,
+        description: `HBCU STEMER's article 'Endless Possibilities through STEM' was featured in Historically Black Since Magazine.`,
     },
     {
         title: 'Community Impact',
-        description: `How to Build an EV Workshop for Oakwood University's Women Initiative (WIN) for STEM Summer Bridge Program.`,
+        description: `Hosted the 'How to Build an EV' Workshop for Oakwood University's Women Initiative (WIN) for STEM Summer Bridge Program.`,
     },
 ]
 
