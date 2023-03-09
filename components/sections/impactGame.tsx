@@ -75,7 +75,7 @@ export default function ImpactGame() {
         <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' && 'cursor-pointer'} ml-10 text-white drop-shadow-xl`}/>
       </div>
 
-      <div className='pointer-events-none select-none flex justify-around items-baseline mb-16 md:mb-12 md:max-w-4xl md:mx-auto md:w-full'>
+      <div className='pointer-events-none select-none flex justify-around items-baseline mb-16 md:mb-12 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
           <img src='/images/impact_scene/startingMan_logo.png' className={`${status !== 'start' && 'hidden'} h-20 -z-10 relative`}/>
           <img src='/images/impact_scene/runningMan_logo.png' className={`${status !== 'run' && 'hidden'} h-20 -z-10 relative`}/>
@@ -87,10 +87,10 @@ export default function ImpactGame() {
         </div>
       </div>
 
-      <div className="h-full absolute w-full bg-[url('/images/impact_scene/background.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : -25)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/impact_scene/midground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : -50)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/impact_scene/ground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -100)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/impact_scene/foreground.png')] bg-cover lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -100)}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/images/impact_scene/background.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : -50)}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/images/impact_scene/midground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : -100)}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/images/impact_scene/ground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -150)}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/images/impact_scene/foreground.png')] bg-cover lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -150)}%`}}/>
 
       <div className="bg-myGreen h-2 transition-all" style={{width: `${(status === 'start' ? 0 : (currentSlide + 1))/(indexLimit) * 100}%`}}/>
     </section>
