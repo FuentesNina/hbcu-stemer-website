@@ -19,7 +19,7 @@ export default function Impact() {
   return (
     <>
       <ImpactGame />
-      <Banner />
+      {/* <Banner /> */}
       <section className="md:my-20" id='community'>
         <div className="my-10 grid gap-10 mx-5 md:my-20">
           <SectionTitle content={`our community`} titleStyle="red-black"/>
