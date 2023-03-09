@@ -39,15 +39,39 @@ export default function ImpactGame() {
     }
   }
 
+  // const slideWithKeys = function(event: React.KeyboardEvent<HTMLDivElement>) {
+  //   event.preventDefault();
+  //   if (event.key === 'ArrowRight') {
+  //     changeSlide(1);
+  //   } else if (event.key === 'ArrowLeft') {
+  //     changeSlide(-1);
+  //   }
+  //   console.log(event.key);
+  //   console.log(currentSlide);
+  // }
+
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-    console.log(windowWidth)
 
     window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
 
-    return window.removeEventListener('resize', () => setWindowWidth(window.innerWidth));
+    return () => window.removeEventListener('resize', () => setWindowWidth(window.innerWidth));
+  })
+
+  useEffect(() => {
+    const slideWithKeys = function(event:any) {
+      console.log(event.key);
+      if (event.key === 'ArrowRight') {
+        changeSlide(1);
+      } else if (event.key === 'ArrowLeft') {
+        changeSlide(-1);
+      }
+    }
+    window.addEventListener('keydown', slideWithKeys);
+
+    return () => window.removeEventListener('keydown', slideWithKeys);
   })
 
   return (
