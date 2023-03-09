@@ -95,8 +95,8 @@ export default function ImpactGame() {
         </div>
       </div>
       <div className="flex justify-between my-10 md:my-0 max-w-4xl md:mx-auto md:w-full">
-        <FontAwesomeIcon onClick={() => changeSlide(-1)} icon={faArrowAltCircleLeft} className={`${status !== 'start' && 'cursor-pointer'} ml-5 shrink-0 h-10 mr-10 text-white drop-shadow-xl`}/>
-        <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' && 'cursor-pointer'} ml-10 text-white drop-shadow-xl`}/>
+        <FontAwesomeIcon onClick={() => changeSlide(-1)} icon={faArrowAltCircleLeft} className={`${status !== 'start' && 'cursor-pointer'} ml-5 shrink-0 h-10 mr-10 text-white drop-shadow-[2px_2px_0_black]`}/>
+        <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' && 'cursor-pointer'} ml-10 text-white drop-shadow-[2px_2px_0_black]`}/>
       </div>
 
       <div className='pointer-events-none select-none flex justify-around items-baseline mb-16 md:mb-12 md:max-w-2xl md:mx-auto md:w-full'>
