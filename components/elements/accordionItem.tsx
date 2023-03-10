@@ -43,7 +43,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                                 <br></br>
                                 {accordionItem.website &&
                                     <>
-                                    Learn more at: <Link href={accordionItem.website}>{accordionItem.website}</Link>
+                                    Learn more at: <Link href={accordionItem.website} className="hover:font-bold underline">{accordionItem.website}</Link>
                                     </>
                                 }
                             </p>

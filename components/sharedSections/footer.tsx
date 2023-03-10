@@ -21,7 +21,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
               <nav>
                 <ul className="text-white font-body text-sm capitalize">
                   {navLinks.map((pageInfo, index) => { return(
-                    <li key={index}><Link href={pageInfo.path}>{pageInfo.pageTitle}</Link></li>
+                    <li key={index}><Link href={pageInfo.path} className="hover:font-bold hover:text-myGreen">{pageInfo.pageTitle}</Link></li>
                   )})}
                 </ul>
               </nav>
@@ -31,7 +31,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
               </Link>
             </div>
           </div>
-          <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://fuentesnina.github.io/my-portfolio-website/">Nina Fuentes LLC</Link></p>
+          <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://github.com/fuentesnina" className="underline hover:font-bold">Nina Fuentes LLC</Link></p>
         </div>
       </footer>
     )

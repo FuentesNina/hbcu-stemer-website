@@ -24,7 +24,7 @@ export default function CommunityMemberCard({member, focusable}:{member: any, fo
                 <p onClick={() => setExpandBio(!expandBio)} className="hover:font-bold font-body font-normal text-sm pt-2 underline">{expandBio ? `Show Less..` : `Show More...`}</p>
             </div>
         </div>
-        <div className={`border border-black divide-y divide-black w-56 mx-auto`} style={{boxShadow: '4px 4px 0 #ff1616, -4px -4px 0 #cfff00'}} onClick={() => setActive(true)}>
+        <div className={`border border-black divide-y divide-black w-56 mx-auto hover:scale-105`} style={{boxShadow: '4px 4px 0 #ff1616, -4px -4px 0 #cfff00'}} onClick={() => setActive(true)}>
             <div className="aspect-square">
                 <img src={member.picture} className="h-full w-full object-cover"/>
             </div>

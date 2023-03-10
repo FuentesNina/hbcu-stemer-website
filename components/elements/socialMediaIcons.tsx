@@ -9,7 +9,7 @@ export default function SocialMediaIcons({containerClassName, iconClassName, col
     const iconColor = color ? color : "white";
     const iconMargins = margins ? margins : "";
     const containerClass = containerClassName ? containerClassName : `text-${iconColor} my-10 md:ml-10 flex text-center place-content-center h-8 `;
-    const iconClass = iconClassName ? iconClassName : "h-full mx-1 w-8" ;
+    const iconClass = iconClassName ? iconClassName : "h-full mx-1 w-8 hover:text-myGreen" ;
 
     return (
       <div className={containerClass}>
