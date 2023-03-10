@@ -86,9 +86,9 @@ export default function ContactSection() {
         <div className="flex flex-col mx-auto my-10 text-center md:text-left">
             <Title content="Connect With Us" className="text-black"/>
             <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7 hover:text-myRed hover:drop-shadow-[1px_1px_0_black]"/>
-            <Link href={webLinks.instagram} className="font-body text-sm my-1">Instagram @ hbcustemer</Link>
-            <Link href={webLinks.facebook} className="font-body text-sm my-1">Facebook @ HBCU STEMER</Link>
-            <p className="font-body text-sm my-1">  Email - {webLinks.email}</p>
+            <Link href={webLinks.instagram} className="font-body text-sm my-1 hover:font-bold">Instagram @ hbcustemer</Link>
+            <Link href={webLinks.facebook} className="font-body text-sm my-1 hover:font-bold">Facebook @ HBCU STEMER</Link>
+            <Link href={`mailto:${webLinks.email}`} className="font-body text-sm my-1 hover:font-bold">  Email - {webLinks.email}</Link>
         </div>
       </div>
       <div className={`${!visibleFAQ && "hidden"} py-20 fixed bg-white/[0.8] backdrop-blur w-screen h-screen top-10 md:top-20 z-50 overflow-scroll`}>
