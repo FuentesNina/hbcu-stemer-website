@@ -67,7 +67,7 @@ export default function NewsletterForm() {
                 )
             }
             })}
-            <Button href="" buttonStyle="white-black" content="keep me posted" type="submit" className="my-5 md:mb-0"/>
+            <Button href="" buttonStyle="white-black-on-red" content="keep me posted" type="submit" className="my-5 md:mb-0"/>
         </div>
     </form>
   )

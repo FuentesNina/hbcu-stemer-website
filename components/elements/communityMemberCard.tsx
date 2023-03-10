@@ -26,7 +26,7 @@ export default function CommunityMemberCard({member, focusable}:{member: any, fo
         </div>
         <div className={`border border-black divide-y divide-black w-56 mx-auto`} style={{boxShadow: '4px 4px 0 #ff1616, -4px -4px 0 #cfff00'}} onClick={() => setActive(true)}>
             <div className="aspect-square">
-                <img src={member.picture} className="object-cover h-full"/>
+                <img src={member.picture} className="h-full w-full object-cover"/>
             </div>
             <div className="bg-white p-5">
                 <p className="font-title font-bold uppercase text-center text-sm">{`${member.firstName} ${member.lastName}`}</p>

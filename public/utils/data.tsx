@@ -190,7 +190,7 @@ export const communityMembers = [
             {
                 firstName: "Cesar",
                 lastName: "Mercedes",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                picture: "/images/community/Cesar.jpg",
                 school: "Oakwood University",
                 year: "2021",
                 bio: "Cesar was the first recipient of our MACS Support Scholarship established at Oakwood University. Cesar's mission is to ensure and maintain the security of internet network users while they are browsing.",
@@ -198,7 +198,7 @@ export const communityMembers = [
             {
                 firstName: "Demaiya",
                 lastName: "Seymour",
-                picture: "/images/placeholders/studentFemale.png",
+                picture: "/images/community/Demaiya.png",
                 school: "Spelman College",
                 year: "2021",
                 bio: `$1000 was awarded to Demaiya, a graduating Biology major. "I was not entirely sure how my balance for this semester [would have been taken care of]. [I’m] truly grateful for your contribution to my success."`,
@@ -206,7 +206,7 @@ export const communityMembers = [
             {
                 firstName: "Aline",
                 lastName: "Tuyishime",
-                picture: "/images/placeholders/studentMale2.png",
+                picture: "/images/community/Aline.png",
                 school: "Oakwood University",
                 year: "2022",
                 bio: `$500 was awarded to Aline, who is a rising sophomore in the WIN for STEM Initiative. "I can confidently say that they make me feel like I belong and I love being a part of STEM."`,
@@ -308,7 +308,7 @@ export const partnersData = [
         ],
         form: {
             callToAction: "Your Company Here! Partner with Us",
-            logo: "/images/placeholders/yourLogoHere.png",
+            logo: "/images/partner_logos/yourLogoHere.png",
             title: "Sponsor Sign-Up",
             details: "SPONSOR BENEFITS",
             fields: [
@@ -375,7 +375,7 @@ export const partnersData = [
         ],
         form: {
             callToAction:"Your School Here! Partner with HBCU STEMER",
-            logo: "/images/placeholders/yourLogoHere.png",
+            logo: "/images/partner_logos/yourLogoHere.png",
             title: "HBCU Partner Sign-Up",
             details: "HBCU PARTNER BENEFITS",
             fields: [

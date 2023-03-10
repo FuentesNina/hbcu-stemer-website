@@ -79,7 +79,7 @@ export default function Home() {
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2023`}</h3>
           </div>
           <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
+            <img src="/images/pastEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`previous events`}</h3>
           </div>
         </Link>

@@ -44,7 +44,7 @@ export default function Impact() {
                 {communityMembers[currentTabIndex].profiles.length === 0 && <p className="font-body text-center font-bold text-lg w-full">Coming Soon...</p>}
                 {communityMembers[currentTabIndex].profiles.map((member : any, index : any) => {
                   return (
-                    <li key={index} onClick={() => setFocus(true)} className="w-fit h-fit mx-auto cursor-pointer">
+                    <li key={index} onClick={() => setFocus(true)} className="w-fit h-fit mx-auto cursor-pointer hover:scale-105">
                       <CommunityMemberCard member={member} focusable={focus}/>
                     </li>
                   )

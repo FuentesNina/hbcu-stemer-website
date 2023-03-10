@@ -32,9 +32,9 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
     return (
         <>
         <dl className="font-body">
-            <dt className="flex items-center cursor-pointer" onClick={() => setOpenForm(!openForm)}>
+            <dt className="flex items-center cursor-pointer group" onClick={() => setOpenForm(!openForm)}>
                 <div className="h-5 mr-2 md:mr-5">
-                    <FontAwesomeIcon icon={openForm ? faMinus :faPlus} className="h-full"/>
+                    <FontAwesomeIcon icon={openForm ? faMinus :faPlus} className="h-full group-hover:scale-110 group-hover:text-myRed"/>
                 </div>
                 <div className="flex items-center w-full justify-between">
                     <p className="font-bold align-middle underline">{form.callToAction}</p>
