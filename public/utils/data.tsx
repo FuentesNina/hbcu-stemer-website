@@ -2,7 +2,7 @@ export const navLinks = [
     {
         pageTitle: "Home",
         path: "/",
-        bannerImage: "",
+        bannerImage: "/images/hero_video.mp4",
         pageDescription: "Educate, empower, and elevate HBCU students through scholarships and career resources.",
         highlight: false,
     },
