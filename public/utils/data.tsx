@@ -413,7 +413,7 @@ export const pastEvents = [
         type: 'recap',
         date: '2022 recap',
         title: 'thanks everyone',
-        video: "/images/pastEvents/2021_stemer_recap.mp4",
+        video: "/images/pastEvents/2022_recap.mp4",
     },
     {
         type: 'event',
@@ -437,7 +437,7 @@ export const pastEvents = [
         type: 'recap',
         date: '2021 recap',
         title: 'thanks everyone',
-        video: "/images/pastEvents/2022_recap.mp4"
+        video: "/images/pastEvents/2021_recap.mp4"
     },
     {
         type: 'event',
