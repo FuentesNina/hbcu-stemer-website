@@ -30,7 +30,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="md:grid md:grid-rows-2 md:gap-5">
-          <Link href="/">
+          <Link href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER">
             <div className={divStyle}>
               <Image className={imageStyle} fill src="/images/pledgeImage.png" alt=""/>
               <h4 className={h4Style}>{`pledge`}</h4>
