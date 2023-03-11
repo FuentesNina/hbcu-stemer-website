@@ -13,8 +13,8 @@ export default function Hero() {
                 <p className="capitalize font-body text-white text-center text-xl">{`empower potential`}</p>
                 <Button href="#basicInfo" content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
               </div>
-              <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
-                <iframe width="100%" height="100%" src={navLinks[0].bannerImage} title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+              <div className="aspect-video md:min-h-none max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
+                <video src={navLinks[0].bannerImage} height="100%" className="mx-auto max-h-[30vh] md:max-h-full" controls autoPlay/>
               </div>
             </div>
             <div className="pt-10 pb-5 md:max-w-4xl md:mx-auto">
