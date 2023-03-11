@@ -22,7 +22,7 @@ export default function Impact() {
       <section className="md:my-20 scroll-mt-10 md:scroll-mt-20" id='community'>
         <div className="my-10 grid gap-10 mx-5 md:my-20">
           <SectionTitle content={`our community`} titleStyle="red-black"/>
-          <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{`This is a small intro paragraph talking about the people who are impacted by HBCU STEMER`}</p>
+          <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{`We are grateful for our community of supporters who put their best foot forward to uplift aspiring STEM students.`}</p>
         </div>
 
         <div className="my-10 md:max-w-7xl md:mx-auto md:px-10">
@@ -39,8 +39,9 @@ export default function Impact() {
               <FontAwesomeIcon icon={faXmark} mask={faCircle} className={`${!focus && 'hidden'} z-10 text-white h-10 aspect-square fixed top-[9vh] md:top-[30vh] right-5 cursor-pointer drop-shadow-xl`} onClick={() => setFocus(false)}/>
 
               {/* all of the cards displayed */}
-              <p className="font-body italic text-center text-sm mb-10 mx-10">Click on each card to learn more about our {currentTabIndex === 0 ? 'scholars' : 'participants'}...</p>
+              {communityMembers[currentTabIndex].profiles.length !== 0 && <p className="font-body italic text-center text-sm mb-10 mx-10">Click on each card to learn more about our {currentTabIndex === 0 ? 'scholars' : 'participants'}...</p>}
               <ul className="flex flex-wrap place-content-stretch gap-14 overflow-auto py-4 mx-auto md:overflow-auto px-10 max-w-6xl">
+                {communityMembers[currentTabIndex].profiles.length === 0 && <p className="font-body text-center font-bold text-lg w-full">Coming Soon...</p>}
                 {communityMembers[currentTabIndex].profiles.map((member : any, index : any) => {
                   return (
                     <li key={index} onClick={() => setFocus(true)} className="w-fit h-fit mx-auto cursor-pointer">

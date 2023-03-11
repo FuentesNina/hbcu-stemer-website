@@ -8,7 +8,7 @@ import Carousel from "@/components/elements/carousel";
 import Hero from "@/components/sections/hero";
 
 export default function Home() {
-  const divStyle = "isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
+  const divStyle = "hover:scale-105 isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
   const imageStyle = "grayscale mix-blend-overlay h-full w-full object-cover object-center absolute contrast-125 brightness-50"
   const h4Style = "font-display text-xl text-center font-bold uppercase text-white drop-shadow-[2px_2px_0_rgba(0,0,0,1)]";
   const pStyle = "drop-shadow-md font-body text-center text-white capitalize mt-2";
@@ -46,42 +46,40 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="stats" className="bg-myLightGrey">
-        {/* <CustomBackground factor={2} color="white" backgroundColor="#d9d9d9"> */}
-            <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
-              <div className="py-10">
-                <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10">
-                  <div>
-                    <p className="text-center font-bold font-display text-3xl">{`120`}</p>
-                    <p className="text-center font-body">{`Participants and Donors`}</p>
-                  </div>
-                  <div >
-                    <p className="text-center font-bold font-display text-3xl">{`$12,340`}</p>
-                    <p className="text-center font-body">{`in scholarship funds raised`}</p>
-                  </div>
-                </div>
-                <Button href="/impact" content="meet our scholars" buttonStyle="black"/>
+      <section id="stats" className="bg-repeat" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
+        <div className="md:pt-20 md:pb-10 md:grid md:grid-cols-2 md:max-w-4xl md:mx-auto">
+          <div className="py-10">
+            <div className="backdrop-blur-[1px] rounded-3xl max-w-fit mx-auto mb-10 grid gap-10 bg-black/[0.7] p-5">
+              <div>
+                <p className="text-center font-bold font-display text-3xl text-white">{`150+`}</p>
+                <p className="text-center font-body text-white">{`Participants and Donors`}</p>
               </div>
-              <Carousel />
+              <div >
+                <p className="text-center font-bold font-display text-3xl text-white">{`$5,500+`}</p>
+                <p className="text-center font-body text-white">{`in scholarship funds raised`}</p>
+              </div>
             </div>
-        {/* </CustomBackground> */}
+            <Button href="/impact" content="meet our scholars" buttonStyle="black"/>
+          </div>
+          <Carousel />
+        </div>
       </section>
       <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
         <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
-          <div className="hover:cursor-pointer left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
+          <div className="hover:cursor-pointer hover:scale-105 left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
+            <img src="/images/2021.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2021`}</h3>
           </div>
-          <div className="hover:cursor-pointer left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+          <div className="hover:cursor-pointer hover:scale-105 left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
+            <img src="/images/2022.jpg" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
           </div>
-          <div className="hover:cursor-pointer right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+          <div className="hover:cursor-pointer hover:scale-105 right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
+            <img src="/images/2023.jpg" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2023`}</h3>
           </div>
-          <div className="hover:cursor-pointer right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
-            <img src="/images/placeholders/previousEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
+          <div className="hover:cursor-pointer hover:scale-105 right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
+            <img src="/images/pastEvents.png" className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`previous events`}</h3>
           </div>
         </Link>
@@ -92,7 +90,7 @@ export default function Home() {
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">Educate, empower, and elevate HBCU students through scholarships and career resources</p>
           <Button href="/about" content="meet the team" buttonStyle="white-black" className="my-10 md:mb-0" />
         </div>
-        <img src="/images/placeholders/aboutUs_introImage.png" className="px-5 md:p-0 md:object-cover md:h-full"/>
+        <img src="/images/aboutUs_introImage.jpeg" className="px-5 md:p-0 md:object-cover md:h-full"/>
       </section>
     </>
   )

@@ -10,6 +10,7 @@ export default function RaceTicketCard({ticket} : {ticket: {
                                             fee: string;
                                             mostPopular: boolean;
                                             features: string[];
+                                            link: string;
                                         }}) {
 
     const [showFeatures, setShowFeatures] = useState(false);
@@ -26,8 +27,9 @@ export default function RaceTicketCard({ticket} : {ticket: {
                     <h3 className="text-lg font-bold capitalize">{ticket.title}</h3>
                     <p className="text-base capitalize">{ticket.description}</p>
                 </div>
-                <p className={`font-bold text-5xl pb-5 md:text-left ${!showFeatures && 'text-center'}`}>{ticket.price}<span className={`text-sm font-normal md:inline-block ${!showFeatures && 'hidden'}`}> + {ticket.fee} SignUp Fee</span></p>
-                <Button className="my-5" href="https://runsignup.com/Race/Register/?raceId=106760&eventId=688359" content="buy ticket" buttonStyle={ticket.mostPopular ? 'red-no-border' : "white-red"}/>
+                <p className={`text-sm font-normal text-center mb-2`}>{`Starting At`}</p>
+                <p className={`font-bold text-5xl mb-10 text-center `}>{ticket.price}</p>
+                <Button className="my-5" href={ticket.link} content="buy ticket" buttonStyle={ticket.mostPopular ? 'red-no-border' : "white-red"}/>
                 <div onClick={() => setShowFeatures(!showFeatures)} className="flex gap-2 cursor-pointer mt-5 md:hidden">
                     <FontAwesomeIcon className="text-myRed h-6" icon={showFeatures ? faMinus : faPlus} />
                     <p className="self-center underline">{showFeatures ? 'Less Info...' : 'More Info...'} </p>

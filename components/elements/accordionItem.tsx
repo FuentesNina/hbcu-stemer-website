@@ -23,12 +23,12 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
 
     return (
         <>
-        <dl className="font-body">
+        <dl className="font-body group">
             {accordionItem.name &&
                 <>
                     <dt className="flex items-center cursor-pointer" onClick={() => activate()}>
                         <div className="h-5 mr-2 md:mr-5">
-                            <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="h-full"/>
+                            <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="h-full group-hover:scale-110 group-hover:text-myRed"/>
                         </div>
                         <div className="flex items-center w-full justify-between">
                             <p className="font-bold align-middle">{accordionItem.name}</p>
@@ -43,7 +43,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                                 <br></br>
                                 {accordionItem.website &&
                                     <>
-                                    Learn more at: <Link href={accordionItem.website}>{accordionItem.website}</Link>
+                                    Learn more at: <Link href={accordionItem.website} className="hover:font-bold underline">{accordionItem.website}</Link>
                                     </>
                                 }
                             </p>
@@ -55,7 +55,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                 <>
                     <dt className="flex w-full items-center cursor-pointer justify-between" onClick={() => setIsActive(!isActive)}>
                         <p className="font-bold">{accordionItem.question}</p>
-                        <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="w-5 shrink-0 ml-5"/>
+                        <FontAwesomeIcon icon={isActive ? faMinus :faPlus} className="w-5 shrink-0 ml-5 group-hover:scale-110 group-hover:text-myRed"/>
                     </dt>
                     <dd className={`text-sm mx-4 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                         {isActive &&

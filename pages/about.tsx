@@ -13,8 +13,8 @@ export default function About() {
     <>
       <Banner/>
       <section className="mx-5 bg-white mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto">
-        <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
-          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/placeholders/aboutUs_introImage.png" alt="" />
+        <div className="border-black border rounded-lg my-10 md:m-0 overflow-clip max-w-sm mx-auto">
+          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/aboutUs_introImage.jpeg" alt="" />
         </div>
         <div className="my-10 md:m-auto">
           <p className="font-body ">
@@ -25,21 +25,19 @@ export default function About() {
           <Button href="#hbcuTeam" content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>
-      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-[#d9d9d9]">
-        {/* <CustomBackground backgroundColor="#d9d9d9" color="white" factor={2}> */}
-            <div className="bg-black/[68%] py-10 px-5">
-              <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
-              <ul className="md:grid md:grid-cols-2 md:gap-x-10 max-w-4xl md:mx-auto">
-                {teamMembers.map((member, index) => {
-                  return (
-                    <li key={index}>
-                      <TeamMember member={member} />
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-        {/* </CustomBackground> */}
+      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-repeat md:mb-20" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
+        <div className="bg-black/[68%] py-10 px-5">
+          <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
+          <ul className="md:grid md:grid-cols-2 md:gap-x-10 max-w-4xl md:mx-auto">
+            {teamMembers.map((member, index) => {
+              return (
+                <li key={index}>
+                  <TeamMember member={member} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </section>
       <div className="bg-white">
         <CallToAction />

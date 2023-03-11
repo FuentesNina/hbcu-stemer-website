@@ -27,8 +27,7 @@ export default function Partners() {
         </div>
         <div className="my-10 md:m-auto">
           <p className="font-body ">
-          {`This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.
-          This is a small paragraph talking about how HBCU STEMER would not be possible without it's Sponsors and HBCU Partners.`}
+          {`What we do would not be possible without our partners! They help fulfill our goals of furthering STEM education through STEM programs, initiatives, and funding.`}
           </p>
           <div className="md:grid md:grid-cols-2">
             {partnersData.map((tab, index) => {

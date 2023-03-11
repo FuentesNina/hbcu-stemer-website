@@ -2,7 +2,7 @@ export const navLinks = [
     {
         pageTitle: "Home",
         path: "/",
-        bannerImage: "",
+        bannerImage: "/images/hero_video.mp4",
         pageDescription: "Educate, empower, and elevate HBCU students through scholarships and career resources.",
         highlight: false,
     },
@@ -99,7 +99,7 @@ export const contactForm = [
     {
       fieldName: "Disclaimer",
       type: "Disclaimer",
-      placeholder: "I would like to be notified of next year's HBCU STEMER Education Run",
+      placeholder: "I would like to be notified of HBCU STEMER's next event",
       required: false,
     },
 ];
@@ -124,14 +124,14 @@ export const teamMembers = [
         firstName: "danielle",
         lastName: "lewis",
         title: "founder & CEO",
-        picture: "/images/placeholders/danielle_headshot.png",
+        picture: "/images/teamMembers/danielle_headshot.JPG",
         bio: "I'm from Pell City, AL, a small town not too far from Birmingham. Even when I was younger, I was always interested in Math and Science, partly due to my mom being an engineer. I knew I wanted to attend Oakwood University, however, the school did not have their own Engineering program. Through Oakwood University and University of Alabama in Huntsville's Dual Degree Program, I had the unique experience of attending both a private HBCU and a public PWI while earning my degrees. Additionally, the financial and academic burden of a 5 year program caused me to be proactive in discovering scholarships and other resources through organizations such as the National Society of Black Engineers (NSBE) and the United Negro College Fund (UNCF).",
     },
     {
         firstName: "india",
         lastName: "hester",
         title: "marketing director",
-        picture: "/images/placeholders/india_headshot.png",
+        picture: "/images/teamMembers/india_headshot.png",
         bio: "Because I know first hand how invaluable these opportunities were for my career as a black woman in STEM, I am passionate to advocate for the younger generations of black STEM potential. Although currently working as a Systems Engineer in Electrification, I remain actively involved in the attraction, retention, and engagement of diverse talent. Most recently serving as the coordinator for the Cummins NSBE Integrated Pipeline Program which is a scholarship, internship, and mentorship opportunity for students at Howard, NC A&T, and Purdue University. Starting my own scholarship for deserving students has been a long lasting dream of mine. In the midst of COVID, I started the virtual HBCU STEM Education Run to raise funds and awareness through another passion of mine, running. I hope you will join me in support of this great cause!",
     },
 ];
@@ -144,11 +144,12 @@ export const raceTickets = [
         fee: '$1.90',
         mostPopular: false,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'T-shirt',
+            'Swag Bag',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359',
     },
     {
         title: 'virtual 5K',
@@ -157,11 +158,13 @@ export const raceTickets = [
         fee: '$2.50',
         mostPopular: true,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'Premium T-shirt',
+            'Swag Bag',
+            'Digital Runners Bib',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361',
     },
     {
         title: 'virtual half-marathon',
@@ -170,11 +173,13 @@ export const raceTickets = [
         fee: '$3.40',
         mostPopular: false,
         features: [
-            'Official T-shirt',
-            'Runners Bib',
+            'Premium T-shirt',
+            'Swag Bag',
+            'Digital Runners Bib',
             'Create/Join a team of friends and family',
             'Easy to use fundraising page to help raise funds'
         ],
+        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362',
     },
 ];
 
@@ -183,90 +188,50 @@ export const communityMembers = [
         tabTitle: 'our scholars',
         profiles: [
             {
-                firstName: "Micah",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                firstName: "Cesar",
+                lastName: "Mercedes Bello",
+                picture: "/images/community/Cesar.jpg",
                 school: "Oakwood University",
-                year: "2020",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish",
+                year: "2021",
+                bio: "Cesar was the first recipient of our MACS Support Scholarship established at Oakwood University. Cesar's mission is to ensure and maintain the security of internet network users while they are browsing.",
             },
             {
-                firstName: "Daniella",
-                lastName: "Johnson",
-                picture: "/images/placeholders/studentFemale.png",
+                firstName: "Demaiya",
+                lastName: "Seymour",
+                picture: "/images/community/Demaiya.png",
                 school: "Spelman College",
-                year: "2020",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
-            },
-            {
-                firstName: "Peter",
-                lastName: "McGiven",
-                picture: "/images/placeholders/studentMale2.png",
-                school: "Howard University",
                 year: "2021",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
+                bio: `$1000 was awarded to Demaiya, a graduating Biology major. "I was not entirely sure how my balance for this semester [would have been taken care of]. [I’m] truly grateful for your contribution to my success."`,
             },
             {
-                firstName: "Micah",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
+                firstName: "Aline",
+                lastName: "Tuyishime",
+                picture: "/images/community/Aline.png",
                 school: "Oakwood University",
-                year: "2020",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish.",
+                year: "2022",
+                bio: `$500 was awarded to Aline, who is a rising sophomore in the WIN for STEM Initiative. "I can confidently say that they make me feel like I belong and I love being a part of STEM."`,
             },
             {
-                firstName: "Peter",
-                lastName: "McGiven",
-                picture: "/images/placeholders/studentFemale.png",
-                school: "Howard University",
-                year: "2021",
-                bio: "The is short intro about the student. They get to tell maybe their story and what HBCU STEMER scholarship has helped them accomplish",
+                firstName: "Zion",
+                lastName: "Raphael",
+                picture: "/images/community/Zion.png",
+                school: "Oakwood University",
+                year: "2022",
+                bio: `"There were times in my college career where I feared if my education would have to come to an end due to financial reasons, but the financial assistance you have provided me has helped me tremendously and allowed me to keep going. Because of what you have done for me I can follow my dream and graduate with my undergraduate degree in the spring of 2023."`,
             },
         ],
     },
     {
         tabTitle: "race hall of fame",
         profiles: [
-            {
-                firstName: "Hazel",
-                lastName: "Samini",
-                picture: "/images/placeholders/studentFemale.png",
-                event: "Women In STEM Walkathon",
-                year: "2020",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Hazel",
-                lastName: "Samini",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "Women In STEM Walkathon",
-                year: "2020",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
-            {
-                firstName: "Steven",
-                lastName: "Mayne",
-                picture: "/images/placeholders/blackStudent.jpeg",
-                event: "HBCU Education Run",
-                year: "2022",
-                bio: "The is short intro or testimonial about the participant or donor. They get to tell  their story and what HBCU STEMER has helped them accomplish",
-            },
+            // {
+            //     firstName: "Peter",
+            //     lastName: "McGiven",
+            //     picture: "/images/placeholders/studentFemale.png",
+            //     event: "Howard University",
+            //     year: "2021",
+            //     bio: "The is short'
+            // },
         ]
     }
 ];
@@ -275,31 +240,90 @@ export const communityMembers = [
 export const partnersData = [
     {
         tabTitle: 'sponsors',
-        intro: "This is a small paragraph introducing the sponsors",
+        intro: "HBCU STEMER relies on sponsors to fulfill our goals of furthering STEM education through STEM programs, info sessions, and funding. By leveraging companies that demonstrate a commitment to diversity, we can increase diverse representation and improve STEM education. Many thanks to our amazing past and current sponsors!",
         callToAction: "become a sponsor",
         companies: [
             {
-                name: "4D Traders Institute",
-                logo: "/images/placeholders/4Dtraders_logo.png",
-                description: "Creating successful traders through education.",
-                website: "https://www.4dtradersinstitute.com/",
+                name: "STEMedia",
+                logo: "/images/partner_logos/logo_STEMedia.png",
+                description: "Elevate and empower STEM success",
+                website: "http://stemedia.com/connect",
+                homepage: true,
+            },
+            {
+                name: "4D Fitness 4 Life",
+                logo: "/images/partner_logos/logo_4D_Fitness_4_Life.png",
+                description: "Changing people's lives one at a time. Sign-up for the 12-Week Total Body Transformation Challenge",
+                website: "https://www.4dfitness4life.com/programs",
+                homepage: true,
+            },
+            {
+                name: "AcaSTEMics",
+                logo: "/images/partner_logos/logo_acastemics.png",
+                description: "We create scientist and engineers! For STEM News: Join the AcaSTEMics Community Network Facebook Group",
+                website: "https://www.facebook.com/groups/599867161520168",
+                homepage: true,
+            },
+            {
+                name: "Math N'More",
+                logo: "/images/partner_logos/logo_MathNMore.png",
+                description: "An acute mathematics firm offering K-12 and post-secondary schools and families math tutorial, coaching, and IEPS/504 solutions. Creating mathematical diversity! Enveryone is a math person!",
+                website: "https://www.mathnmore.com/",
+                homepage: true,
+            },
+            {
+                name: "The Black Math Academy",
+                logo: "/images/partner_logos/logo_The_Black_Math_Academy.jpeg",
+                description: `"Math is where it's at" We tutor mathematics. As long as math involved, we can help. Hit us up for any of your mathematics needs.`,
+                website: "http://www.theblackmathacademy.com/",
+                homepage: true,
+            },
+            {
+                name: "India Approved",
+                logo: "/images/partner_logos/logo_India_Approved.png",
+                description: "Community of beauty lover and one-stop shop for beauty recommendations. Follow India Approved for the latest beauty trends.",
+                website: "https://www.instagram.com/indiaapproved/",
+                homepage: true,
             },
             {
                 name: "Nina Fuentes Coaching LLC",
-                logo: "/images/placeholders/nfc_logo.png",
+                logo: "/images/partner_logos/logo_nfc.png",
                 description: "Helping women transition to a plant-based lifestyle while losing stubborn weight",
                 website: "https://www.ninafuentescoaching.com",
+                homepage: true,
             },
             {
                 name: "Post Mask Skin",
-                logo: "/images/placeholders/pms_logo.png",
+                logo: "/images/partner_logos/logo_PMS.png",
                 description: "A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.",
                 website: "https://www.etsy.com/shop/hgho/?etsrc=sdt",
+                homepage: false,
+            },
+            {
+                name: "STEAMulater",
+                logo: "/images/partner_logos/logo_STEAMulater.png",
+                description: "STEAM = STEM + Arts Education with Dr. Muk. Check out our website for the latest updates",
+                website: "http://linktree.com/steamulater",
+                homepage: false,
+            },
+            {
+                name: "4D Traders Institute",
+                logo: "/images/partner_logos/logo_4D_Traders.PNG",
+                description: "Creating successful traders through education.",
+                website: "https://www.4dtradersinstitute.com/",
+                homepage: false,
+            },
+            {
+                name: "Life Clothing",
+                logo: "/images/partner_logos/logo_LifeClothing.png",
+                description: "A clothing brand that's comfortable but fashionable enough for any event.",
+                website: "https://www.facebook.com/1ifeclothing",
+                homepage: false,
             },
         ],
         form: {
             callToAction: "Your Company Here! Partner with Us",
-            logo: "/images/placeholders/yourLogoHere.png",
+            logo: "/images/partner_logos/yourLogoHere.png",
             title: "Sponsor Sign-Up",
             details: "SPONSOR BENEFITS",
             fields: [
@@ -345,28 +369,28 @@ export const partnersData = [
         intro: "HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners to fulfill our goals of furthering STEM education through the STEM programs, initiatives, and bright minds at your institution. By leveraging the influential community of HBCU alumni, current students, and supporters, we can improve STEM education.",
         callToAction: "become a partner",
         companies: [
-            {
-                name: "Spelman College",
-                logo: "/images/placeholders/spelmanCollege_logo.png",
-                description: "A historically black liberal arts college for women location in Atlanta, Georgia dedicated to the intellectual, creative, ethical, and leadership development of it's students.",
-                website: "https://www.spelman.edu",
-            },
-            {
-                name: "Oakwook University",
-                logo: "/images/placeholders/oakwood_logo.png",
-                description: "",
-                website: "",
-            },
-            {
-                name: "Howard University",
-                logo: "/images/placeholders/howard_logo.png",
-                description: "",
-                website: "",
-            },
+            // {
+            //     name: "Spelman College",
+            //     logo: "/images/placeholders/spelmanCollege_logo.png",
+            //     description: "A historically black liberal arts college for women location in Atlanta, Georgia dedicated to the intellectual, creative, ethical, and leadership development of it's students.",
+            //     website: "https://www.spelman.edu",
+            // },
+            // {
+            //     name: "Oakwook University",
+            //     logo: "/images/placeholders/oakwood_logo.png",
+            //     description: "",
+            //     website: "",
+            // },
+            // {
+            //     name: "Howard University",
+            //     logo: "/images/placeholders/howard_logo.png",
+            //     description: "",
+            //     website: "",
+            // },
         ],
         form: {
             callToAction:"Your School Here! Partner with HBCU STEMER",
-            logo: "/images/placeholders/yourLogoHere.png",
+            logo: "/images/partner_logos/yourLogoHere.png",
             title: "HBCU Partner Sign-Up",
             details: "HBCU PARTNER BENEFITS",
             fields: [
@@ -401,13 +425,22 @@ export const partnersData = [
 
 export const pastEvents = [
     {
+        type: 'recap',
+        date: '2022 recap',
+        title: 'thanks everyone',
+        video: "/images/pastEvents/2022_recap.mp4",
+    },
+    {
         type: 'event',
         date: 'may 2022',
         title: '2nd annual education run',
         files: [
-            "/images/placeholders/instagramShowcase/IG1.png",
-            "/images/placeholders/instagramShowcase/IG2.png",
-            "/images/placeholders/instagramShowcase/IG3.png",
+            "/images/pastEvents/2022_HBCU_stemer/1.jpg",
+            "/images/pastEvents/2022_HBCU_stemer/2.jpg",
+            "/images/pastEvents/2022_HBCU_stemer/3.jpg",
+            "/images/pastEvents/2022_HBCU_stemer/4.jpg",
+            "/images/pastEvents/2022_HBCU_stemer/5.png",
+            "/images/pastEvents/2022_HBCU_stemer/6.png",
         ],
         highlights: [
             '1 Mile, 5K, and Half Marathon Options',
@@ -419,16 +452,19 @@ export const pastEvents = [
         type: 'recap',
         date: '2021 recap',
         title: 'thanks everyone',
-        video: "https://www.youtube.com/embed/o5caqBTLK4k",
+        video: "/images/pastEvents/2021_recap.mp4"
     },
     {
         type: 'event',
         date: 'october 2021',
         title: 'women in STEM walkathon',
         files: [
-            "/images/placeholders/instagramShowcase/IG1.png",
-            "/images/placeholders/instagramShowcase/IG2.png",
-            "/images/placeholders/instagramShowcase/IG3.png",
+            "/images/pastEvents/2021_WiSW/1.png",
+            "/images/pastEvents/2021_WiSW/2.png",
+            "/images/pastEvents/2021_WiSW/3.png",
+            "/images/pastEvents/2021_WiSW/4.png",
+            "/images/pastEvents/2021_WiSW/5.jpg",
+            "/images/pastEvents/2021_WiSW/6.png",
         ],
         highlights: [
             'Over 500 Miles',
@@ -441,9 +477,14 @@ export const pastEvents = [
         date: 'may 2021',
         title: 'inaugural education run',
         files: [
-            "/images/placeholders/instagramShowcase/IG1.png",
-            "/images/placeholders/instagramShowcase/IG2.png",
-            "/images/placeholders/instagramShowcase/IG3.png",
+            "/images/pastEvents/2021_HBCU_stemer/1.png",
+            "/images/pastEvents/2021_HBCU_stemer/2.jpg",
+            "/images/pastEvents/2021_HBCU_stemer/3.png",
+            "/images/pastEvents/2021_HBCU_stemer/4.png",
+            "/images/pastEvents/2021_HBCU_stemer/5.png",
+            "/images/pastEvents/2021_HBCU_stemer/6.jpg",
+            "/images/pastEvents/2021_HBCU_stemer/7.jpg",
+            "/images/pastEvents/2021_HBCU_stemer/8.png",
         ],
         highlights: [
             '56 runners',
@@ -461,15 +502,15 @@ export const faq = [
     },
     {
         question: 'How do I register?',
-        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. Register now to join the virtual Women in STEM Walkathon to support young women in STEM at these crucial institutions.`
+        answer: `Whether you are an HBCU alum or STEM graduate, or just passionate about education, this event is for you. You can register by visiting www.hbcustemer.com/raceinfo.`
     },
     {
         question: 'When is the race?',
-        answer: 'The  Women in STEM Walkathon is a virtual event that is held over the full month of October. Consistency is key to rack up as many miles as possible. Upload your miles and pictures before the deadline to turn your miles into money!',
+        answer: 'The HBCU STEMER virtual run is held during the month of May, while the  Women in STEM Walkathon is a virtual walk that is held over the full month of October.',
     },
     {
         question: `Unfortunately, I can't participate in the event, but can I donate instead?`,
-        answer: 'Yes! Pledge funds to help us meet our $1500 donation goal.',
+        answer: 'Yes! Pledge funds to help us meet our donation goal and/or you can sponsor a student to participate in the virtual event.',
     },
     {
         question: ' What does HBCU STEMER and WiSW stand for?',
@@ -477,7 +518,7 @@ export const faq = [
     },
     {
         question: 'How do I partner with HBCU STEMER?',
-        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on our Partners page.',
+        answer: 'To become a sponsor or HBCU partner, please fill out the respective form on Our Partners page: www.hbcustemer.com/partners.',
     },
 ];
 

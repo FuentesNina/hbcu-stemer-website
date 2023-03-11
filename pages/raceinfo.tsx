@@ -67,7 +67,7 @@ export default function RaceInformation() {
               <p className="text-center font-body font-bold max-w-xs mx-auto mt-14 md:mt-0 md:max-w-none">{`Don't want to run... but still want to support?`}</p>
               <div className="md:flex md:items-center md:grow">
                 <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='donate' buttonStyle="white-red" className="my-5 md:my-0 "/>
-                <Button href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER" content='support a student' buttonStyle="white-red" className="my-5 md:my-0"/>
+                <Button href="https://runsignup.com/Race/Register/?raceId=106760&eventId=701744" content='sponsor a student runner' buttonStyle="white-red" className="my-5 md:my-0"/>
               </div>
             </div>
         </section>

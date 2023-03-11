@@ -46,7 +46,7 @@ export default function ContactSection() {
   return (
     <section className="md:flex md:gap-x-5 md:justify-center">
       <div className="grid place-content-center mt-10 md:mb-10">
-        <form ref={formRef} action={`https://formsubmit.co/ninette972@gmail.com`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
+        <form ref={formRef} action={`https://formsubmit.co/${webLinks.email}`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
               >
           {/* This is setup for formsubmit.com */}
           <input type="hidden" name="_captcha" value="false" />
@@ -85,10 +85,10 @@ export default function ContactSection() {
         <Button href="" action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
         <div className="flex flex-col mx-auto my-10 text-center md:text-left">
             <Title content="Connect With Us" className="text-black"/>
-            <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7"/>
-            <Link href={webLinks.instagram} className="font-body text-sm my-1">Instagram @ hbcustemer</Link>
-            <Link href={webLinks.facebook} className="font-body text-sm my-1">Facebook @ HBCU STEMER</Link>
-            <p className="font-body text-sm my-1">  Email - {webLinks.email}</p>
+            <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7 hover:text-myRed hover:drop-shadow-[1px_1px_0_black]"/>
+            <Link href={webLinks.instagram} className="font-body text-sm my-1 hover:font-bold">Instagram @ hbcustemer</Link>
+            <Link href={webLinks.facebook} className="font-body text-sm my-1 hover:font-bold">Facebook @ HBCU STEMER</Link>
+            <Link href={`mailto:${webLinks.email}`} className="font-body text-sm my-1 hover:font-bold">  Email - {webLinks.email}</Link>
         </div>
       </div>
       <div className={`${!visibleFAQ && "hidden"} py-20 fixed bg-white/[0.8] backdrop-blur w-screen h-screen top-10 md:top-20 z-50 overflow-scroll`}>

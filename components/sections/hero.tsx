@@ -1,4 +1,4 @@
-import { partnersData } from "@/public/utils/data"
+import { navLinks, partnersData } from "@/public/utils/data"
 import LargeLogo from "../elements/logos/largeLogo"
 import Button from "../elements/styledbutton"
 import Title from "../elements/title"
@@ -14,18 +14,20 @@ export default function Hero() {
                 <Button href="#basicInfo" content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
               </div>
               <div className="aspect-video max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o5caqBTLK4k?controls=0&autoplay=1&mute=1" title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
+                <iframe width="100%" height="100%" src={navLinks[0].bannerImage} title="HBCU STEMER Website Intro Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={false} />
               </div>
             </div>
-            <div className="py-10 md:max-w-4xl md:mx-auto">
+            <div className="pt-10 pb-5 md:max-w-4xl md:mx-auto">
               <Title content="sponsored by" className="text-white text-sm text-center"/>
-              <ul className="flex gap-10 justify-center mt-10 flex-wrap">
+              <ul className="flex justify-around items-center gap-3 p-5 flex-wrap bg-white mx-5 mt-2 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
                 {partnersData[0].companies.map((company, index) => {
-                  return (
-                    <li key={index}>
-                      <img src={company.logo} className="h-10"/>
-                    </li>
-                  )
+                  if (company.homepage) {
+                    return (
+                      <li key={index} className='max-w-[6rem] '>
+                        <img src={company.logo} className="w-full max-h-[3rem]"/>
+                      </li>
+                    )
+                  }
                 })}
               </ul>
             </div>
