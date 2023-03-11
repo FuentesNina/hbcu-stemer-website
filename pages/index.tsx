@@ -67,15 +67,15 @@ export default function Home() {
       <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
         <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
           <div className="hover:cursor-pointer hover:scale-105 left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
-            <img src="/images/2021.png" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
+            <img src="/images/2021.PNG" className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2021`}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
-            <img src="/images/2022.jpg" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <img src="/images/2022.JPG" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2022`}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
-            <img src="/images/2023.jpg" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <img src="/images/2023.JPG" className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{`2023`}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
