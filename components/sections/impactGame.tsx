@@ -69,7 +69,7 @@ export default function ImpactGame() {
             {pageTitle}
         </h1>
       </div>
-      <div className="md:my-5 md:mt-0 my-10">
+      <div className="md:my-5 md:mt-0 my-5">
         <div className="h-52 grid place-content-center overflow-y-auto">
           <div className={`${status === 'run' && 'hidden'}`}>
             <p className={`${status !== 'start' && 'hidden'} mx-10 drop-shadow-md font-body font-bold text-center text-sm md:max-w-xl md:mx-auto bg-white/[0.6] backdrop-blur rounded-lg p-2`}>{`Click on 'Begin the Race' below and use the left and right arrows to learn about our milestones throughout the years`}</p>
@@ -82,12 +82,12 @@ export default function ImpactGame() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between my-10 md:my-0 max-w-4xl md:mx-auto md:w-full">
-        <FontAwesomeIcon onClick={() => changeSlide(-1)} icon={faArrowAltCircleLeft} className={`${status !== 'start' && 'cursor-pointer'} ml-5 shrink-0 h-10 mr-10 text-white drop-shadow-[2px_2px_0_black]`}/>
-        <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' && 'cursor-pointer'} ml-10 text-white drop-shadow-[2px_2px_0_black]`}/>
+      <div className="flex justify-between my-5 md:my-0 max-w-4xl md:mx-auto md:w-full">
+        <FontAwesomeIcon onClick={() => changeSlide(-1)} icon={faArrowAltCircleLeft} className={`${status !== 'start' ? 'cursor-pointer hover:text-myGreen opacity-100' : 'opacity-50'} ml-5 shrink-0 h-10 mr-10 text-white drop-shadow-[2px_2px_0_black]`}/>
+        <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' ? 'cursor-pointer hover:text-myGreen opacity-100' : "opacity-50"} ml-10 text-white drop-shadow-[2px_2px_0_black] `}/>
       </div>
 
-      <div className='pointer-events-none select-none flex justify-around items-baseline mb-16 md:mb-12 md:max-w-2xl md:mx-auto md:w-full'>
+      <div className='pointer-events-none select-none flex justify-around items-baseline mb-12 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
           <img src='/images/Impact_scene/startingMan_logo.png' className={`${status !== 'start' && 'hidden'} h-20 -z-10 relative`}/>
           <img src='/images/Impact_scene/runningMan_logo.png' className={`${status !== 'run' && 'hidden'} h-20 -z-10 relative`}/>
