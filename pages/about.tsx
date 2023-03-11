@@ -25,7 +25,7 @@ export default function About() {
           <Button href="#hbcuTeam" content="meet the team" buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>
-      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-repeat" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
+      <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-repeat md:mb-20" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
         <div className="bg-black/[68%] py-10 px-5">
           <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
           <ul className="md:grid md:grid-cols-2 md:gap-x-10 max-w-4xl md:mx-auto">

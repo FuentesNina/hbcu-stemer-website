@@ -28,7 +28,7 @@ export default function PastEventCard({event, nthChild} : {event: PastEvent, nth
                 <div className={`bg-black text-white font-body my-10 text-sm overflow-clip rounded-3xl max-w-xs mx-auto md:grid ${nthChild % 2 !== 0 ? "md:grid-cols-[3fr_4fr]" : "md:grid-cols-[4fr_3fr]"} md:max-w-none md:items-center`}>
                     <div className='aspect-square relative'>
                         <FontAwesomeIcon onClick={getPreviousSlide} icon={faArrowAltCircleLeft} className="absolute h-10 left-5 top-[50%] -mt-5 cursor-pointer hover:text-myGreen drop-shadow-[1px_1px_0_black]"/>
-                        <img src={event.files && event.files[currentSlide]} className='object-cover w-full aspect-square'/>
+                        <img src={event.files && event.files[currentSlide]} className='object-cover w-full aspect-square pointer-events-none select-none'/>
                         <FontAwesomeIcon onClick={getNextSlide} icon={faArrowAltCircleRight} className="absolute h-10 right-5 top-[50%] -mt-5 cursor-pointer hover:text-myGreen drop-shadow-[1px_1px_0_black]"/>
                     </div>
                     <div className={`${nthChild % 2 === 0 && "order-first"} p-5 ml-10`}>

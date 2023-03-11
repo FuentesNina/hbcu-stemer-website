@@ -189,7 +189,7 @@ export const communityMembers = [
         profiles: [
             {
                 firstName: "Cesar",
-                lastName: "Mercedes",
+                lastName: "Mercedes Bello",
                 picture: "/images/community/Cesar.jpg",
                 school: "Oakwood University",
                 year: "2021",
@@ -210,6 +210,14 @@ export const communityMembers = [
                 school: "Oakwood University",
                 year: "2022",
                 bio: `$500 was awarded to Aline, who is a rising sophomore in the WIN for STEM Initiative. "I can confidently say that they make me feel like I belong and I love being a part of STEM."`,
+            },
+            {
+                firstName: "Zion",
+                lastName: "Raphael",
+                picture: "/images/community/Zion.png",
+                school: "Oakwood University",
+                year: "2022",
+                bio: `"There were times in my college career where I feared if my education would have to come to an end due to financial reasons, but the financial assistance you have provided me has helped me tremendously and allowed me to keep going. Because of what you have done for me I can follow my dream and graduate with my undergraduate degree in the spring of 2023."`,
             },
         ],
     },
@@ -303,6 +311,13 @@ export const partnersData = [
                 logo: "/images/partner_logos/logo_4D_Traders.PNG",
                 description: "Creating successful traders through education.",
                 website: "https://www.4dtradersinstitute.com/",
+                homepage: false,
+            },
+            {
+                name: "Life Clothing",
+                logo: "/images/partner_logos/logo_LifeClothing.png",
+                description: "A clothing brand that's comfortable but fashionable enough for any event.",
+                website: "https://www.facebook.com/1ifeclothing",
                 homepage: false,
             },
         ],
