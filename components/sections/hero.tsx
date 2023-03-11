@@ -23,8 +23,8 @@ export default function Hero() {
                 {partnersData[0].companies.map((company, index) => {
                   if (company.homepage) {
                     return (
-                      <li key={index} className='max-w-[6rem] '>
-                        <img src={company.logo} className="w-full max-h-[3rem]"/>
+                      <li key={index} className='max-w-[6rem]'>
+                        <img src={company.logo} className="max-w-full max-h-[3rem]"/>
                       </li>
                     )
                   }
