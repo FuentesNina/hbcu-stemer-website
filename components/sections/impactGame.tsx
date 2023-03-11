@@ -87,7 +87,7 @@ export default function ImpactGame() {
         <FontAwesomeIcon onClick={() => changeSlide(1)} icon={faArrowAltCircleRight} className={`mr-5 shrink-0 h-10 ${status !== 'end' ? 'cursor-pointer hover:text-myGreen opacity-100' : "opacity-50"} ml-10 text-white drop-shadow-[2px_2px_0_black] `}/>
       </div>
 
-      <div className='pointer-events-none select-none flex justify-around items-baseline mb-12 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
+      <div className='pointer-events-none select-none flex justify-around items-baseline mb-10 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
           <img src='/images/Impact_scene/startingMan_logo.png' className={`${status !== 'start' && 'hidden'} h-20 -z-10 relative`}/>
           <img src='/images/Impact_scene/runningMan_logo.png' className={`${status !== 'run' && 'hidden'} h-20 -z-10 relative`}/>
