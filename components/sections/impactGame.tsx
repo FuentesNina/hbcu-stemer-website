@@ -64,7 +64,7 @@ export default function ImpactGame() {
 
   return (
     <section className={`flex flex-col isolate bg-gradient-to-b from-myRed to-transparent overflow-clip md:rounded-lg md:border border-x-0 border md:m-5 border-black shadow-md relative`}>
-      <div className="my-10 mt-20 md:my-10">
+      <div className="my-5 mt-10 md:mt-20 md:my-10">
         <h1 className=" text-white font-display drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)] font-bold text-3xl md:text-5xl text-center uppercase">
             {pageTitle}
         </h1>
