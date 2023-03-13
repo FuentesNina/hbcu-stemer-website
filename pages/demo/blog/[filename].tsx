@@ -1,18 +1,18 @@
 // THIS FILE HAS BEEN GENERATED WITH THE TINA CLI.
   // This is a demo file once you have tina setup feel free to delete this file
-  
+
   import Head from 'next/head'
   import { useTina } from 'tinacms/dist/react'
   import { TinaMarkdown } from 'tinacms/dist/rich-text'
   import client from '../../../.tina/__generated__/client'
-  
-  const BlogPage = (props) => {
+
+  const BlogPage = (props:any) => {
     const { data } = useTina({
       query: props.query,
       variables: props.variables,
       data: props.data,
     })
-  
+
     return (
       <>
         <Head>
@@ -51,8 +51,8 @@
       </>
     )
   }
-  
-  export const getStaticProps = async ({ params }) => {
+
+  export const getStaticProps = async ({ params } : {params:any}) => {
     let data = {}
     let query = {}
     let variables = { relativePath: `${params.filename}.md` }
@@ -64,7 +64,7 @@
     } catch {
       // swallow errors related to document creation
     }
-  
+
     return {
       props: {
         variables: variables,
@@ -74,21 +74,21 @@
       },
     }
   }
-  
+
   export const getStaticPaths = async () => {
     const postsListData = await client.queries.postConnection()
-  
+
     return {
-      paths: postsListData.data.postConnection.edges.map((post) => ({
-        params: { filename: post.node._sys.filename },
+      paths: postsListData.data.postConnection.edges?.map((post) => ({
+        params: { filename: post?.node?._sys.filename },
       })),
       fallback: false,
     }
   }
-  
+
   export default BlogPage
-  
-  const PageSection = (props) => {
+
+  const PageSection = (props:any) => {
     return (
       <>
         <h2>{props.heading}</h2>
@@ -96,12 +96,12 @@
       </>
     )
   }
-  
+
   const components = {
     PageSection: PageSection,
   }
-  
-  const ContentSection = ({ content }) => {
+
+  const ContentSection = ({ content } : {content: any}) => {
     return (
       <div className="relative py-16 bg-white overflow-hidden">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
