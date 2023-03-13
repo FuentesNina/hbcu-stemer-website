@@ -244,6 +244,13 @@ export const partnersData = [
         callToAction: "become a sponsor",
         companies: [
             {
+                name: "Huntsville Magazine",
+                logo: "/images/partner_logos/logo_huntsvilleMagazine.png",
+                description: "Huntsville Magazine is Huntsville, Alabama’s premier print and digital city lifestyle publication. Founded in 2022, the quarterly magazine serves as a guide to the best of the city with insightful reads on culture, people, entertainment, and businesses catalyzing the city’s transformation.",
+                website: "https://huntsvillemagazine.com/",
+                homepage: true,
+            },
+            {
                 name: "STEMedia",
                 logo: "/images/partner_logos/logo_STEMedia.png",
                 description: "Elevate and empower STEM success",
