@@ -31,7 +31,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean}) {
               </Link>
             </div>
           </div>
-          <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://github.com/fuentesnina" className="underline hover:font-bold">Nina Fuentes LLC</Link></p>
+          <p className="font-body text-xs md:text-sm text-center text-white py-2">Designed and Build with ❤️ by <Link href="https://ninafuentes.dev" className="underline hover:font-bold">Nina Fuentes LLC</Link></p>
         </div>
       </footer>
     )
