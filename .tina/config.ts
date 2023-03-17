@@ -74,6 +74,9 @@ export default defineConfig({
             label: "Quote",
           },
         ],
+        ui: {
+          router: () => `/contact`,
+        },
       },
     ],
   },

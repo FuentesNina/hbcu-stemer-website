@@ -9,14 +9,14 @@ import { useTina } from "tinacms/dist/react";
 import client from "@/.tina/__generated__/client";
 
 
-export default function Footer({showSignUp, props}: {showSignUp: boolean, props:any}) {
+export default function Footer({showSignUp, ...props}: {showSignUp: boolean} ) {
   const { data } = useTina ({
     query: props.query,
     variables: props.variables,
     data: props.variables,
   })
 
-  console.log(data);
+  console.log(props);
 
 
   return (
@@ -48,7 +48,18 @@ export default function Footer({showSignUp, props}: {showSignUp: boolean, props:
 }
 
 export const getStaticProps = async () => {
-  const { data, query, variables } = await client.queries.webLinks({relativePath: 'site-details.md'});
+  let data = {};
+  let query = {};
+  let variables = {relativePath: 'site-details.md'};
+
+  try {
+    const res = await client.queries.webLinks(variables)
+    query = res.query
+    data = res.data
+    variables = res.variables
+  } catch {
+    // errors
+  }
 
   return {
     props: {
