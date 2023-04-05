@@ -30,14 +30,14 @@ export default function About({...props}) {
         <div className="border-black border rounded-lg my-10 md:m-0 overflow-clip max-w-sm mx-auto">
           <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/aboutUs_introImage.jpeg" alt="" />
         </div>
-        <div className="my-10 md:m-auto">
-          <p className="font-body">
+        <div className="my-10 md:m-auto font-body">
+          {/* <p className="font-body"> */}
           <TinaMarkdown content={data.about.intro}/>
             {/* {data.about.intro} */}
           {/* {`Historically Black Colleges and Universities (HBCU's) are an oasis of cultural significance, both past and present, and are leading sources for black graduates. However, the fields of Science, Technology, Engineering, and Math (STEM) are still lacking proper representation of minority and underrepresented groups.`}
           <br/><br/>
           {`The HBCU STEM Education Run (STEMER) is a virtual run/walk that strives to raise funds and awareness through fitness. Funds are collected in the form of registration fees, sponsorship money, and pledges. Funds raised will be used to educate, empower, and elevate HBCU students through scholarships and career resources.`} */}
-          </p>
+          {/* </p> */}
           <Button href="#hbcuTeam" content={data.about.cta} buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>

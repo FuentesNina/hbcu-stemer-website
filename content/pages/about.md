@@ -16,8 +16,9 @@ intro: >
   significance, both past and present, and are leading sources for black
   graduates. However, the fields of Science, Technology, Engineering, and Math
   (STEM) are still lacking proper representation of minority and
-  underrepresented groups.
+  underrepresented groups.\
 
+  \
 
   The HBCU STEM Education Run (STEMER) is a virtual run/walk that strives to
   raise funds and awareness through fitness. Funds are collected in the form of
@@ -25,6 +26,7 @@ intro: >
   to educate, empower, and elevate HBCU students through scholarships and career
   resources.
 ---
+
 
 
 
