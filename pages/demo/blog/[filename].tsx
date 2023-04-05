@@ -13,6 +13,8 @@
       data: props.data,
     })
 
+    console.log(props)
+
     return (
       <>
         <Head>

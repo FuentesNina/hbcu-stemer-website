@@ -10,11 +10,11 @@ export default function TeamMember({member}: {member: any}) {
   return (
     <div className="mb-14 max-w-sm mx-auto">
         <div className="max-w-[70%] aspect-square relative rounded-full overflow-clip border border-white my-5 mx-auto">
-          <Image className="h-full w-full object-cover object-center" src={member.picture} fill alt={`headshot of ${member.firstName} ${member.lastName}`}/>
+          <Image className="h-full w-full object-cover object-center" src={member.headshot} fill alt={`headshot of ${member.firstName} ${member.lastName}`}/>
         </div>
         <div className="my-5 text-center text-white backdrop-blur w-fit mx-auto">
           <Subtitle content={`${member.firstName} ${member.lastName}`} className=""/>
-          <Subtitle content={member.title} className="text-sm font-normal"/>
+          <Subtitle content={member.role} className="text-sm font-normal"/>
         </div>
         {/* <div className='font-body text-sm text-white overflow-clip mx-auto backdrop-blur'>
           <p className={`${!expandBio && "line-clamp max-h-fit overflow-clip"}  transition-all text-justify`}>{member.bio}</p>

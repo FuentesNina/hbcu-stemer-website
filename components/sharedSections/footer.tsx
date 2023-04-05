@@ -5,19 +5,8 @@ import WebsiteLogo from "../elements/logos/websiteLogo";
 import InstagramShowcase from "../elements/instagramShowcase";
 import SocialMediaIcons from "../elements/socialMediaIcons";
 import NewsletterForm from "../sections/newsletterForm";
-import { useTina } from "tinacms/dist/react";
-import client from "@/.tina/__generated__/client";
 
-
-export default function Footer({showSignUp, ...props}: {showSignUp: boolean} ) {
-  const { data } = useTina ({
-    query: props.query,
-    variables: props.variables,
-    data: props.variables,
-  })
-
-  console.log(props);
-
+export default function Footer({showSignUp}: {showSignUp: boolean} ) {
 
   return (
     <footer className="overflow-clip w-full">
@@ -46,26 +35,3 @@ export default function Footer({showSignUp, ...props}: {showSignUp: boolean} ) {
     </footer>
   )
 }
-
-export const getStaticProps = async () => {
-  let data = {};
-  let query = {};
-  let variables = {relativePath: 'site-details.md'};
-
-  try {
-    const res = await client.queries.webLinks(variables)
-    query = res.query
-    data = res.data
-    variables = res.variables
-  } catch {
-    // errors
-  }
-
-  return {
-    props: {
-      data,
-      query,
-      variables,
-    }
-  }
-};

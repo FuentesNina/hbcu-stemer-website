@@ -74,8 +74,75 @@ export default defineConfig({
             label: "Quote",
           },
         ],
+      },
+      {
+        name: "about",
+        label: "About",
+        path: "content/pages",
+        fields: [
+          {
+            type: "rich-text",
+            name: "intro",
+            label: "Intro",
+          },
+          {
+            type: "string",
+            name: "cta",
+            label: "CTA",
+          },
+          {
+            label: "Team Members",
+            name: "teamMembers",
+            type: "object",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.firstName} ${item?.lastName} ( ${item?.role} ) `}
+              },
+              // // Setting a default will auto-populate new items with the given values
+              defaultItem: {
+                firstName: "Danielle",
+                lastName: "Lewis",
+                role: "Founder & CEO",
+                bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
+              }
+            },
+            fields: [
+              {
+                type: "image",
+                label: "Headshot",
+                name: "headshot"
+              },
+              {
+                label: "First Name",
+                name: "firstName",
+                type: "string",
+              },
+              {
+                label: "Last Name",
+                name: "lastName",
+                type: "string",
+              },
+              {
+                label: "Role",
+                name: "role",
+                type: "string"
+              },
+              {
+                label: "Bio",
+                name: "bio",
+                type: "string",
+                ui: {
+                  component: "textarea",
+                }
+              }
+            ]
+          },
+        ],
         ui: {
-          router: () => `/contact`,
+          router: () => `/about`,
         },
       },
     ],
