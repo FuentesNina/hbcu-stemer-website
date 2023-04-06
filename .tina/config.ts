@@ -20,30 +20,6 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
-      },
-      {
         name: "webLinks",
         label: "WebLinks",
         path: "content/webLinks",
@@ -76,74 +52,267 @@ export default defineConfig({
         ],
       },
       {
-        name: "about",
-        label: "About",
+        name: "page",
+        label: "Website Pages",
         path: "content/pages",
-        fields: [
+        ui: {
+          router: ({ document }) => `/${document._sys.filename}`,
+        },
+        templates: [
           {
-            type: "rich-text",
-            name: "intro",
-            label: "Intro",
-          },
-          {
-            type: "string",
-            name: "cta",
-            label: "CTA",
-          },
-          {
-            label: "Team Members",
-            name: "teamMembers",
-            type: "object",
-            list: true,
-            ui: {
-              // This allows the customization of the list item UI
-              // Data can be accessed by item?.<Name of field>
-              itemProps: (item) => {
-                return { label: `${item?.firstName} ${item?.lastName} ( ${item?.role} ) `}
-              },
-              // // Setting a default will auto-populate new items with the given values
-              defaultItem: {
-                firstName: "Danielle",
-                lastName: "Lewis",
-                role: "Founder & CEO",
-                bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
-              }
-            },
+            name: "about",
+            label: "About",
             fields: [
               {
                 type: "image",
-                label: "Headshot",
-                name: "headshot"
+                name: "picture",
+                label: "Picture",
               },
               {
-                label: "First Name",
-                name: "firstName",
+                type: "rich-text",
+                name: "intro",
+                label: "Intro",
+              },
+              {
                 type: "string",
+                name: "cta",
+                label: "CTA",
               },
               {
-                label: "Last Name",
-                name: "lastName",
-                type: "string",
-              },
-              {
-                label: "Role",
-                name: "role",
-                type: "string"
-              },
-              {
-                label: "Bio",
-                name: "bio",
-                type: "string",
+                label: "Team Members",
+                name: "teamMembers",
+                type: "object",
+                list: true,
                 ui: {
-                  component: "textarea",
-                }
-              }
-            ]
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.firstName} ${item?.lastName} ( ${item?.role} ) `}
+                  },
+                  // // Setting a default will auto-populate new items with the given values
+                  defaultItem: {
+                    firstName: "Team Member",
+                    lastName: "",
+                    role: "new",
+                  },
+                },
+                fields: [
+                  {
+                    type: "image",
+                    label: "Headshot",
+                    name: "headshot"
+                  },
+                  {
+                    label: "First Name",
+                    name: "firstName",
+                    type: "string",
+                  },
+                  {
+                    label: "Last Name",
+                    name: "lastName",
+                    type: "string",
+                  },
+                  {
+                    label: "Role",
+                    name: "role",
+                    type: "string"
+                  },
+                  {
+                    label: "Bio",
+                    name: "bio",
+                    type: "string",
+                    ui: {
+                      component: "textarea",
+                    }
+                  }
+                ]
+              },
+            ],
           },
-        ],
-        ui: {
-          router: () => `/about`,
-        },
+          {
+            name: "partners",
+            label: "Partners",
+            fields: [
+              {
+                type: "image",
+                name: "picture",
+                label: "Picture",
+              },
+              {
+                type: "rich-text",
+                name: "intro",
+                label: "Intro",
+              },
+              {
+                label: "Partners Data",
+                name: "partnersData",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: `${item?.tabTitle}`}
+                  },
+                },
+                fields: [
+                  {
+                    label: "Tab Title",
+                    name: "tabTitle",
+                    type: "string",
+                  },
+                  {
+                    label: "Intro",
+                    name: "intro",
+                    type: "string",
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                  {
+                    label: "Call To Action",
+                    name: "callToAction",
+                    type: "string",
+                  },
+                  {
+                    label: "Companies or Schools",
+                    name: "companies",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.name}`}
+                      },
+                    },
+                    fields: [
+                      {
+                        label: "Logo",
+                        name: "logo",
+                        type: "image",
+                        required: true,
+                      },
+                      {
+                        label: "Name",
+                        name: "name",
+                        type: "string",
+                        required: true,
+                      },
+                      {
+                        label: "Description",
+                        name: "description",
+                        type: "string",
+                        ui: {
+                          component: "textarea",
+                        },
+                      },
+                      {
+                        label: "Website",
+                        name: "website",
+                        type: "string",
+                        required: true,
+                      },
+                      {
+                        label: "Displayed on HomePage",
+                        name: "homepage",
+                        type: "boolean",
+                      },
+                    ]
+                  },
+                  {
+                    label: "Form",
+                    name: "form",
+                    type: "object",
+                    fields: [
+                      {
+                        label: "Placeholder Logo",
+                        name: "logo",
+                        type: "image",
+                      },
+                      {
+                        label: "Call To Action",
+                        name: "callToAction",
+                        type: "string",
+                      },
+                      {
+                        label: "Form Title",
+                        name: "title",
+                        type: "string",
+                      },
+                      {
+                        label: "Details and Benefits",
+                        name: "details",
+                        type: "rich-text",
+                      },
+                      {
+                        label: "Form Fields",
+                        name: "fields",
+                        type: "object",
+                        list: true,
+                        ui: {
+                          itemProps: (item) => {
+                            return { label: `${item?.fieldName}`}
+                          },
+                        },
+                        fields: [
+                          {
+                            label: "Field Name",
+                            name: "fieldName",
+                            type: "string",
+                            required: true,
+                          },
+                          {
+                            label: "Type",
+                            name: "type",
+                            type: "string",
+                            required: true,
+                            options: [
+                              {
+                                value: "Short answer text",
+                                label: "Short Answer",
+                              },
+                              {
+                                value: "Paragraph",
+                                label: "Paragraph",
+                              },
+                              {
+                                value: "Email",
+                                label: "Email",
+                              },
+                              {
+                                value: "Checkbox",
+                                label: "Checkbox",
+                              },
+                              {
+                                value: "Disclaimer",
+                                label: "Disclaimer",
+                              }
+                            ]
+                          },
+                          {
+                            label: "Placeholder",
+                            name: "placeholder",
+                            type: "string",
+                            required: true,
+                          },
+                          {
+                            label: "Required",
+                            name: "required",
+                            type: "boolean",
+                            required: true,
+                          },
+                          {
+                            label: "Options",
+                            name: "options",
+                            type: "string",
+                            list: true,
+                          },
+                        ]
+                      },
+                    ]
+                  },
+                ],
+              },
+            ],
+          },
+        ]
       },
     ],
   },

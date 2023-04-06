@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Subtitle from "./subtitle";
 import Button from "./styledbutton";
 import { webLinks } from "@/public/utils/data";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default function AccordionForm({form, setOpenForm, openForm} : {form: any, setOpenForm: Function, openForm: boolean}) {
     const formRef = useRef(null);
@@ -54,7 +55,9 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                     {/* End of setup for formsubmit.com */}
 
                     <Subtitle content={form.title} className="text-myRed text-base text-center" />
-                    <p className="my-5">{form.details}</p>
+                    <div className="my-5">
+                        <TinaMarkdown content={form.details} />
+                    </div>
                     {form.fields.map((field : any, index : number) => {
                         const fieldClassName = "grid my-3";
                         const labelClassName = "";

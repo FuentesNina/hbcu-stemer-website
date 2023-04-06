@@ -25,8 +25,8 @@ intro: >
   registration fees, sponsorship money, and pledges. Funds raised will be used
   to educate, empower, and elevate HBCU students through scholarships and career
   resources.
+picture: /images/aboutUs_introImage.jpeg
+_template: about
 ---
-
-
 
 

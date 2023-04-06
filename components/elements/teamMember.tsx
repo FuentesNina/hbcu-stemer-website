@@ -10,7 +10,7 @@ export default function TeamMember({member}: {member: any}) {
   return (
     <div className="mb-14 max-w-sm mx-auto">
         <div className="max-w-[70%] aspect-square relative rounded-full overflow-clip border border-white my-5 mx-auto">
-          <Image className="h-full w-full object-cover object-center" src={member.headshot} fill alt={`headshot of ${member.firstName} ${member.lastName}`}/>
+          {member.headshot && <Image className="h-full w-full object-cover object-center" src={member.headshot} fill alt={`headshot of ${member.firstName} ${member.lastName}`}/>}
         </div>
         <div className="my-5 text-center text-white backdrop-blur w-fit mx-auto">
           <Subtitle content={`${member.firstName} ${member.lastName}`} className=""/>

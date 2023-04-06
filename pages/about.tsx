@@ -20,32 +20,29 @@ export default function About({...props}) {
     data: props.data,
   })
 
-  console.log(data.about.teamMembers)
-
-
   return (
     <>
       <Banner/>
       <section className="mx-5 bg-white mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 md:m-0 overflow-clip max-w-sm mx-auto">
-          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src="/images/aboutUs_introImage.jpeg" alt="" />
+          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src={data.page.picture} alt="" />
         </div>
         <div className="my-10 md:m-auto font-body">
           {/* <p className="font-body"> */}
-          <TinaMarkdown content={data.about.intro}/>
+          <TinaMarkdown content={data.page.intro}/>
             {/* {data.about.intro} */}
           {/* {`Historically Black Colleges and Universities (HBCU's) are an oasis of cultural significance, both past and present, and are leading sources for black graduates. However, the fields of Science, Technology, Engineering, and Math (STEM) are still lacking proper representation of minority and underrepresented groups.`}
           <br/><br/>
           {`The HBCU STEM Education Run (STEMER) is a virtual run/walk that strives to raise funds and awareness through fitness. Funds are collected in the form of registration fees, sponsorship money, and pledges. Funds raised will be used to educate, empower, and elevate HBCU students through scholarships and career resources.`} */}
           {/* </p> */}
-          <Button href="#hbcuTeam" content={data.about.cta} buttonStyle="black" className="my-5 md:mb-0" />
+          <Button href="#hbcuTeam" content={data.page.cta} buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>
       <section id="hbcuTeam" className="scroll-mt-14 md:scroll-mt-24 overflow-clip my-10 bg-repeat md:mb-20" style={{backgroundImage: 'url(/images/customBackground_light.svg)', backgroundSize: '400px'}}>
         <div className="bg-black/[68%] py-10 px-5">
           <SectionTitle content="the team behind hbcu stemer" titleStyle='white-red'className="mb-14"/>
           <ul className="md:grid md:grid-cols-2 md:gap-x-10 max-w-4xl md:mx-auto">
-            {data.about.teamMembers.map((member: any, index: number) => {
+            {data.page.teamMembers.map((member: any, index: number) => {
               return (
                 <li key={index}>
                   <TeamMember member={member} />
@@ -64,7 +61,7 @@ export default function About({...props}) {
 
 
 export const getStaticProps = async () => {
-  const pageResponse = await client.queries.about({ relativePath: 'about.md' })
+  const pageResponse = await client.queries.page({ relativePath: 'about.md' })
 
   return {
     props: {

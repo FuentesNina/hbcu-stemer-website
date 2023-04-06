@@ -1,17 +1,17 @@
-import { partnersData } from "@/public/utils/data"
+import { partnersData as pD } from "@/public/utils/data"
 import Subtitle from "../elements/subtitle";
 import AccordionItem from "../elements/accordionItem";
 import AccordionForm from "../elements/accordionForm";
 
-export default function CollapsableSection({currentTab, activateTab, setOpenForm, openForm} : {activateTab: Function, currentTab: any, setOpenForm: Function, openForm: boolean}) {
+export default function CollapsableSection({currentTab, activateTab, setOpenForm, openForm, partnersData} : {activateTab: Function, currentTab: any, setOpenForm: Function, openForm: boolean, partnersData: any}) {
 
   return (
     <section className="md:mb-10 md:mx-10">
       <div className="flex place-content-center">
-        {partnersData.map((tab, index) => {
+        {partnersData.map((tab: any, index: number) => {
           let tabStyle : string;
           let afterStyle = "";
-          const listKey = `${tab} + ${index}`;
+          const listKey = `${tab.tabTitle} + ${index}`;
 
           if (tab.tabTitle === currentTab.tabTitle) {
             tabStyle = "text-myRed bg-myLightGrey z-30 relative top-0.5";
@@ -30,7 +30,7 @@ export default function CollapsableSection({currentTab, activateTab, setOpenForm
       <div className = "bg-myLightGrey p-5 border-y-2 border-black relative z-20 md:px-10 md:border-2 md:drop-shadow-[8px_8px_0px_#000000] lg:max-w-4xl lg:mx-auto" >
           <p className="font-body mt-5 mb-10">{currentTab.intro}</p>
           <ul>
-            {currentTab.companies.map((company: any, index: number) => {
+            {currentTab.companies?.map((company: any, index: number) => {
               const listKey = `${company} + ${index}`;
 
               return (
