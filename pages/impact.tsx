@@ -34,8 +34,8 @@ export default function Impact({...props}) {
 
       <section className="md:my-20 scroll-mt-10 md:scroll-mt-20" id='community'>
         <div className="my-10 grid gap-10 mx-5 md:my-20">
-          <SectionTitle content={`our community`} titleStyle="red-black"/>
-          <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{`We are grateful for our community of supporters who put their best foot forward to uplift aspiring STEM students.`}</p>
+          <SectionTitle content={data.page.communityTitle} titleStyle="red-black"/>
+          <p className="font-body text-justify md:px-10 md:max-w-5xl md:mx-auto">{data.page.smallIntro}</p>
         </div>
 
         <div className="my-10 md:max-w-7xl md:mx-auto md:px-10">

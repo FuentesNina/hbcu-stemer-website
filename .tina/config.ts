@@ -314,6 +314,11 @@ export default defineConfig({
                 ],
               },
               {
+                name: "communityTitle",
+                label: "Community Title",
+                type: "string",
+              },
+              {
                 name: "smallIntro",
                 label: "Community Intro Text",
                 type: "string",

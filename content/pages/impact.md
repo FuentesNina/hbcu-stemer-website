@@ -22,21 +22,30 @@ communityMembers:
         schoolOrEvent: Spelman College
         year: 2021
         bio: >-
-          $1000 was awarded to Demaiya, a graduating Biology major. "I was not entirely sure how my balance for this semester [would have been taken care of]. [I’m] truly grateful for your contribution to my success."
+          $1000 was awarded to Demaiya, a graduating Biology major. "I was not
+          entirely sure how my balance for this semester [would have been taken
+          care of]. [I’m] truly grateful for your contribution to my success."
       - picture: /images/community/Aline.png
         firstName: Aline
         lastName: Tuyishime
         schoolOrEvent: Oakwood University
         year: 2022
         bio: >-
-          $500 was awarded to Aline, who is a rising sophomore in the WIN for STEM Initiative. "I can confidently say that they make me feel like I belong and I love being a part of STEM."
+          $500 was awarded to Aline, who is a rising sophomore in the WIN for
+          STEM Initiative. "I can confidently say that they make me feel like I
+          belong and I love being a part of STEM."
       - picture: /images/community/Zion.png
         firstName: Zion
         lastName: Raphael
         schoolOrEvent: Oakwood University
         year: 2022
         bio: >-
-          "There were times in my college career where I feared if my education would have to come to an end due to financial reasons, but the financial assistance you have provided me has helped me tremendously and allowed me to keep going. Because of what you have done for me I can follow my dream and graduate with my undergraduate degree in the spring of 2023."
+          "There were times in my college career where I feared if my education
+          would have to come to an end due to financial reasons, but the
+          financial assistance you have provided me has helped me tremendously
+          and allowed me to keep going. Because of what you have done for me I
+          can follow my dream and graduate with my undergraduate degree in the
+          spring of 2023."
   - tabTitle: Race Hall of Fame
     tabIntro: Click on each card to learn more about our participants...
 milestones:
@@ -56,5 +65,7 @@ milestones:
     description: >-
       Hosted the 'How to Build an EV' Workshop for Oakwood University's Women
       Initiative (WIN) for STEM Summer Bridge Program.
+communityTitle: Our Community
 _template: impact
 ---
+
