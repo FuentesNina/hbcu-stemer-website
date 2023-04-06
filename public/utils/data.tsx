@@ -138,7 +138,7 @@ export const teamMembers = [
 
 export const raceTickets = [
     {
-        title: 'Family fun',
+        title: 'Virtual Family fun',
         description: '1 mile run/walk',
         price: '$15',
         fee: '$1.90',

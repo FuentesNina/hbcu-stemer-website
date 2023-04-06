@@ -260,6 +260,9 @@ export default defineConfig({
                             name: "placeholder",
                             type: "string",
                             required: true,
+                            ui: {
+                              component: "textarea"
+                            },
                           },
                           {
                             label: "Required",
@@ -400,6 +403,232 @@ export default defineConfig({
               },
             ],
           },
+          {
+            name: "contact",
+            label: "Contact",
+            fields: [
+              {
+                name: "formTitle",
+                label: "Form Title",
+                type: "string",
+              },
+              {
+                name: "formSubmit",
+                label: "Form Submit Text",
+                type: "string",
+              },
+              {
+                name: "formFields",
+                label: "Contact Form Fields",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: `${item?.fieldName}`}
+                  },
+                },
+                fields: [
+                  {
+                    label: "Field Name",
+                    name: "fieldName",
+                    type: "string",
+                    required: true,
+                  },
+                  {
+                    label: "Type",
+                    name: "type",
+                    type: "string",
+                    required: true,
+                    options: [
+                      {
+                        value: "Short answer text",
+                        label: "Short Answer",
+                      },
+                      {
+                        value: "Paragraph",
+                        label: "Paragraph",
+                      },
+                      {
+                        value: "Email",
+                        label: "Email",
+                      },
+                      {
+                        value: "Checkbox",
+                        label: "Checkbox",
+                      },
+                      {
+                        value: "Disclaimer",
+                        label: "Disclaimer",
+                      }
+                    ]
+                  },
+                  {
+                    label: "Placeholder",
+                    name: "placeholder",
+                    type: "string",
+                    required: true,
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    label: "Required",
+                    name: "required",
+                    type: "boolean",
+                    required: true,
+                  },
+                  {
+                    label: "Options",
+                    name: "options",
+                    type: "string",
+                    list: true,
+                  },
+                ]
+              },
+            ],
+          },
+          {
+            name: "raceInfo",
+            label: "Registration Page",
+            fields:[
+              {
+                name: "raceDay",
+                label: "Race Day (Start Date)",
+                type: "object",
+                fields: [
+                  {
+                    name: "year",
+                    label: "Year",
+                    type: "number",
+                  },
+                  {
+                    name: "month",
+                    label: "Month",
+                    type: "number",
+                    ui:{
+                      validate: (val:number)=>{
+                        if(val > 12 || val <= 0) {
+                          return 'the number must be between 1 and 12'
+                        }
+                      }
+                    }
+                  },
+                  {
+                    name: "day",
+                    label: "Day",
+                    type: "number",
+                    ui:{
+                      validate: (val:number)=>{
+                        if(val > 31 || val <= 0) {
+                          return 'the number must be between 1 and 31'
+                        }
+                      }
+                    }
+                  },
+                ]
+              },
+              {
+                name: "raceInfoIntro",
+                label: "Intro Text",
+                type: "rich-text",
+              },
+              {
+                name: "cta",
+                label: "Call To Action",
+                type: "string",
+              },
+              {
+                name: "benefits",
+                label: "Race Benefits",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.title};
+                  }
+                },
+                fields: [
+                  {
+                    name: "title",
+                    label: "Benefit Title",
+                    type: "string",
+                  },
+                  {
+                    name: "imageIcon",
+                    label: "Benefit Picture",
+                    type: "image"
+                  },
+                ],
+              },
+              {
+                name: "tickets",
+                label: "Tickets",
+                type: "object",
+                fields: [
+                  {
+                    name: "tbd",
+                    label: "tbd",
+                    type: "string"
+                  },
+                ],
+              },
+              {
+                name: "pastEvents",
+                label: "Past Events",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.date}
+                  },
+                },
+                fields: [
+                  {
+                    name: "type",
+                    label: "Event Type",
+                    type: "string",
+                    options: [
+                      {
+                        value: "recap",
+                        label: "Annual Recap"
+                      },
+                      {
+                        value: "event",
+                        label: "Individual Event"
+                      },
+                    ]
+                  },
+                  {
+                    name: "date",
+                    label: "Date",
+                    type: "string",
+                  },
+                  {
+                    name: "title",
+                    label: "Event Name",
+                    type: "string",
+                  },
+                  {
+                    name: "highlights",
+                    label: "Event Highlights",
+                    type: "string",
+                    list: true,
+                  },
+                  {
+                    name: "files",
+                    label: "Pictures",
+                    type: "image",
+                    list: true,
+                  },
+                  {
+                    name: "video",
+                    label: "Recap Video",
+                    type: "image",
+                  },
+                ]
+              },
+            ],
+          }
         ]
       },
       {

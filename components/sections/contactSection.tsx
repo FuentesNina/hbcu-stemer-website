@@ -1,6 +1,6 @@
 import SocialMediaIcons from "../elements/socialMediaIcons";
 import Button from "../elements/styledbutton";
-import { webLinks, contactForm } from "@/public/utils/data";
+import { webLinks } from "@/public/utils/data";
 import Link from "next/link";
 import Title from "../elements/title";
 import { useState, useRef, useEffect } from "react";
@@ -8,7 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 import FAQ from "./faq";
 
-export default function ContactSection() {
+export default function ContactSection({contactFormData}:{contactFormData: any}) {
+  const contactForm = contactFormData.formFields;
+  const formTitle = contactFormData.formTitle;
+  const formSubmit = contactFormData.formSubmit;
+
   const formRef = useRef(null);
   const [visibleFAQ, setVisibleFAQ] = useState(false);
   const [URL, setURL] = useState('');
@@ -57,17 +61,17 @@ export default function ContactSection() {
           <input type="hidden" name="_next" value={`${URL}/thankyou`} />
           {/* End of setup for formsubmit.com */}
 
-          <Title content="get in touch" className="text-myGreen text-center my-5" />
-          {contactForm.map((field, index) => {
+          <Title content={formTitle} className="text-myGreen text-center my-5" />
+          {contactForm?.map((field: any, index: number) => {
             const className = "py-2 px-5 font-body m-2 text-sm";
 
-            if (field.type === "Short answer text") {
+            if (field?.type === "Short answer text") {
               return <input key = {`${field.fieldName.toLowerCase()}${index}`} name={field.fieldName.toLowerCase()} placeholder={`${field.placeholder}`} type="text" className={className} required={field.required}/>
-            } else if (field.type === "Email") {
+            } else if (field?.type === "Email") {
               return <input key = {`${field.fieldName.toLowerCase()}${index}`} name={field.fieldName.toLowerCase()} placeholder={`${field.placeholder}`} type="email" className={className} required={field.required}/>
-            } else if (field.type === "Paragraph") {
+            } else if (field?.type === "Paragraph") {
               return <textarea className={className + ' ' + "min-h-[10rem]"} key = {`${field.fieldName.toLowerCase()}${index}`} name={field.fieldName.toLowerCase()} placeholder={`${field.placeholder}`} required={field.required}/>
-            } else if (field.type === "Disclaimer") {
+            } else if (field?.type === "Disclaimer") {
               return (
                 <div key = {`${field.fieldName.toLowerCase()}${index}`} className="flex flex-row text-white m-5 text-xs">
                   <input id={`${field.fieldName.toLowerCase()}${index}`} name={field.placeholder.toLowerCase()} type="checkbox" className="mr-5" required={field.required}/>
@@ -78,7 +82,7 @@ export default function ContactSection() {
               )
             }
           })}
-          <Button href="" buttonStyle="white-black" content="send message" type="submit" className="my-5"/>
+          <Button href="" buttonStyle="white-black" content={formSubmit} type="submit" className="my-5"/>
         </form>
       </div>
       <div className="flex flex-col md:mt-10">

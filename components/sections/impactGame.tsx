@@ -1,6 +1,5 @@
 import { getPageInfo } from "@/hooks/getPageInfo";
 import Button from "../elements/styledbutton";
-// import { milestones } from "@/public/utils/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";

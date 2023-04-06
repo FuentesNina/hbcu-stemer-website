@@ -8,9 +8,17 @@ import FAQ from "@/components/sections/faq";
 import { getPageInfo } from "@/hooks/getPageInfo";
 import { pastEvents, raceTickets } from "@/public/utils/data";
 import Image from "next/image";
+import { useTina } from 'tinacms/dist/react';
+import client from '@/.tina/__generated__/client';
 
 
-export default function RaceInformation() {
+export default function RaceInformation({...props}) {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  })
+
   const pageInfo = getPageInfo();
   const benefits = pageInfo.runBenefits;
   const bannerImage= pageInfo.bannerImage;
@@ -76,7 +84,6 @@ export default function RaceInformation() {
           <ul>
             {pastEvents.map((event, index) => {
               if (event.type === 'event') nthChild++;
-              console.log(nthChild);
 
               return (
                 <li key={index}>
@@ -89,4 +96,17 @@ export default function RaceInformation() {
         <FAQ />
       </>
     )
+  }
+
+
+  export const getStaticProps = async () => {
+    const pageResponse = await client.queries.page({ relativePath: 'raceinfo.md' })
+
+    return {
+      props: {
+        data: pageResponse.data,
+        query: pageResponse.query,
+        variables: pageResponse.variables,
+      },
+    }
   }
