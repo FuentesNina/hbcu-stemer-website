@@ -23,10 +23,10 @@ export default function Layout({children, ...props}:{children:ReactElement}) {
 const getWebLinks = async () => {
   let data = {};
   let query = {};
-  let variables = {relativePath: 'site-details.md'};
+  let variables = {relativePath: 'links.md'};
 
   try {
-    const res = await client.queries.webLinks(variables);
+    const res = await client.queries.websiteDetails(variables);
     query = res.query;
     data = res.data;
     variables = res.variables;

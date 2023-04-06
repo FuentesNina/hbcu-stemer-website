@@ -20,38 +20,6 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "webLinks",
-        label: "WebLinks",
-        path: "content/webLinks",
-        fields: [
-          {
-            type: "string",
-            name: "instagram",
-            label: "Instagram",
-          },
-          {
-            type: "string",
-            name: "facebook",
-            label: "Facebook",
-          },
-          {
-            type: "string",
-            name: "youtube",
-            label: "YouTube",
-          },
-          {
-            type: "string",
-            name: "email",
-            label: "Contact Email",
-          },
-          {
-            type: "string",
-            name: "quote",
-            label: "Quote",
-          },
-        ],
-      },
-      {
         name: "page",
         label: "Website Pages",
         path: "content/pages",
@@ -313,6 +281,44 @@ export default defineConfig({
             ],
           },
         ]
+      },
+      {
+        name: "websiteDetails",
+        label: "Site Details",
+        path: "content/siteDetails",
+        templates: [
+          {
+            name: "webLinks",
+            label: "Links",
+            fields: [
+              {
+                type: "string",
+                name: "instagram",
+                label: "Instagram",
+              },
+              {
+                type: "string",
+                name: "facebook",
+                label: "Facebook",
+              },
+              {
+                type: "string",
+                name: "youtube",
+                label: "YouTube",
+              },
+              {
+                type: "string",
+                name: "email",
+                label: "Contact Email",
+              },
+              {
+                type: "string",
+                name: "quote",
+                label: "Quote",
+              },
+            ],
+          },
+        ],
       },
     ],
   },
