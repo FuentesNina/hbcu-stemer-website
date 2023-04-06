@@ -8,8 +8,16 @@ import { communityMembers } from "@/public/utils/data";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { useTina } from 'tinacms/dist/react';
+import client from '@/.tina/__generated__/client';
 
-export default function Impact() {
+export default function Impact({...props}) {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  })
+
   const scholarsTabIndex = 0;
   const participantsTabIndex = 1;
   const [currentTabIndex, setCurrentTabIndex] = useState(scholarsTabIndex);
@@ -57,4 +65,17 @@ export default function Impact() {
       <CallToAction />
     </>
   )
+}
+
+
+export const getStaticProps = async () => {
+  const pageResponse = await client.queries.page({ relativePath: 'impact.md' })
+
+  return {
+    props: {
+      data: pageResponse.data,
+      query: pageResponse.query,
+      variables: pageResponse.variables,
+    },
+  }
 }

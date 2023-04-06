@@ -1,8 +1,6 @@
 import Banner from '@/components/sections/banner';
-import CustomBackground from '@/components/elements/customBackground';
 import CallToAction from '@/components/sections/callToAction';
 import Button from '@/components/elements/styledbutton';
-import { teamMembers } from '@/public/utils/data';
 import SectionTitle from '@/components/elements/sectionTitle';
 import TeamMember from '@/components/elements/teamMember';
 import { useTina } from 'tinacms/dist/react';

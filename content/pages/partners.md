@@ -100,23 +100,19 @@ partnersData:
       details: >
         SPONSOR BENEFITS\
 
-        \
-
+        \\
 
 
         \=> Demonstrating continued commitment to increasing diverse
-        representation in STEM fields.\
-
+        representation in STEM fields.\\
 
 
         \=> Reaching a broader audience through our dedicated Meet Our Sponsors
-        spotlight page.\
-
+        spotlight page.\\
 
 
         \=> Showcasing your brand and latest initiatives to potential customers
-        and investors.\
-
+        and investors.\\
 
 
         \=> and much more!
@@ -208,18 +204,3 @@ intro: >
 _template: partners
 ---
 
-
-What we do would not be possible without our partners! They help fulfill our goals of furthering STEM education through STEM programs, initiatives, and funding.
-
-## still
-
-* does
-* tjat help?
-
-> mo
-
-hjh
-
-jkj\
-\
-fgf

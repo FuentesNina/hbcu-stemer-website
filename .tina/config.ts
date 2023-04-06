@@ -23,6 +23,7 @@ export default defineConfig({
         name: "page",
         label: "Website Pages",
         path: "content/pages",
+        format: "md",
         ui: {
           router: ({ document }) => `/${document._sys.filename}`,
         },
@@ -280,12 +281,25 @@ export default defineConfig({
               },
             ],
           },
+          {
+            name: "impact",
+            label: "Impact",
+            fields: [
+
+              {
+                name: "smallIntro",
+                label: "Intro",
+                type: "string"
+              },
+            ],
+          },
         ]
       },
       {
         name: "websiteDetails",
         label: "Site Details",
         path: "content/siteDetails",
+        format: "md",
         templates: [
           {
             name: "webLinks",
