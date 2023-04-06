@@ -1,11 +1,11 @@
 import { getPageInfo } from "@/hooks/getPageInfo";
 import Button from "../elements/styledbutton";
-import { milestones } from "@/public/utils/data";
+// import { milestones } from "@/public/utils/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
 
-export default function ImpactGame() {
+export default function ImpactGame({milestones} : {milestones: any}) {
   const pageInfo = getPageInfo();
   const pageTitle = pageInfo.pageTitle;
 

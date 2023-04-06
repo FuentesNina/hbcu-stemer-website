@@ -18,8 +18,7 @@ export default function CommunityMemberCard({member, focusable}:{member: any, fo
             </div>
             <div className={`max-h-[50vh] overflow-y-auto bg-white p-5 pt-16 w-[150%] border border-black `} style={{boxShadow: '4px 4px 0 #ff1616, -4px -4px 0 #cfff00'}}>
                 <p className="font-title font-bold uppercase text-center text-sm">{`${member.firstName} ${member.lastName}`}</p>
-                <p className="font-title uppercase text-center text-sm">{member.school}</p>
-                <p className="font-title uppercase text-center text-sm">{member.event}</p>
+                <p className="font-title uppercase text-center text-sm">{member.schoolOrEvent}</p>
                 <p className={`font-body text-center text-sm mt-5`}>{member.bio}</p>
             </div>
         </div>
@@ -29,8 +28,7 @@ export default function CommunityMemberCard({member, focusable}:{member: any, fo
             </div>
             <div className="bg-white p-5">
                 <p className="font-title font-bold uppercase text-center text-sm">{`${member.firstName} ${member.lastName}`}</p>
-                <p className="font-title uppercase text-center text-sm">{member.school}</p>
-                <p className="font-title uppercase text-center text-sm">{member.event}</p>
+                <p className="font-title uppercase text-center text-sm">{member.schoolOrEvent}</p>
                 <p className="font-title uppercase text-center text-sm">{member.year}</p>
             </div>
         </div>

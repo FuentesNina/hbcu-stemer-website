@@ -285,11 +285,113 @@ export default defineConfig({
             name: "impact",
             label: "Impact",
             fields: [
-
+              {
+                name: "milestones",
+                label: "Impact Milestones",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item: any) => {
+                    return { label: `${item?.title}`}
+                  },
+                },
+                fields: [
+                  {
+                    name: "title",
+                    label: "Title",
+                    type: "string",
+                    required: true,
+                  },
+                  {
+                    name: "description",
+                    label: "Description",
+                    type: "string",
+                    required: true,
+                    ui: {
+                      component: "textarea",
+                    }
+                  },
+                ],
+              },
               {
                 name: "smallIntro",
-                label: "Intro",
-                type: "string"
+                label: "Community Intro Text",
+                type: "string",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                name: "communityMembers",
+                label: "Community Members",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item: any) => {
+                    return { label: `${item?.tabTitle}`}
+                  },
+                },
+                fields: [
+                  {
+                    name: "tabTitle",
+                    label: "Tab Title",
+                    type: "string",
+                  },
+                  {
+                    name: "tabIntro",
+                    label: "Tab Intro",
+                    type: "string",
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                  {
+                    name: "profiles",
+                    label: "Member Profiles",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      itemProps: (item: any) => {
+                        return { label: `${item?.firstName} ${item?.lastName}`}
+                      },
+                    },
+                    fields: [
+                      {
+                        name: "picture",
+                        label: "Picture",
+                        type: "image",
+                      },
+                      {
+                        name: "firstName",
+                        label: "First Name",
+                        type: "string",
+                      },
+                      {
+                        name: "lastName",
+                        label: "Last Name",
+                        type: "string",
+                      },
+                      {
+                        name: "schoolOrEvent",
+                        label: "School/Event",
+                        type: "string",
+                      },
+                      {
+                        name: "year",
+                        label: "Year",
+                        type: "number",
+                      },
+                      {
+                        name: "bio",
+                        label: "Bio/Testimonial",
+                        type: "string",
+                        ui: {
+                          component: "textarea",
+                        },
+                      },
+                    ],
+                  },
+                ],
               },
             ],
           },
