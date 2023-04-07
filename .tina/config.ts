@@ -572,35 +572,35 @@ export default defineConfig({
                   },
                 ],
               },
-              {
-                name: "tickets",
-                label: "Tickets",
-                type: "object",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return {label: item?.type}
-                  }
-                },
-                fields: [
-                  {
-                    name: "type",
-                    label: "Ticket Type",
-                    type: "string",
-                  },
-                  {
-                    name: "cta",
-                    label: "Call To Action",
-                    type: "string",
-                  },
-                  {
-                    name: "description",
-                    label: "Description",
-                    type: "string",
-                    ui: {
-                      component: "textarea",
-                    }
-                  },
+              // {
+              //   name: "tickets",
+              //   label: "Tickets",
+              //   type: "object",
+              //   list: true,
+              //   ui: {
+              //     itemProps: (item) => {
+              //       return {label: item?.type}
+              //     }
+              //   },
+              //   fields: [
+              //     {
+              //       name: "type",
+              //       label: "Ticket Type",
+              //       type: "string",
+              //     },
+              //     {
+              //       name: "cta",
+              //       label: "Call To Action",
+              //       type: "string",
+              //     },
+              //     {
+              //       name: "description",
+              //       label: "Description",
+              //       type: "string",
+              //       ui: {
+              //         component: "textarea",
+              //       }
+              //     },
                   {
                     name: "tickets",
                     label: "Tickets",
@@ -638,6 +638,11 @@ export default defineConfig({
                         type: "boolean"
                       },
                       {
+                        name: "inPerson",
+                        label: "In-Person Event",
+                        type: "boolean"
+                      },
+                      {
                         name: "link",
                         label: "Registration Link",
                         type: "string"
@@ -649,9 +654,9 @@ export default defineConfig({
                         list: true,
                       },
                     ],
-                  }
-                ],
-              },
+                  },
+              //   ],
+              // },
               {
                 name: "otherOptions",
                 label: "Other Participation Options",

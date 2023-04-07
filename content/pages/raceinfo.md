@@ -21,59 +21,58 @@ raceDay:
   month: 5
   day: 1
 tickets:
-  - type: In-Person Events
-    cta: 'Join Us In-Person May 07, 2023'
-    tickets:
-      - title: In-Person Run/Walk
-        description: 1 Mile or 5K - You Choose
-        price: $25
-        fee: $2.50
-        mostPopular: false
-        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=712453'
-        features:
-          - Premium T-shirt
-          - Swag Bag
-          - Runners Bib to wear during the event
-          - Create/Join a team of friends and family
-          - Easy to use fundraising page to help raise funds
-  - type: Virtual Events
-    cta: Join Us from Anywhere in May
-    tickets:
-      - title: Virtual Family fun
-        description: 1 mile run/walk
-        price: $15
-        fee: $1.90
-        mostPopular: false
-        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359'
-        features:
-          - T-shirt
-          - Swag Bag
-          - Create/Join a team of friends and family
-          - Easy to use fundraising page to help raise funds
-      - title: Virtual 5K
-        description: 3.1 miles run/walk
-        price: $25
-        fee: $2.50
-        mostPopular: true
-        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
-        features:
-          - Premium T-shirt
-          - Swag Bag
-          - Digital Runners Bib
-          - Create/Join a team of friends and family
-          - Easy to use fundraising page to help raise funds
-      - title: Virtual half-marathon
-        description: 13.1 miles run/walk
-        price: $40
-        fee: $3.40
-        mostPopular: false
-        link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362'
-        features:
-          - Premium T-shirt
-          - Swag Bag
-          - Digital Runners Bib
-          - Create/Join a team of friends and family
-          - Easy to use fundraising page to help raise funds
+  - title: 5K (or 1 Mile) Run/Walk
+    description: 'May 07, 2023 - Huntsville, AL'
+    price: $25
+    fee: $2.50
+    mostPopular: false
+    inPerson: true
+    link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=712453'
+    features:
+      - Choice of 1 Mile or 5K
+      - Premium T-shirt
+      - Swag Bag
+      - Runners Bib to wear during the event
+      - Create/Join a team of friends and family
+      - Easy to use fundraising page to help raise funds
+  - title: Virtual Family fun
+    description: 1 mile run/walk
+    price: $15
+    fee: $1.90
+    mostPopular: false
+    inPerson: false
+    link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359'
+    features:
+      - T-shirt
+      - Swag Bag
+      - Create/Join a team of friends and family
+      - Easy to use fundraising page to help raise funds
+  - title: Virtual 5K
+    description: 3.1 miles run/walk
+    price: $25
+    fee: $2.50
+    mostPopular: true
+    inPerson: false
+    link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
+    features:
+      - Premium T-shirt
+      - Swag Bag
+      - Digital Runners Bib
+      - Create/Join a team of friends and family
+      - Easy to use fundraising page to help raise funds
+  - title: Virtual half-marathon
+    description: 13.1 miles run/walk
+    price: $40
+    fee: $3.40
+    mostPopular: false
+    inPerson: false
+    link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362'
+    features:
+      - Premium T-shirt
+      - Swag Bag
+      - Digital Runners Bib
+      - Create/Join a team of friends and family
+      - Easy to use fundraising page to help raise funds
 donateCTA: Donate
 donate: 'https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER'
 sponsorStudentCTA: sponsor a student runner
@@ -151,7 +150,7 @@ faq:
       [Registation Page](www.hbcustemer.com/raceinfo "Registration Page").
   - question: When is the race?
     answer: >
-      The HBCU STEMER virtual run is held during the month of May, while the 
+      The HBCU STEMER virtual run is held during the month of May, while the
       Women in STEM Walkathon is a virtual walk that is held over the full month
       of October
   - question: >-

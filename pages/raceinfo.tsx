@@ -33,8 +33,7 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
   const navLinks = sharedData.navLinks;
 
 
-  const tickets = data.page.tickets;
-  const raceTickets = tickets[1].tickets;
+  const raceTickets = data.page.tickets;
 
   const router = useRouter();
   const pathname = router.pathname;
