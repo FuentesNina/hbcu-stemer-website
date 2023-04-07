@@ -43,11 +43,15 @@ export default function Impact({sharedData,...props} : {sharedData: any}) {
         <div className="my-10 md:max-w-7xl md:mx-auto md:px-10">
           <div className="md:grid md:grid-cols-2 z-10 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] bg-myLightGrey w-fit mx-auto py-5 px-10 rounded-t-3xl border border-black border-b-0 grid gap-5 relative -mb-2 overflow-clip">
             {/* titles /tabs */}
-            {communityMembers.map((tab: any, index: any) => {
-              return (
-                <Button href='' content={communityMembers[index].tabTitle} buttonStyle={currentTabIndex === index ? 'black' : 'darkerGrey'} action={() => {setCurrentTabIndex(index); setFocus(false)}}/>
-              )
-            })}
+            <ul>
+              {communityMembers.map((tab: any, index: any) => {
+                return (
+                  <li key={index}>
+                    <Button href='' content={communityMembers[index].tabTitle} buttonStyle={currentTabIndex === index ? 'black' : 'darkerGrey'} action={() => {setCurrentTabIndex(index); setFocus(false)}}/>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
 
           <div>
