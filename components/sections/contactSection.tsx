@@ -8,10 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 import FAQ from "./faq";
 
-export default function ContactSection({contactFormData, faq}:{contactFormData: any, faq: any}) {
+export default function ContactSection({contactFormData, faq, webLinks}:{contactFormData: any, faq: any, webLinks: any}) {
   const contactForm = contactFormData.formFields;
   const formTitle = contactFormData.formTitle;
   const formSubmit = contactFormData.formSubmit;
+  const formEmail = contactFormData.email;
 
   const formRef = useRef(null);
   const [visibleFAQ, setVisibleFAQ] = useState(false);
@@ -50,7 +51,7 @@ export default function ContactSection({contactFormData, faq}:{contactFormData: 
   return (
     <section className="md:flex md:gap-x-5 md:justify-center">
       <div className="grid place-content-center mt-10 md:mb-10">
-        <form ref={formRef} action={`https://formsubmit.co/${webLinks.email}`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
+        <form ref={formRef} action={`https://formsubmit.co/${formEmail}`} method="POST" className="bg-black p-5 rounded-3xl flex flex-col m-5 max-w-md"
               >
           {/* This is setup for formsubmit.com */}
           <input type="hidden" name="_captcha" value="false" />

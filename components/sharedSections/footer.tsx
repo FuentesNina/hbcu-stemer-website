@@ -6,7 +6,7 @@ import InstagramShowcase from "../elements/instagramShowcase";
 import SocialMediaIcons from "../elements/socialMediaIcons";
 import NewsletterForm from "../sections/newsletterForm";
 
-export default function Footer({showSignUp}: {showSignUp: boolean} ) {
+export default function Footer({showSignUp, navLinks, webLinks}: {showSignUp: boolean, navLinks: any, webLinks: any} ) {
 
   return (
     <footer className="overflow-clip w-full">
@@ -19,7 +19,7 @@ export default function Footer({showSignUp}: {showSignUp: boolean} ) {
           <div className="flex place-content-between mx-10 md:mt-auto md:w-full">
             <nav>
               <ul className="text-white font-body text-sm capitalize">
-                {navLinks.map((pageInfo, index) => { return(
+                {navLinks.map((pageInfo: any, index: number) => { return(
                   <li key={index}><Link href={pageInfo.path} className="hover:font-bold hover:text-myGreen">{pageInfo.pageTitle}</Link></li>
                 )})}
               </ul>

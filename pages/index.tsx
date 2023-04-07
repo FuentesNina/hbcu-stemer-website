@@ -3,11 +3,19 @@ import Title from "@/components/elements/title";
 import Link from "next/link";
 import Image from "next/image";
 import Countdown from "@/components/elements/countdown";
-import CustomBackground from "@/components/elements/customBackground";
 import Carousel from "@/components/elements/carousel";
 import Hero from "@/components/sections/hero";
+import { useTina } from 'tinacms/dist/react';
+import client from '@/.tina/__generated__/client';
+import { TinaMarkdown } from 'tinacms/dist/rich-text';
 
-export default function Home() {
+export default function Home({sharedData,...props} : {sharedData: any}) {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  })
+
   const divStyle = "hover:scale-105 isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
   const imageStyle = "grayscale mix-blend-overlay h-full w-full object-cover object-center absolute contrast-125 brightness-50"
   const h4Style = "font-display text-xl text-center font-bold uppercase text-white drop-shadow-[2px_2px_0_rgba(0,0,0,1)]";
@@ -25,7 +33,7 @@ export default function Home() {
                 <h4 className={h4Style}>{`register now`}</h4>
                 <p className={pStyle}>{`join the STEM education run`}</p>
               </div>
-              <Countdown />
+              <Countdown raceDay={sharedData.raceDay}/>
             </div>
           </Link>
         </div>
@@ -94,4 +102,17 @@ export default function Home() {
       </section>
     </>
   )
+}
+
+
+export const getStaticProps = async () => {
+  const pageResponse = await client.queries.page({ relativePath: 'index.md' })
+
+  return {
+    props: {
+      data: pageResponse.data,
+      query: pageResponse.query,
+      variables: pageResponse.variables,
+    },
+  }
 }

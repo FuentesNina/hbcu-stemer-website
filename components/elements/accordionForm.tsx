@@ -3,7 +3,6 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Subtitle from "./subtitle";
 import Button from "./styledbutton";
-import { webLinks } from "@/public/utils/data";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default function AccordionForm({form, setOpenForm, openForm} : {form: any, setOpenForm: Function, openForm: boolean}) {
@@ -39,26 +38,26 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                     <FontAwesomeIcon icon={openForm ? faMinus :faPlus} className="h-full group-hover:scale-110 group-hover:text-myRed"/>
                 </div>
                 <div className="flex items-center w-full justify-between">
-                    <p className="font-bold align-middle underline">{form.callToAction}</p>
-                    <img src={form.logo} className="h-14 ml-2"/>
+                    <p className="font-bold align-middle underline">{form?.callToAction}</p>
+                    <img src={form?.logo} className="h-14 ml-2"/>
                 </div>
             </dt>
             <dd className={`transition-all duration-500 ${openForm ? 'mt-5' : 'h-0 mt-0'}`}>
-                <form ref={formRef} className={`p-5 text-sm border-black border shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] ${!openForm && 'hidden'}`} action={`https://formsubmit.co/${webLinks.email}`} method="POST">
+                <form ref={formRef} className={`p-5 text-sm border-black border shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)] ${!openForm && 'hidden'}`} action={`https://formsubmit.co/${form.email}`} method="POST">
                     {/* This is setup for formsubmit.com */}
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_autoresponse" value="Thank you for message. Someone from our team will get back to you shortly." />
                     <input type="hidden" name="_template" value="table" />
                     <input type="text" name="_honey" style={{display:"none"}} />
-                    <input type="hidden" id="subject" name="_subject" value={`New ${form.title} Submission From HBCU STEMER Website`} />
+                    <input type="hidden" id="subject" name="_subject" value={`New ${form?.title} Submission From HBCU STEMER Website`} />
                     <input type="hidden" name="_next" value={`${URL}/thankyou`} />
                     {/* End of setup for formsubmit.com */}
 
-                    <Subtitle content={form.title} className="text-myRed text-base text-center" />
+                    <Subtitle content={form?.title} className="text-myRed text-base text-center" />
                     <div className="my-5">
-                        <TinaMarkdown content={form.details} />
+                        <TinaMarkdown content={form?.details} />
                     </div>
-                    {form.fields.map((field : any, index : number) => {
+                    {form?.fields.map((field : any, index : number) => {
                         const fieldClassName = "grid my-3";
                         const labelClassName = "";
                         const inputClassName = "border border-black";

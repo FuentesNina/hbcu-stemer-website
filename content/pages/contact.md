@@ -22,7 +22,9 @@ formFields:
     required: false
 formTitle: Get In Touch
 formSubmit: Send Message
+email: info@hbcustemer.com
 _template: contact
 ---
+
 
 

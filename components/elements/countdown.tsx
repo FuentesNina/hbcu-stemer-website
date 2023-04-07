@@ -1,16 +1,14 @@
-import { getPageInfo } from "@/hooks/getPageInfo";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function Countdown({raceDay} : {raceDay: {year:number, month: number, day: number}}) {
-  const pageInfo = getPageInfo();
-
-  const path= pageInfo.path;
+  const router = useRouter();
+  const path = router.pathname;
 
   const numberStyle = `font-title uppercase font-bold text-white text-center text-3xl ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
   const catStyle = `font-title uppercase font-bold text-white text-center ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
   const textStyle = `font-title uppercase text-center font-bold text-white text-sm ${path === '/raceinfo' ? 'drop-shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'drop-shadow-md'}`;
 
-  // const raceDay = {year: 2023, month: 5, day: 1};
 
   const getRemainingTime = function(raceDay:{year: number, month: number, day: number}) {
     const deadline = new Date(raceDay.year, raceDay.month - 1,raceDay.day);

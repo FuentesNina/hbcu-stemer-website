@@ -2,9 +2,8 @@ import Banner from '@/components/sections/banner';
 import ContactSection from '@/components/sections/contactSection';
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
-import { faq } from '@/public/utils/data';
 
-export default function Contact({...props}) {
+export default function Contact({sharedData,...props} : {sharedData: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
@@ -12,18 +11,19 @@ export default function Contact({...props}) {
   })
 
   const contactFormData = data.page;
+  const faq = sharedData.faq;
+  const webLinks = sharedData.webLinks;
 
   return (
     <>
       <Banner />
-      <ContactSection contactFormData={contactFormData} faq={faq}/>
+      <ContactSection contactFormData={contactFormData} faq={faq} webLinks={webLinks}/>
     </>
   )
 }
 
 export const getStaticProps = async () => {
   const pageResponse = await client.queries.page({ relativePath: 'contact.md' })
-  // const faq = await client.queries.websiteDetails({ relativePath: 'faq.md' })
 
   return {
     props: {

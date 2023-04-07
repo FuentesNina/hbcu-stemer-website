@@ -6,7 +6,7 @@ import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export default function Partners({...props}) {
+export default function Partners({sharedData,...props} : {sharedData: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
@@ -21,7 +21,6 @@ export default function Partners({...props}) {
   const activateTab = function(index: number) {
     setCurrentTab(partnersData[index]);
     setOpenForm(false);
-    console.log(currentTab);
   }
 
   const goToForm = function (index: number) {

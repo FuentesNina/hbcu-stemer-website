@@ -95,6 +95,7 @@ partnersData:
         homepage: false
     form:
       logo: /images/partner_logos/yourLogoHere.png
+      email: info@hbcustemer.com
       callToAction: Your Company Here! Partner with Us
       title: SPONSOR SIGN-UP
       details: >
@@ -154,6 +155,7 @@ partnersData:
     callToAction: Become a Partner
     form:
       logo: /images/partner_logos/yourLogoHere.png
+      email: info@hbcustemer.com
       callToAction: Your School Here! Partner with HBCU STEMER
       title: SPONSOR SIGN-UP
       details: >
@@ -203,5 +205,7 @@ intro: >
   funding.
 _template: partners
 ---
+
+
 
 

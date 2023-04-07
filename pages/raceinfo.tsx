@@ -12,7 +12,7 @@ import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 
-export default function RaceInformation({...props}) {
+export default function RaceInformation({sharedData,...props} : {sharedData: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
@@ -29,7 +29,7 @@ export default function RaceInformation({...props}) {
   const sponsorStudentCTA = data.page.sponsorStudentCTA;
   const sponsorStudentLink = data.page.sponsorStudent;
   const pastEvents = data.page.pastEvents;
-  const faq = data.page.faq;
+  const faq = sharedData.faq;
 
 
   const tickets = data.page.tickets;

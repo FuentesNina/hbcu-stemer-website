@@ -25,7 +25,7 @@ export default defineConfig({
         path: "content/pages",
         format: "md",
         ui: {
-          router: ({ document }) => `/${document._sys.filename}`,
+          router: ({ document }) => `/${document._sys.filename !== "index" ? document._sys.filename : ''}`,
         },
         templates: [
           {
@@ -59,11 +59,11 @@ export default defineConfig({
                     return { label: `${item?.firstName} ${item?.lastName} ( ${item?.role} ) `}
                   },
                   // // Setting a default will auto-populate new items with the given values
-                  defaultItem: {
-                    firstName: "Team Member",
-                    lastName: "",
-                    role: "new",
-                  },
+                  // defaultItem: {
+                  //   firstName: "Team Member",
+                  //   lastName: "",
+                  //   role: "new",
+                  // },
                 },
                 fields: [
                   {
@@ -142,51 +142,7 @@ export default defineConfig({
                     type: "string",
                   },
                   {
-                    label: "Companies or Schools",
-                    name: "companies",
-                    type: "object",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return { label: `${item?.name}`}
-                      },
-                    },
-                    fields: [
-                      {
-                        label: "Logo",
-                        name: "logo",
-                        type: "image",
-                        required: true,
-                      },
-                      {
-                        label: "Name",
-                        name: "name",
-                        type: "string",
-                        required: true,
-                      },
-                      {
-                        label: "Description",
-                        name: "description",
-                        type: "string",
-                        ui: {
-                          component: "textarea",
-                        },
-                      },
-                      {
-                        label: "Website",
-                        name: "website",
-                        type: "string",
-                        required: true,
-                      },
-                      {
-                        label: "Displayed on HomePage",
-                        name: "homepage",
-                        type: "boolean",
-                      },
-                    ]
-                  },
-                  {
-                    label: "Form",
+                    label: "Partner Sign-Up Form",
                     name: "form",
                     type: "object",
                     fields: [
@@ -194,6 +150,12 @@ export default defineConfig({
                         label: "Placeholder Logo",
                         name: "logo",
                         type: "image",
+                      },
+                      {
+                        label: "Email Form to:",
+                        name: "email",
+                        type: "string",
+                        required: true,
                       },
                       {
                         label: "Call To Action",
@@ -277,6 +239,50 @@ export default defineConfig({
                             list: true,
                           },
                         ]
+                      },
+                    ]
+                  },
+                  {
+                    label: "Companies or Schools",
+                    name: "companies",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.name}`}
+                      },
+                    },
+                    fields: [
+                      {
+                        label: "Logo",
+                        name: "logo",
+                        type: "image",
+                        required: true,
+                      },
+                      {
+                        label: "Name",
+                        name: "name",
+                        type: "string",
+                        required: true,
+                      },
+                      {
+                        label: "Description",
+                        name: "description",
+                        type: "string",
+                        ui: {
+                          component: "textarea",
+                        },
+                      },
+                      {
+                        label: "Website",
+                        name: "website",
+                        type: "string",
+                        required: true,
+                      },
+                      {
+                        label: "Displayed on HomePage",
+                        name: "homepage",
+                        type: "boolean",
                       },
                     ]
                   },
@@ -416,6 +422,12 @@ export default defineConfig({
                 name: "formSubmit",
                 label: "Form Submit Text",
                 type: "string",
+              },
+              {
+                label: "Email Form to:",
+                name: "email",
+                type: "string",
+                required: true,
               },
               {
                 name: "formFields",
@@ -723,34 +735,19 @@ export default defineConfig({
                   },
                 ]
               },
+            ],
+          },
+          {
+            name: "homepage",
+            label: "Homepage",
+            fields: [
               {
-                name: "faq",
-                label: "Frequently Asked Questions",
-                type: "object",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return {label: item?.question}
-                  }
-                },
-                fields: [
-                  {
-                    name: "question",
-                    label: "Question",
-                    type: "string",
-                    ui: {
-                      component: "textarea"
-                    },
-                  },
-                  {
-                    name: "answer",
-                    label: "Answer",
-                    type: "rich-text",
-                  },
-                ],
+                name: "pageTitle",
+                label: "Page Title",
+                type: "string",
               },
             ],
-          }
+          },
         ]
       },
       {
@@ -833,7 +830,11 @@ export default defineConfig({
                 list: true,
                 ui: {
                   itemProps: (item) => {
-                    return {label: item?.pageTitle}
+                    if (item?.highlight) {
+                      return {label: item?.pageTitle, style: {backgroundColor: "#cfff00"}}
+                    } else {
+                      return {label: item?.pageTitle}
+                    }
                   }
                 },
                 fields: [

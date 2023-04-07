@@ -10,12 +10,14 @@ import { useState } from "react";
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 
-export default function Impact({...props}) {
+export default function Impact({sharedData,...props} : {sharedData: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
     data: props.data,
   })
+
+  const cta = sharedData.cta;
 
   const milestones = data.page.milestones;
   const communityMembers = data.page.communityMembers;
@@ -72,7 +74,7 @@ export default function Impact({...props}) {
           </div>
         </div>
       </section>
-      <CallToAction />
+      <CallToAction cta={cta}/>
     </>
   )
 }
