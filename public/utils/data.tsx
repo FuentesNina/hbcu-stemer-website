@@ -552,8 +552,8 @@
 //     },
 // ]
 
-// to be deleted/replaced with IG API.
 export const IG_PICTURES = [
+// to be deleted/replaced with IG API.
     {
         src: "/images/placeholders/instagramShowcase/IG1.png",
         caption: "",

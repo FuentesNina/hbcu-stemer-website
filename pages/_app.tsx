@@ -4,7 +4,7 @@ import Layout from '@/components/sharedSections/layout'
 import client from '@/.tina/__generated__/client'
 
 
-export default function App({ Component, pageProps, ...props }: AppProps) {
+export default function App({ Component, pageProps, ...props}: AppProps) {
 
   const webLinks = props.props.webLinks.websiteDetails;
   const raceDay = props.props.raceInfoData.page.raceDay;
@@ -28,7 +28,7 @@ export default function App({ Component, pageProps, ...props }: AppProps) {
   )
 }
 
-App.getInitialProps = async () => {
+App.getInitialProps = async (ctx: any) => {
   const faq = await client.queries.websiteDetails({ relativePath: 'faq.md' });
   const webLinks = await client.queries.websiteDetails({ relativePath: 'links.md' });
   const cta = await client.queries.websiteDetails({ relativePath: 'cta.md' });
