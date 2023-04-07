@@ -14,8 +14,9 @@ export default function App({ Component, pageProps, ...props }: AppProps) {
   const customBackground = props.props.customBackground.websiteDetails.customBackground;
   const sponsors = props.props.partnersData.page.partnersData[0].companies;
   const scholars = props.props.impactData.page.communityMembers[0].profiles;
+  const newsletterForm = props.props.homeData.page.newsletterSignUp;
 
-  const layoutData = { navLinks, webLinks};
+  const layoutData = { navLinks, webLinks, newsletterForm};
   const sharedData = {webLinks, raceDay, faq, cta, customBackground, navLinks, sponsors, scholars};
 
   return (
@@ -36,6 +37,7 @@ App.getInitialProps = async () => {
   const raceInfoResponse = await client.queries.page({ relativePath: 'raceinfo.md' });
   const partnersResponse = await client.queries.page({ relativePath: 'partners.md' });
   const impactResponse = await client.queries.page({ relativePath: 'impact.md' });
+  const homeResponse = await client.queries.page({ relativePath: 'index.md' });
 
   return {
     props: {
@@ -47,6 +49,7 @@ App.getInitialProps = async () => {
       raceInfoData: raceInfoResponse.data,
       partnersData: partnersResponse.data,
       impactData: impactResponse.data,
+      homeData: homeResponse.data,
     },
   }
 }

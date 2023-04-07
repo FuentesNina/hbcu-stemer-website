@@ -16,7 +16,7 @@ export default function Contact({sharedData,...props} : {sharedData: any}) {
 
   return (
     <>
-      <Banner />
+      <Banner navLinks={sharedData.navLinks}/>
       <ContactSection contactFormData={contactFormData} faq={faq} webLinks={webLinks}/>
     </>
   )

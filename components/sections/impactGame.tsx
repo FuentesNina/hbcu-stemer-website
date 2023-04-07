@@ -1,11 +1,14 @@
-import { getPageInfo } from "@/hooks/getPageInfo";
 import Button from "../elements/styledbutton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-export default function ImpactGame({milestones} : {milestones: any}) {
-  const pageInfo = getPageInfo();
+export default function ImpactGame({milestones, navLinks} : {milestones: any, navLinks: any}) {
+  const router = useRouter();
+  const pathname = router.pathname;
+  const filtered = navLinks.filter((pageInfo: any) => pageInfo.path === pathname);
+  const pageInfo = filtered[0];
   const pageTitle = pageInfo.pageTitle;
 
   const [status, setStatus] = useState('start');

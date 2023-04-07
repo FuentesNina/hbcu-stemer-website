@@ -2,9 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { webLinks } from "@/public/utils/data";
 
-export default function SocialMediaIcons({containerClassName, iconClassName, color, margins }: {containerClassName?: string | undefined ,iconClassName?:string | undefined, color?: string | undefined, margins?: string | undefined}) {
+export default function SocialMediaIcons({containerClassName, iconClassName, color, margins, webLinks }: {webLinks: any, containerClassName?: string | undefined ,iconClassName?:string | undefined, color?: string | undefined, margins?: string | undefined}) {
 
     const iconColor = color ? color : "white";
     const iconMargins = margins ? margins : "";

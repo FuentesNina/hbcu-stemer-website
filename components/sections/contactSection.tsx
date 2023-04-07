@@ -1,6 +1,5 @@
 import SocialMediaIcons from "../elements/socialMediaIcons";
 import Button from "../elements/styledbutton";
-import { webLinks } from "@/public/utils/data";
 import Link from "next/link";
 import Title from "../elements/title";
 import { useState, useRef, useEffect } from "react";
@@ -90,7 +89,7 @@ export default function ContactSection({contactFormData, faq, webLinks}:{contact
         <Button href="" action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
         <div className="flex flex-col mx-auto my-10 text-center md:text-left">
             <Title content="Connect With Us" className="text-black"/>
-            <SocialMediaIcons containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7 hover:text-myRed hover:drop-shadow-[1px_1px_0_black]"/>
+            <SocialMediaIcons webLinks={webLinks} containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7 hover:text-myRed hover:drop-shadow-[1px_1px_0_black]"/>
             <Link href={webLinks.instagram} className="font-body text-sm my-1 hover:font-bold">Instagram @ hbcustemer</Link>
             <Link href={webLinks.facebook} className="font-body text-sm my-1 hover:font-bold">Facebook @ HBCU STEMER</Link>
             <Link href={`mailto:${webLinks.email}`} className="font-body text-sm my-1 hover:font-bold">  Email - {webLinks.email}</Link>

@@ -1,9 +1,8 @@
-import { navLinks, partnersData } from "@/public/utils/data"
 import LargeLogo from "../elements/logos/largeLogo"
 import Button from "../elements/styledbutton"
 import Title from "../elements/title"
 
-export default function Hero() {
+export default function Hero({heroVideo, companies} : {heroVideo: string, companies: any}) {
     return (
         <>
           <section id="hero" className="bg-black">
@@ -14,13 +13,13 @@ export default function Hero() {
                 <Button href="#basicInfo" content="learn more" buttonStyle="red" className="my-10 md:mb-0"/>
               </div>
               <div className="aspect-video md:min-h-none max-w-md mx-auto md:w-full md:my-auto md:order-first shadow-[0_0_20px_white] lg:max-w-none">
-                <video src={navLinks[0].bannerImage} height="100%" className="mx-auto max-h-[30vh] md:max-h-full" controls autoPlay/>
+                <video src={heroVideo} height="100%" className="mx-auto max-h-[30vh] md:max-h-full" controls autoPlay/>
               </div>
             </div>
             <div className="pt-10 pb-5 md:max-w-4xl md:mx-auto">
               <Title content="sponsored by" className="text-white text-sm text-center"/>
               <ul className="flex justify-around items-center gap-3 p-5 flex-wrap bg-white mx-5 mt-2 shadow-[inset_4px_4px_4px_rgba(0,0,0,0.25)]">
-                {partnersData[0].companies.map((company, index) => {
+                {companies?.map((company: any, index: number) => {
                   if (company.homepage) {
                     return (
                       <li key={index} className='max-w-[6rem]'>

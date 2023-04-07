@@ -1,6 +1,6 @@
 ---
 navLinks:
-  - bannerImage: /images/hero_video.mp4
+  - bannerImage: ''
     pageTitle: Home
     path: /
     pageDescription: >-
@@ -30,4 +30,5 @@ navLinks:
     highlight: false
 _template: navLinks
 ---
+
 

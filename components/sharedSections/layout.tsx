@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 export default function Layout({children, layoutData}:{children:ReactElement, layoutData: any}) {
   const navLinks = layoutData.navLinks;
   const webLinks = layoutData.webLinks;
+  const newsletterForm = layoutData.newsletterForm
 
   const router = useRouter();
   const pathname = router.pathname;
@@ -18,7 +19,7 @@ export default function Layout({children, layoutData}:{children:ReactElement, la
       {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} />}
       {pageInfo && <NavBar navLinks={navLinks}/>}
             <main>{children}</main>
-      {pageInfo && <Footer showSignUp={pageInfo.path === '/' && true} navLinks={navLinks} webLinks={webLinks}/>}
+      {pageInfo && <Footer showSignUp={pageInfo.path === '/' && true} navLinks={navLinks} webLinks={webLinks} newsletterForm={newsletterForm}/>}
     </>
   )
 }

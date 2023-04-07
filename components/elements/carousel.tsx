@@ -1,11 +1,9 @@
 import CommunityMemberCard from "./communityMemberCard";
-import { communityMembers } from "@/public/utils/data";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-export default function Carousel() {
-    const scholarsTabIndex = 0;
+export default function Carousel({communityMembers}: {communityMembers: any}) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
 
@@ -40,7 +38,7 @@ export default function Carousel() {
                 {[...Array(3)].map((value, index) => {
                     return (
                         <li key={index} className={`mx-5 ${animation} ${currentSlide !== index && ""}`}>
-                            <CommunityMemberCard member={communityMembers[scholarsTabIndex].profiles[index]} />
+                            <CommunityMemberCard member={communityMembers[index]} />
                         </li>
                     )
                 })}

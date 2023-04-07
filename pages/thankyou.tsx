@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 
 export default function ThankYou({sharedData,...props} : {sharedData: any}) {
   const navLinks = sharedData.navLinks;
-  const webLinks = sharedData.webLinks
+  const webLinks = sharedData.webLinks;
+  const newsletterForm = sharedData.newsletterForm;
 
   const router = useRouter();
 
@@ -28,7 +29,7 @@ export default function ThankYou({sharedData,...props} : {sharedData: any}) {
             <Button href="" action={goHome} content="homepage" buttonStyle="white-red"/>
         </main>
         {/* 2 buttons: go back to previous page & go back home. */}
-        <Footer showSignUp={false} navLinks={navLinks} webLinks={webLinks}/>
+        <Footer showSignUp={false} navLinks={navLinks} webLinks={webLinks} newsletterForm={newsletterForm}/>
       </>
     )
   }

@@ -5,11 +5,11 @@ import RaceTicketCard from "@/components/elements/raceTicketCard";
 import SectionTitle from "@/components/elements/sectionTitle";
 import Button from "@/components/elements/styledbutton";
 import FAQ from "@/components/sections/faq";
-import { getPageInfo } from "@/hooks/getPageInfo";
 import Image from "next/image";
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import { useRouter } from "next/router";
 
 
 export default function RaceInformation({sharedData,...props} : {sharedData: any}) {
@@ -30,12 +30,16 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
   const sponsorStudentLink = data.page.sponsorStudent;
   const pastEvents = data.page.pastEvents;
   const faq = sharedData.faq;
+  const navLinks = sharedData.navLinks;
 
 
   const tickets = data.page.tickets;
   const raceTickets = tickets[1].tickets;
 
-  const pageInfo = getPageInfo();
+  const router = useRouter();
+  const pathname = router.pathname;
+  const filtered = navLinks.filter((pageInfo: any) => pageInfo.path === pathname);
+  const pageInfo = filtered[0];
   const bannerImage= pageInfo.bannerImage;
   const bannerImageLarge= pageInfo.bannerImageLarge;
 

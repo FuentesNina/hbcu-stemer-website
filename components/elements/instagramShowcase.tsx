@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { IG_PICTURES } from "@/public/utils/data"
+import Link from "next/link";
+import { IG_PICTURES } from "@/public/utils/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

@@ -30,8 +30,8 @@ export default function Impact({sharedData,...props} : {sharedData: any}) {
     <>
       {
       milestones.length > 0
-      ? <ImpactGame milestones={milestones}/>
-      : <Banner />
+      ? <ImpactGame milestones={milestones} navLinks={sharedData.navLinks}/>
+      : <Banner navLinks={sharedData.navLinks}/>
       }
 
       <section className="md:my-20 scroll-mt-10 md:scroll-mt-20" id='community'>

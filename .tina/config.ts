@@ -742,9 +742,238 @@ export default defineConfig({
             label: "Homepage",
             fields: [
               {
-                name: "pageTitle",
-                label: "Page Title",
-                type: "string",
+                name: "heroSection",
+                label: "Hero Banner",
+                type: "object",
+                fields: [
+                  {
+                    name: "heroVideo",
+                    label: "Welcome Video",
+                    type: "image",
+                  },
+                  {
+                    name: "slogan",
+                    label: "Slogan",
+                    type: "string",
+                  },
+                  {
+                    name: "button",
+                    label: "Button",
+                    type: "string",
+                  },
+                ],
+              },
+              {
+                name: "mainCTA",
+                label: "Call To Action Section",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.name}
+                  }
+                },
+                fields: [
+                  {
+                    name: "name",
+                    label: "CTA Main",
+                    type: "string",
+                  },
+                  {
+                    name: "description",
+                    label: "CTA Description",
+                    type: "string",
+                  },
+                  {
+                    name: "image",
+                    label: "CTA Image",
+                    type: "image",
+                  },
+                ]
+              },
+              {
+                name: "stats",
+                label: "Homepage Statistics",
+                type: "object",
+                fields: [
+                  {
+                    name: "stat1",
+                    label: "Statistic #1",
+                    type: "string",
+                  },
+                  {
+                    name: "stat1Description",
+                    label: "Statistic #1 Description",
+                    type: "string",
+                  },
+                  {
+                    name: "stat2",
+                    label: "Statistic #2",
+                    type: "string",
+                  },
+                  {
+                    name: "stat2Description",
+                    label: "Statistic #2 Description",
+                    type: "string",
+                  },
+                  {
+                    name: "cta",
+                    label: "Call To Action",
+                    type: "string",
+                  },
+                ],
+              },
+              {
+                name: "pastEvents",
+                label: "Homepage Past Events",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.title}
+                  }
+                },
+                fields: [
+                  {
+                    name: "title",
+                    label: "Title",
+                    type: "string",
+                  },
+                  {
+                    name: "picture",
+                    label: "Picture",
+                    type: "image",
+                  },
+                ],
+              },
+              {
+                name: "mission",
+                label: "Mission",
+                type: "object",
+                fields: [
+                  {
+                    name: "image",
+                    label: "Picture",
+                    type: "image",
+                  },
+                  {
+                    name: "title",
+                    label: "Title",
+                    type: "string",
+                  },
+                  {
+                    name: "mission",
+                    label: "Mission",
+                    type: "string",
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    name: "button",
+                    label: "Button",
+                    type: "string",
+                  },
+                ],
+              },
+              {
+                name: "newsletterSignUp",
+                label: "Newsletter Sign-Up Form",
+                type: "object",
+                fields: [
+                  {
+                    name: "title",
+                    label: "Title",
+                    type: "string",
+                  },
+                  {
+                    name: "description",
+                    label: "Description",
+                    type: "string",
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    name: "button",
+                    label: "Button",
+                    type: "string",
+                  },
+                  {
+                    label: "Email Form to:",
+                    name: "email",
+                    type: "string",
+                    required: true,
+                  },
+                  {
+                    name: "formFields",
+                    label: "Form Fields",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return {label: item?.fieldName}
+                      }
+                    },
+                    fields: [
+                      {
+                        label: "Field Name",
+                        name: "fieldName",
+                        type: "string",
+                        required: true,
+                      },
+                      {
+                        label: "Type",
+                        name: "type",
+                        type: "string",
+                        required: true,
+                        options: [
+                          {
+                            value: "Short answer text",
+                            label: "Short Answer",
+                          },
+                          {
+                            value: "Paragraph",
+                            label: "Paragraph",
+                          },
+                          {
+                            value: "Email",
+                            label: "Email",
+                          },
+                          {
+                            value: "Checkbox",
+                            label: "Checkbox",
+                          },
+                          {
+                            value: "Disclaimer",
+                            label: "Disclaimer",
+                          }
+                        ]
+                      },
+                      {
+                        label: "Placeholder",
+                        name: "placeholder",
+                        type: "string",
+                        required: true,
+                        ui: {
+                          component: "textarea"
+                        },
+                      },
+                      {
+                        label: "Required",
+                        name: "required",
+                        type: "boolean",
+                        required: true,
+                      },
+                      {
+                        label: "Options",
+                        name: "options",
+                        type: "string",
+                        list: true,
+                      },
+                    ]
+                  },
+                ],
               },
             ],
           },

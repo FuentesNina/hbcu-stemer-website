@@ -1,8 +1,11 @@
-import { getPageInfo } from "@/hooks/getPageInfo";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-export default function Banner() {
-  const pageInfo = getPageInfo();
+export default function Banner({navLinks}: {navLinks: any}) {
+  const router = useRouter();
+  const pathname = router.pathname;
+  const filtered = navLinks.filter((pageInfo: any) => pageInfo.path === pathname);
+  const pageInfo = filtered[0];
 
   const pageTitle = pageInfo.pageTitle;
   const bannerImage= pageInfo.bannerImage;
