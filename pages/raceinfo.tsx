@@ -59,9 +59,9 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
         </section>
         <section id='raceDetails' className="scroll-mt-20 md:scroll-mt-28 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto lg:grid lg:grid-cols-[1fr_1fr]">
           <div className="md:my-auto">
-            <p className="font-body my-10 mx-5 text-justify">
+            <div className="font-body my-10 mx-5 text-justify">
               <TinaMarkdown content={introText} />
-            </p>
+            </div>
             <Button href="#tickets" content={introCTA} buttonStyle="black" className="my-10"/>
           </div>
           <ul className="flex flex-wrap gap-10 place-content-center justify-items-center my-10 lg:grid lg:grid-cols-2 lg:gap-y-5 lg:gap-x-0">

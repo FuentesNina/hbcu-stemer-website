@@ -89,13 +89,19 @@ pastEvents:
       - '1 Mile, 5K, and Half Marathon Options'
       - Runners from all over the country
       - '$1,200+ raised for future black doctors of America!'
-    files:
-      - /images/pastEvents/2022_HBCU_stemer/1.jpg
-      - /images/pastEvents/2022_HBCU_stemer/2.jpg
-      - /images/pastEvents/2022_HBCU_stemer/3.jpg
-      - /images/pastEvents/2022_HBCU_stemer/4.JPG
-      - /images/pastEvents/2022_HBCU_stemer/5.png
-      - /images/pastEvents/2022_HBCU_stemer/6.png
+    pictures:
+      - picture: /images/pastEvents/2022_HBCU_stemer/1.jpg
+        alt: runner smiling at the camera
+      - picture: /images/pastEvents/2022_HBCU_stemer/2.jpg
+        alt: runner holding bib smiling
+      - picture: /images/pastEvents/2022_HBCU_stemer/3.jpg
+        alt: Danielle and Daphne smiling during a run
+      - picture: /images/pastEvents/2022_HBCU_stemer/4.JPG
+        alt: participant taking a selfie
+      - picture: /images/pastEvents/2022_HBCU_stemer/5.png
+        alt: female participant outside smiling
+      - picture: /images/pastEvents/2022_HBCU_stemer/6.png
+        alt: 2 women walking in nature
   - type: recap
     date: 2021 Recap
     title: Thanks Everyone
@@ -107,13 +113,19 @@ pastEvents:
       - Over 500 Miles
       - '1st Place: Sakinah S. with 120 Miles'
       - Over $1000 raised for graduating seniors
-    files:
-      - /images/pastEvents/2021_WiSW/1.PNG
-      - /images/pastEvents/2021_WiSW/2.png
-      - /images/pastEvents/2021_WiSW/3.PNG
-      - /images/pastEvents/2021_WiSW/4.PNG
-      - /images/pastEvents/2021_WiSW/5.jpg
-      - /images/pastEvents/2021_WiSW/6.png
+    pictures:
+      - picture: /images/pastEvents/2021_WiSW/1.PNG
+        alt: women holding the peace sign outside
+      - picture: /images/pastEvents/2021_WiSW/2.png
+        alt: 2 women from Spellman college
+      - picture: /images/pastEvents/2021_WiSW/3.PNG
+        alt: woman wearing the hbcu stemer branded face mask
+      - picture: /images/pastEvents/2021_WiSW/4.PNG
+        alt: van for STEM success summit
+      - picture: /images/pastEvents/2021_WiSW/5.jpg
+        alt: dog wearing the hbcu stemer face cloth
+      - picture: /images/pastEvents/2021_WiSW/6.png
+        alt: 3 women wearing the Women in STEM Walkathon t-shirt
   - type: event
     date: May 2021
     title: inaugural education run
@@ -123,15 +135,23 @@ pastEvents:
       - >-
         Math and Computer Science (MACS) support Scholarship established for
         deserving students at Oakwood University (Huntsville, AL)
-    files:
-      - /images/pastEvents/2021_HBCU_stemer/1.png
-      - /images/pastEvents/2021_HBCU_stemer/2.jpg
-      - /images/pastEvents/2021_HBCU_stemer/3.png
-      - /images/pastEvents/2021_HBCU_stemer/4.png
-      - /images/pastEvents/2021_HBCU_stemer/5.png
-      - /images/pastEvents/2021_HBCU_stemer/6.jpg
-      - /images/pastEvents/2021_HBCU_stemer/7.JPG
-      - /images/pastEvents/2021_HBCU_stemer/8.PNG
+    pictures:
+      - picture: /images/pastEvents/2021_HBCU_stemer/1.png
+        alt: Picture of Constance who completed here first half marathon
+      - picture: /images/pastEvents/2021_HBCU_stemer/2.jpg
+        alt: danielle after completing her first marathon
+      - picture: /images/pastEvents/2021_HBCU_stemer/3.png
+        alt: picture of Ajene who completed the 5K
+      - picture: /images/pastEvents/2021_HBCU_stemer/4.png
+        alt: Picture of Clifton
+      - picture: /images/pastEvents/2021_HBCU_stemer/5.png
+        alt: Picture of Chidinma with Danielle
+      - picture: /images/pastEvents/2021_HBCU_stemer/6.jpg
+        alt: Women walking outside in nature
+      - picture: /images/pastEvents/2021_HBCU_stemer/7.JPG
+        alt: Woman wearing the HBCU STEM t-shirt
+      - picture: /images/pastEvents/2021_HBCU_stemer/8.PNG
+        alt: picture of Oakwood University math department students
 otherOptions: |+
   Don't want to run... but still want to support?
 

@@ -572,91 +572,60 @@ export default defineConfig({
                   },
                 ],
               },
-              // {
-              //   name: "tickets",
-              //   label: "Tickets",
-              //   type: "object",
-              //   list: true,
-              //   ui: {
-              //     itemProps: (item) => {
-              //       return {label: item?.type}
-              //     }
-              //   },
-              //   fields: [
-              //     {
-              //       name: "type",
-              //       label: "Ticket Type",
-              //       type: "string",
-              //     },
-              //     {
-              //       name: "cta",
-              //       label: "Call To Action",
-              //       type: "string",
-              //     },
-              //     {
-              //       name: "description",
-              //       label: "Description",
-              //       type: "string",
-              //       ui: {
-              //         component: "textarea",
-              //       }
-              //     },
+              {
+                name: "tickets",
+                label: "Tickets",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.title}
+                  }
+                },
+                fields: [
                   {
-                    name: "tickets",
-                    label: "Tickets",
-                    type: "object",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return {label: item?.title}
-                      }
-                    },
-                    fields: [
-                      {
-                        name: "title",
-                        label: "Ticket Title",
-                        type: "string"
-                      },
-                      {
-                        name: "description",
-                        label: "Description",
-                        type: "string"
-                      },
-                      {
-                        name: "price",
-                        label: "Price",
-                        type: "string"
-                      },
-                      {
-                        name: "fee",
-                        label: "Run Sign-Up Fee",
-                        type: "string"
-                      },
-                      {
-                        name: "mostPopular",
-                        label: "Most Popular Option",
-                        type: "boolean"
-                      },
-                      {
-                        name: "inPerson",
-                        label: "In-Person Event",
-                        type: "boolean"
-                      },
-                      {
-                        name: "link",
-                        label: "Registration Link",
-                        type: "string"
-                      },
-                      {
-                        name: "features",
-                        label: "Features",
-                        type: "string",
-                        list: true,
-                      },
-                    ],
+                    name: "title",
+                    label: "Ticket Title",
+                    type: "string"
                   },
-              //   ],
-              // },
+                  {
+                    name: "description",
+                    label: "Description",
+                    type: "string"
+                  },
+                  {
+                    name: "price",
+                    label: "Price",
+                    type: "string"
+                  },
+                  {
+                    name: "fee",
+                    label: "Run Sign-Up Fee",
+                    type: "string"
+                  },
+                  {
+                    name: "mostPopular",
+                    label: "Most Popular Option",
+                    type: "boolean"
+                  },
+                  {
+                    name: "inPerson",
+                    label: "In-Person Event",
+                    type: "boolean"
+                  },
+                  {
+                    name: "link",
+                    label: "Registration Link",
+                    type: "string"
+                  },
+                  {
+                    name: "features",
+                    label: "Features",
+                    type: "string",
+                    list: true,
+                  },
+                ],
+              },
               {
                 name: "otherOptions",
                 label: "Other Participation Options",
@@ -728,10 +697,27 @@ export default defineConfig({
                     list: true,
                   },
                   {
-                    name: "files",
+                    name: "pictures",
                     label: "Pictures",
-                    type: "image",
+                    type: "object",
                     list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return {label: item?.alt}
+                      }
+                    },
+                    fields: [
+                      {
+                        name: "picture",
+                        label: "Picture",
+                        type: "image",
+                      },
+                      {
+                        name: "alt",
+                        label: "Image Description (accessibility)",
+                        type: "string",
+                      }
+                    ],
                   },
                   {
                     name: "video",
