@@ -10,7 +10,6 @@ export default function PastEventCard({event, nthChild} : {event: PastEvent, nth
         if (event.files) {
             let nextSlide = (currentSlide + 1) % (event.files.length);
             setCurrentSlide(nextSlide);
-            console.log(nextSlide);
         }
     }
 
@@ -18,7 +17,6 @@ export default function PastEventCard({event, nthChild} : {event: PastEvent, nth
         if (event.files) {
             let nextSlide = (currentSlide - 1) % (event.files.length);
             setCurrentSlide(nextSlide > -1 ? nextSlide : event.files.length - 1);
-            console.log(nextSlide);
         }
     }
 

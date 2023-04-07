@@ -564,13 +564,109 @@ export default defineConfig({
                 name: "tickets",
                 label: "Tickets",
                 type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.type}
+                  }
+                },
                 fields: [
                   {
-                    name: "tbd",
-                    label: "tbd",
-                    type: "string"
+                    name: "type",
+                    label: "Ticket Type",
+                    type: "string",
                   },
+                  {
+                    name: "cta",
+                    label: "Call To Action",
+                    type: "string",
+                  },
+                  {
+                    name: "description",
+                    label: "Description",
+                    type: "string",
+                    ui: {
+                      component: "textarea",
+                    }
+                  },
+                  {
+                    name: "tickets",
+                    label: "Tickets",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return {label: item?.title}
+                      }
+                    },
+                    fields: [
+                      {
+                        name: "title",
+                        label: "Ticket Title",
+                        type: "string"
+                      },
+                      {
+                        name: "description",
+                        label: "Description",
+                        type: "string"
+                      },
+                      {
+                        name: "price",
+                        label: "Price",
+                        type: "string"
+                      },
+                      {
+                        name: "fee",
+                        label: "Run Sign-Up Fee",
+                        type: "string"
+                      },
+                      {
+                        name: "mostPopular",
+                        label: "Most Popular Option",
+                        type: "boolean"
+                      },
+                      {
+                        name: "link",
+                        label: "Registration Link",
+                        type: "string"
+                      },
+                      {
+                        name: "features",
+                        label: "Features",
+                        type: "string",
+                        list: true,
+                      },
+                    ],
+                  }
                 ],
+              },
+              {
+                name: "otherOptions",
+                label: "Other Participation Options",
+                type: "string",
+                ui: {
+                  component: "textarea",
+                }
+              },
+              {
+                name: "donateCTA",
+                label: "Donation CTA",
+                type: "string"
+              },
+              {
+                name: "donate",
+                label: "Donation Link",
+                type: "string"
+              },
+              {
+                name: "sponsorStudentCTA",
+                label: "Student Runner CTA",
+                type: "string"
+              },
+              {
+                name: "sponsorStudent",
+                label: "Student Runner Link",
+                type: "string"
               },
               {
                 name: "pastEvents",
@@ -627,6 +723,32 @@ export default defineConfig({
                   },
                 ]
               },
+              {
+                name: "faq",
+                label: "Frequently Asked Questions",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.question}
+                  }
+                },
+                fields: [
+                  {
+                    name: "question",
+                    label: "Question",
+                    type: "string",
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    name: "answer",
+                    label: "Answer",
+                    type: "rich-text",
+                  },
+                ],
+              },
             ],
           }
         ]
@@ -665,6 +787,130 @@ export default defineConfig({
                 type: "string",
                 name: "quote",
                 label: "Quote",
+              },
+            ],
+          },
+          {
+            name: "faq",
+            label: "FAQ",
+            fields: [
+              {
+                name: "faq",
+                label: "Frequently Asked Questions",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.question}
+                  }
+                },
+                fields: [
+                  {
+                    name: "question",
+                    label: "Question",
+                    type: "string",
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    name: "answer",
+                    label: "Answer",
+                    type: "rich-text",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            name: "navLinks",
+            label: "Navigation Links",
+            fields: [
+              {
+                name: "navLinks",
+                label: "Navigation Links and Banner Images",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return {label: item?.pageTitle}
+                  }
+                },
+                fields: [
+                  {
+                    name: "bannerImage",
+                    label: "Banner Image",
+                    type: "image",
+                  },
+                  {
+                    name: "pageTitle",
+                    label: "Page Title",
+                    type: "string",
+                  },
+                  {
+                    name: "path",
+                    label: "Path (DO NOT EDIT)",
+                    type: "string",
+                  },
+                  {
+                    name: "pageDescription",
+                    label: "Page Description (SEO)",
+                    type: "string",
+                    ui: {
+                      component: "textarea"
+                    },
+                  },
+                  {
+                    name: "highlight",
+                    label: "Highlight Link",
+                    type: "boolean",
+                  },
+                  {
+                    name: "bannerImageLarge",
+                    label: "Banner Image (Large)",
+                    type: "image",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            name: "cta",
+            label: "CTA",
+            fields: [
+              {
+                name: "image",
+                label: "Picture",
+                type: "image",
+              },
+              {
+                name: "title",
+                label: "CTA Title",
+                type: "string",
+              },
+              {
+                name: "text",
+                label: "CTA Text",
+                type: "string",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                name: "button",
+                label: "CTA Button",
+                type: "string",
+              },
+            ],
+          },
+          {
+            name: "customBackground",
+            label: "Custom Background",
+            fields: [
+              {
+                name: "customBackground",
+                label: "Custom Background",
+                type: "image"
               },
             ],
           },

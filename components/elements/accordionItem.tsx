@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export default function AccordionItem({accordionItem} : {accordionItem: {[key: string]: string, }}) {
+export default function AccordionItem({accordionItem} : {accordionItem: any}) {
     const [isActive, setIsActive] = useState(false);
     const [itemName, setItemName] = useState(accordionItem.name);
     const [transition, setTransition] = useState('transition-none');
@@ -59,7 +60,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: {[key: s
                     </dt>
                     <dd className={`text-sm mx-4 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                         {isActive &&
-                            <p>{accordionItem.answer}</p>
+                            <p><TinaMarkdown content={accordionItem.answer} /></p>
                         }
                     </dd>
                 </>

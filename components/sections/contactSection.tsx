@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faXmark } from "@fortawesome/free-solid-svg-icons";
 import FAQ from "./faq";
 
-export default function ContactSection({contactFormData}:{contactFormData: any}) {
+export default function ContactSection({contactFormData, faq}:{contactFormData: any, faq: any}) {
   const contactForm = contactFormData.formFields;
   const formTitle = contactFormData.formTitle;
   const formSubmit = contactFormData.formSubmit;
@@ -98,7 +98,7 @@ export default function ContactSection({contactFormData}:{contactFormData: any})
       <div className={`${!visibleFAQ && "hidden"} py-20 fixed bg-white/[0.8] backdrop-blur w-screen h-screen top-10 md:top-20 z-50 overflow-scroll`}>
         <FontAwesomeIcon onClick={hideFAQ} icon={faXmark} className="text-black right-0 absolute h-8 -mt-10 mr-5 cursor-pointer" mask={faCircle}/>
         <div className="">
-          <FAQ />
+          <FAQ faq={faq}/>
         </div>
       </div>
     </section>
