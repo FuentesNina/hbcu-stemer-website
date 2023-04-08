@@ -1,13 +1,7 @@
 import '@/styles/globals.css'
-import type { AppInitialProps, AppProps } from 'next/app'
 import Layout from '@/components/sharedSections/layout'
 import client from '@/.tina/__generated__/client'
 import { AppPropsType } from 'next/dist/shared/lib/utils'
-
-
-export declare type Props<P = any> = AppPropsType & {
-  props: P;
-}
 
 export default function App({ Component, pageProps, ...props}: Props) {
 
@@ -57,4 +51,8 @@ App.getInitialProps = async (ctx: any) => {
       homeData: homeResponse.data,
     },
   }
+}
+
+export declare type Props<P = any> = AppPropsType & {
+  props: P;
 }
