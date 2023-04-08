@@ -38,6 +38,11 @@ export default defineConfig({
                 label: "Picture",
               },
               {
+                type: "string",
+                name: "alt",
+                label: "Picture Description (accessibility)",
+              },
+              {
                 type: "rich-text",
                 name: "intro",
                 label: "Intro",
