@@ -12,7 +12,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { useRouter } from "next/router";
 
 
-export default function RaceInformation({sharedData,...props} : {sharedData: any}) {
+export default function RaceInformation({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,

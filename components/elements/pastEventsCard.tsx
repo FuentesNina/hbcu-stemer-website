@@ -57,7 +57,7 @@ export type PastEvent = {
     type: string;
     date: string;
     title: string;
-    pictures?: {picture: string, alt: string}[];
+    pictures?: { [key: string]: any; }[];
     highlights?: string[];
     video?: undefined | string;
 };

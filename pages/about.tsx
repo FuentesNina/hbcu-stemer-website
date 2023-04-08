@@ -6,9 +6,13 @@ import TeamMember from '@/components/elements/teamMember';
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
+import { PageQuery } from '@/.tina/__generated__/types';
 
-export default function About({sharedData,...props} : {sharedData: any}) {
+
+export default function About({sharedData, ...props} : {sharedData: any, data: any, variables: any, query: any}) {
   const cta = sharedData.cta;
+
+  console.log(props);
 
   const { data } = useTina({
     query: props.query,
@@ -49,7 +53,6 @@ export default function About({sharedData,...props} : {sharedData: any}) {
   )
 }
 
-
 export const getStaticProps = async () => {
   const pageResponse = await client.queries.page({ relativePath: 'about.md' })
 
@@ -60,4 +63,4 @@ export const getStaticProps = async () => {
       variables: pageResponse.variables,
     },
   }
-}
+};

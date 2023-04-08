@@ -6,7 +6,7 @@ import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export default function Partners({sharedData,...props} : {sharedData: any}) {
+export default function Partners({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,

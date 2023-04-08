@@ -3,7 +3,7 @@ import ContactSection from '@/components/sections/contactSection';
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 
-export default function Contact({sharedData,...props} : {sharedData: any}) {
+export default function Contact({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
