@@ -36,7 +36,7 @@ App.getInitialProps = async (ctx: any) => {
   const raceInfoResponse = await client.queries.page({ relativePath: 'raceinfo.md' });
   const partnersResponse = await client.queries.page({ relativePath: 'partners.md' });
   const impactResponse = await client.queries.page({ relativePath: 'impact.md' });
-  const homeResponse = await client.queries.page({ relativePath: 'index.md' });
+  const homeResponse = await client.queries.page({ relativePath: 'home.md' });
 
   return {
     props: {

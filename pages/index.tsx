@@ -35,7 +35,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
             <div className={`${divStyle} grid`}>
-              <Image className={`${imageStyle} object-top`} fill src={CTAs[0].image} alt={CTAs[0].alt}/>
+              <Image className={`${imageStyle} object-top`} fill src={CTAs[0].image} alt={CTAs[0].alt} sizes="70vw" priority/>
               <div className="my-10">
                 <h4 className={h4Style}>{CTAs[0].name}</h4>
                 <p className={pStyle}>{CTAs[0].description}</p>
@@ -47,14 +47,14 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
         <div className="md:grid md:grid-rows-2 md:gap-5">
           <Link href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER">
             <div className={divStyle}>
-              <Image className={imageStyle} fill src={CTAs[1].image} alt={CTAs[1].alt}/>
+              <Image className={imageStyle} fill src={CTAs[1].image} alt={CTAs[1].alt} sizes="70vw"/>
               <h4 className={h4Style}>{CTAs[1].name}</h4>
               <p className={pStyle}>{CTAs[1].description}</p>
             </div>
           </Link>
           <Link href="/partners">
             <div className={divStyle}>
-            <Image className={imageStyle} fill src={CTAs[2].image} alt={CTAs[2].alt}/>
+            <Image className={imageStyle} fill src={CTAs[2].image} alt={CTAs[2].alt} sizes="70vw"/>
               <h4 className={h4Style}>{CTAs[2].name}</h4>
               <p className={pStyle}>{CTAs[2].description}</p>
             </div>
@@ -113,7 +113,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
 
 
 export const getStaticProps = async () => {
-  const pageResponse = await client.queries.page({ relativePath: 'index.md' })
+  const pageResponse = await client.queries.page({ relativePath: 'home.md' })
 
   return {
     props: {

@@ -48,8 +48,8 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
     return (
       <>
         <section className={`md:h-80 md:py-auto py-5 md:px-10 isolate bg-myRed/[0.44] overflow-clip md:rounded-lg md:border border-x-0 border md:m-5 border-black shadow-md relative `}>
-            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center  md:object-top lg:object-top absolute lg:hidden" fill src={bannerImage} alt={bannerImageAlt}/>
-            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center md:object-top lg:object-center hidden absolute lg:block" fill src={bannerImageLarge ? bannerImageLarge : ''} alt={bannerImageAlt}/>
+            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center  md:object-top lg:object-top absolute lg:hidden" fill src={bannerImage} alt={bannerImageAlt} priority sizes="100vw"/>
+            <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center md:object-top lg:object-center hidden absolute lg:block" fill src={bannerImageLarge ? bannerImageLarge : ''} alt={bannerImageAlt} priority sizes="99vw"/>
             <div className="md:flex md:justify-between md:max-w-6xl lg:mx-auto place-content-center grid">
             <h1><span className="hidden">HBCU Education Run Info Page</span>
               <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)]" color="white"/>
@@ -69,8 +69,8 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
             {benefits && benefits.map((benefit: any, index: number) => {
               return (
                 <li key={index} className="w-[10rem]">
-                  <div className={`aspect-square w-full drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`}>
-                    <Image src={benefit.imageIcon} alt="" fill className="object-cover"/>
+                  <div className={`relative aspect-square w-full drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`}>
+                    <Image src={benefit.imageIcon} alt="" fill className="object-cover" sizes="50vw"/>
                   </div>
                   <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[2px_2px_0_white] -mt-4">{benefit.title}</h3>
                 </li>

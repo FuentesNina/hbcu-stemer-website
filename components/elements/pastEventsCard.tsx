@@ -28,7 +28,7 @@ export default function PastEventCard({event, nthChild} : {event: PastEvent, nth
                     <div className='aspect-square relative'>
                         <FontAwesomeIcon onClick={getPreviousSlide} icon={faArrowAltCircleLeft} className=" z-10 absolute h-10 left-5 top-[50%] -mt-5 cursor-pointer hover:text-myGreen drop-shadow-[1px_1px_0_black]"/>
                         <div className='object-cover w-full aspect-square pointer-events-none select-none relative'>
-                            <Image fill className="object-cover" src={event.pictures && event.pictures[currentSlide].picture} alt={event.pictures && event.pictures[currentSlide].alt}/>
+                            <Image fill sizes="80vw" className="object-cover" src={event.pictures && event.pictures[currentSlide].picture} alt={event.pictures && event.pictures[currentSlide].alt}/>
                         </div>
                         <FontAwesomeIcon onClick={getNextSlide} icon={faArrowAltCircleRight} className="absolute h-10 right-5 top-[50%] -mt-5 cursor-pointer hover:text-myGreen drop-shadow-[1px_1px_0_black]"/>
                     </div>

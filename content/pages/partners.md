@@ -8,6 +8,58 @@ partnersData:
       diverse representation and improve STEM education. Many thanks to our
       amazing past and current sponsors!
     callToAction: Become a Sponsor
+    form:
+      logo: /images/partner_logos/yourLogoHere.png
+      email: info@hbcustemer.com
+      callToAction: Your Company Here! Partner with Us
+      title: SPONSOR SIGN-UP
+      details: >
+        SPONSOR BENEFITS\
+
+        \\
+
+
+        \=> Demonstrating continued commitment to increasing diverse
+        representation in STEM fields.\\
+
+
+        \=> Reaching a broader audience through our dedicated Meet Our Sponsors
+        spotlight page.\\
+
+
+        \=> Showcasing your brand and latest initiatives to potential customers
+        and investors.\\
+
+
+        \=> and much more!
+      fields:
+        - fieldName: Name
+          type: Short answer text
+          placeholder: Name
+          required: true
+        - fieldName: Email
+          type: Email
+          placeholder: Email
+          required: true
+        - fieldName: Organization or company Name
+          type: Short answer text
+          placeholder: >-
+            What is the full name of the organization you represent? Please
+            enter "Individual Sponsor" if not representing an organization.
+          required: true
+        - fieldName: Interests
+          type: Checkbox
+          placeholder: What are your primary interests as a sponsor? Select top 3.
+          required: true
+          options:
+            - Improving STEM education
+            - Increasing diversity in STEM
+            - Supporting HBCU's
+            - Promoting fitness awareness
+            - Exposure for my brand
+            - Growth/networking opportunities with HBCU STEMER and its partners
+            - I just enjoy giving back
+            - Tax break from donations
     companies:
       - logo: /images/partner_logos/logo_huntsvilleMagazine.png
         name: Hunstville Magazine
@@ -93,58 +145,6 @@ partnersData:
           event.
         website: 'https://www.facebook.com/1ifeclothing'
         homepage: false
-    form:
-      logo: /images/partner_logos/yourLogoHere.png
-      email: info@hbcustemer.com
-      callToAction: Your Company Here! Partner with Us
-      title: SPONSOR SIGN-UP
-      details: >
-        SPONSOR BENEFITS\
-
-        \\
-
-
-        \=> Demonstrating continued commitment to increasing diverse
-        representation in STEM fields.\\
-
-
-        \=> Reaching a broader audience through our dedicated Meet Our Sponsors
-        spotlight page.\\
-
-
-        \=> Showcasing your brand and latest initiatives to potential customers
-        and investors.\\
-
-
-        \=> and much more!
-      fields:
-        - fieldName: Name
-          type: Short answer text
-          placeholder: Name
-          required: true
-        - fieldName: Email
-          type: Email
-          placeholder: Email
-          required: true
-        - fieldName: Organization or company Name
-          type: Short answer text
-          placeholder: >-
-            What is the full name of the organization you represent? Please
-            enter "Individual Sponsor" if not representing an organization.
-          required: true
-        - fieldName: Interests
-          type: Checkbox
-          placeholder: What are your primary interests as a sponsor? Select top 3.
-          required: true
-          options:
-            - Improving STEM education
-            - Increasing diversity in STEM
-            - Supporting HBCU's
-            - Promoting fitness awareness
-            - Exposure for my brand
-            - Growth/networking opportunities with HBCU STEMER and its partners
-            - I just enjoy giving back
-            - Tax break from donations
   - tabTitle: HBCU Partners
     intro: >-
       HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners
@@ -203,8 +203,10 @@ intro: >
   What we do would not be possible without our partners! They help fulfill our
   goals of furthering STEM education through STEM programs, initiatives, and
   funding.
+alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 

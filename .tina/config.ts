@@ -25,7 +25,7 @@ export default defineConfig({
         path: "content/pages",
         format: "md",
         ui: {
-          router: ({ document }) => `/${document._sys.filename !== "index" ? document._sys.filename : ''}`,
+          router: ({ document }) => `/${document._sys.filename !== "home" ? document._sys.filename : ''}`,
         },
         templates: [
           {

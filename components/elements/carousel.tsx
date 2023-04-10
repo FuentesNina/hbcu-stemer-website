@@ -30,7 +30,7 @@ export default function Carousel({communityMembers}: {communityMembers: any}) {
         }, 2000);
 
         return () => clearInterval(interval);
-    }, [currentSlide, slide])
+    })
 
     return (
         <div className="pb-10 md:order-first overflow-x-clip">
