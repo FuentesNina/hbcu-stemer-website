@@ -23,8 +23,7 @@ export default function About({sharedData, ...props} : {sharedData: any, data: a
       <Banner navLinks={sharedData.navLinks}/>
       <section className="mx-5 bg-white mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto">
         <div className="border-black border rounded-lg my-10 md:m-0 overflow-clip max-w-sm mx-auto relative min-h-[20rem]">
-          <Image src={data.page.picture} alt={data.page.alt} className="object-cover" fill/>
-          {/* <img className="max-w-full max-h-full object-cover object-center h-full w-full" src={data.page.picture} alt="" /> */}
+          <Image src={data.page.picture} alt={data.page.alt} className="object-cover" fill sizes="24rem"/>
         </div>
         <div className="my-10 md:m-auto font-body">
           <p><TinaMarkdown content={data.page.intro}/></p>

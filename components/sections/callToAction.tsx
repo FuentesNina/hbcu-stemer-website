@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionTitle from "../elements/sectionTitle";
 import Button from "../elements/styledbutton";
 
@@ -12,7 +13,7 @@ export default function CallToAction({cta} : {cta: any}) {
               <p className="text-white font-body text-sm my-10 text-justify">{cta.text}</p>
               <Button href="/raceinfo" content={cta.button} buttonStyle="red"/>
             </div>
-            <img className="rounded-xl mt-10 mx-0 md:max-w-xs" src={cta.image} />
+            <img className="rounded-xl mt-10 mx-0 md:max-w-xs" src={cta.image} alt={cta.alt}/>
           </div>
         </div>
       </section>

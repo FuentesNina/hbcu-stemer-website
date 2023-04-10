@@ -3,6 +3,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import Image from "next/image";
 
 export default function AccordionItem({accordionItem} : {accordionItem: any}) {
     const [isActive, setIsActive] = useState(false);

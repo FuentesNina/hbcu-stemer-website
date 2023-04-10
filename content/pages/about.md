@@ -26,7 +26,9 @@ intro: >
   to educate, empower, and elevate HBCU students through scholarships and career
   resources.
 picture: /images/aboutUs_introImage.jpeg
+alt: picture of Oakwood University math department students
 _template: about
 ---
+
 
 

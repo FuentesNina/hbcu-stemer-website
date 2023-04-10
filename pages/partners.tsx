@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import Image from "next/image";
 
 export default function Partners({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
   const { data } = useTina({
@@ -32,8 +33,8 @@ export default function Partners({sharedData,...props} : {sharedData: any, data:
     <>
       <Banner navLinks={sharedData.navLinks}/>
       <section className="mx-5 mt-10 mb-16 sm-sm:max-w-lg text-justify md:grid-cols-[2fr_3fr] md:grid md:gap-10 md:mx-10 lg:max-w-4xl lg:mx-auto">
-        <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto">
-          <img className="max-w-full max-h-full object-cover object-center h-full w-full" src={data.page.picture} alt="" />
+        <div className="border-black border rounded-lg my-10 overflow-clip max-w-sm mx-auto relative">
+          <Image src={data.page.picture} alt={data.page.alt} className="object-cover" width={500} height={500}/>
         </div>
         <div className="my-10 md:m-auto">
           <div className="font-body">

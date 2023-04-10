@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function ImpactGame({milestones, navLinks} : {milestones: any, navLinks: any}) {
   const router = useRouter();
@@ -91,13 +92,13 @@ export default function ImpactGame({milestones, navLinks} : {milestones: any, na
 
       <div className='pointer-events-none select-none flex justify-around items-baseline mb-10 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
-          <img src='/images/Impact_scene/startingMan_logo.png' className={`${status !== 'start' && 'hidden'} h-20 -z-10 relative`}/>
-          <img src='/images/Impact_scene/runningMan_logo.png' className={`${status !== 'run' && 'hidden'} h-20 -z-10 relative`}/>
-          <img src='/images/Impact_scene/finishMan_logo.png' className={`${status !== 'end' && 'hidden'} h-32 -z-10 relative animate-bounce`}/>
+          <Image src='/images/Impact_scene/startingMan_logo.png' alt="racer in starting position" className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={67.84} height={80}/>
+          <Image src='/images/Impact_scene/runningMan_logo.png' alt="racer running race (hbcu stemer logo)" className={`${status !== 'run' && 'hidden'} -z-10 relative`} width={82} height={80}/>
+          <Image src='/images/Impact_scene/finishMan_logo.png' alt="racer jumping after finishing race" className={`${status !== 'end' && 'hidden'} -z-10 relative animate-bounce`} width={59.59} height={128}/>
         </div>
         <div className={`h-32 ${status === 'end' && 'order-first'}`}>
-          <img src='/images/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} h-full -z-10 relative`}/>
-          <img src='/images/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} h-full -z-10 relative`}/>
+          <Image alt="Race Start Banner" src='/images/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
+          <Image alt="Race Finish Banner" src='/images/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
         </div>
       </div>
 
