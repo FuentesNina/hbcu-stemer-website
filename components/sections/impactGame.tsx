@@ -80,8 +80,8 @@ export default function ImpactGame({milestones, navLinks} : {milestones: any, na
             <Button content='meet our scholars' href='#community' buttonStyle="black" className={`${status !== 'end' && 'hidden'}`}/>
           </div>
           <div className={`${status === 'run' ? 'grid' : 'hidden'} border border-black max-w-xs divide-y divide-black shadow-[4px_4px_0_black] mx-auto`}>
-            <h3 className="bg-myRed text-white font-title uppercase font-bold px-5 py-3 text-sm">{milestones[currentSlide].title}</h3>
-            <p className="bg-white font-body p-5 text-sm">{milestones[currentSlide].description}</p>
+            <h3 className="bg-myRed text-white font-title uppercase font-bold px-5 py-3 text-sm">{milestones[currentSlide]?.title}</h3>
+            <p className="bg-white font-body p-5 text-sm">{milestones[currentSlide]?.description}</p>
           </div>
         </div>
       </div>

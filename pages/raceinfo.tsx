@@ -70,7 +70,7 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
               return (
                 <li key={index} className="w-[10rem]">
                   <div className={`relative aspect-square w-full drop-shadow-[1px_1px_1px_rgba(255,22,22,1)] rounded-full overflow-clip`}>
-                    <Image src={benefit.imageIcon} alt="" fill className="object-cover" sizes="50vw"/>
+                    {benefit?.imageIcon && <Image src={benefit.imageIcon} alt="" fill className="object-cover" sizes="50vw"/>}
                   </div>
                   <h3 className="text-center font-display uppercase font-bold text-xl text-black drop-shadow-[2px_2px_0_white] -mt-4">{benefit.title}</h3>
                 </li>

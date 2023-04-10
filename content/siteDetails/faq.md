@@ -1,5 +1,4 @@
 ---
-_template: faq
 faq:
   - question: What is a virtual race or walkathon?
     answer: >
@@ -32,4 +31,6 @@ faq:
     answer: >
       To become a sponsor or HBCU partner, please fill out the respective form
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
+_template: faq
 ---
+

@@ -7,6 +7,8 @@ text: >-
   support STEM education at these crucial institutions. Event registration and
   donations are hosted via our HBCU STEMER Run Signup page.`
 button: register now
+alt: Race participants running towards the camera.
 _template: cta
 ---
+
 

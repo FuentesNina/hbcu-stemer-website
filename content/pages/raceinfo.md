@@ -21,6 +21,17 @@ raceDay:
   month: 5
   day: 1
 tickets:
+  - title: Title
+    description: Descriot
+    price: $15
+    fee: $1.40
+    mostPopular: false
+    inPerson: true
+    features:
+      - ''
+      - dfdfd
+      - 'well, my name'
+      - 'wow, this is okay'
   - title: 5K (or 1 Mile) Run/Walk
     description: 'May 07, 2023 - Huntsville, AL'
     price: $25
@@ -189,4 +200,5 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
