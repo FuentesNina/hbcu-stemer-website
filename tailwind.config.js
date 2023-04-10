@@ -63,6 +63,9 @@ module.exports = {
         secondLeft: 'secondLeft 0.5s ease-out forwards',
         secondRight: 'secondRight 0.5s ease-out forwards',
       },
+      screens: {
+        'impact-lg': '1145px',
+      }
     },
   },
   plugins: [],
