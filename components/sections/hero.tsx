@@ -2,7 +2,7 @@ import LargeLogo from "../elements/logos/largeLogo"
 import Button from "../elements/styledbutton"
 import Title from "../elements/title"
 
-export default function Hero({heroVideo, companies, heroVideoThumbnail} : {heroVideo: string, heroVideThumbnail: string, companies: any}) {
+export default function Hero({heroVideo, companies, heroVideoThumbnail} : {heroVideo: string, heroVideoThumbnail: string, companies: any}) {
     return (
         <>
           <section id="hero" className="bg-black">

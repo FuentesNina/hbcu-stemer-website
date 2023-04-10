@@ -31,7 +31,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
 
   return (
     <>
-      <Hero heroVideo={heroVideo} companies={companies} heroVideThumbnail={heroVideoThumbnail}/>
+      <Hero heroVideo={heroVideo} companies={companies} heroVideoThumbnail={heroVideoThumbnail}/>
       <section id="basicInfo" className="scroll-mt-14 md:scroll-mt-24 my-10 max-w-md mx-auto md:grid md:grid-cols-2 md:max-w-4xl md:gap-5 md:my-20 md:px-10">
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
