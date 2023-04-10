@@ -40,7 +40,7 @@ export default function Countdown({raceDay} : {raceDay: {year:number, month: num
     }, 1000 * 60);
 
     return () => clearInterval(interval);
-  }, [countdown])
+  }, [countdown, raceDay])
 
 
   return (

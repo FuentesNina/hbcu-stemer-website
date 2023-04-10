@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionTitle from "../elements/sectionTitle";
 import Button from "../elements/styledbutton";
 

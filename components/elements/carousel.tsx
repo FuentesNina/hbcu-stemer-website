@@ -7,14 +7,6 @@ export default function Carousel({communityMembers}: {communityMembers: any}) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            slide((currentSlide + 1) % 3);
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, [currentSlide])
-
     const slide = function(index : number) {
         if (currentSlide === 0 && index === 1) {
             setAnimation('animate-halfLeft');
@@ -31,6 +23,14 @@ export default function Carousel({communityMembers}: {communityMembers: any}) {
         }
         setCurrentSlide(index);
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            slide((currentSlide + 1) % 3);
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [currentSlide, slide])
 
     return (
         <div className="pb-10 md:order-first overflow-x-clip">

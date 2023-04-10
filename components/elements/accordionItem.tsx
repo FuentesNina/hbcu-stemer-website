@@ -16,7 +16,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: any}) {
             setIsActive(false);
             setItemName(accordionItem.name);
         }
-    }, [accordionItem.name]);
+    }, [accordionItem.name, itemName]);
 
     const activate = function() {
         setIsActive(!isActive);

@@ -9,7 +9,7 @@ export default function CommunityMemberCard({member, focusable}:{member: any, fo
         if (!focusable) {
             setActive(false);
         }
-    })
+    }, [focusable])
 
     return (
         <>

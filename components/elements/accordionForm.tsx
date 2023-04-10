@@ -39,7 +39,7 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                 </div>
                 <div className="flex items-center w-full justify-between">
                     <p className="font-bold align-middle underline">{form?.callToAction}</p>
-                    <img src={form?.logo} className="h-14 ml-2"/>
+                    <img src={form?.logo} alt="Generic Logo Placeholder" className="h-14 ml-2"/>
                 </div>
             </dt>
             <dd className={`transition-all duration-500 ${openForm ? 'mt-5' : 'h-0 mt-0'}`}>
