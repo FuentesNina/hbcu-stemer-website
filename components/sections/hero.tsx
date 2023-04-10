@@ -23,7 +23,7 @@ export default function Hero({heroVideo, companies} : {heroVideo: string, compan
                   if (company.homepage) {
                     return (
                       <li key={index} className='max-w-[6rem]'>
-                        <img src={company.logo} className="max-w-full max-h-[3rem]"/>
+                        <img src={company.logo} className="max-w-full max-h-[3rem]" alt={`Logo of ${company.name}`}/>
                       </li>
                     )
                   }

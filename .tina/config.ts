@@ -790,6 +790,11 @@ export default defineConfig({
                     label: "CTA Image",
                     type: "image",
                   },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "CTA Image Description (accessibility)",
+                  },
                 ]
               },
               {
@@ -845,6 +850,11 @@ export default defineConfig({
                     label: "Picture",
                     type: "image",
                   },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Picture Description (accessibility)",
+                  },
                 ],
               },
               {
@@ -856,6 +866,11 @@ export default defineConfig({
                     name: "image",
                     label: "Picture",
                     type: "image",
+                  },
+                  {
+                    type: "string",
+                    name: "alt",
+                    label: "Picture Description (accessibility)",
                   },
                   {
                     name: "title",
@@ -1072,6 +1087,11 @@ export default defineConfig({
                     name: "bannerImage",
                     label: "Banner Image",
                     type: "image",
+                  },
+                  {
+                    type: "string",
+                    name: "bannerImageAlt",
+                    label: "Banner Image Description (accessibility)",
                   },
                   {
                     name: "pageTitle",

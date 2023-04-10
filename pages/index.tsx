@@ -35,7 +35,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
         <div>
           <Link href="/raceinfo" className="h-screen w-screen bg-red-100">
             <div className={`${divStyle} grid`}>
-              <Image className={`${imageStyle} object-top`} fill src={CTAs[0].image} alt=""/>
+              <Image className={`${imageStyle} object-top`} fill src={CTAs[0].image} alt={CTAs[0].alt}/>
               <div className="my-10">
                 <h4 className={h4Style}>{CTAs[0].name}</h4>
                 <p className={pStyle}>{CTAs[0].description}</p>
@@ -47,14 +47,14 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
         <div className="md:grid md:grid-rows-2 md:gap-5">
           <Link href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER">
             <div className={divStyle}>
-              <Image className={imageStyle} fill src={CTAs[1].image} alt=""/>
+              <Image className={imageStyle} fill src={CTAs[1].image} alt={CTAs[1].alt}/>
               <h4 className={h4Style}>{CTAs[1].name}</h4>
               <p className={pStyle}>{CTAs[1].description}</p>
             </div>
           </Link>
           <Link href="/partners">
             <div className={divStyle}>
-            <Image className={imageStyle} fill src={CTAs[2].image} alt=""/>
+            <Image className={imageStyle} fill src={CTAs[2].image} alt={CTAs[2].alt}/>
               <h4 className={h4Style}>{CTAs[2].name}</h4>
               <p className={pStyle}>{CTAs[2].description}</p>
             </div>
@@ -82,19 +82,19 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
       <section id="previous events" className="mt-10 mb-24 mx-auto w-80 h-52 relative md:my-20 md:h-fit md:max-w-7xl md:w-full md:mb-auto">
         <Link href="/raceinfo#previousevents" className="cursor-default md:grid md:grid-cols-4 md:h-fit md:grid-rows-2">
           <div className="hover:cursor-pointer hover:scale-105 left-3 isolate top-6 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:order-4 md:top-28 md:w-full md:right-14">
-            <img src={pastEvents[3].picture} className="grayscale absolute  object-cover mix-blend-overlay w-full h-full"/>
+            <img src={pastEvents[3].picture} alt={pastEvents[3].alt} className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{pastEvents[3].title}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 left-1 isolate top-4 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:left-auto md:top-auto md:order-3 md:w-full md:right-7">
-            <img src={pastEvents[2].picture} className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <img src={pastEvents[2].picture} alt={pastEvents[2].alt} className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{pastEvents[2].title}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 right-1 isolate top-2 absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-black/[0.30] border border-white md:relative md:right-auto md:top-28 md:order-2 md:w-full md:left-7">
-            <img src={pastEvents[1].picture} className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
+            <img src={pastEvents[1].picture} alt={pastEvents[1].alt} className="grayscale absolute object-cover mix-blend-overlay w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{pastEvents[1].title}</h3>
           </div>
           <div className="hover:cursor-pointer hover:scale-105 right-3 isolate absolute overflow-clip rounded-3xl w-full aspect-[4/3] grid place-content-center bg-myRed/[0.30] border border-white md:relative md:right-auto md:top-auto md:order-1 md:w-full md:left-14">
-            <img src={pastEvents[0].picture} className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
+            <img src={pastEvents[0].picture} alt={pastEvents[0].alt} className="grayscale absolute mix-blend-overlay object-cover w-full h-full"/>
             <h3 className="font-display text-blackOutline text-3xl drop-shadow-[2px_2px_0_#ff1616] uppercase font-bold text-center">{pastEvents[0].title}</h3>
           </div>
         </Link>
@@ -105,7 +105,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
           <p className="font-body text-white text-sm text-center max-w-xs mx-auto">{mission.mission}</p>
           <Button href="/about" content={mission.button} buttonStyle="white-black" className="my-10 md:mb-0" />
         </div>
-        <img src={mission.image} className="px-5 md:p-0 md:object-cover md:h-full"/>
+        <img src={mission.image} alt={mission.alt} className="px-5 md:p-0 md:object-cover md:h-full"/>
       </section>
     </>
   )

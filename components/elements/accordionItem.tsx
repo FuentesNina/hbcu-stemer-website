@@ -34,7 +34,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: any}) {
                         </div>
                         <div className="flex items-center w-full justify-between">
                             <p className="font-bold align-middle">{accordionItem.name}</p>
-                            <img src={accordionItem.logo} className="h-10 ml-2"/>
+                            <img src={accordionItem.logo} className="h-10 ml-2" alt={`logo of ${accordionItem.name}`}/>
                         </div>
                     </dt>
                     <dd className={`text-sm ml-6 ${transition} duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
