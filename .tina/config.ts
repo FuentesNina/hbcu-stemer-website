@@ -753,6 +753,11 @@ export default defineConfig({
                     type: "image",
                   },
                   {
+                    name: "heroVideoThumbnail",
+                    label: "Welcome Video Thumbnail",
+                    type: "image",
+                  },
+                  {
                     name: "slogan",
                     label: "Slogan",
                     type: "string",

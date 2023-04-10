@@ -1,6 +1,7 @@
 ---
 heroSection:
   heroVideo: /images/hero_video.mp4
+  heroVideoThumbnail: /images/benefit_challenge.png
   slogan: Empower Potential
   button: Learn More
 mainCTA:
@@ -61,5 +62,6 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
