@@ -16,22 +16,18 @@ partnersData:
       details: >
         SPONSOR BENEFITS\
 
-        \\
 
 
-        \=> Demonstrating continued commitment to increasing diverse
-        representation in STEM fields.\\
+        * Demonstrating continued commitment to increasing diverse
+        representation in STEM fields.
 
+        * Reaching a broader audience through our dedicated Meet Our Sponsors
+        spotlight page.
 
-        \=> Reaching a broader audience through our dedicated Meet Our Sponsors
-        spotlight page.\\
+        * Showcasing your brand and latest initiatives to potential customers
+        and investors.
 
-
-        \=> Showcasing your brand and latest initiatives to potential customers
-        and investors.\\
-
-
-        \=> and much more!
+        * and much more!
       fields:
         - fieldName: Name
           type: Short answer text
@@ -159,26 +155,19 @@ partnersData:
       callToAction: Your School Here! Partner with HBCU STEMER
       title: SPONSOR SIGN-UP
       details: >
-        HBCU PARTNER BENEFITS\
+        HBCU PARTNER BENEFITS
 
-        \
 
-        \=> Receiving funds dedicated for scholarships and career resources for
-        your institution's STEM programs.\
+        * Receiving funds dedicated to scholarships and career resources for
+        your institution's STEM programs.
 
-        \
+        * Reaching a broader audience through our dedicated This Year's HBCU
+        spotlight page.
 
-        \=> Reaching a broader audience through our dedicated This Year's HBCU
-        spotlight page.\
+        * Showcasing your latest STEM achievements/endeavors to potential
+        students and supporters.
 
-        \
-
-        \=> Showcasing your latest STEM achievements/endeavors to potential
-        students and supporters.\
-
-        \
-
-        \=> and much more!
+        * and much more!
       fields:
         - fieldName: Name
           type: Short answer text
@@ -206,6 +195,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 

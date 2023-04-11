@@ -26,7 +26,9 @@ export default function About({sharedData, ...props} : {sharedData: any, data: a
           <Image src={data.page.picture} alt={data.page.alt} className="object-cover" fill sizes="24rem"/>
         </div>
         <div className="my-10 md:m-auto font-body">
-          <TinaMarkdown content={data.page.intro}/>
+          <div className="TinaMarkDown">
+            <TinaMarkdown content={data.page.intro}/>
+          </div>
           <Button href="#hbcuTeam" content={data.page.cta} buttonStyle="black" className="my-5 md:mb-0" />
         </div>
       </section>

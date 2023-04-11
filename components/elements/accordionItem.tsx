@@ -3,7 +3,6 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import Image from "next/image";
 
 export default function AccordionItem({accordionItem} : {accordionItem: any}) {
     const [isActive, setIsActive] = useState(false);
@@ -26,7 +25,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: any}) {
     return (
         <>
         <dl className="font-body group">
-            {accordionItem.name &&
+            {accordionItem?.name &&
                 <>
                     <dt className="flex items-center cursor-pointer" onClick={() => activate()}>
                         <div className="h-5 mr-2 md:mr-5">
@@ -53,7 +52,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: any}) {
                     </dd>
                 </>
             }
-            {accordionItem.question &&
+            {accordionItem?.question &&
                 <>
                     <dt className="flex w-full items-center cursor-pointer justify-between" onClick={() => setIsActive(!isActive)}>
                         <p className="font-bold">{accordionItem.question}</p>
@@ -61,7 +60,7 @@ export default function AccordionItem({accordionItem} : {accordionItem: any}) {
                     </dt>
                     <dd className={`text-sm mx-4 transition-all duration-500 overflow-clip ${isActive ? 'mt-5' : 'h-0 mt-0'}`}>
                         {isActive &&
-                            <p><TinaMarkdown content={accordionItem.answer} /></p>
+                            <div className="TinaMarkDown"><TinaMarkdown content={accordionItem.answer} /></div>
                         }
                     </dd>
                 </>

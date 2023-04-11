@@ -4,7 +4,7 @@ import Footer from "@/components/sharedSections//footer";
 import Button from "@/components/elements/styledbutton";
 import { useRouter } from "next/router";
 
-export default function ThankYou({sharedData} : {sharedData: any}) {
+export default function ThankYou({sharedData, ...props} : {sharedData: any, query: any, variables: any, data: any}) {
   const navLinks = sharedData.navLinks;
   const webLinks = sharedData.webLinks;
   const newsletterForm = sharedData.newsletterForm;

@@ -37,9 +37,8 @@ export default function Partners({sharedData,...props} : {sharedData: any, data:
           <Image src={data.page.picture} alt={data.page.alt} className="object-cover" width={500} height={500}/>
         </div>
         <div className="my-10 md:m-auto">
-          <div className="font-body">
+          <div className="font-body TinaMarkDown">
             <TinaMarkdown content={data.page.intro} />
-          {/* {`What we do would not be possible without our partners! They help fulfill our goals of furthering STEM education through STEM programs, initiatives, and funding.`} */}
           </div>
           <div className="md:grid md:grid-cols-2">
             {partnersData.map((tab: any, index: number) => {

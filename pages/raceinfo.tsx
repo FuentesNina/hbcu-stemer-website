@@ -60,7 +60,7 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
         </section>
         <section id='raceDetails' className="scroll-mt-20 md:scroll-mt-28 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto lg:grid lg:grid-cols-[1fr_1fr]">
           <div className="md:my-auto">
-            <div className="font-body my-10 mx-5 text-justify">
+            <div className="font-body my-10 mx-5 text-justify TinaMarkDown">
               <TinaMarkdown content={introText} />
             </div>
             <Button href="#tickets" content={introCTA} buttonStyle="black" className="my-10"/>

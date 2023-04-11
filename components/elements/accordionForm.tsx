@@ -54,7 +54,7 @@ export default function AccordionForm({form, setOpenForm, openForm} : {form: any
                     {/* End of setup for formsubmit.com */}
 
                     <Subtitle content={form?.title} className="text-myRed text-base text-center" />
-                    <div className="my-5">
+                    <div className="my-5 TinaMarkDown">
                         <TinaMarkdown content={form?.details} />
                     </div>
                     {form?.fields.map((field : any, index : number) => {
