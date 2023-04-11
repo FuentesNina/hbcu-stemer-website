@@ -168,10 +168,6 @@ partnersData:
 
         * and much more!
       fields:
-        - fieldName: disclainer
-          type: Disclaimer
-          placeholder: disclainer
-          required: false
         - fieldName: Name
           type: Short answer text
           placeholder: Name
@@ -198,6 +194,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
