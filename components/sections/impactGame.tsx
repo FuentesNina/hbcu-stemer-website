@@ -92,21 +92,21 @@ export default function ImpactGame({milestones, navLinks} : {milestones: any, na
 
       <div className='pointer-events-none select-none flex justify-around items-baseline mb-10 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
-          <Image src='/images/Impact_scene/startingMan_logo.png' alt="racer in starting position" className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={67.84} height={80}/>
-          <Image src='/images/Impact_scene/runningMan_logo.png' alt="racer running race (hbcu stemer logo)" className={`${status !== 'run' && 'hidden'} -z-10 relative`} width={82} height={80}/>
-          <Image src='/images/Impact_scene/finishMan_logo.png' alt="racer jumping after finishing race" className={`${status !== 'end' && 'hidden'} -z-10 relative animate-bounce`} width={59.59} height={128}/>
+          <Image src='/utils/Impact_scene/startingMan_logo.png' alt="racer in starting position" className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={67.84} height={80}/>
+          <Image src='/utils/Impact_scene/runningMan_logo.png' alt="racer running race (hbcu stemer logo)" className={`${status !== 'run' && 'hidden'} -z-10 relative`} width={82} height={80}/>
+          <Image src='/utils/Impact_scene/finishMan_logo.png' alt="racer jumping after finishing race" className={`${status !== 'end' && 'hidden'} -z-10 relative animate-bounce`} width={59.59} height={128}/>
 
         </div>
         <div className={`h-32 ${status === 'end' && 'order-first'}`}>
-          <Image alt="Race Start Banner" src='/images/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
-          <Image alt="Race Finish Banner" src='/images/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
+          <Image alt="Race Start Banner" src='/utils/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
+          <Image alt="Race Finish Banner" src='/utils/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
         </div>
       </div>
 
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/background.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : (windowWidth < 1145 ? 50 : -50))}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/midground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : (windowWidth < 1145 ? 100 : -100))}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/ground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/foreground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/background.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : (windowWidth < 1145 ? 50 : -50))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/midground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : (windowWidth < 1145 ? 100 : -100))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/ground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/foreground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
 
       <div className="bg-myGreen h-2 transition-all" style={{width: `${(status === 'start' ? 0 : (currentSlide + 1))/(indexLimit) * 100}%`}}/>
     </section>
