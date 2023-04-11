@@ -23,8 +23,19 @@ formFields:
 formTitle: Get In Touch
 formSubmit: Send Message
 email: info@hbcustemer.com
+links:
+  - type: Instagram
+    text: Instagram @ hbcustemer
+  - type: Facebook
+    text: Facebook @ HBCU STEMER
+  - type: Email
+    text: Email - info@hbcustemer.com
+socialTitle: connect with us
 _template: contact
 ---
+
+
+
 
 
 

@@ -12,6 +12,8 @@ export default function ContactSection({contactFormData, faq, webLinks}:{contact
   const formTitle = contactFormData.formTitle;
   const formSubmit = contactFormData.formSubmit;
   const formEmail = contactFormData.email;
+  const linksShown = contactFormData.links;
+  const socialTitle = contactFormData.socialTitle;
 
   const formRef = useRef(null);
   const [visibleFAQ, setVisibleFAQ] = useState(false);
@@ -88,11 +90,24 @@ export default function ContactSection({contactFormData, faq, webLinks}:{contact
       <div className="flex flex-col md:mt-10">
         <Button href="" action={showFAQ} content="Check out our FAQs" buttonStyle="green" className="my-10 md:order-last md:my-0"/>
         <div className="flex flex-col mx-auto my-10 text-center md:text-left">
-            <Title content="Connect With Us" className="text-black"/>
+            <Title content={socialTitle} className="text-black"/>
             <SocialMediaIcons webLinks={webLinks} containerClassName="mt-10 mb-10 text-black flex text-center place-content-center h-7" iconClassName="h-full mx-0.5 w-7 hover:text-myRed hover:drop-shadow-[1px_1px_0_black]"/>
-            <Link href={webLinks.instagram} className="font-body text-sm my-1 hover:font-bold">Instagram @ hbcustemer</Link>
-            <Link href={webLinks.facebook} className="font-body text-sm my-1 hover:font-bold">Facebook @ HBCU STEMER</Link>
-            <Link href={`mailto:${webLinks.email}`} className="font-body text-sm my-1 hover:font-bold">  Email - {webLinks.email}</Link>
+            <ul>
+              {linksShown?.map((link: any, index: number) => {
+                const filtered = webLinks.socialLinks.filter((social: any) => {
+                  return social.platform === link?.type;
+                })
+                const linkInfo = filtered[0];
+
+                if (linkInfo) {
+                  return (
+                    <li key={`${linkInfo.platform}${index}`}>
+                      <Link href={link.type === "Email" ? `mailto:${linkInfo.link}` : linkInfo.link} className="font-body text-sm my-1 hover:font-bold">{link.text}</Link>
+                    </li>
+                  )
+                }
+              })}
+            </ul>
         </div>
       </div>
       <div className={`${!visibleFAQ && "hidden"} py-20 fixed bg-white/[0.8] backdrop-blur w-screen h-screen top-10 md:top-20 z-50 overflow-scroll`}>

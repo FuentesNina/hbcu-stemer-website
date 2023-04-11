@@ -503,6 +503,42 @@ export default defineConfig({
                   },
                 ]
               },
+              {
+                name: "socialTitle",
+                label: "Title for Social Media Links",
+                type: "string",
+              },
+              {
+                name: "links",
+                label: "Social Media Links",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: item => {
+                    return {label: item?.type}
+                  }
+                },
+                fields: [
+                  {
+                    name: "type",
+                    label: "Link Type",
+                    type: "string",
+                    options: [
+                      "Email",
+                      "Instagram",
+                      "Facebook",
+                      "YouTube",
+                      "TikTok",
+                      "LinkedIn"
+                    ]
+                  },
+                  {
+                    name: "text",
+                    label: "Link Text",
+                    type: "string"
+                  }
+                ]
+              }
             ],
           },
           {
@@ -1008,6 +1044,51 @@ export default defineConfig({
             fields: [
               {
                 type: "string",
+                name: "quote",
+                label: "Quote",
+              },
+              {
+                name: "socialLinks",
+                label: "Social Media Links",
+                type: "object",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    if (!item?.showIcon) {
+                      return {label: item?.platform, style: {backgroundColor: "whitesmoke"}}
+                    } else {
+                      return {label: item?.platform}
+                    }
+                  }
+                },
+                fields: [
+                  {
+                    name: "platform",
+                    label: "Platform",
+                    type: "string",
+                    options: [
+                      "Email",
+                      "Instagram",
+                      "Facebook",
+                      "YouTube",
+                      "TikTok",
+                      "LinkedIn"
+                    ]
+                  },
+                  {
+                    name: "link",
+                    label: "Link",
+                    type: "string",
+                  },
+                  {
+                    name: "showIcon",
+                    label: "Show Icon",
+                    type: "boolean",
+                  }
+                ],
+              },
+              {
+                type: "string",
                 name: "instagram",
                 label: "Instagram",
               },
@@ -1026,11 +1107,7 @@ export default defineConfig({
                 name: "email",
                 label: "Contact Email",
               },
-              {
-                type: "string",
-                name: "quote",
-                label: "Quote",
-              },
+
             ],
           },
           {
