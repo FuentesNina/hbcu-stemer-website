@@ -16,7 +16,7 @@ export default function Layout({children, layoutData}:{children:ReactElement, la
 
   return (
     <>
-      {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} />}
+      {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} pageImage={pageInfo.pageImage ? pageInfo.pageImage : navLinks[0].pageImage}/>}
       {pageInfo && <NavBar navLinks={navLinks}/>}
             <main>{children}</main>
       {pageInfo && <Footer showSignUp={pageInfo.path === '/' && true} navLinks={navLinks} webLinks={webLinks} newsletterForm={newsletterForm}/>}

@@ -6,6 +6,7 @@ navLinks:
     pageDescription: >-
       Educate, empower, and elevate HBCU students through scholarships and
       career resources.
+    pageImage: /images/SEOImage/LargeLogo_BlackBackground.png
     highlight: false
   - bannerImage: /images/raceInfo_Banner.jpeg
     bannerImageAlt: Black woman running
@@ -35,6 +36,7 @@ navLinks:
     highlight: false
 _template: navLinks
 ---
+
 
 
 

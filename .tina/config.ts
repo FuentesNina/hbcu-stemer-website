@@ -58,17 +58,9 @@ export default defineConfig({
                 type: "object",
                 list: true,
                 ui: {
-                  // This allows the customization of the list item UI
-                  // Data can be accessed by item?.<Name of field>
                   itemProps: (item) => {
-                    return { label: `${item?.firstName} ${item?.lastName} ( ${item?.role} ) `}
+                    return { label: `${item?.firstName} ${item?.lastName} (${item?.role}) `}
                   },
-                  // // Setting a default will auto-populate new items with the given values
-                  // defaultItem: {
-                  //   firstName: "Team Member",
-                  //   lastName: "",
-                  //   role: "new",
-                  // },
                 },
                 fields: [
                   {
@@ -259,8 +251,12 @@ export default defineConfig({
                     list: true,
                     ui: {
                       itemProps: (item) => {
-                        return { label: `${item?.name}`}
-                      },
+                        if (!item?.homepage) {
+                          return {label: item?.name, style: {backgroundColor: "whitesmoke"}}
+                        } else {
+                          return {label: item?.name}
+                        }
+                      }
                     },
                     fields: [
                       {
@@ -1115,6 +1111,11 @@ export default defineConfig({
                     ui: {
                       component: "textarea"
                     },
+                  },
+                  {
+                    name: "pageImage",
+                    label: "Page Image (SEO)",
+                    type: "image",
                   },
                   {
                     name: "highlight",

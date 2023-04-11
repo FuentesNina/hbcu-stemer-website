@@ -16,10 +16,11 @@ export default function TeamMember({member}: {member: any}) {
           <Subtitle content={`${member.firstName} ${member.lastName}`} className=""/>
           <Subtitle content={member.role} className="text-sm font-normal"/>
         </div>
-        {/* <div className='font-body text-sm text-white overflow-clip mx-auto backdrop-blur'>
+        { member.bio &&
+          <div className='font-body text-sm text-white overflow-clip mx-auto backdrop-blur'>
           <p className={`${!expandBio && "line-clamp max-h-fit overflow-clip"}  transition-all text-justify`}>{member.bio}</p>
-          <p onClick={() => setExpandBio(!expandBio)} className="hover:font-bold font-normal pt-2 underline">{expandBio ? `Show Less..` : `Show More...`}</p>
-        </div> */}
+          {member.bio.length > 275 && <p onClick={() => setExpandBio(!expandBio)} className="hover:font-bold font-normal pt-2 underline">{expandBio ? `Show Less..` : `Show More...`}</p>}
+        </div>}
     </div>
 
   )

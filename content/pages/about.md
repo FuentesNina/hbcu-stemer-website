@@ -27,8 +27,11 @@ intro: >
   resources.
 picture: /images/aboutUs_introImage.jpeg
 alt: picture of Oakwood University math department students
+showBios: true
 _template: about
 ---
+
+
 
 
 
