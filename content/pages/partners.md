@@ -14,8 +14,7 @@ partnersData:
       callToAction: Your Company Here! Partner with Us
       title: SPONSOR SIGN-UP
       details: >
-        SPONSOR BENEFITS\
-
+        SPONSOR BENEFITS
 
 
         * Demonstrating continued commitment to increasing diverse
@@ -195,6 +194,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
