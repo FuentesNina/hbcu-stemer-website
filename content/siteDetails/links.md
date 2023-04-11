@@ -21,5 +21,3 @@ socialLinks:
     showIcon: false
 _template: webLinks
 ---
-
-

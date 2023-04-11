@@ -27,7 +27,7 @@ export default function App({ Component, pageProps, ...props}: Props) {
   )
 }
 
-App.getInitialProps = async (ctx: any) => {
+App.getInitialProps = async () => {
   const faq = await client.queries.websiteDetails({ relativePath: 'faq.md' });
   const webLinks = await client.queries.websiteDetails({ relativePath: 'links.md' });
   const cta = await client.queries.websiteDetails({ relativePath: 'cta.md' });

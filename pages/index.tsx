@@ -8,7 +8,7 @@ import Hero from "@/components/sections/hero";
 import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 
-export default function Home({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
+export default function Home({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any, raceData: any}) {
   const { data } = useTina({
     query: props.query,
     variables: props.variables,
@@ -22,6 +22,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
   const stats = data.page.stats;
   const pastEvents = data.page.pastEvents;
   const mission = data.page.mission;
+  const donateLink = props.raceData.page.donate;
 
   const divStyle = "hover:scale-105 isolate bg-myRed/[0.44] overflow-clip rounded-3xl border border m-5 border-black shadow-md relative place-content-center grid py-5 md:h-full md:m-0";
   const imageStyle = "grayscale mix-blend-overlay h-full w-full object-cover object-center absolute contrast-125 brightness-50"
@@ -45,7 +46,7 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
           </Link>
         </div>
         <div className="md:grid md:grid-rows-2 md:gap-5">
-          <Link href="https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER">
+          <Link href={donateLink}>
             <div className={divStyle}>
               <Image className={imageStyle} fill src={CTAs[1].image} alt={CTAs[1].alt} sizes="70vw"/>
               <h4 className={h4Style}>{CTAs[1].name}</h4>
@@ -114,12 +115,14 @@ export default function Home({sharedData,...props} : {sharedData: any, data: any
 
 export const getStaticProps = async () => {
   const pageResponse = await client.queries.page({ relativePath: 'home.md' })
+  const raceResponse = await client.queries.page({ relativePath: 'raceinfo.md' })
 
   return {
     props: {
       data: pageResponse.data,
       query: pageResponse.query,
       variables: pageResponse.variables,
+      raceData: raceResponse.data
     },
   }
 }
