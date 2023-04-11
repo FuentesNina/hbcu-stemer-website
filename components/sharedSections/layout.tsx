@@ -2,18 +2,30 @@ import MyHead from "./myHead";
 import NavBar from "./navbar";
 import Footer from "./footer";
 import { ReactElement } from "react";
-import { navLinks } from "@/public/utils/data";
-import { getPageInfo } from "@/hooks/getPageInfo";
+import { useRouter } from "next/router";
 
-export default function Layout({children}:{children:ReactElement}) {
-    const pageInfo = getPageInfo();
+export default function Layout({children, layoutData}:{children:ReactElement, layoutData: any}) {
+  const navLinks = layoutData.navLinks;
+  const webLinks = layoutData.webLinks;
+  const newsletterForm = layoutData.newsletterForm;
 
+  const router = useRouter();
+  const pathname = router.pathname;
+  const filtered = navLinks.filter((pageInfo: any) => pageInfo.path === pathname);
+  const pageInfo = filtered[0];
+
+  if (pageInfo) {
     return (
       <>
-        {pageInfo && <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} />}
-        {pageInfo && <NavBar />}
+        <MyHead pageTitle={pageInfo.pageTitle} pageDescription={pageInfo.pageDescription ? pageInfo.pageDescription : navLinks[0].pageDescription} pageImage={pageInfo.pageImage ? pageInfo.pageImage : navLinks[0].pageImage}/>
+        <NavBar navLinks={navLinks}/>
               <main>{children}</main>
-        {pageInfo && <Footer showSignUp={pageInfo.path === '/' && true}/>}
+        <Footer showSignUp={pageInfo.path === '/' && true} navLinks={navLinks} webLinks={webLinks} newsletterForm={newsletterForm}/>
       </>
     )
+  } else {
+    return (
+      <></>
+    )
+  }
 }

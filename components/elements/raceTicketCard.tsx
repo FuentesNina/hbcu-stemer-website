@@ -8,7 +8,8 @@ export default function RaceTicketCard({ticket} : {ticket: {
                                             description: string;
                                             price: string;
                                             fee: string;
-                                            mostPopular: boolean;
+                                            mostPopular?: boolean;
+                                            inPerson?: boolean;
                                             features: string[];
                                             link: string;
                                         }}) {
@@ -19,9 +20,19 @@ export default function RaceTicketCard({ticket} : {ticket: {
     return (
         <>
             <div className="font-body bg-white shadow-[4px_4px_4px_rgba(0,0,0,0.4)] rounded-3xl p-10 max-w-xs md:w-80 mx-auto my-10 relative">
-                {ticket.mostPopular &&
-                    <p className="bg-myRed/[0.44] text-white p-2 text-xs rounded-full border border-myRed absolute top-5 right-5">Most Popular</p>
-
+                {ticket.mostPopular && (
+                    <>
+                        <p className="bg-myRed/[0.44] text-white p-2 text-xs rounded-full border border-myRed absolute top-5 right-5">Most Popular</p>
+                        <div className="h-5"/>
+                    </>
+                )
+                }
+                {ticket.inPerson && (
+                    <>
+                        <p className="bg-myGreen text-black font-bold p-2 text-xs rounded-full border border-myGreen absolute top-5 right-5">In-Person Event</p>
+                        <div className="h-5"/>
+                    </>
+                )
                 }
                 <div className="mb-10">
                     <h3 className="text-lg font-bold capitalize">{ticket.title}</h3>

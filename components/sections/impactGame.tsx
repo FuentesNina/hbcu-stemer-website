@@ -1,12 +1,15 @@
-import { getPageInfo } from "@/hooks/getPageInfo";
 import Button from "../elements/styledbutton";
-import { milestones } from "@/public/utils/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Image from "next/image";
 
-export default function ImpactGame() {
-  const pageInfo = getPageInfo();
+export default function ImpactGame({milestones, navLinks} : {milestones: any, navLinks: any}) {
+  const router = useRouter();
+  const pathname = router.pathname;
+  const filtered = navLinks.filter((pageInfo: any) => pageInfo.path === pathname);
+  const pageInfo = filtered[0];
   const pageTitle = pageInfo.pageTitle;
 
   const [status, setStatus] = useState('start');
@@ -77,8 +80,8 @@ export default function ImpactGame() {
             <Button content='meet our scholars' href='#community' buttonStyle="black" className={`${status !== 'end' && 'hidden'}`}/>
           </div>
           <div className={`${status === 'run' ? 'grid' : 'hidden'} border border-black max-w-xs divide-y divide-black shadow-[4px_4px_0_black] mx-auto`}>
-            <h3 className="bg-myRed text-white font-title uppercase font-bold px-5 py-3 text-sm">{milestones[currentSlide].title}</h3>
-            <p className="bg-white font-body p-5 text-sm">{milestones[currentSlide].description}</p>
+            <h3 className="bg-myRed text-white font-title uppercase font-bold px-5 py-3 text-sm">{milestones[currentSlide]?.title}</h3>
+            <p className="bg-white font-body p-5 text-sm">{milestones[currentSlide]?.description}</p>
           </div>
         </div>
       </div>
@@ -89,20 +92,21 @@ export default function ImpactGame() {
 
       <div className='pointer-events-none select-none flex justify-around items-baseline mb-10 md:mb-10 md:max-w-2xl md:mx-auto md:w-full'>
         <div>
-          <img src='/images/Impact_scene/startingMan_logo.png' className={`${status !== 'start' && 'hidden'} h-20 -z-10 relative`}/>
-          <img src='/images/Impact_scene/runningMan_logo.png' className={`${status !== 'run' && 'hidden'} h-20 -z-10 relative`}/>
-          <img src='/images/Impact_scene/finishMan_logo.png' className={`${status !== 'end' && 'hidden'} h-32 -z-10 relative animate-bounce`}/>
+          <Image src='/utils/Impact_scene/startingMan_logo.png' alt="racer in starting position" className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={67.84} height={80}/>
+          <Image src='/utils/Impact_scene/runningMan_logo.png' alt="racer running race (hbcu stemer logo)" className={`${status !== 'run' && 'hidden'} -z-10 relative`} width={82} height={80}/>
+          <Image src='/utils/Impact_scene/finishMan_logo.png' alt="racer jumping after finishing race" className={`${status !== 'end' && 'hidden'} -z-10 relative animate-bounce`} width={59.59} height={128}/>
+
         </div>
         <div className={`h-32 ${status === 'end' && 'order-first'}`}>
-          <img src='/images/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} h-full -z-10 relative`}/>
-          <img src='/images/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} h-full -z-10 relative`}/>
+          <Image alt="Race Start Banner" src='/utils/Impact_scene/start_banner.png' className={`${status !== 'start' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
+          <Image alt="Race Finish Banner" src='/utils/Impact_scene/finish_banner.png' className={`${status !== 'end' && 'hidden'} -z-10 relative`} width={157.63} height={128}/>
         </div>
       </div>
 
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/background.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : -50)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/midground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : -100)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/ground.png')] bg-cover lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -150)}%`}}/>
-      <div className="h-full absolute w-full bg-[url('/images/Impact_scene/foreground.png')] bg-cover lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : -150)}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/background.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 10 : (windowWidth < 1145 ? 50 : -50))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/midground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 25 : (windowWidth < 1145 ? 100 : -100))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/ground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-20 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
+      <div className="h-full absolute w-full bg-[url('/utils/Impact_scene/foreground.png')] bg-cover impact-lg:bg-contain bg-repeat-x -z-10 transition-all" style={{backgroundPositionX: `${(status === 'start' ? -1 : status === 'end' ? indexLimit : currentSlide) * (windowWidth < 1024 ? 50 : (windowWidth < 1145 ? 150 : -150))}%`}}/>
 
       <div className="bg-myGreen h-2 transition-all" style={{width: `${(status === 'start' ? 0 : (currentSlide + 1))/(indexLimit) * 100}%`}}/>
     </section>

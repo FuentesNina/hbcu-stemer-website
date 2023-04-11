@@ -1,21 +1,11 @@
 import CommunityMemberCard from "./communityMemberCard";
-import { communityMembers } from "@/public/utils/data";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-export default function Carousel() {
-    const scholarsTabIndex = 0;
+export default function Carousel({communityMembers}: {communityMembers: any}) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [animation, setAnimation] = useState('');
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            slide((currentSlide + 1) % 3);
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, [currentSlide])
 
     const slide = function(index : number) {
         if (currentSlide === 0 && index === 1) {
@@ -34,13 +24,21 @@ export default function Carousel() {
         setCurrentSlide(index);
     }
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            slide((currentSlide + 1) % 3);
+        }, 2000);
+
+        return () => clearInterval(interval);
+    })
+
     return (
         <div className="pb-10 md:order-first overflow-x-clip">
             <ul className={`flex mx-auto max-w-sm transition-transform justify-center`}>
                 {[...Array(3)].map((value, index) => {
                     return (
                         <li key={index} className={`mx-5 ${animation} ${currentSlide !== index && ""}`}>
-                            <CommunityMemberCard member={communityMembers[scholarsTabIndex].profiles[index]} />
+                            <CommunityMemberCard member={communityMembers[index]} />
                         </li>
                     )
                 })}
