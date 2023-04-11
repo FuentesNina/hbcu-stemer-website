@@ -14,7 +14,8 @@ socialLinks:
     showIcon: true
   - platform: Email
     link: info@hbcustemer.com
-    showIcon: true
+    showIcon: false
 _template: webLinks
 ---
+
 
