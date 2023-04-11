@@ -8,7 +8,7 @@ mainCTA:
   - name: Register Now
     description: Join The STEM Education Run
     image: /images/raceInfo_Banner.jpeg
-    alt: woman running
+    alt: woman running on the beach
   - name: Pledge
     description: Donate Funds To Support HBCU's
     image: /images/pledgeImage.png
@@ -62,6 +62,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
