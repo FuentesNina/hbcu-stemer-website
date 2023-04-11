@@ -65,7 +65,7 @@ partnersData:
           culture, people, entertainment, and businesses catalyzing the city’s
           transformation.
         website: 'https://huntsvillemagazine.com/'
-        homepage: true
+        homepage: false
       - logo: /images/partner_logos/logo_STEMedia.png
         name: STEMedia
         description: Elevate and empower STEM success
@@ -194,6 +194,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
