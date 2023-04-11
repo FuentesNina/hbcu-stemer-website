@@ -1087,26 +1087,6 @@ export default defineConfig({
                   }
                 ],
               },
-              // {
-              //   type: "string",
-              //   name: "instagram",
-              //   label: "Instagram",
-              // },
-              // {
-              //   type: "string",
-              //   name: "facebook",
-              //   label: "Facebook",
-              // },
-              // {
-              //   type: "string",
-              //   name: "youtube",
-              //   label: "YouTube",
-              // },
-              // {
-              //   type: "string",
-              //   name: "email",
-              //   label: "Contact Email",
-              // },
             ],
           },
           {

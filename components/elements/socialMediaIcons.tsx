@@ -4,7 +4,6 @@ import { faCircle, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function SocialMediaIcons({containerClassName, iconClassName, color, margins, webLinks }: {webLinks: any, containerClassName?: string | undefined ,iconClassName?:string | undefined, color?: string | undefined, margins?: string | undefined}) {
-
     const iconColor = color ? color : "white";
     const iconMargins = margins ? margins : "";
     const containerClass = containerClassName ? containerClassName : `text-${iconColor} my-10 md:ml-10 flex text-center place-content-center h-8 `;
@@ -22,7 +21,7 @@ export default function SocialMediaIcons({containerClassName, iconClassName, col
                 :link.platform === "Instagram"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faInstagram} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
                 : link.platform === "Facebook"
-                ? <Link href={webLinks.facebook}><FontAwesomeIcon icon={faFacebookF} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
+                ? <Link href={link.link}><FontAwesomeIcon icon={faFacebookF} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
                 : link.platform === "YouTube"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faYoutube} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
                 : link.platform === "TikTok"
