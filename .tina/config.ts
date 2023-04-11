@@ -123,6 +123,7 @@ export default defineConfig({
                   itemProps: (item) => {
                     return { label: `${item?.tabTitle}`}
                   },
+                  max: 2,
                 },
                 fields: [
                   {
@@ -350,6 +351,7 @@ export default defineConfig({
                   itemProps: (item: any) => {
                     return { label: `${item?.tabTitle}`}
                   },
+                  max: 2,
                 },
                 fields: [
                   {
@@ -809,7 +811,8 @@ export default defineConfig({
                 ui: {
                   itemProps: (item) => {
                     return {label: item?.name}
-                  }
+                  },
+                  max: 3,
                 },
                 fields: [
                   {
@@ -874,7 +877,8 @@ export default defineConfig({
                 ui: {
                   itemProps: (item) => {
                     return {label: item?.title}
-                  }
+                  },
+                  max: 4,
                 },
                 fields: [
                   {
