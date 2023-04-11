@@ -21,7 +21,7 @@ export default function ThankYou({sharedData, ...props} : {sharedData: any, quer
 
     return (
       <>
-        <MyHead pageTitle="Thank You" pageDescription={navLinks[0].pageDescription} />
+        <MyHead pageTitle="Thank You" pageDescription={navLinks[0].pageDescription} pageImage={navLinks[0].pageImage}/>
         <NavBar navLinks={navLinks}/>
         <main className="m-10 grid place-content-center font-body gap-5">
             <p>Thank you for your submission.</p>
