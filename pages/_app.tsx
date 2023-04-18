@@ -14,6 +14,9 @@ export default function App({ Component, pageProps, ...props}: Props) {
   const sponsors = props.props.partnersData.page.partnersData[0].companies;
   const scholars = props.props.impactData.page.communityMembers[0].profiles;
   const newsletterForm = props.props.homeData.page.newsletterSignUp;
+  const instagramImages = props.props.instagramImages;
+
+  console.log(instagramImages)
 
   const layoutData = { navLinks, webLinks, newsletterForm};
   const sharedData = {webLinks, raceDay, faq, cta, customBackground, navLinks, sponsors, scholars};
@@ -37,6 +40,7 @@ App.getInitialProps = async () => {
   const partnersResponse = await client.queries.page({ relativePath: 'partners.md' });
   const impactResponse = await client.queries.page({ relativePath: 'impact.md' });
   const homeResponse = await client.queries.page({ relativePath: 'home.md' });
+  const instagramImages = process.env.INSTAGRAM_KEY;
 
   return {
     props: {
@@ -49,6 +53,7 @@ App.getInitialProps = async () => {
       partnersData: partnersResponse.data,
       impactData: impactResponse.data,
       homeData: homeResponse.data,
+      instagramImages: instagramImages,
     },
   }
 }
