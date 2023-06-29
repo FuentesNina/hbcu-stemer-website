@@ -10,6 +10,7 @@ import { useTina } from 'tinacms/dist/react';
 import client from '@/.tina/__generated__/client';
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 
 export default function RaceInformation({sharedData,...props} : {sharedData: any, data: any, variables: any, query: any}) {
@@ -45,18 +46,44 @@ export default function RaceInformation({sharedData,...props} : {sharedData: any
 
   let nthChild = -1;
 
+  const showButtonCheck = function(raceDay:{year: number, month: number, day: number}) {
+    const deadline = new Date(raceDay.year, raceDay.month - 1,raceDay.day);
+
+    const remainingTime = deadline.valueOf() - Date.now();
+
+    const DAYS_IN_MILLISECONDS = 1000 * 60 * 60 * 24;
+
+    const days = Math.floor(remainingTime / DAYS_IN_MILLISECONDS);
+
+    if (days >= 0) {
+      return 'md:hidden';
+    }
+  }
+
+  const [showButton, setShowButton] = useState(showButtonCheck(raceDay));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowButton(showButtonCheck(raceDay));
+    }, 1000 * 60);
+
+    return () => clearInterval(interval);
+  }, [showButton, raceDay])
+
     return (
       <>
         <section className={`md:h-80 md:py-auto py-5 md:px-10 isolate bg-myRed/[0.44] overflow-clip md:rounded-lg md:border border-x-0 border md:m-5 border-black shadow-md relative `}>
             <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center  md:object-top lg:object-top absolute lg:hidden" fill src={bannerImage} alt={bannerImageAlt} priority sizes="100vw"/>
             <Image className="border-x-0 grayscale mix-blend-overlay h-full w-full object-cover object-center md:object-top lg:object-center hidden absolute lg:block" fill src={bannerImageLarge ? bannerImageLarge : ''} alt={bannerImageAlt} priority sizes="99vw"/>
             <div className="md:flex md:justify-between md:max-w-6xl lg:mx-auto place-content-center grid">
-            <h1><span className="hidden">HBCU Education Run Info Page</span>
-              <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)]" color="white"/>
-            </h1>
-              <Countdown raceDay={raceDay}/>
+              <h1><span className="hidden">HBCU Education Run Info Page</span>
+                <LargeLogo className="py-14 w-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)]" color="white"/>
+              </h1>
+              <div className='py-20 lg:pr-10'>
+                <Countdown raceDay={raceDay}/>
+                <Button href="#raceDetails" content="learn more" buttonStyle="white-red" className={`${showButton} my-10 relative`}/>
+              </div>
             </div>
-            <Button href="#raceDetails" content="learn more" buttonStyle="white-red" className="md:hidden my-10 relative"/>
         </section>
         <section id='raceDetails' className="scroll-mt-20 md:scroll-mt-28 md:mx-10 md:my-20 lg:max-w-4xl lg:mx-auto lg:grid lg:grid-cols-[1fr_1fr]">
           <div className="md:my-auto">
