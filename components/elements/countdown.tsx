@@ -28,6 +28,7 @@ export default function Countdown({raceDay} : {raceDay: {year:number, month: num
     const MINUTES_IN_MILLISECONDS = 1000 * 60;
 
     const minutes = Math.floor(remaningMinutes / MINUTES_IN_MILLISECONDS);
+    console.log({days, hours, minutes})
 
     return {days, hours, minutes};
   }
@@ -44,26 +45,31 @@ export default function Countdown({raceDay} : {raceDay: {year:number, month: num
 
 
   return (
-    <div className="flex flex-col place-content-center">
-        <h5 className={textStyle}>{`Race Starts in...`}</h5>
-        <div className="grid grid-cols-3 mt-3">
-            <div>
-                <p className={numberStyle}>{countdown.days}</p>
-                <h6 className={catStyle}>{`days`}</h6>
-            </div>
-            {/* <p className={numberStyle}>:</p>
-            grid-cols-[1fr_0.25fr_1fr_0.25fr_1fr]*/}
-            <div>
-                <p className={numberStyle}>{countdown.hours}</p>
-                <h6 className={catStyle}>{`hours`}</h6>
-            </div>
-            {/* <p className={numberStyle}>:</p> */}
-            <div>
-                <p className={numberStyle}>{countdown.minutes}</p>
-                <h6 className={catStyle}>{`minutes`}</h6>
+    <>
+      {countdown.days >= 0 ?
+        <div className="flex flex-col place-content-center">
+            <h5 className={textStyle}>{`Race Starts in...`}</h5>
+            <div className="grid grid-cols-3 mt-3">
+                <div>
+                    <p className={numberStyle}>{countdown.days}</p>
+                    <h6 className={catStyle}>{`days`}</h6>
+                </div>
+                <div>
+                    <p className={numberStyle}>{countdown.hours}</p>
+                    <h6 className={catStyle}>{`hours`}</h6>
+                </div>
+                <div>
+                    <p className={numberStyle}>{countdown.minutes}</p>
+                    <h6 className={catStyle}>{`minutes`}</h6>
+                </div>
             </div>
         </div>
-    </div>
+        : countdown.days === -1 &&
+        <div className="flex flex-col place-content-center">
+            <h5 className={textStyle}>{`The Race Starts Today!!!`}</h5>
+        </div>
+      }
+    </>
 
   )
 }
