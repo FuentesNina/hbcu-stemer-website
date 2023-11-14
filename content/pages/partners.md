@@ -114,6 +114,16 @@ partnersData:
           stubborn weight
         website: 'https://www.ninafuentescoaching.com'
         homepage: true
+      - logo: /images/Logo ES.png
+        name: Elite Sports
+        description: >-
+          Premium quality fight wear.
+
+
+          Shop at:
+          https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
+        website: 'https://www.elitesports.com'
+        homepage: false
       - logo: /images/partner_logos/logo_PMS.png
         name: Post Mask Skin
         description: >-
@@ -127,16 +137,6 @@ partnersData:
           STEAM = STEM + Arts Education with Dr. Muk. Check out our website for
           the latest updates
         website: 'http://linktree.com/steamulater'
-        homepage: false
-      - logo: /images/Logo ES.png
-        name: Elite Sports
-        description: >-
-          Premium quality fight wear.
-
-
-          Shop at:
-          https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
-        website: 'https://www.elitesports.com'
         homepage: false
       - logo: /images/partner_logos/logo_4D_Traders.PNG
         name: 4D Traders Institute
@@ -204,6 +204,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
