@@ -56,16 +56,6 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
-      - logo: /images/Logo ES.png
-        name: Elite Sports
-        description: >-
-          Premium quality fight wear.
-
-
-          Shop at:
-          https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
-        website: 'https://www.elitesports.com'
-        homepage: false
       - logo: /images/partner_logos/logo_huntsvilleMagazine.png
         name: Hunstville Magazine
         description: >-
@@ -138,6 +128,16 @@ partnersData:
           the latest updates
         website: 'http://linktree.com/steamulater'
         homepage: false
+      - logo: /images/Logo ES.png
+        name: Elite Sports
+        description: >-
+          Premium quality fight wear.
+
+
+          Shop at:
+          https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
+        website: 'https://www.elitesports.com'
+        homepage: false
       - logo: /images/partner_logos/logo_4D_Traders.PNG
         name: 4D Traders Institute
         description: Creating successful traders through education.
@@ -204,6 +204,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
