@@ -107,13 +107,6 @@ partnersData:
           recommendations. Follow India Approved for the latest beauty trends.
         website: 'https://www.instagram.com/indiaapproved/'
         homepage: true
-      - logo: /images/partner_logos/logo_nfc.png
-        name: Nina Fuentes Coaching LLC
-        description: >-
-          Helping women transition to a plant-based lifestyle while losing
-          stubborn weight
-        website: 'https://www.ninafuentescoaching.com'
-        homepage: true
       - logo: /images/Logo ES.png
         name: Elite Sports
         description: >-
@@ -123,7 +116,14 @@ partnersData:
           Shop at:
           https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
         website: 'https://www.elitesports.com'
-        homepage: false
+        homepage: true
+      - logo: /images/partner_logos/logo_nfc.png
+        name: Nina Fuentes Coaching LLC
+        description: >-
+          Helping women transition to a plant-based lifestyle while losing
+          stubborn weight
+        website: 'https://www.ninafuentescoaching.com'
+        homepage: true
       - logo: /images/partner_logos/logo_PMS.png
         name: Post Mask Skin
         description: >-
@@ -204,6 +204,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
