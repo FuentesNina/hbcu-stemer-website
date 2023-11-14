@@ -65,6 +65,7 @@ partnersData:
           Shop at:
           https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
         website: 'https://www.elitesports.com'
+        homepage: true
       - logo: /images/partner_logos/logo_huntsvilleMagazine.png
         name: Hunstville Magazine
         description: >-
@@ -203,6 +204,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
