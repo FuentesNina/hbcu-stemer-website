@@ -67,9 +67,9 @@ milestones:
       Initiative (WIN) for STEM Summer Bridge Program.
   - title: Face Time
     description: >-
-      2023 marked our first in-person events. The signature HBCU STEMER 5K was
-      hosted in Huntsville, AL aka Rocket City and the Women in STEM Walkathon
-      was hosted at the historic Morehouse College in Atlanta, GA!
+      2023 marked the first in-person events. The signature 5K was hosted in
+      Huntsville, AL aka Rocket City and the Women in STEM Walkathon was hosted
+      at the historic Morehouse College in Atlanta, GA!
 communityTitle: Our Community
 _template: impact
 ---
