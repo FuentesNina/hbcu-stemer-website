@@ -18,9 +18,9 @@ mainCTA:
     image: /images/ourPartners_Banner.jpg
     alt: 2 business people shaking hands
 stats:
-  stat1: 150+
+  stat1: 200+
   stat1Description: Participants and Donors
-  stat2: '$5,500+'
+  stat2: '$7,500+'
   stat2Description: in scholarship funds raised
   cta: Meet our Scholars
 pastEvents:
@@ -62,6 +62,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
