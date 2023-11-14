@@ -49,6 +49,11 @@ communityMembers:
   - tabTitle: Race Hall of Fame
     tabIntro: Click on each card to learn more about our participants...
 milestones:
+  - title: Face Time
+    description: >-
+      2023 marked our first in-person events. The signature HBCU STEMER 5K was
+      hosted in Huntsville, AL aka Rocket City and the Women in STEM Walkathon
+      was hosted at the historic Morehouse College in Atlanta, GA!
   - title: First HBCU STEM Education run
     description: May 2021 - MACS Support Scholarship Established.
   - title: We're official!
@@ -68,6 +73,7 @@ milestones:
 communityTitle: Our Community
 _template: impact
 ---
+
 
 
 
