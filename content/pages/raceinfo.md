@@ -43,7 +43,7 @@ tickets:
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359'
     features:
-      - All April Long
+      - Finish Anytime in April
       - T-shirt
       - Swag Bag
       - Create/Join a team of friends and family
@@ -190,6 +190,7 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
