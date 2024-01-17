@@ -107,16 +107,6 @@ partnersData:
           recommendations. Follow India Approved for the latest beauty trends.
         website: 'https://www.instagram.com/indiaapproved/'
         homepage: true
-      - logo: /images/Logo ES.png
-        name: Elite Sports
-        description: >-
-          Premium quality fight wear.
-
-
-          Shop at:
-          https://www.elitesports.com/collections/brazilian-jiu-jitsu-bjj-gis
-        website: 'https://www.elitesports.com'
-        homepage: true
       - logo: /images/partner_logos/logo_nfc.png
         name: Nina Fuentes Coaching LLC
         description: >-
@@ -204,6 +194,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
