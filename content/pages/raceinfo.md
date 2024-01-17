@@ -18,7 +18,7 @@ raceInfoIntro: >
 cta: Register Now
 raceDay:
   year: 2024
-  month: 5
+  month: 4
   day: 1
 tickets:
   - title: 5K (or 1 Mile) Run/Walk
@@ -189,6 +189,7 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
