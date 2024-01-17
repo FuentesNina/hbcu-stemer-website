@@ -56,6 +56,7 @@ tickets:
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
     features:
+      - Finish Anytime in April
       - Premium T-shirt
       - Swag Bag
       - Digital Runners Bib
@@ -190,6 +191,7 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
