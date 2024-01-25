@@ -132,7 +132,7 @@ partnersData:
           Helping women transition to a plant-based lifestyle while losing
           stubborn weight
         website: 'https://www.ninafuentescoaching.com'
-        homepage: false
+        homepage: true
       - logo: /images/partner_logos/logo_PMS.png
         name: Post Mask Skin
         description: >-
@@ -230,6 +230,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
