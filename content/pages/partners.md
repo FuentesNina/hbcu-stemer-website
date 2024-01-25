@@ -56,6 +56,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/Code.Sip.Repeat..jpg
+        name: Code.Sip.Repeat™
+        description: >-
+          An Interactive Adult Coding Experience. Our events allow new and
+          experienced coders to gain confidence in coding in a fun and engaging
+          environment.
+        website: 'https://codesiprepeat.com'
+        homepage: true
       - logo: /images/partner_logos/logo_huntsvilleMagazine.png
         name: Hunstville Magazine
         description: >-
@@ -194,6 +202,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
