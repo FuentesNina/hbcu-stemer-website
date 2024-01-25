@@ -96,7 +96,7 @@ partnersData:
           Changing people's lives one at a time. Sign-up for the 12-Week Total
           Body Transformation Challenge
         website: 'https://www.4dfitness4life.com/programs'
-        homepage: true
+        homepage: false
       - logo: /images/partner_logos/logo_Acastemics.png
         name: AcaSTEMics
         description: >-
@@ -230,6 +230,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
