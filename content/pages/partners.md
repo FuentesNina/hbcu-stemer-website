@@ -209,7 +209,7 @@ partnersData:
 
           Explore Oakwood's Departments of Mathematics and Computer Science,
           Biological Sciences, and Chemistry.
-        website: 'https://www.oakwood.edu'
+        website: 'https://oakwood.edu/academic-experience/school-of-arts-sciences/'
         homepage: true
 picture: /images/ourPartners_introImage.jpg
 intro: >
@@ -219,6 +219,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
