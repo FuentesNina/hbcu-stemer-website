@@ -139,7 +139,7 @@ partnersData:
           A natural skincare collection formulated for skin traumatized by
           COVID-19 face covering guidelines.
         website: 'https://www.etsy.com/shop/hgho/?etsrc=sdt'
-        homepage: false
+        homepage: true
       - logo: /images/partner_logos/logo_STEAMulater.png
         name: STEAMulater
         description: >-
