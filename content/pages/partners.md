@@ -151,7 +151,7 @@ partnersData:
         name: 4D Traders Institute
         description: Creating successful traders through education.
         website: 'https://www.4dtradersinstitute.com/'
-        homepage: false
+        homepage: true
       - logo: /images/partner_logos/logo_LifeClothing.png
         name: Life Clothing
         description: >-
@@ -230,6 +230,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
