@@ -194,6 +194,23 @@ partnersData:
             What is the likely primary use of HBCU STEMER funds? Funds must be
             applied to STEM student/education.
           required: true
+    companies:
+      - logo: /images/2017 Acorn LogoType_CMYK_H.png
+        name: Oakwood University
+        description: >-
+          The Oakwood University STEM Departments include the Departments of
+          Mathematics and Computer Science, Biological Sciences, and Chemistry.
+          Students are trained to pursue graduate studies in STEM, medical
+          school, other professional programs or the STEM workforce. The
+          biblically based education means that you receive training for the
+          mind, body, and soul. Setting you up for success on this earth and in
+          the earth made new.
+
+
+          Explore Oakwood's Departments of Mathematics and Computer Science,
+          Biological Sciences, and Chemistry.
+        website: 'https://www.oakwood.edu'
+        homepage: true
 picture: /images/ourPartners_introImage.jpg
 intro: >
   What we do would not be possible without our partners! They help fulfill our
@@ -202,6 +219,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
