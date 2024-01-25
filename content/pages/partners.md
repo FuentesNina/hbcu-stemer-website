@@ -127,7 +127,7 @@ partnersData:
           STEAM = STEM + Arts Education with Dr. Muk. Check out our website for
           the latest updates
         website: 'http://linktree.com/steamulater'
-        homepage: false
+        homepage: true
       - logo: /images/partner_logos/logo_4D_Traders.PNG
         name: 4D Traders Institute
         description: Creating successful traders through education.
@@ -194,6 +194,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
