@@ -56,6 +56,9 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/ultra premium entertainment logo.png
+        name: Ultra Premium Entertainment
+        website: ultrapremiumentertainment.com
       - logo: /images/103WEUP logo.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
@@ -224,6 +227,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
