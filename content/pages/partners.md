@@ -123,6 +123,7 @@ partnersData:
       - logo: /images/ultra premium entertainment logo.png
         name: Ultra Premium Entertainment
         website: ultrapremiumentertainment.com
+        homepage: true
       - logo: /images/partner_logos/logo_nfc.png
         name: Nina Fuentes Coaching LLC
         description: >-
