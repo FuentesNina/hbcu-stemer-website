@@ -58,13 +58,7 @@ partnersData:
     companies:
       - logo: /images/103WEUP logo.jpg
         name: 103Weup
-        description: >-
-          WEUP is Alabama’s first black-owned and black-operated radio station.
-          They continue to grow and evolve while keeping one important constant
-          in mind, our commitment to deliver the urban perspective, not only to
-          listeners in two states, but also around the world. The WEUP family of
-          stations remains firmly committed to that goal and will continue to
-          carry the torch and provide the community with a voice of its own.
+        description: '#1 For Hip Hop and R&B'
         website: 'https://103weup.com/'
         homepage: true
       - logo: /images/Code.Sip.Repeat..jpg
@@ -230,6 +224,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
