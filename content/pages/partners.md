@@ -61,7 +61,7 @@ partnersData:
         description: 'Youth Development, Healthy Living, Social Responsibility'
         website: www.ymcahuntsville.org
         homepage: true
-      - logo: /images/103.1-FM-WEUP.jpg
+      - logo: /images/103WEUP logo.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
         website: 'https://103weup.com/'
@@ -233,6 +233,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
