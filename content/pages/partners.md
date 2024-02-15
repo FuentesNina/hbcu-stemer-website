@@ -161,7 +161,7 @@ partnersData:
           A clothing brand that's comfortable but fashionable enough for any
           event.
         website: 'https://www.facebook.com/1ifeclothing'
-        homepage: true
+        homepage: false
   - tabTitle: HBCU Partners
     intro: >-
       HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners
@@ -233,6 +233,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
