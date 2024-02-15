@@ -56,11 +56,6 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
-      - logo: /images/ymca lgo.png
-        name: Heart of the Valley YMCA
-        description: 'Youth Development, Healthy Living, Social Responsibility'
-        website: www.ymcahuntsville.org
-        homepage: true
       - logo: /images/103WEUP logo.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
@@ -117,6 +112,11 @@ partnersData:
           "Math is where it's at" We tutor mathematics. As long as math
           involved, we can help. Hit us up for any of your mathematics needs.
         website: 'http://www.theblackmathacademy.com/'
+        homepage: true
+      - logo: /images/ymca lgo.png
+        name: Heart of the Valley YMCA
+        description: 'Youth Development, Healthy Living, Social Responsibility'
+        website: www.ymcahuntsville.org
         homepage: true
       - logo: /images/partner_logos/logo_India_Approved.PNG
         name: India Approved
@@ -233,6 +233,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
