@@ -56,7 +56,7 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
-      - logo: /images/103WEUP logo.jpg
+      - logo: /images/103.1-FM-WEUP.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
         website: 'https://103weup.com/'
@@ -228,6 +228,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
