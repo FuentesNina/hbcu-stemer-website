@@ -56,6 +56,11 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/ymca lgo.png
+        name: Heart of the Valley YMCA
+        description: 'Youth Development, Healthy Living, Social Responsibility'
+        website: www.ymcahuntsville.org
+        homepage: true
       - logo: /images/103.1-FM-WEUP.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
@@ -228,6 +233,7 @@ intro: >
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
