@@ -17,7 +17,7 @@ raceInfoIntro: >
   crucial institutions.
 cta: Register Now
 raceDay:
-  year: 2024
+  year: 2026
   month: 4
   day: 1
 tickets:
@@ -193,6 +193,7 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
