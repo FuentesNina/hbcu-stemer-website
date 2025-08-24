@@ -17,9 +17,9 @@ raceInfoIntro: >
   crucial institutions.
 cta: Register Now
 raceDay:
-  year: 2024
+  year: 2025
   month: 4
-  day: 1
+  day: 6
 tickets:
   - title: 5K (or 1 Mile) Run/Walk
     description: 'April 14, 2024 - Huntsville, AL'
@@ -193,6 +193,7 @@ faq:
       on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
