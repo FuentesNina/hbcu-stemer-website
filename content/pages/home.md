@@ -2,7 +2,7 @@
 heroSection:
   heroVideo: /images/hero_video.mp4
   heroVideoThumbnail: /images/benefit_challenge.png
-  slogan: Empower Potential
+  slogan: Educate. Empower. Elevate.
   button: Learn More
 mainCTA:
   - name: Register Now
@@ -62,6 +62,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
