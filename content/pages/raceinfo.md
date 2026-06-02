@@ -50,7 +50,7 @@ tickets:
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
     features:
       - Finish Anytime in April
-      - Swag Bag
+      - Virtual Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
   - title: Virtual 5K or half-marathon
@@ -168,6 +168,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
