@@ -64,6 +64,7 @@ tickets:
       - Finish Anytime in April
       - Commemorative Finisher Medal
       - Premium Tech T-shirt
+      - 6-Week Training Program
       - Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
@@ -168,6 +169,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
