@@ -55,16 +55,16 @@ tickets:
       - Digital Runners Bib
       - Create/Join a team of friends and family
       - Easy to use fundraising page to help raise funds
-  - title: Virtual half-marathon
-    description: 13.1 miles run/walk
-    price: $40
-    fee: $3.40
+  - title: Virtual 5K or half-marathon
+    description: Run Anywhere!
+    price: $25
+    fee: ''
     mostPopular: false
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362'
     features:
       - Finish Anytime in April
-      - Premium T-shirt
+      - Premium Tech T-shirt
       - Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
@@ -170,6 +170,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
