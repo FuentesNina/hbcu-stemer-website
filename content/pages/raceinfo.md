@@ -24,9 +24,9 @@ tickets:
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=712453'
     features:
-      - Commemorative Finisher Meda
       - Commemorative Finisher Medal
       - Premium Tech T-shirt
+      - 4-Week Training Program
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
@@ -170,6 +170,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
