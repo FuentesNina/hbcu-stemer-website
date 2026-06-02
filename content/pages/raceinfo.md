@@ -53,7 +53,6 @@ tickets:
       - Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
-      - Easy to use fundraising page to help raise funds
   - title: Virtual 5K or half-marathon
     description: Run Anywhere!
     price: $25
@@ -169,6 +168,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
