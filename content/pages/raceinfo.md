@@ -26,7 +26,7 @@ tickets:
     features:
       - Commemorative Finisher Medal
       - Premium Tech T-shirt
-      - 4-Week Training Program
+      - 6-Week Training Program
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
@@ -169,6 +169,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
