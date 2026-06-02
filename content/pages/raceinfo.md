@@ -16,7 +16,7 @@ raceDay:
   month: 4
   day: 6
 tickets:
-  - title: 5K (or 1 Mile) Run/Walk
+  - title: 5K Run/Walk
     description: 'April 19, 2026 - Huntsville, AL'
     price: $25
     fee: $2.50
@@ -172,6 +172,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
