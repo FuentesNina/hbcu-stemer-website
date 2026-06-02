@@ -29,10 +29,10 @@ tickets:
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
       - Easy to use fundraising page to help raise funds
-  - title: Virtual Family fun
-    description: 1 mile run/walk
-    price: $15
-    fee: $1.90
+  - title: 1 Mile Family Fun Run/Walk
+    description: 'April 19, 2026 - Huntsville, AL'
+    price: $20
+    fee: ''
     mostPopular: false
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359'
@@ -172,6 +172,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
