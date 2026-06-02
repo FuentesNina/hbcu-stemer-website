@@ -41,7 +41,6 @@ tickets:
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
-      - Easy to use fundraising page to help raise funds
   - title: Virtual 1 Mile Family Fun Run/Walk
     description: Run Anywhere!
     price: $20
@@ -170,6 +169,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
