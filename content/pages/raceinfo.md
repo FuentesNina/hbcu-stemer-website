@@ -62,11 +62,11 @@ tickets:
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688362'
     features:
       - Finish Anytime in April
+      - Commemorative Finisher Medal
       - Premium Tech T-shirt
       - Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
-      - Easy to use fundraising page to help raise funds
 donateCTA: Donate
 donate: 'https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER'
 sponsorStudentCTA: sponsor a student runner
@@ -168,6 +168,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
