@@ -24,12 +24,12 @@ tickets:
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=712453'
     features:
-      - Finisher Medal
+      - Commemorative Finisher Meda
+      - Commemorative Finisher Medal
       - Premium Tech T-shirt
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
-      - Easy to use fundraising page to help raise funds
   - title: 1 Mile Family Fun Run/Walk
     description: 'April 19, 2026 - Huntsville, AL'
     price: $20
@@ -170,6 +170,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
