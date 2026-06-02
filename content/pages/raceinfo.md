@@ -37,7 +37,6 @@ tickets:
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688359'
     features:
-      - Finish Anytime in April
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
@@ -170,6 +169,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
