@@ -20,12 +20,11 @@ tickets:
     description: 'April 19, 2026 - Huntsville, AL'
     price: $25
     fee: $2.50
-    mostPopular: false
-    inPerson: true
+    mostPopular: true
+    inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=712453'
     features:
-      - Choice of 1 Mile or 5K
-      - Premium T-shirt
+      - Premium Tech T-shirt
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
@@ -173,6 +172,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
