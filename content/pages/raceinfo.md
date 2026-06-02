@@ -42,16 +42,15 @@ tickets:
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
       - Easy to use fundraising page to help raise funds
-  - title: Virtual 5K
-    description: 3.1 miles run/walk
-    price: $25
-    fee: $2.50
-    mostPopular: true
+  - title: Virtual 1 Mile Family Fun Run/Walk
+    description: Run Anywhere!
+    price: $20
+    fee: ''
+    mostPopular: false
     inPerson: false
     link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
     features:
       - Finish Anytime in April
-      - Premium T-shirt
       - Swag Bag
       - Digital Runners Bib
       - Create/Join a team of friends and family
@@ -171,6 +170,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
