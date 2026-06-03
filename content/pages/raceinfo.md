@@ -85,9 +85,9 @@ pastEvents:
       - picture: /images/1B4A9931.jpg
       - picture: /images/1B4A9903.jpg
       - picture: /images/057A9969.jpg
-      - picture: /images/057A9651.jpg
       - picture: /images/057A1080.jpg
       - picture: /images/057A0068.jpg
+      - picture: /images/057A9651.jpg
   - type: recap
     date: 2022 Recap
     title: Thanks Everyone
@@ -184,6 +184,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
