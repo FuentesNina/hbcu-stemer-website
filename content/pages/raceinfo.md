@@ -80,6 +80,9 @@ pastEvents:
       - $4200 raised for local HBCU STEM students
       - '125 Runners from 12 states. Most out of state runners: Georgia/ Tennessee'
       - 'Team with the most runners: Rocket City Runners (31)'
+    pictures:
+      - picture: /images/057A0068.jpg
+      - {}
   - type: recap
     date: 2022 Recap
     title: Thanks Everyone
@@ -176,6 +179,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
