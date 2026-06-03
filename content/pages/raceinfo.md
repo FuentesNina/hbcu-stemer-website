@@ -62,7 +62,7 @@ tickets:
     fee: ''
     mostPopular: false
     inPerson: false
-    link: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=688361'
+    link: 'https://runsignup.com/Race/AL/Huntsville/HBCUSTEMER?rsus=500-400-e3af627a-b0a0-433d-84a4-21d1dc482b06'
     features:
       - Finish Anytime in April
       - Virtual Swag Bag
@@ -184,6 +184,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
