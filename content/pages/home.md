@@ -48,6 +48,10 @@ newsletterSignUp:
   button: Keep me Posted
   email: info@hbcustemer.com
   formFields:
+    - fieldName: I'm not a robot
+      type: Checkbox
+      placeholder: Check
+      required: false
     - fieldName: Name
       type: Short answer text
       placeholder: Name
@@ -58,6 +62,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
