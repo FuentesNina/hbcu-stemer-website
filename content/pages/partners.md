@@ -47,7 +47,7 @@ partnersData:
         description: 'At Fleet Feet we believe in the power of running. Whether you move fast or slow, whether you cover a mile or a marathon, it doesn’t matter. Running has the ability to challenge perceptions of what you’re capable of. It can bring people together, relieve stress, help you cope with hardship and give you healthy goals to strive for. Join us as we follow Fleet Feet runners from communities across the country and celebrate how RUNNING CHANGES EVERYTHING®.'
         website: 'https://www.fleetfeet.com/s/huntsville'
         homepage: true
-      - logo: /images/103WEUP logo.jpg
+      - logo: /images/103.1-FM-WEUP.jpg
         name: 103Weup
         description: '#1 For Hip Hop and R&B'
         website: 'https://103weup.com/'
@@ -173,6 +173,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
