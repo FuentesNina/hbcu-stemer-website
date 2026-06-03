@@ -73,6 +73,13 @@ donate: 'https://runsignup.com/Race/Donate/AL/Huntsville/HBCUSTEMER'
 sponsorStudentCTA: Volunteer
 sponsorStudent: 'https://runsignup.com/Race/Volunteer/AL/Huntsville/HBCUSTEMER'
 pastEvents:
+  - type: event
+    date: April 2026
+    title: 6th Annual Education Run
+    highlights:
+      - $4200 raised for local HBCU STEM students
+      - '125 Runners from 12 states. Most out of state runners: Georgia/ Tennessee'
+      - 'Team with the most runners: Rocket City Runners (31)'
   - type: recap
     date: 2022 Recap
     title: Thanks Everyone
@@ -169,6 +176,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
