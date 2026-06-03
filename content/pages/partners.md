@@ -144,6 +144,16 @@ partnersData:
           placeholder: What is the likely primary use of HBCU STEMER funds? Funds must be applied to STEM student/education.
           required: true
     companies:
+      - logo: /images/Clark-Atlanta-University.png
+        name: Clark Atlanta University
+        description: |-
+          ONE EXCEPTIONAL UNIVERSITY!
+
+          Atlanta University, established in 1865 by the American Missionary Association, was the nation’s first institution to award graduate degrees to African-Americans.
+
+          Building on its social justice history and heritage, Clark Atlanta University is a culturally diverse, research-intensive, liberal arts institution that prepares and transforms the lives of students. CAU is located in the heart of Atlanta which is the epicenter of the Civil Rights Movement and the modern center of emerging technologies and innovation. Ignited by its history, CAU is committed to delivering education that is accessible, relevant, and transformative.
+        website: 'https://www.cau.edu/'
+        homepage: true
       - logo: /images/2017 Acorn LogoType_CMYK_H.png
         name: Oakwood University
         description: |-
@@ -158,6 +168,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
