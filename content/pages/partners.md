@@ -91,16 +91,11 @@ partnersData:
         name: India Approved
         description: Community of beauty lover and one-stop shop for beauty recommendations. Follow India Approved for the latest beauty trends.
         website: 'https://www.instagram.com/indiaapproved/'
-        homepage: true
+        homepage: false
       - logo: /images/ultra premium entertainment logo.png
         name: Ultra Premium Entertainment
         website: ultrapremiumentertainment.com
         homepage: false
-      - logo: /images/partner_logos/logo_nfc.png
-        name: Nina Fuentes Coaching LLC
-        description: Helping women transition to a plant-based lifestyle while losing stubborn weight
-        website: 'https://www.ninafuentescoaching.com'
-        homepage: true
       - logo: /images/partner_logos/logo_PMS.png
         name: Post Mask Skin
         description: A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.
@@ -168,6 +163,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
