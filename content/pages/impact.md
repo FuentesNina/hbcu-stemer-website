@@ -31,8 +31,6 @@ communityMembers:
   - tabTitle: Race Hall of Fame
     tabIntro: Click on each card to learn more about our participants...
 milestones:
-  - title: Funding Black Women in STEM
-    description: October 2025 - Established Dr. Lakeshia Legette Jones Scholarship at Clark Atlanta University.
   - title: First HBCU STEM Education run
     description: May 2021 - MACS Support Scholarship Established.
   - title: We're official!
@@ -45,9 +43,12 @@ milestones:
     description: Hosted the 'How to Build an EV' Workshop for Oakwood University's Women Initiative (WIN) for STEM Summer Bridge Program.
   - title: Face Time
     description: '2023 marked the first in-person events. The signature 5K was hosted in Huntsville, AL aka Rocket City and the Women in STEM Walkathon was hosted at the historic Morehouse College in Atlanta, GA!'
+  - title: Funding Black Women in STEM
+    description: October 2025 - Established Dr. Lakeshia Legette Jones Scholarship at Clark Atlanta University.
 communityTitle: Our Community
 _template: impact
 ---
+
 
 
 
