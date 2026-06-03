@@ -42,6 +42,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/Evince Innovation updated 2025.png
+        name: 'Evince, Inc.'
+        description: |-
+          Discoveries… Opportunities…. Everywhere
+
+          We are a research and development company that supports and develops energy technologies and early careers professionals.
+        website: 'https://instagram.com/evince_innov'
+        homepage: true
       - logo: /images/99fce7a39bd1d053892941c0fdcbacc2.jpeg
         name: The King McNeal Collection
         description: 'As a fully custom apparel company, we design and manufacture 95% of our products from scratch. This also allows us the ability to produce custom bulk orders of 15 pieces or more. The majority of our products are our exclusive designs and can only be found here at kingmcneal.com'
@@ -191,6 +199,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
