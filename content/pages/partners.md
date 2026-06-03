@@ -42,6 +42,11 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/New-Balance-Logo.png
+        name: New Balance
+        description: 'We are committed to creating positive change in our communities by promoting healthy active living, advancing educational opportunities, and championing the success of young people.'
+        website: www.newbalance.com
+        homepage: true
       - logo: /images/FF_City_HuntsvilleMadison_Blue--1-_2.jpg
         name: Fleet Feet
         description: 'At Fleet Feet we believe in the power of running. Whether you move fast or slow, whether you cover a mile or a marathon, it doesn’t matter. Running has the ability to challenge perceptions of what you’re capable of. It can bring people together, relieve stress, help you cope with hardship and give you healthy goals to strive for. Join us as we follow Fleet Feet runners from communities across the country and celebrate how RUNNING CHANGES EVERYTHING®.'
@@ -173,6 +178,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
