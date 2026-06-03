@@ -81,6 +81,7 @@ pastEvents:
       - '125 Runners from 12 states. Most out of state runners: Georgia/ Tennessee'
       - 'Team with the most runners: Rocket City Runners (31)'
     pictures:
+      - picture: /images/1B4A9903.jpg
       - picture: /images/057A9969.jpg
       - picture: /images/057A9651.jpg
       - picture: /images/057A1080.jpg
@@ -182,6 +183,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
