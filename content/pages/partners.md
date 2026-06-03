@@ -96,11 +96,6 @@ partnersData:
         name: Ultra Premium Entertainment
         website: ultrapremiumentertainment.com
         homepage: false
-      - logo: /images/partner_logos/logo_PMS.png
-        name: Post Mask Skin
-        description: A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.
-        website: 'https://www.etsy.com/shop/hgho/?etsrc=sdt'
-        homepage: true
       - logo: /images/partner_logos/logo_STEAMulater.png
         name: STEAMulater
         description: STEAM = STEM + Arts Education with Dr. Muk. Check out our website for the latest updates
@@ -163,6 +158,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
