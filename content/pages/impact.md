@@ -31,8 +31,8 @@ communityMembers:
   - tabTitle: Race Hall of Fame
     tabIntro: Click on each card to learn more about our participants...
 milestones:
-  - title: Established Dr. Lakeshia Legett
-    description: Established Dr. Lakeshia Legett
+  - title: Funding Black Women in STEM
+    description: October 2025 - Established Dr. Lakeshia Legette Jones Scholarship at Clark Atlanta University.
   - title: First HBCU STEM Education run
     description: May 2021 - MACS Support Scholarship Established.
   - title: We're official!
@@ -48,6 +48,7 @@ milestones:
 communityTitle: Our Community
 _template: impact
 ---
+
 
 
 
