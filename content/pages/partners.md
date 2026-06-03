@@ -42,6 +42,7 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - {}
       - logo: /images/Evince Innovation updated 2025.png
         name: 'Evince, Inc.'
         description: |-
@@ -120,8 +121,11 @@ partnersData:
         homepage: true
       - logo: /images/partner_logos/logo_India_Approved.PNG
         name: India Approved
-        description: Community of beauty lover and one-stop shop for beauty recommendations. Follow India Approved for the latest beauty trends.
-        website: 'https://www.instagram.com/indiaapproved/'
+        description: |-
+          Clean. Inclusive. Made for you.
+          Teaching beauty, not gatekeeping it.
+          Shop our new glosses & lip liners!
+        website: 'https://www.instagram.com/iabeauty.shop/'
         homepage: false
       - logo: /images/ultra premium entertainment logo.png
         name: Ultra Premium Entertainment
@@ -199,6 +203,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
