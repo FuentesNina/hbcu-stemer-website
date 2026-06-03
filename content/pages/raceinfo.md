@@ -12,7 +12,7 @@ raceInfoIntro: |
   HBCU STEMER is a virtual run/walk that can be done anywhere you like! Race alone, with a friend, or with a team. You can select the finisher thank you packet option you would like to receive. Whether you are an HBCU alum/student, STEM graduate, or just passionate about education, this run is for you! Come join the virtual HBCU STEM Education Run to support STEM education at these crucial institutions.
 cta: Register Now
 raceDay:
-  year: 2027
+  year: 2026
   month: 4
   day: 19
 tickets:
@@ -184,6 +184,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
