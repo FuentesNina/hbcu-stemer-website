@@ -194,6 +194,14 @@ partnersData:
           placeholder: What is the likely primary use of HBCU STEMER funds? Funds must be applied to STEM student/education.
           required: true
     companies:
+      - logo: /images/morehouse.jpg
+        name: Morehouse College
+        description: |-
+          For over 150 years, we have prepared young men to change the world at a top HBCU in the nation, Morehouse College.
+
+          Through leadership and service—driven by innovation, technology, global cultural dexterity, and a liberal arts foundation of knowledge.
+        website: 'https://www.morehouse.edu'
+        homepage: true
       - logo: /images/2017 Acorn LogoType_CMYK_H.png
         name: Oakwood University
         description: |-
@@ -218,6 +226,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
