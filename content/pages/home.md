@@ -40,15 +40,11 @@ mission:
   image: /images/aboutUs_introImage.jpeg
   alt: Group picture of the math department students of Oakwood University.
   title: Our Mission
-  mission: >-
-    Educate, empower, and elevate HBCU students through scholarships and career
-    resources
+  mission: 'Educate, Empower, and Elevate HBCU Students through Scholarships and Career Resources'
   button: Meet the Team
 newsletterSignUp:
   title: JOIN OUR MAILING LIST
-  description: >-
-    Sign up to receive updates on our events, and how you can support our
-    efforts
+  description: 'Sign up to receive updates on our events, and how you can support our efforts'
   button: Keep me Posted
   email: info@hbcustemer.com
   formFields:
@@ -62,6 +58,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
