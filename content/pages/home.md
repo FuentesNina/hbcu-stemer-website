@@ -27,12 +27,12 @@ pastEvents:
   - title: Previous Events
     picture: /images/pastEvents.png
     alt: Group of friends ready to run the race
+  - title: '2026'
+    picture: /images/057A9890.jpg
+    alt: Running taking off from the starting line
   - title: '2023'
     picture: /images/2023.JPG
     alt: Group Photo of Oakwood University students
-  - title: '2022'
-    picture: /images/2022.JPG
-    alt: Running man holding a bib during a race smiling at the camera
   - title: '2021'
     picture: /images/2021.PNG
     alt: Woman making the peace sign with her fingers while smiling
@@ -58,6 +58,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
