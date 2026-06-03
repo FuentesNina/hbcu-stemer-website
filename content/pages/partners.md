@@ -42,6 +42,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/RCR LOGO.PNG
+        name: Rocket City Runners
+        description: |-
+          We Run We Finish
+
+          Rocket City Runners are dedicated to fostering a safe, inclusive, and supportive environment for everyone. We promote unity through walking, jogging, and running, emphasizing the importance of healthy minds, hearts, bodies, and souls.
+        website: www.instagram.com/rocketcityrunners
+        homepage: true
       - logo: /images/New-Balance-Logo.png
         name: New Balance
         description: 'We are committed to creating positive change in our communities by promoting healthy active living, advancing educational opportunities, and championing the success of young people.'
@@ -178,6 +186,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
