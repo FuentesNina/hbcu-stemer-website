@@ -52,6 +52,8 @@ newsletterSignUp:
       type: Checkbox
       placeholder: Check
       required: false
+      options:
+        - 'yes'
     - fieldName: Name
       type: Short answer text
       placeholder: Name
@@ -62,6 +64,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
