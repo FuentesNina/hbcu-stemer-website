@@ -42,6 +42,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/BPSFTlogoPNG (2).png
+        name: Big Peach - South Fulton
+        description: |-
+          We help Atlanta have more fun and get the most out of their fitness routine! Along with our award-winning (and FREE!) shoe-fitting process, we have the best selection of footwear, apparel, and accessories for an active lifestyle.
+
+          Store location: 5829 Campbellton Road SW Suite 102 South Fulton GA 30331
+        website: www.instagram.com/bigpeach_southfulton
+        homepage: true
       - logo: /images/NSBE_AtlantaPro_Logo_COLOR.png
         name: National Society of Black Engineers - Alumni Extension
         description: |-
@@ -226,6 +234,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
