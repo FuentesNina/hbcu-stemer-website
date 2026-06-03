@@ -144,6 +144,14 @@ partnersData:
           placeholder: What is the likely primary use of HBCU STEMER funds? Funds must be applied to STEM student/education.
           required: true
     companies:
+      - logo: /images/2017 Acorn LogoType_CMYK_H.png
+        name: Oakwood University
+        description: |-
+          The Oakwood University STEM Departments include the Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry. Students are trained to pursue graduate studies in STEM, medical school, other professional programs or the STEM workforce. The biblically based education means that you receive training for the mind, body, and soul. Setting you up for success on this earth and in the earth made new.
+
+          Explore Oakwood's Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry.
+        website: 'https://oakwood.edu/academic-experience/school-of-arts-sciences/'
+        homepage: true
       - logo: /images/Clark-Atlanta-University.png
         name: Clark Atlanta University
         description: |-
@@ -154,20 +162,13 @@ partnersData:
           Building on its social justice history and heritage, Clark Atlanta University is a culturally diverse, research-intensive, liberal arts institution that prepares and transforms the lives of students. CAU is located in the heart of Atlanta which is the epicenter of the Civil Rights Movement and the modern center of emerging technologies and innovation. Ignited by its history, CAU is committed to delivering education that is accessible, relevant, and transformative.
         website: 'https://www.cau.edu/'
         homepage: true
-      - logo: /images/2017 Acorn LogoType_CMYK_H.png
-        name: Oakwood University
-        description: |-
-          The Oakwood University STEM Departments include the Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry. Students are trained to pursue graduate studies in STEM, medical school, other professional programs or the STEM workforce. The biblically based education means that you receive training for the mind, body, and soul. Setting you up for success on this earth and in the earth made new.
-
-          Explore Oakwood's Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry.
-        website: 'https://oakwood.edu/academic-experience/school-of-arts-sciences/'
-        homepage: true
 picture: /images/ourPartners_introImage.jpg
 intro: |
   What we do would not be possible without our partners! They help fulfill our goals of furthering STEM education through STEM programs, initiatives, and funding.
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
