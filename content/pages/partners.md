@@ -42,7 +42,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
-      - {}
+      - logo: /images/ArdensGardensInc1117.png
+        name: Arden's Garden
+        description: |-
+          Atlanta’s best smoothie, juice and vegan food bar!
+
+          Arden’s Garden offers a bounty of plant-based delights, ranging from smoothies and vegan bowls to cold-press juices and nutritious snacks.
+        website: 'https://www.ardensgarden.com/'
+        homepage: true
       - logo: /images/Evince Innovation updated 2025.png
         name: 'Evince, Inc.'
         description: |-
@@ -203,6 +210,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
