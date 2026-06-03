@@ -95,7 +95,7 @@ partnersData:
       - logo: /images/ultra premium entertainment logo.png
         name: Ultra Premium Entertainment
         website: ultrapremiumentertainment.com
-        homepage: true
+        homepage: false
       - logo: /images/partner_logos/logo_nfc.png
         name: Nina Fuentes Coaching LLC
         description: Helping women transition to a plant-based lifestyle while losing stubborn weight
@@ -168,6 +168,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
