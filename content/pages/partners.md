@@ -42,6 +42,14 @@ partnersData:
             - I just enjoy giving back
             - Tax break from donations
     companies:
+      - logo: /images/NSBE_AtlantaPro_Logo_COLOR.png
+        name: National Society of Black Engineers - Alumni Extension
+        description: |-
+          Our mission is to increase the number of culturally responsible Black Engineers who excel academically, succeed professionally and positively impact the community.
+
+          NSBE Atlanta Professionals is composed of 200+ experienced STEM professionals representing various industries. In addition to engaging our professional members through a series of networking and professional development events throughout the year, we also prioritize mentorship, scholarship, and service to the Atlanta community.
+        website: 'https://www.nsbeatlantaprofessionals.org/nsbejr'
+        homepage: true
       - logo: /images/ArdensGardensInc1117.png
         name: Arden's Garden
         description: |-
@@ -210,6 +218,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
