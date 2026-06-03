@@ -119,7 +119,7 @@ partnersData:
         description: 'Youth Development, Healthy Living, Social Responsibility'
         website: www.ymcahuntsville.org
         homepage: true
-      - logo: /images/partner_logos/logo_India_Approved.PNG
+      - logo: /images/Screenshot 2025-03-26 111004.png
         name: IA Beauty
         description: |-
           Clean. Inclusive. Made for you.
@@ -203,6 +203,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
