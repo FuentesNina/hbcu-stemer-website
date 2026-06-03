@@ -10,7 +10,7 @@ mainCTA:
     image: /images/raceInfo_Banner.jpeg
     alt: woman running
   - name: Donate
-    description: Give Funds to Support HBCU's
+    description: Help Fund to HBCU Scholarships
     image: /images/pledgeImage.png
     alt: 2 hands holding donations
   - name: Sponsor
@@ -58,6 +58,7 @@ newsletterSignUp:
       required: true
 _template: homepage
 ---
+
 
 
 
