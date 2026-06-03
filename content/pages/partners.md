@@ -1,31 +1,19 @@
 ---
 partnersData:
   - tabTitle: Sponsors
-    intro: >-
-      HBCU STEMER relies on sponsors to fulfill our goals of furthering STEM
-      education through STEM programs, info sessions, and funding. By leveraging
-      companies that demonstrate a commitment to diversity, we can increase
-      diverse representation and improve STEM education. Many thanks to our
-      amazing past and current sponsors!
+    intro: 'HBCU STEMER relies on sponsors to fulfill our goals of furthering STEM education through STEM programs, info sessions, and funding. By leveraging companies that demonstrate a commitment to diversity, we can increase diverse representation and improve STEM education. Many thanks to our amazing past and current sponsors!'
     callToAction: Become a Sponsor
     form:
       logo: /images/partner_logos/yourLogoHere.png
       email: info@hbcustemer.com
       callToAction: Your Company Here! Partner with Us
       title: SPONSOR SIGN-UP
-      details: >
+      details: |
         SPONSOR BENEFITS
 
-
-        * Demonstrating continued commitment to increasing diverse
-        representation in STEM fields.
-
-        * Reaching a broader audience through our dedicated Meet Our Sponsors
-        spotlight page.
-
-        * Showcasing your brand and latest initiatives to potential customers
-        and investors.
-
+        * Demonstrating continued commitment to increasing diverse representation in STEM fields.
+        * Reaching a broader audience through our dedicated Meet Our Sponsors spotlight page.
+        * Showcasing your brand and latest initiatives to potential customers and investors.
         * and much more!
       fields:
         - fieldName: Name
@@ -38,9 +26,7 @@ partnersData:
           required: true
         - fieldName: Organization or company Name
           type: Short answer text
-          placeholder: >-
-            What is the full name of the organization you represent? Please
-            enter "Individual Sponsor" if not representing an organization.
+          placeholder: What is the full name of the organization you represent? Please enter "Individual Sponsor" if not representing an organization.
           required: true
         - fieldName: Interests
           type: Checkbox
@@ -63,20 +49,12 @@ partnersData:
         homepage: true
       - logo: /images/Code.Sip.Repeat..jpg
         name: Code.Sip.Repeat™
-        description: >-
-          An Interactive Adult Coding Experience. Our events allow new and
-          experienced coders to gain confidence in coding in a fun and engaging
-          environment.
+        description: An Interactive Adult Coding Experience. Our events allow new and experienced coders to gain confidence in coding in a fun and engaging environment.
         website: 'https://codesiprepeat.com'
         homepage: true
       - logo: /images/partner_logos/logo_huntsvilleMagazine.png
         name: Hunstville Magazine
-        description: >-
-          Huntsville Magazine is Huntsville, Alabama’s premier print and digital
-          city lifestyle publication. Founded in 2022, the quarterly magazine
-          serves as a guide to the best of the city with insightful reads on
-          culture, people, entertainment, and businesses catalyzing the city’s
-          transformation.
+        description: 'Huntsville Magazine is Huntsville, Alabama’s premier print and digital city lifestyle publication. Founded in 2022, the quarterly magazine serves as a guide to the best of the city with insightful reads on culture, people, entertainment, and businesses catalyzing the city’s transformation.'
         website: 'https://huntsvillemagazine.com/'
         homepage: true
       - logo: /images/partner_logos/logo_STEMedia.png
@@ -86,31 +64,22 @@ partnersData:
         homepage: true
       - logo: /images/partner_logos/logo_4D_Fitness_4_Life.png
         name: 4D Fitness 4 Life
-        description: >-
-          Changing people's lives one at a time. Sign-up for the 12-Week Total
-          Body Transformation Challenge
+        description: Changing people's lives one at a time. Sign-up for the 12-Week Total Body Transformation Challenge
         website: 'https://www.4dfitness4life.com/programs'
         homepage: true
       - logo: /images/partner_logos/logo_Acastemics.png
         name: AcaSTEMics
-        description: >-
-          We create scientist and engineers! For STEM News: Join the AcaSTEMics
-          Community Network Facebook Group
+        description: 'We create scientist and engineers! For STEM News: Join the AcaSTEMics Community Network Facebook Group'
         website: 'https://www.facebook.com/groups/599867161520168'
-        homepage: true
+        homepage: false
       - logo: /images/partner_logos/logo_MathNMore.png
         name: Math N'More
-        description: >-
-          An acute mathematics firm offering K-12 and post-secondary schools and
-          families math tutorial, coaching, and IEPS/504 solutions. Creating
-          mathematical diversity! Enveryone is a math person!
+        description: 'An acute mathematics firm offering K-12 and post-secondary schools and families math tutorial, coaching, and IEPS/504 solutions. Creating mathematical diversity! Enveryone is a math person!'
         website: 'https://www.mathnmore.com/'
         homepage: true
       - logo: /images/partner_logos/logo_The_Black_Math_Academy.jpeg
         name: The Black Math Academy
-        description: >-
-          "Math is where it's at" We tutor mathematics. As long as math
-          involved, we can help. Hit us up for any of your mathematics needs.
+        description: '"Math is where it''s at" We tutor mathematics. As long as math involved, we can help. Hit us up for any of your mathematics needs.'
         website: 'http://www.theblackmathacademy.com/'
         homepage: true
       - logo: /images/ymca lgo.png
@@ -120,9 +89,7 @@ partnersData:
         homepage: true
       - logo: /images/partner_logos/logo_India_Approved.PNG
         name: India Approved
-        description: >-
-          Community of beauty lover and one-stop shop for beauty
-          recommendations. Follow India Approved for the latest beauty trends.
+        description: Community of beauty lover and one-stop shop for beauty recommendations. Follow India Approved for the latest beauty trends.
         website: 'https://www.instagram.com/indiaapproved/'
         homepage: true
       - logo: /images/ultra premium entertainment logo.png
@@ -131,23 +98,17 @@ partnersData:
         homepage: true
       - logo: /images/partner_logos/logo_nfc.png
         name: Nina Fuentes Coaching LLC
-        description: >-
-          Helping women transition to a plant-based lifestyle while losing
-          stubborn weight
+        description: Helping women transition to a plant-based lifestyle while losing stubborn weight
         website: 'https://www.ninafuentescoaching.com'
         homepage: true
       - logo: /images/partner_logos/logo_PMS.png
         name: Post Mask Skin
-        description: >-
-          A natural skincare collection formulated for skin traumatized by
-          COVID-19 face covering guidelines.
+        description: A natural skincare collection formulated for skin traumatized by COVID-19 face covering guidelines.
         website: 'https://www.etsy.com/shop/hgho/?etsrc=sdt'
         homepage: true
       - logo: /images/partner_logos/logo_STEAMulater.png
         name: STEAMulater
-        description: >-
-          STEAM = STEM + Arts Education with Dr. Muk. Check out our website for
-          the latest updates
+        description: STEAM = STEM + Arts Education with Dr. Muk. Check out our website for the latest updates
         website: 'http://linktree.com/steamulater'
         homepage: true
       - logo: /images/partner_logos/logo_4D_Traders.PNG
@@ -157,37 +118,23 @@ partnersData:
         homepage: true
       - logo: /images/partner_logos/logo_LifeClothing.png
         name: Life Clothing
-        description: >-
-          A clothing brand that's comfortable but fashionable enough for any
-          event.
+        description: A clothing brand that's comfortable but fashionable enough for any event.
         website: 'https://www.facebook.com/1ifeclothing'
         homepage: false
   - tabTitle: HBCU Partners
-    intro: >-
-      HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners
-      to fulfill our goals of furthering STEM education through the STEM
-      programs, initiatives, and bright minds at your institution. By leveraging
-      the influential community of HBCU alumni, current students, and
-      supporters, we can improve STEM education.
+    intro: 'HBCUs, big or small, we love them all! HBCU STEMER relies on HBCU partners to fulfill our goals of furthering STEM education through the STEM programs, initiatives, and bright minds at your institution. By leveraging the influential community of HBCU alumni, current students, and supporters, we can improve STEM education.'
     callToAction: Become a Partner
     form:
       logo: /images/partner_logos/yourLogoHere.png
       email: info@hbcustemer.com
       callToAction: Your School Here! Partner with HBCU STEMER
       title: SPONSOR SIGN-UP
-      details: >
+      details: |
         HBCU PARTNER BENEFITS
 
-
-        * Receiving funds dedicated to scholarships and career resources for
-        your institution's STEM programs.
-
-        * Reaching a broader audience through our dedicated This Year's HBCU
-        spotlight page.
-
-        * Showcasing your latest STEM achievements/endeavors to potential
-        students and supporters.
-
+        * Receiving funds dedicated to scholarships and career resources for your institution's STEM programs.
+        * Reaching a broader audience through our dedicated This Year's HBCU spotlight page.
+        * Showcasing your latest STEM achievements/endeavors to potential students and supporters.
         * and much more!
       fields:
         - fieldName: Name
@@ -204,35 +151,24 @@ partnersData:
           required: true
         - fieldName: Funds Use
           type: Paragraph
-          placeholder: >-
-            What is the likely primary use of HBCU STEMER funds? Funds must be
-            applied to STEM student/education.
+          placeholder: What is the likely primary use of HBCU STEMER funds? Funds must be applied to STEM student/education.
           required: true
     companies:
       - logo: /images/2017 Acorn LogoType_CMYK_H.png
         name: Oakwood University
-        description: >-
-          The Oakwood University STEM Departments include the Departments of
-          Mathematics and Computer Science, Biological Sciences, and Chemistry.
-          Students are trained to pursue graduate studies in STEM, medical
-          school, other professional programs or the STEM workforce. The
-          biblically based education means that you receive training for the
-          mind, body, and soul. Setting you up for success on this earth and in
-          the earth made new.
+        description: |-
+          The Oakwood University STEM Departments include the Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry. Students are trained to pursue graduate studies in STEM, medical school, other professional programs or the STEM workforce. The biblically based education means that you receive training for the mind, body, and soul. Setting you up for success on this earth and in the earth made new.
 
-
-          Explore Oakwood's Departments of Mathematics and Computer Science,
-          Biological Sciences, and Chemistry.
+          Explore Oakwood's Departments of Mathematics and Computer Science, Biological Sciences, and Chemistry.
         website: 'https://oakwood.edu/academic-experience/school-of-arts-sciences/'
         homepage: true
 picture: /images/ourPartners_introImage.jpg
-intro: >
-  What we do would not be possible without our partners! They help fulfill our
-  goals of furthering STEM education through STEM programs, initiatives, and
-  funding.
+intro: |
+  What we do would not be possible without our partners! They help fulfill our goals of furthering STEM education through STEM programs, initiatives, and funding.
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
