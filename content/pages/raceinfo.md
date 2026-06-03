@@ -82,7 +82,7 @@ pastEvents:
       - 'Team with the most runners: Rocket City Runners (31)'
     pictures:
       - picture: /images/057A0068.jpg
-      - {}
+      - picture: /images/057A0866.jpg
   - type: recap
     date: 2022 Recap
     title: Thanks Everyone
@@ -179,6 +179,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
