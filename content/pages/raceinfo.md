@@ -69,9 +69,9 @@ tickets:
       - Digital Runners Bib
       - Create/Join a team of friends and family
 donateCTA: Donate
-donate: 'https://runsignup.com/Race/Donate/AL/Anywhere/HBCUSTEMER'
-sponsorStudentCTA: sponsor a student runner
-sponsorStudent: 'https://runsignup.com/Race/Register/?raceId=106760&eventId=701744'
+donate: 'https://runsignup.com/Race/Donate/AL/Huntsville/HBCUSTEMER'
+sponsorStudentCTA: Volunteer
+sponsorStudent: 'https://runsignup.com/Race/Volunteer/AL/Huntsville/HBCUSTEMER'
 pastEvents:
   - type: recap
     date: 2022 Recap
@@ -146,7 +146,7 @@ pastEvents:
       - picture: /images/pastEvents/2021_HBCU_stemer/8.PNG
         alt: picture of Oakwood University math department students
 otherOptions: |+
-  Don't want to run... but still want to support?
+  Not able to run... but still want to support?
 
 faq:
   - question: What is a virtual race or walkathon?
@@ -169,6 +169,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
