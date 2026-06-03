@@ -120,7 +120,7 @@ partnersData:
         website: www.ymcahuntsville.org
         homepage: true
       - logo: /images/partner_logos/logo_India_Approved.PNG
-        name: India Approved
+        name: IA Beauty
         description: |-
           Clean. Inclusive. Made for you.
           Teaching beauty, not gatekeeping it.
@@ -203,6 +203,7 @@ intro: |
 alt: Students putting hands together in a playground
 _template: partners
 ---
+
 
 
 
