@@ -44,20 +44,18 @@ tickets:
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
-  - title: Virtual 5K or half-marathon
-    description: Run Anywhere!
-    price: $25
+  - title: Women in STEM Walkathon
+    description: 'October 1-31, 2026'
+    price: $30
     fee: ''
-    mostPopular: false
+    mostPopular: true
     inPerson: false
     link: 'https://runsignup.com/Race/AL/Huntsville/HBCUSTEMER?rsus=500-400-e3af627a-b0a0-433d-84a4-21d1dc482b06'
     features:
-      - Finish Anytime in April
-      - Commemorative Finisher Medal
-      - Premium Tech T-shirt
-      - 6-Week Training Program
+      - Complete as Many Miles as Possible
+      - Long Sleeve Tee
+      - Tracking Program
       - Swag Bag
-      - Digital Runners Bib
       - Create/Join a team of friends and family
   - title: Virtual 1 Mile Family Fun Run/Walk
     description: Run Anywhere!
@@ -187,6 +185,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
