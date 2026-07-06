@@ -58,18 +58,6 @@ tickets:
       - Swag Bag & Weekly Raffles
       - $150 Grand Prize
       - Create/Join a team of friends and family
-  - title: Virtual 1 Mile Family Fun Run/Walk
-    description: Run Anywhere!
-    price: $20
-    fee: ''
-    mostPopular: false
-    inPerson: false
-    link: 'https://runsignup.com/Race/AL/Huntsville/HBCUSTEMER?rsus=500-400-e3af627a-b0a0-433d-84a4-21d1dc482b06'
-    features:
-      - Finish Anytime in April
-      - Virtual Swag Bag
-      - Digital Runners Bib
-      - Create/Join a team of friends and family
 donateCTA: Donate
 donate: 'https://runsignup.com/Race/Donate/AL/Huntsville/HBCUSTEMER'
 sponsorStudentCTA: Volunteer
@@ -186,6 +174,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
