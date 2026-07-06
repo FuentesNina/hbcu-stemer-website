@@ -55,7 +55,8 @@ tickets:
       - Complete as Many Miles as Possible
       - Long Sleeve Tee
       - Tracking Program
-      - Swag Bag
+      - Swag Bag & Weekly Raffles
+      - $150 Grand Prize
       - Create/Join a team of friends and family
   - title: Virtual 1 Mile Family Fun Run/Walk
     description: Run Anywhere!
@@ -185,6 +186,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
