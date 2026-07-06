@@ -50,7 +50,7 @@ tickets:
     fee: ''
     mostPopular: true
     inPerson: false
-    link: 'https://runsignup.com/Race/AL/Huntsville/HBCUSTEMER?rsus=500-400-e3af627a-b0a0-433d-84a4-21d1dc482b06'
+    link: 'https://runsignup.com/Race/GA/Atlanta/WomeninSTEMWalkathon?rsus=500-400-fbff3da0-c4c3-4b38-b04b-75455ecdf993'
     features:
       - Complete as Many Miles as Possible
       - Long Sleeve Tee
@@ -186,6 +186,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
