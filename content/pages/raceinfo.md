@@ -32,7 +32,7 @@ tickets:
       - Create/Join a team of friends and family
   - title: Raleigh 5K Run/Walk
     description: 'September 7, 2026'
-    price: $35
+    price: $25
     fee: ''
     mostPopular: false
     inPerson: false
@@ -187,6 +187,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
