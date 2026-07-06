@@ -30,14 +30,17 @@ tickets:
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
-  - title: 1 Mile Family Fun Run/Walk
-    description: 'April 19, 2026 - Huntsville, AL'
-    price: $20
+  - title: Raleigh 5K Run/Walk
+    description: 'September 7, 2026'
+    price: $35
     fee: ''
     mostPopular: false
     inPerson: false
-    link: 'https://runsignup.com/Race/AL/Huntsville/HBCUSTEMER?rsus=500-400-e3af627a-b0a0-433d-84a4-21d1dc482b06'
+    link: 'https://runsignup.com/Race/NC/Raleigh/HBCUSTEMEducationRunRaleigh?rsus=500-400-ce594241-b998-4b9e-930c-09ee10e1b5ab'
     features:
+      - Commemorative Finisher Medal (add-on)
+      - T-shirt
+      - Virtual Training Program
       - Swag Bag
       - Runners Bib to wear during the event
       - Create/Join a team of friends and family
@@ -184,6 +187,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
