@@ -46,7 +46,7 @@ tickets:
       - Create/Join a team of friends and family
   - title: Women in STEM Walkathon (Virtual)
     description: 'October 1-31, 2026'
-    price: $20
+    price: $30
     fee: ''
     mostPopular: true
     inPerson: false
@@ -174,6 +174,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
