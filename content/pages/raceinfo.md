@@ -46,14 +46,14 @@ tickets:
       - Create/Join a team of friends and family
   - title: Women in STEM Walkathon (Virtual)
     description: 'October 1-31, 2026'
-    price: $30
+    price: $20
     fee: ''
     mostPopular: true
     inPerson: false
     link: 'https://runsignup.com/Race/GA/Atlanta/WomeninSTEMWalkathon?rsus=500-400-fbff3da0-c4c3-4b38-b04b-75455ecdf993'
     features:
       - Complete as Many Miles as Possible
-      - Long Sleeve Tee
+      - Long Sleeve Tee (add-on)
       - Tracking Program
       - Swag Bag & Weekly Raffles
       - $150 Grand Prize
@@ -174,6 +174,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
