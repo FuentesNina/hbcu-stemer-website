@@ -17,7 +17,7 @@ raceDay:
   day: 19
 tickets:
   - title: Huntsville 5K Run/Walk
-    description: 'April 18, 2027 - Huntsville, AL'
+    description: 'April 18, 2027'
     price: $25
     fee: ''
     mostPopular: true
@@ -174,6 +174,7 @@ faq:
       To become a sponsor or HBCU partner, please fill out the respective form on [Our Partners page](www.hbcustemer.com/partners "our Partners Page").
 _template: raceInfo
 ---
+
 
 
 
