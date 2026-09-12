@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faLinkedin, faTiktok, faYoutube, faStore } from "@fortawesome/free-brands-svg-icons";
-import { faCircle, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faLinkedin, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faCircle, faEnvelope, faStore } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function SocialMediaIcons({containerClassName, iconClassName, color, margins, webLinks }: {webLinks: any, containerClassName?: string | undefined ,iconClassName?:string | undefined, color?: string | undefined, margins?: string | undefined}) {
