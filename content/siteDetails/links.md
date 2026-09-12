@@ -13,8 +13,12 @@ socialLinks:
   - platform: Shop
     link: 'https://hbcustemer.square.site/'
     showIcon: true
+  - platform: LinkedIn
+    link: 'https://www.linkedin.com/company/hbcustemer/'
+    showIcon: true
 _template: webLinks
 ---
+
 
 
 
