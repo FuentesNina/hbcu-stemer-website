@@ -10,11 +10,12 @@ socialLinks:
   - platform: YouTube
     link: 'https://www.youtube.com/@hbcustemer'
     showIcon: true
-  - platform: Store
+  - platform: Shop
     link: 'https://hbcustemer.square.site/'
     showIcon: true
 _template: webLinks
 ---
+
 
 
 
