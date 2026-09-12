@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faLinkedin, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faLinkedin, faTiktok, faYoutube, faStore } from "@fortawesome/free-brands-svg-icons";
 import { faCircle, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -18,6 +18,8 @@ export default function SocialMediaIcons({containerClassName, iconClassName, col
               <li key={`${link.platform}${index}`}>
                 { link.platform === "Email"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faEnvelope} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
+                :link.platform === "Store"
+                ? <Link href={link.link}><FontAwesomeIcon icon={faStore} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
                 :link.platform === "Instagram"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faInstagram} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
                 : link.platform === "Facebook"
