@@ -1073,6 +1073,7 @@ export default defineConfig({
                     type: "string",
                     options: [
                       "Email",
+                      "Store",
                       "Instagram",
                       "Facebook",
                       "YouTube",
