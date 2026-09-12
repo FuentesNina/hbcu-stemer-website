@@ -19,7 +19,7 @@ export default function SocialMediaIcons({containerClassName, iconClassName, col
                 { link.platform === "Email"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faEnvelope} className={iconClass} mask={faCircle} transform="shrink-6" /></Link>
                 :link.platform === "Store"
-                ? <Link href={link.link}><FontAwesomeIcon icon={faStore} className={iconClass} mask={faCircle} transform="shrink-6 translate-x-2" /></Link>
+                ? <Link href={link.link}><FontAwesomeIcon icon={faStore} className={iconClass} mask={faCircle} transform="shrink-6 right-1" /></Link>
                 :link.platform === "Instagram"
                 ? <Link href={link.link}><FontAwesomeIcon icon={faInstagram} className={iconClass} mask={faCircle} transform="shrink-4" /></Link>
                 : link.platform === "Facebook"
