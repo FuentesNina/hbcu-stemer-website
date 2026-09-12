@@ -528,6 +528,7 @@ export default defineConfig({
                     options: [
                       "Email",
                       "Store",
+                      "Shop",
                       "Instagram",
                       "Facebook",
                       "YouTube",
@@ -1074,6 +1075,7 @@ export default defineConfig({
                     options: [
                       "Email",
                       "Store",
+                      "Shop",
                       "Instagram",
                       "Facebook",
                       "YouTube",
