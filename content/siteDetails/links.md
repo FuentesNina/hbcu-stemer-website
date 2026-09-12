@@ -10,10 +10,11 @@ socialLinks:
   - platform: YouTube
     link: 'https://www.youtube.com/@hbcustemer'
     showIcon: true
-  - platform: Email
+  - platform: ''
     link: hbcustemer.square.site
 _template: webLinks
 ---
+
 
 
 
