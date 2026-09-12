@@ -1,6 +1,8 @@
 ---
 quote: '“Yesterday’s the past, tomorrow’s the future, but today is a gift. That’s why its called the present.” - Bil Keane'
 socialLinks:
+  - platform: Email
+    link: hbcustemer.square.site
   - platform: Instagram
     link: 'https://www.instagram.com/hbcustemer/'
     showIcon: true
@@ -15,6 +17,7 @@ socialLinks:
     showIcon: false
 _template: webLinks
 ---
+
 
 
 
